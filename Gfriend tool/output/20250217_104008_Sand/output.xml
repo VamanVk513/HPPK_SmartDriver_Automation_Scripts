@@ -1,0 +1,2609 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Sand">
+  <StartTime>
+2025-02-17 10:40:31
+</StartTime>
+  <TestCase Name="1.General Everyday Printing">
+    <StartTime>
+2025-02-17 10:40:31
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_General_Everyday_Printing">
+      <StartTime>
+2025-02-17 10:40:31
+</StartTime>
+      <StartTime>
+2025-02-17 10:40:31
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_General_Everyday_Printing.pdf,HP Smart Printing)">
+        <StartTime>
+2025-02-17 10:40:31
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:41:04
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,20)">
+        <StartTime>
+2025-02-17 10:41:04
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:41:04
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2025-02-17 10:41:04
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:41:10
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-17 10:41:10
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:41:10
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2025-02-17 10:41:10
+</StartTime>
+      <StartTime>
+2025-02-17 10:41:10
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-17 10:41:10
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:41:10
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_GeneralPrint)">
+      <StartTime>
+2025-02-17 10:41:10
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:41:10
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2025-02-17 10:41:10
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:41:15
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2025-02-17 10:41:15
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:41:15
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2025-02-17 10:41:15
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:41:20
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2025-02-17 10:41:20
+</StartTime>
+      <StartTime>
+2025-02-17 10:41:20
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2025-02-17 10:41:20
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:41:22
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2025-02-17 10:41:22
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:41:33
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2025-02-17 10:41:33
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2025-02-17 10:41:33
+</StartTime>
+          <Block>
+            <StartTime>
+2025-02-17 10:41:33
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2025-02-17 10:41:33
+</EndTime>
+          </Block>
+          <EndTime>
+2025-02-17 10:41:33
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2025-02-17 10:41:33
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(12)">
+        <StartTime>
+2025-02-17 10:41:33
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:41:45
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-17 10:41:45
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:41:45
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+      <StartTime>
+2025-02-17 10:41:45
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:41:45
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2025-02-17 10:41:45
+</EndTime>
+  </TestCase>
+  <TestCase Name="2.EcoSMART Settings">
+    <StartTime>
+2025-02-17 10:41:45
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_EcoSMART_Settings">
+      <StartTime>
+2025-02-17 10:41:45
+</StartTime>
+      <StartTime>
+2025-02-17 10:41:45
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_EcoSMART_Settings.pdf,HP Smart Printing)">
+        <StartTime>
+2025-02-17 10:41:45
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:42:17
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,20)">
+        <StartTime>
+2025-02-17 10:42:17
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:42:17
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2025-02-17 10:42:17
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:42:23
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-17 10:42:23
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:42:23
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2025-02-17 10:42:23
+</StartTime>
+      <StartTime>
+2025-02-17 10:42:23
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-17 10:42:23
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:42:23
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_EcoSmart)">
+      <StartTime>
+2025-02-17 10:42:23
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:42:23
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2025-02-17 10:42:23
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:42:28
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2025-02-17 10:42:28
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:42:29
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2025-02-17 10:42:29
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:42:34
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2025-02-17 10:42:34
+</StartTime>
+      <StartTime>
+2025-02-17 10:42:34
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2025-02-17 10:42:34
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:42:36
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2025-02-17 10:42:36
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:42:46
+</EndTime>
+      </Statement>
+      <If Condition="If :  Hallasan.Close Application">
+        <StartTime>
+2025-02-17 10:42:46
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2025-02-17 10:42:46
+</StartTime>
+          <Block>
+            <StartTime>
+2025-02-17 10:42:46
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2025-02-17 10:42:46
+</EndTime>
+          </Block>
+          <EndTime>
+2025-02-17 10:42:46
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2025-02-17 10:42:46
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(12)">
+        <StartTime>
+2025-02-17 10:42:46
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:42:58
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-17 10:42:58
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:42:58
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+      <StartTime>
+2025-02-17 10:42:58
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:42:58
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2025-02-17 10:42:58
+</EndTime>
+  </TestCase>
+  <TestCase Name="3.Envelopes">
+    <StartTime>
+2025-02-17 10:42:58
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_Envelopes">
+      <StartTime>
+2025-02-17 10:42:58
+</StartTime>
+      <StartTime>
+2025-02-17 10:42:58
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Envelopes.pdf,HP Smart Printing)">
+        <StartTime>
+2025-02-17 10:42:58
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:43:31
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,20)">
+        <StartTime>
+2025-02-17 10:43:31
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:43:31
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2025-02-17 10:43:31
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:43:37
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-17 10:43:37
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:43:37
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2025-02-17 10:43:37
+</StartTime>
+      <StartTime>
+2025-02-17 10:43:37
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-17 10:43:37
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:43:37
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_Envelope)">
+      <StartTime>
+2025-02-17 10:43:37
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:43:37
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2025-02-17 10:43:37
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:43:42
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2025-02-17 10:43:42
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:43:42
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2025-02-17 10:43:42
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:43:47
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2025-02-17 10:43:47
+</StartTime>
+      <StartTime>
+2025-02-17 10:43:47
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2025-02-17 10:43:47
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:43:49
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2025-02-17 10:43:49
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:43:59
+</EndTime>
+      </Statement>
+      <If Condition="If :  Hallasan.Close Application">
+        <StartTime>
+2025-02-17 10:43:59
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2025-02-17 10:43:59
+</StartTime>
+          <Block>
+            <StartTime>
+2025-02-17 10:43:59
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2025-02-17 10:43:59
+</EndTime>
+          </Block>
+          <EndTime>
+2025-02-17 10:43:59
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2025-02-17 10:43:59
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(12)">
+        <StartTime>
+2025-02-17 10:43:59
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:44:11
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-17 10:44:11
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:44:11
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+      <StartTime>
+2025-02-17 10:44:11
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:44:11
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2025-02-17 10:44:11
+</EndTime>
+  </TestCase>
+  <TestCase Name="4.Labels">
+    <StartTime>
+2025-02-17 10:44:11
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_Labels">
+      <StartTime>
+2025-02-17 10:44:11
+</StartTime>
+      <StartTime>
+2025-02-17 10:44:11
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Labels.pdf,HP Smart Printing)">
+        <StartTime>
+2025-02-17 10:44:11
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:44:44
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,20)">
+        <StartTime>
+2025-02-17 10:44:44
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:44:44
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2025-02-17 10:44:44
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:44:50
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-17 10:44:50
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:44:50
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2025-02-17 10:44:50
+</StartTime>
+      <StartTime>
+2025-02-17 10:44:50
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-17 10:44:50
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:44:50
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_Labels)">
+      <StartTime>
+2025-02-17 10:44:50
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:44:50
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2025-02-17 10:44:50
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:44:55
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2025-02-17 10:44:55
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:44:55
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2025-02-17 10:44:55
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:45:00
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2025-02-17 10:45:00
+</StartTime>
+      <StartTime>
+2025-02-17 10:45:00
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2025-02-17 10:45:01
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:45:03
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2025-02-17 10:45:03
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:45:13
+</EndTime>
+      </Statement>
+      <If Condition="If :  Hallasan.Close Application">
+        <StartTime>
+2025-02-17 10:45:13
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2025-02-17 10:45:13
+</StartTime>
+          <Block>
+            <StartTime>
+2025-02-17 10:45:13
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2025-02-17 10:45:13
+</EndTime>
+          </Block>
+          <EndTime>
+2025-02-17 10:45:13
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2025-02-17 10:45:13
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(12)">
+        <StartTime>
+2025-02-17 10:45:13
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:45:25
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-17 10:45:25
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:45:25
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+      <StartTime>
+2025-02-17 10:45:25
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:45:25
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2025-02-17 10:45:25
+</EndTime>
+  </TestCase>
+  <TestCase Name="5.Two-Sided Printing:TwoSidedLongEdge">
+    <StartTime>
+2025-02-17 10:45:25
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2025-02-17 10:45:25
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2025-02-17 10:45:25
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_TwoSidedLongEdge">
+          <StartTime>
+2025-02-17 10:45:25
+</StartTime>
+          <StartTime>
+2025-02-17 10:45:25
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_TwoSidedLongEdge.pdf,HP Smart Printing)">
+            <StartTime>
+2025-02-17 10:45:25
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:45:57
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,20)">
+            <StartTime>
+2025-02-17 10:45:57
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:45:57
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2025-02-17 10:45:57
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:46:03
+</EndTime>
+          </Statement>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2025-02-17 10:46:03
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:46:03
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2025-02-17 10:46:03
+</StartTime>
+          <StartTime>
+2025-02-17 10:46:03
+</StartTime>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2025-02-17 10:46:03
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:46:03
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.JobDuplexAllDocumentsContiguously,Option.TwoSidedLongEdge)">
+          <StartTime>
+2025-02-17 10:46:03
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:46:04
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2025-02-17 10:46:04
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_250217_10460416.png
+</ScreenShot>
+          <EndTime>
+2025-02-17 10:46:04
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2025-02-17 10:46:04
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:46:09
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2025-02-17 10:46:09
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:46:09
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2025-02-17 10:46:09
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:46:14
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2025-02-17 10:46:14
+</StartTime>
+          <StartTime>
+2025-02-17 10:46:14
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2025-02-17 10:46:14
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:46:16
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(10)">
+            <StartTime>
+2025-02-17 10:46:16
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:46:26
+</EndTime>
+          </Statement>
+          <If Condition="If :  Hallasan.Close Application">
+            <StartTime>
+2025-02-17 10:46:26
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2025-02-17 10:46:26
+</StartTime>
+              <Block>
+                <StartTime>
+2025-02-17 10:46:26
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2025-02-17 10:46:26
+</EndTime>
+              </Block>
+              <EndTime>
+2025-02-17 10:46:26
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2025-02-17 10:46:26
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(12)">
+            <StartTime>
+2025-02-17 10:46:26
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:46:38
+</EndTime>
+          </Statement>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2025-02-17 10:46:38
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:46:38
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+          <StartTime>
+2025-02-17 10:46:38
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:46:38
+</EndTime>
+        </Statement>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2025-02-17 10:46:38
+</EndTime>
+      </Loop>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-17 10:46:38
+</EndTime>
+    </Repeat>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2025-02-17 10:46:38
+</EndTime>
+  </TestCase>
+  <TestCase Name="6.Two-Sided Printing:TwoSidedShortEdge">
+    <StartTime>
+2025-02-17 10:46:38
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2025-02-17 10:46:38
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2025-02-17 10:46:38
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_TwoSidedShortEdge">
+          <StartTime>
+2025-02-17 10:46:38
+</StartTime>
+          <StartTime>
+2025-02-17 10:46:38
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_TwoSidedShortEdge.pdf,HP Smart Printing)">
+            <StartTime>
+2025-02-17 10:46:38
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:47:11
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,20)">
+            <StartTime>
+2025-02-17 10:47:11
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:47:11
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2025-02-17 10:47:11
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:47:17
+</EndTime>
+          </Statement>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2025-02-17 10:47:17
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:47:17
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2025-02-17 10:47:17
+</StartTime>
+          <StartTime>
+2025-02-17 10:47:17
+</StartTime>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2025-02-17 10:47:17
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:47:17
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.JobDuplexAllDocumentsContiguously,Option.TwoSidedShortEdge)">
+          <StartTime>
+2025-02-17 10:47:17
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:47:17
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2025-02-17 10:47:17
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_250217_10471769.png
+</ScreenShot>
+          <EndTime>
+2025-02-17 10:47:17
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2025-02-17 10:47:17
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:47:22
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2025-02-17 10:47:22
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:47:22
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2025-02-17 10:47:22
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:47:27
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2025-02-17 10:47:27
+</StartTime>
+          <StartTime>
+2025-02-17 10:47:27
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2025-02-17 10:47:28
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:47:30
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(10)">
+            <StartTime>
+2025-02-17 10:47:30
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:47:40
+</EndTime>
+          </Statement>
+          <If Condition="If :  Hallasan.Close Application">
+            <StartTime>
+2025-02-17 10:47:40
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2025-02-17 10:47:40
+</StartTime>
+              <Block>
+                <StartTime>
+2025-02-17 10:47:40
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2025-02-17 10:47:40
+</EndTime>
+              </Block>
+              <EndTime>
+2025-02-17 10:47:40
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2025-02-17 10:47:40
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(12)">
+            <StartTime>
+2025-02-17 10:47:40
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:47:52
+</EndTime>
+          </Statement>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2025-02-17 10:47:52
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:47:52
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+          <StartTime>
+2025-02-17 10:47:52
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:47:52
+</EndTime>
+        </Statement>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2025-02-17 10:47:52
+</EndTime>
+      </Loop>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-17 10:47:52
+</EndTime>
+    </Repeat>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2025-02-17 10:47:52
+</EndTime>
+  </TestCase>
+  <TestCase Name="7.Pages per Sheet:2UP_RightBottom">
+    <StartTime>
+2025-02-17 10:47:52
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2025-02-17 10:47:52
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2025-02-17 10:47:52
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_2UP_RightBottom">
+          <StartTime>
+2025-02-17 10:47:52
+</StartTime>
+          <StartTime>
+2025-02-17 10:47:52
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_RightBottom.pdf,HP PSA Smart Printing)">
+            <StartTime>
+2025-02-17 10:47:52
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Fail to click target printer
+</ErrorDescription>
+            <EndTime>
+2025-02-17 10:48:12
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,20)">
+            <StartTime>
+2025-02-17 10:48:12
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:48:12
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2025-02-17 10:48:12
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:48:18
+</EndTime>
+          </Statement>
+          <Result>
+FAIL
+</Result>
+          <EndTime>
+2025-02-17 10:48:18
+</EndTime>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2025-02-17 10:48:18
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2025-02-17 10:48:18
+</StartTime>
+          <StartTime>
+2025-02-17 10:48:18
+</StartTime>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2025-02-17 10:48:18
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:48:18
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.DocumentNUp,Option.2)">
+          <StartTime>
+2025-02-17 10:48:18
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find combobox : Part.DocumentNUp
+</ErrorDescription>
+          <EndTime>
+2025-02-17 10:48:21
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.PresentationDirection,Option.RightBottom)">
+          <StartTime>
+2025-02-17 10:48:21
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find combobox : Part.PresentationDirection
+</ErrorDescription>
+          <EndTime>
+2025-02-17 10:48:23
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2025-02-17 10:48:23
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_250217_10482373.png
+</ScreenShot>
+          <EndTime>
+2025-02-17 10:48:23
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2025-02-17 10:48:23
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:48:28
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2025-02-17 10:48:28
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+          <ScreenShot>
+.\Hallasan_Screenshot_250217_10483240.png
+</ScreenShot>
+          <EndTime>
+2025-02-17 10:48:32
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2025-02-17 10:48:32
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:48:37
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2025-02-17 10:48:37
+</StartTime>
+          <StartTime>
+2025-02-17 10:48:37
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2025-02-17 10:48:37
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:48:39
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(10)">
+            <StartTime>
+2025-02-17 10:48:39
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:48:49
+</EndTime>
+          </Statement>
+          <If Condition="If :  Hallasan.Close Application">
+            <StartTime>
+2025-02-17 10:48:49
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2025-02-17 10:48:49
+</StartTime>
+              <Block>
+                <StartTime>
+2025-02-17 10:48:49
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2025-02-17 10:48:49
+</EndTime>
+              </Block>
+              <EndTime>
+2025-02-17 10:48:49
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2025-02-17 10:48:49
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(12)">
+            <StartTime>
+2025-02-17 10:48:49
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:49:01
+</EndTime>
+          </Statement>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2025-02-17 10:49:01
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:49:01
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+          <StartTime>
+2025-02-17 10:49:01
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:49:01
+</EndTime>
+        </Statement>
+        <Result>
+FAIL
+</Result>
+        <EndTime>
+2025-02-17 10:49:01
+</EndTime>
+      </Loop>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2025-02-17 10:49:01
+</EndTime>
+    </Repeat>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2025-02-17 10:49:01
+</EndTime>
+  </TestCase>
+  <TestCase Name="8.Pages per Sheet:2UP_BottomRight">
+    <StartTime>
+2025-02-17 10:49:01
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2025-02-17 10:49:01
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2025-02-17 10:49:01
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_2UP_BottomRight">
+          <StartTime>
+2025-02-17 10:49:01
+</StartTime>
+          <StartTime>
+2025-02-17 10:49:01
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_ BottomRight.pdf,HP PSA Smart Printing)">
+            <StartTime>
+2025-02-17 10:49:01
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Fail to click target printer
+</ErrorDescription>
+            <EndTime>
+2025-02-17 10:49:22
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,20)">
+            <StartTime>
+2025-02-17 10:49:22
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:49:22
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2025-02-17 10:49:22
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:49:28
+</EndTime>
+          </Statement>
+          <Result>
+FAIL
+</Result>
+          <EndTime>
+2025-02-17 10:49:28
+</EndTime>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2025-02-17 10:49:28
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2025-02-17 10:49:28
+</StartTime>
+          <StartTime>
+2025-02-17 10:49:28
+</StartTime>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2025-02-17 10:49:28
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:49:28
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.DocumentNUp,Option.2)">
+          <StartTime>
+2025-02-17 10:49:28
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find combobox : Part.DocumentNUp
+</ErrorDescription>
+          <EndTime>
+2025-02-17 10:49:30
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)">
+          <StartTime>
+2025-02-17 10:49:30
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find combobox : Part.PresentationDirection
+</ErrorDescription>
+          <EndTime>
+2025-02-17 10:49:33
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2025-02-17 10:49:33
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_250217_10493327.png
+</ScreenShot>
+          <EndTime>
+2025-02-17 10:49:33
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2025-02-17 10:49:33
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:49:38
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2025-02-17 10:49:38
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+          <ScreenShot>
+.\Hallasan_Screenshot_250217_10494194.png
+</ScreenShot>
+          <EndTime>
+2025-02-17 10:49:41
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2025-02-17 10:49:41
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:49:47
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2025-02-17 10:49:47
+</StartTime>
+          <StartTime>
+2025-02-17 10:49:47
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2025-02-17 10:49:47
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:49:49
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(10)">
+            <StartTime>
+2025-02-17 10:49:49
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:49:59
+</EndTime>
+          </Statement>
+          <If Condition="If :  Hallasan.Close Application">
+            <StartTime>
+2025-02-17 10:49:59
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2025-02-17 10:49:59
+</StartTime>
+              <Block>
+                <StartTime>
+2025-02-17 10:49:59
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2025-02-17 10:49:59
+</EndTime>
+              </Block>
+              <EndTime>
+2025-02-17 10:49:59
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2025-02-17 10:49:59
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(12)">
+            <StartTime>
+2025-02-17 10:49:59
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:50:11
+</EndTime>
+          </Statement>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2025-02-17 10:50:11
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:50:11
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+          <StartTime>
+2025-02-17 10:50:11
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:50:11
+</EndTime>
+        </Statement>
+        <Result>
+FAIL
+</Result>
+        <EndTime>
+2025-02-17 10:50:11
+</EndTime>
+      </Loop>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2025-02-17 10:50:11
+</EndTime>
+    </Repeat>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2025-02-17 10:50:11
+</EndTime>
+  </TestCase>
+  <TestCase Name="9.Pages per Sheet:2UP_LeftBottom">
+    <StartTime>
+2025-02-17 10:50:11
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2025-02-17 10:50:11
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2025-02-17 10:50:11
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_2UP_LeftBottom">
+          <StartTime>
+2025-02-17 10:50:11
+</StartTime>
+          <StartTime>
+2025-02-17 10:50:11
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_LeftBottom.pdf,HP PSA Smart Printing)">
+            <StartTime>
+2025-02-17 10:50:11
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Fail to click target printer
+</ErrorDescription>
+            <EndTime>
+2025-02-17 10:50:31
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,20)">
+            <StartTime>
+2025-02-17 10:50:31
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:50:31
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2025-02-17 10:50:31
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:50:37
+</EndTime>
+          </Statement>
+          <Result>
+FAIL
+</Result>
+          <EndTime>
+2025-02-17 10:50:37
+</EndTime>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2025-02-17 10:50:37
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2025-02-17 10:50:37
+</StartTime>
+          <StartTime>
+2025-02-17 10:50:37
+</StartTime>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2025-02-17 10:50:37
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:50:37
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.DocumentNUp,Option.2)">
+          <StartTime>
+2025-02-17 10:50:37
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find combobox : Part.DocumentNUp
+</ErrorDescription>
+          <EndTime>
+2025-02-17 10:50:40
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)">
+          <StartTime>
+2025-02-17 10:50:40
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find combobox : Part.PresentationDirection
+</ErrorDescription>
+          <EndTime>
+2025-02-17 10:50:42
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2025-02-17 10:50:42
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_250217_10504274.png
+</ScreenShot>
+          <EndTime>
+2025-02-17 10:50:42
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2025-02-17 10:50:42
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:50:47
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2025-02-17 10:50:47
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+          <ScreenShot>
+.\Hallasan_Screenshot_250217_10505146.png
+</ScreenShot>
+          <EndTime>
+2025-02-17 10:50:51
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2025-02-17 10:50:51
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:50:56
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2025-02-17 10:50:56
+</StartTime>
+          <StartTime>
+2025-02-17 10:50:56
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2025-02-17 10:50:56
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:50:58
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(10)">
+            <StartTime>
+2025-02-17 10:50:58
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:51:08
+</EndTime>
+          </Statement>
+          <If Condition="If :  Hallasan.Close Application">
+            <StartTime>
+2025-02-17 10:51:08
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2025-02-17 10:51:08
+</StartTime>
+              <Block>
+                <StartTime>
+2025-02-17 10:51:08
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2025-02-17 10:51:08
+</EndTime>
+              </Block>
+              <EndTime>
+2025-02-17 10:51:08
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2025-02-17 10:51:08
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(12)">
+            <StartTime>
+2025-02-17 10:51:08
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:51:20
+</EndTime>
+          </Statement>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2025-02-17 10:51:20
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:51:20
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+          <StartTime>
+2025-02-17 10:51:20
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:51:20
+</EndTime>
+        </Statement>
+        <Result>
+FAIL
+</Result>
+        <EndTime>
+2025-02-17 10:51:20
+</EndTime>
+      </Loop>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2025-02-17 10:51:20
+</EndTime>
+    </Repeat>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2025-02-17 10:51:20
+</EndTime>
+  </TestCase>
+  <TestCase Name="10.Pages per Sheet:2UP_BottomLeft">
+    <StartTime>
+2025-02-17 10:51:20
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2025-02-17 10:51:20
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2025-02-17 10:51:20
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_2UP_BottomLeft">
+          <StartTime>
+2025-02-17 10:51:20
+</StartTime>
+          <StartTime>
+2025-02-17 10:51:20
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_BottomLeft.pdf,HP PSA Smart Printing)">
+            <StartTime>
+2025-02-17 10:51:20
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Fail to click target printer
+</ErrorDescription>
+            <EndTime>
+2025-02-17 10:51:41
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,20)">
+            <StartTime>
+2025-02-17 10:51:41
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:51:41
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2025-02-17 10:51:41
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:51:47
+</EndTime>
+          </Statement>
+          <Result>
+FAIL
+</Result>
+          <EndTime>
+2025-02-17 10:51:47
+</EndTime>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2025-02-17 10:51:47
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2025-02-17 10:51:47
+</StartTime>
+          <StartTime>
+2025-02-17 10:51:47
+</StartTime>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2025-02-17 10:51:47
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:51:47
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.DocumentNUp,Option.2)">
+          <StartTime>
+2025-02-17 10:51:47
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find combobox : Part.DocumentNUp
+</ErrorDescription>
+          <EndTime>
+2025-02-17 10:51:49
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomLeft)">
+          <StartTime>
+2025-02-17 10:51:49
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find combobox : Part.PresentationDirection
+</ErrorDescription>
+          <EndTime>
+2025-02-17 10:51:52
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2025-02-17 10:51:52
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_250217_10515231.png
+</ScreenShot>
+          <EndTime>
+2025-02-17 10:51:52
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2025-02-17 10:51:52
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:51:57
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2025-02-17 10:51:57
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+          <ScreenShot>
+.\Hallasan_Screenshot_250217_10520094.png
+</ScreenShot>
+          <EndTime>
+2025-02-17 10:52:00
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2025-02-17 10:52:00
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:52:06
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2025-02-17 10:52:06
+</StartTime>
+          <StartTime>
+2025-02-17 10:52:06
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2025-02-17 10:52:06
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:52:08
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(10)">
+            <StartTime>
+2025-02-17 10:52:08
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:52:18
+</EndTime>
+          </Statement>
+          <If Condition="If :  Hallasan.Close Application">
+            <StartTime>
+2025-02-17 10:52:18
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2025-02-17 10:52:18
+</StartTime>
+              <Block>
+                <StartTime>
+2025-02-17 10:52:18
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2025-02-17 10:52:18
+</EndTime>
+              </Block>
+              <EndTime>
+2025-02-17 10:52:18
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2025-02-17 10:52:18
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(12)">
+            <StartTime>
+2025-02-17 10:52:18
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2025-02-17 10:52:30
+</EndTime>
+          </Statement>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2025-02-17 10:52:30
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:52:30
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+          <StartTime>
+2025-02-17 10:52:30
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2025-02-17 10:52:30
+</EndTime>
+        </Statement>
+        <Result>
+FAIL
+</Result>
+        <EndTime>
+2025-02-17 10:52:30
+</EndTime>
+      </Loop>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2025-02-17 10:52:30
+</EndTime>
+    </Repeat>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2025-02-17 10:52:30
+</EndTime>
+  </TestCase>
+  <EndTime>
+2025-02-17 10:52:30
+</EndTime>
+</TestSuite>

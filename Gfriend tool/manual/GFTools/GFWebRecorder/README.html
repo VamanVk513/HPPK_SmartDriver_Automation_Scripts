@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>GFriend Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="../../gfmanual.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">GFriend Manual</h1>
+</header>
+<h1 id="gfriend-web-recorder">GFriend Web Recorder</h1>
+<p><img src=".images/GFWebRecorder_main.png" alt="GFWebRecorder::Main" /></p>
+<p>GFriend Web Recorder support to making GFriend TC using by Web keywords. When you use this tool, this tool records your actions from Chrome browser. Tester can export this recording data to GFriend TC.</p>
+<h2 id="1-install">1. Install</h2>
+<p><img src=".images/GFWebRecorder_install.png" alt="GFWebRecorder::Install" /></p>
+<ol>
+<li>If you didn't install this Chrome extension on your local PC, you can install it by clicking "Tool &gt; External Tools &gt; GF Web Recorder".</li>
+<li>After installation, GF Web Recorder icon is displayed to the Chrome browser.</li>
+</ol>
+<p>NOTE: If you can not find GF Web Recorder icon after clicking the option, retry it after killing all Chrome process.</p>
+<h2 id="2-execute">2. Execute</h2>
+<p><img src=".images/GFWebRecorder_ChromeExtension.png" alt="GFWebRecorder::GF Web Recorder icon on the Chrome" /></p>
+<p>You can start GFWebRecorder by clicking <img src=".images/gfriend_16.png" alt="Dump" /> button on the chrome browser.</p>
+<h2 id="3-record">3. Record</h2>
+<p><img src=".images/GFWebRecorder_Record_OpenwithChrome.png" alt="GFWebRecorder::Recording start" /></p>
+<ol>
+<li>You can find text box for Web browser after clicking Record button.</li>
+<li>If you type "url" that you want to use it, it makes new tabs for recording.</li>
+<li>It will be recorded on the tools what you act on the browser.</li>
+</ol>
+<p>NOTE: You can stop the recording by clicking Stop button. If you want to restart recording, click Record button again. It will start recording again without creating new tab.</p>
+<h2 id="4-record-result">4. Record result</h2>
+<p><img src=".images/GFWebRecorder_RecordingResult.png" alt="GFWebRecorder::Recording result" /></p>
+<ol>
+<li>You can find your running script form the main UI. It usually use xPath for testing.</li>
+</ol>
+<h2 id="5-export">5. Export</h2>
+<p><img src=".images/GFWebRecorder_ExportTestCase.png" alt="GFWebRecorder::Export TC" /></p>
+<ol>
+<li>It display GFriend TC that makes automatically when you click Export button.</li>
+<li>You can select two type of formats on the UI: GFriend, and XML
+<ul>
+<li>If you want to copy it to Clipboard, click "Copy to Clipboard" button.</li>
+<li>If you want to Save it to specific file, click "Save As File..." button.</li>
+</ul></li>
+</ol>
+<h2 id="more-information">[More information]</h2>
+<p><img src=".images/GFWebRecorder_NonRecorded.png" alt="GFWebRecorder::Ignored case" /></p>
+<ol>
+<li><p>Some types of pop-up are not recorded to this tool. If you want to make TCs include these types pop-up, you should add "id" and "password" to your Web.Open() keyword. At this case, you should add "{id}:{password}@" after "https://".</p>
+<p>Web.Open with Chrome(https://{url}) -&gt; Web.Open with Chrome(https://{id}:{password}@{url})</p>
+<p>ex) Web.Open with Chrome(<a href="https://admin:admin@130.31.193.111:3443/mymfp/conf">https://admin:admin@130.31.193.111:3443/mymfp/conf</a>)</p></li>
+</ol>
+</body>
+</html>

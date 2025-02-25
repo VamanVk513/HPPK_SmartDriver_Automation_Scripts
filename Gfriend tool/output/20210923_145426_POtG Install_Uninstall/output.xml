@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="POtG Install_Uninstall">
+  <StartTime>
+2021-09-23 14:54:45
+</StartTime>
+  <TestCase Name="Printer Driver Installation">
+    <StartTime>
+2021-09-23 14:54:45
+</StartTime>
+    <Statement StatementName="Windows.Add Certificate (C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\Potg_Driver\install_smartdriver_v2\BoiseTest.cer)">
+      <StartTime>
+2021-09-23 14:54:45
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-09-23 14:54:45
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Add Local Printer(HP Smart Printing,HPSmartPrintingPort,C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\Potg_Driver\HPOneDriver-1.8.1.732-V4-Release-x64\HPOneDriver_V4_x64.inf,HP Smart Printing)">
+      <StartTime>
+2021-09-23 14:54:45
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Driver creation fail
+</ErrorDescription>
+      <EndTime>
+2021-09-23 14:54:46
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep (10)">
+      <StartTime>
+2021-09-23 14:54:46
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-09-23 14:54:56
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Remove Printer (HP Smart Printing)">
+      <StartTime>
+2021-09-23 14:54:56
+</StartTime>
+      <Result>
+Error
+</Result>
+      <ErrorDescription>
+Error during delete printer
+</ErrorDescription>
+      <AdditionalInfo>
+System.Printing.PrintQueueException: An exception occurred while populating the properties for the PrintQueue object. Win32 error: The printer name is invalid.
+
+   at System.Printing.PrintQueue.Initialize(PrintServer printServer, String printQueueName, String[] propertiesFilter, PrinterDefaults printerDefaults)
+   at System.Printing.PrintQueue..ctor(PrintServer printServer, String printQueueName, PrintSystemDesiredAccess desiredAccess)
+   at HP.GFriend.Keywords.PrinterDriverUtils.DeletePrinter(String printerName) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\PrinterDriverUtils.cs:line 288
+   at HP.GFriend.Keywords.Windows.RemovePrinter(String printerName) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 693
+</AdditionalInfo>
+      <EndTime>
+2021-09-23 14:54:56
+</EndTime>
+    </Statement>
+    <Result>
+ERROR
+</Result>
+    <EndTime>
+2021-09-23 14:54:56
+</EndTime>
+  </TestCase>
+  <TestCase Name="HPSmartAPP Install">
+    <StartTime>
+2021-09-23 14:54:56
+</StartTime>
+    <Statement StatementName="BuiltIn.Run Command (powershell C:\Temp\script.ps1,${out})">
+      <StartTime>
+2021-09-23 14:54:56
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2021-09-23 14:54:57
+</EndTime>
+    </Statement>
+    <Statement StatementName="BuiltIn.Run Command (PowerShell C:\GFriend_PotG\Potg_Driver\GothamUltron131-131.1.238\Add-AppDevPackage.ps1,${HP Smart})">
+      <StartTime>
+2021-09-23 14:54:57
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2021-09-23 14:54:58
+</EndTime>
+    </Statement>
+    <Statement StatementName="BuiltIn.Run Command As Admin (Run with PowerShell C:\GFriend_PotG\Potg_Driver\GothamUltron131-131.1.238\Add-AppDevPackage.ps1,${out})">
+      <StartTime>
+2021-09-23 14:54:58
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Exception during run command
+</ErrorDescription>
+      <EndTime>
+2021-09-23 14:54:58
+</EndTime>
+    </Statement>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2021-09-23 14:54:58
+</EndTime>
+  </TestCase>
+  <EndTime>
+2021-09-23 14:54:58
+</EndTime>
+</TestSuite>

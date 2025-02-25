@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_DragonFly">
+  <StartTime>
+2024-06-07 12:54:39
+</StartTime>
+  <TestCase Name="Test">
+    <StartTime>
+2024-06-07 12:54:39
+</StartTime>
+    <Statement StatementName="Windows.Select Application (ApplicationFrameWindow)">
+      <StartTime>
+2024-06-07 12:54:39
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240607_12544488.png
+</ScreenShot>
+      <EndTime>
+2024-06-07 12:54:44
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Wait For ID (ui_Preset_Combo,20)">
+      <StartTime>
+2024-06-07 12:54:44
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : ui_Preset_Combo
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240607_12550505.png
+</ScreenShot>
+      <EndTime>
+2024-06-07 12:55:05
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID With Mouse (ui_Preset_Combo)">
+      <StartTime>
+2024-06-07 12:55:05
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 12:55:05
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Wait For Name (Envelopes)">
+      <StartTime>
+2024-06-07 12:55:05
+</StartTime>
+      <Result>
+Error
+</Result>
+      <ErrorDescription>
+Unexpected exception
+</ErrorDescription>
+      <AdditionalInfo>
+System.MissingMethodException: Method 'HP.GFriend.Keywords.Windows.WaitForName' not found.
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+</AdditionalInfo>
+      <EndTime>
+2024-06-07 12:55:05
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click Name With Mouse (Envelopes)">
+      <StartTime>
+2024-06-07 12:55:05
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : Envelopes
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240607_12550920.png
+</ScreenShot>
+      <EndTime>
+2024-06-07 12:55:09
+</EndTime>
+    </Statement>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2024-06-07 12:55:09
+</EndTime>
+  </TestCase>
+  <EndTime>
+2024-06-07 12:55:09
+</EndTime>
+</TestSuite>

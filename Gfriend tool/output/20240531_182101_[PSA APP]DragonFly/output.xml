@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite  Name="[PSA APP]DragonFly">
+<StartTime>
+2024-05-31 18:21:24
+</StartTime>
+<TestCase  Name="Paper Size:Letter">
+<StartTime>
+2024-05-31 18:21:24
+</StartTime>
+<Repeat  RepeatCount="1">
+<StartTime>
+2024-05-31 18:21:24
+</StartTime>
+<Loop  LoopCount="1">
+<StartTime>
+2024-05-31 18:21:24
+</StartTime>
+<Statement  StatementName="Destination_Selection_Application.PSA_Destination Selection_Letter">
+<StartTime>
+2024-05-31 18:21:24
+</StartTime>
+<StartTime>
+2024-05-31 18:21:24
+</StartTime>
+<Statement  StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Letter.pdf,HP Smart Printing)">
+<StartTime>
+2024-05-31 18:21:24
+</StartTime>
+<Result>
+Fail
+</Result>
+<ErrorDescription>
+Fail to click target printer
+</ErrorDescription>
+<EndTime>
+2024-05-31 18:21:45
+</EndTime>
+</Statement>
+<Statement  StatementName="Hallasan.Get Driver Window(BackstageView)">
+<StartTime>
+2024-05-31 18:21:45
+</StartTime>
+<Result>
+Fail
+</Result>
+<ErrorDescription>
+Can not find window
+</ErrorDescription>
+<ScreenShot>
+.\Hallasan_Screenshot_240531_18215656.png
+</ScreenShot>
+<EndTime>
+2024-05-31 18:21:56
+</EndTime>
+</Statement>
+<Statement  StatementName="Windows.Wait For Name (BackstageView,30)">
+<StartTime>
+2024-05-31 18:21:56
+</StartTime>
+<Result>
+Fail
+</Result>
+<ErrorDescription>
+Can not find element with given name : BackstageView
+</ErrorDescription>
+<ScreenShot>
+.\Windows_Screenshot_240531_18222671.png
+</ScreenShot>
+<EndTime>
+2024-05-31 18:22:26
+</EndTime>
+</Statement>
+<Statement  StatementName="Sleep(6)">
+<StartTime>
+2024-05-31 18:22:26
+</StartTime>
+<Result>
+Pass
+</Result>
+<EndTime>
+2024-05-31 18:22:32
+</EndTime>
+</Statement>
+<Result>
+FAIL
+</Result>
+<EndTime>
+2024-05-31 18:22:32
+</EndTime>
+<Result>
+Fail
+</Result>
+<EndTime>
+2024-05-31 18:22:32
+</EndTime>
+</Statement>
+<Statement  StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+<StartTime>
+2024-05-31 18:22:32
+</StartTime>
+<StartTime>
+2024-05-31 18:22:32
+</StartTime>
+<Result>
+PASS
+</Result>
+<EndTime>
+2024-05-31 18:22:32
+</EndTime>
+<Result>
+Pass
+</Result>
+<EndTime>
+2024-05-31 18:22:32
+</EndTime>
+</Statement>
+<Statement  StatementName="Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaLetter)">
+<StartTime>
+2024-05-31 18:22:32
+</StartTime>
+<Result>
+Fail
+</Result>
+<ErrorDescription>
+Can not find combobox : Part.PageMediaSize
+</ErrorDescription>
+<EndTime>
+2024-05-31 18:22:35
+</EndTime>
+</Statement>
+<Statement  StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+<StartTime>
+2024-05-31 18:22:35
+</StartTime>
+<Result>
+Pass
+</Result>
+<ScreenShot>
+.\Windows_Screenshot_240531_18223510.png
+</ScreenShot>
+<EndTime>
+2024-05-31 18:22:35
+</EndTime>
+</Statement>
+<Statement  StatementName="Sleep(5)">
+<StartTime>
+2024-05-31 18:22:35
+</StartTime>
+<Result>
+Pass
+</Result>
+<EndTime>
+2024-05-31 18:22:40
+</EndTime>
+</Statement>
+<Statement  StatementName="Hallasan.Confirm">
+<StartTime>
+2024-05-31 18:22:40
+</StartTime>
+<Result>
+Fail
+</Result>
+<ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+<ScreenShot>
+.\Hallasan_Screenshot_240531_18224355.png
+</ScreenShot>
+<EndTime>
+2024-05-31 18:22:43
+</EndTime>
+</Statement>
+<Statement  StatementName="Sleep(5)">
+<StartTime>
+2024-05-31 18:22:43
+</StartTime>

@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-03-23 17:37:48
+</StartTime>
+  <TestCase Name="Settings : Print Dialog Off">
+    <StartTime>
+2022-03-23 17:37:48
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-03-23 17:37:48
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-03-23 17:37:48
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_PtDialogOff">
+          <StartTime>
+2022-03-23 17:37:48
+</StartTime>
+          <StartTime>
+2022-03-23 17:37:48
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_PtDialogOff.pdf,HP Smart Printing)">
+            <StartTime>
+2022-03-23 17:37:48
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 17:38:18
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2022-03-23 17:38:18
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 17:38:18
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-03-23 17:38:18
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 17:38:18
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-03-23 17:38:18
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 17:38:24
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:38:24
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:38:24
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-03-23 17:38:24
+</StartTime>
+          <StartTime>
+2022-03-23 17:38:24
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:38:24
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:38:24
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (SettingButton,10)">
+          <StartTime>
+2022-03-23 17:38:24
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:38:24
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Is Clickable(SettingButton)">
+          <StartTime>
+2022-03-23 17:38:24
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:38:25
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(SettingButton)">
+          <StartTime>
+2022-03-23 17:38:25
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:38:25
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (AskDestConfirmAlways,10)">
+          <StartTime>
+2022-03-23 17:38:25
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : AskDestConfirmAlways
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_220323_17383541.png
+</ScreenShot>
+          <EndTime>
+2022-03-23 17:38:35
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(AskDestConfirmAlways)">
+          <StartTime>
+2022-03-23 17:38:35
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : AskDestConfirmAlways
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_220323_17383877.png
+</ScreenShot>
+          <EndTime>
+2022-03-23 17:38:38
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(ui_FeaturePopupIDS_OKButton)">
+          <StartTime>
+2022-03-23 17:38:38
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : ui_FeaturePopupIDS_OKButton
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_220323_17384215.png
+</ScreenShot>
+          <EndTime>
+2022-03-23 17:38:42
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-23 17:38:42
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:38:47
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-03-23 17:38:47
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220323_17384722.png
+</ScreenShot>
+          <EndTime>
+2022-03-23 17:38:47
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-23 17:38:47
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:38:52
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2022-03-23 17:38:52
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:38:52
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-23 17:38:52
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:38:57
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2022-03-23 17:38:57
+</StartTime>
+          <StartTime>
+2022-03-23 17:38:57
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2022-03-23 17:38:57
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 17:38:59
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-03-23 17:38:59
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

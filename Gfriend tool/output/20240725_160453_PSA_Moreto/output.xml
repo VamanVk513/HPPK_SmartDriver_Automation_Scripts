@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_Moreto">
+  <StartTime>
+2024-07-25 16:05:15
+</StartTime>
+  <TestCase Name="17. NUP_2UP_RightBottom">
+    <StartTime>
+2024-07-25 16:05:15
+</StartTime>
+    <Statement StatementName="Destination_Selection_PSA_Application.Destination Selection_2UP_RightBottom_PSA">
+      <StartTime>
+2024-07-25 16:05:15
+</StartTime>
+      <StartTime>
+2024-07-25 16:05:15
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_RightBottom.pdf,HP_PrintSupport_App)">
+        <StartTime>
+2024-07-25 16:05:15
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Fail to open Printer Dialogue
+</ErrorDescription>
+        <EndTime>
+2024-07-25 16:06:22
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP_PrintSupport_App,20)">
+        <StartTime>
+2024-07-25 16:06:22
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-07-25 16:06:23
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-07-25 16:06:23
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-07-25 16:06:29
+</EndTime>
+      </Statement>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2024-07-25 16:06:29
+</EndTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2024-07-25 16:06:29
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-07-25 16:06:29
+</StartTime>
+      <StartTime>
+2024-07-25 16:06:29
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-07-25 16:06:29
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-07-25 16:06:29
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_PSA_Application.Expections_Error">
+      <StartTime>
+2024-07-25 16:06:29
+</StartTime>
+      <StartTime>
+2024-07-25 16:06:29
+</StartTime>
+      <Statement StatementName="Windows.Capture Full Screen (SS)">
+        <StartTime>
+2024-07-25 16:06:29
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240725_16063003.png
+</ScreenShot>
+        <EndTime>
+2024-07-25 16:06:30
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Child Window With Title (HP_PrintSupport_App,5)">
+        <StartTime>
+2024-07-25 16:06:30
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240725_16063554.png
+</ScreenShot>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-07-25 16:06:35
+</StartTime>
+          <Block>
+            <StartTime>
+2024-07-25 16:06:35
+</StartTime>
+            <Statement StatementName="Pass (Childpop was not displayed)">
+              <StartTime>
+2024-07-25 16:06:35
+</StartTime>
+              <Result>
+Pass
+</Result>
+              <Output>
+Childpop was not displayed
+</Output>
+              <EndTime>
+2024-07-25 16:06:35
+</EndTime>
+            </Statement>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-07-25 16:06:35
+</EndTime>
+          </Block>
+          <EndTime>
+2024-07-25 16:06:35
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-07-25 16:06:35
+</EndTime>
+      </If>
+      <Statement StatementName="Windows.Capture Full Screen (SSS)">
+        <StartTime>
+2024-07-25 16:06:35
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240725_16063564.png
+</ScreenShot>
+        <EndTime>
+2024-07-25 16:06:35
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Application (HP_PrintSupport_App,5)">
+        <StartTime>
+2024-07-25 16:06:35
+</StartTime>
+      </If>
+    </Statement>
+  </TestCase>
+</TestSuite>

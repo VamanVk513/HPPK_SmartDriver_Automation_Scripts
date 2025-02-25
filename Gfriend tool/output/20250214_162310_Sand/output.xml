@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Sand">
+  <StartTime>
+2025-02-14 16:23:33
+</StartTime>
+  <TestCase Name="2.EcoSMART Settings">
+    <StartTime>
+2025-02-14 16:23:33
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_EcoSMART_Settings">
+      <StartTime>
+2025-02-14 16:23:33
+</StartTime>
+      <StartTime>
+2025-02-14 16:23:33
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_EcoSMART_Settings.pdf,HP Smart Printing)">
+        <StartTime>
+2025-02-14 16:23:33
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-14 16:24:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,20)">
+        <StartTime>
+2025-02-14 16:24:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-14 16:24:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2025-02-14 16:24:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-14 16:24:12
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-14 16:24:12
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-14 16:24:12
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2025-02-14 16:24:12
+</StartTime>
+      <StartTime>
+2025-02-14 16:24:12
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-14 16:24:12
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-14 16:24:12
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_EcoSmart)">
+      <StartTime>
+2025-02-14 16:24:12
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-14 16:24:12
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2025-02-14 16:24:12
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-14 16:24:17
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2025-02-14 16:24:17
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-14 16:24:17
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2025-02-14 16:24:17
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-14 16:24:22
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2025-02-14 16:24:22
+</StartTime>
+      <StartTime>
+2025-02-14 16:24:22
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2025-02-14 16:24:22
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-14 16:24:24
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2025-02-14 16:24:24
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-14 16:24:34
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2025-02-14 16:24:34
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2025-02-14 16:24:34
+</StartTime>
+          <Block>
+            <StartTime>
+2025-02-14 16:24:34
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2025-02-14 16:24:34
+</EndTime>
+          </Block>
+          <EndTime>
+2025-02-14 16:24:34
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2025-02-14 16:24:34
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(12)">
+        <StartTime>
+2025-02-14 16:24:34
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-14 16:24:47
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-14 16:24:47
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-14 16:24:47
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+      <StartTime>
+2025-02-14 16:24:47
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-14 16:24:47
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2025-02-14 16:24:47
+</EndTime>
+  </TestCase>
+  <EndTime>
+2025-02-14 16:24:47
+</EndTime>
+</TestSuite>

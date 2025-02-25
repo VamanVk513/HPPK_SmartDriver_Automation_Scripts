@@ -1,0 +1,3201 @@
+﻿////////////////////////////////////// SAND -ANGEL////////////////////////////////////////
+
+using Hallasan
+using XML
+using Windows
+Using Testfile.gfvar
+Using Destination_Selection_Application.gflib
+Using Used_Destination_Selection_Function.gflib
+Using Click_Print_Button.gflib
+
+
+1.General Everyday Printing 
+{
+ Destination_Selection_Application.Destination Selection_General_Everyday_Printing
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (ui_PresetComboBox,_GeneralPrint)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+}
+
+2.EcoSMART Settings  
+{
+ Destination_Selection_Application.Destination Selection_EcoSMART_Settings
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (ui_PresetComboBox,_EcoSmart)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+}
+
+3.Envelopes 
+{
+ Destination_Selection_Application.Destination Selection_Envelopes 
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (ui_PresetComboBox,_Envelope)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+}
+
+4.Labels 
+{
+ Destination_Selection_Application.Destination Selection_Labels
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (ui_PresetComboBox,_Labels)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+}
+ 
+
+// Two-Sided Printing
+
+5.Two-Sided Printing:TwoSidedLongEdge    
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_TwoSidedLongEdge
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.JobDuplexAllDocumentsContiguously,Option.TwoSidedLongEdge)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+6.Two-Sided Printing:TwoSidedShortEdge   
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_TwoSidedShortEdge
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.JobDuplexAllDocumentsContiguously,Option.TwoSidedShortEdge)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+// Pages per Sheet
+
+7.Pages per Sheet:2UP_RightBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_2UP_RightBottom
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.2)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.RightBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+8.Pages per Sheet:2UP_BottomRight
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_2UP_BottomRight
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.2)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+9.Pages per Sheet:2UP_LeftBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_2UP_LeftBottom
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.2)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+10.Pages per Sheet:2UP_BottomLeft
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_2UP_BottomLeft
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.2)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomLeft)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+11.Pages per Sheet:2UP_RightBottom_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_2UP_RightBottom_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.2)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.RightBottom)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+12.Pages per Sheet:2UP_BottomRight_Boder
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_2UP_BottomRight_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.2)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+13.Pages per Sheet:2UP_LeftBottom_Boder
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_2UP_LeftBottom_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.2)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+14.Pages per Sheet:2UP_BottomLeft_Boder
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_2UP_BottomLeft_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.2)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomLeft)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+15.Pages per Sheet:4UP_RightBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_4UP_RightBottom
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.4)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.RightBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+16.Pages per Sheet:4UP_BottomRight
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_4UP_BottomRight
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.4)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+17.Pages per Sheet:4UP_LeftBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_4UP_LeftBottom
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.4)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+18.Pages per Sheet:4UP_BottomLeft
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_4UP_BottomLeft
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.4)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomLeft)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+19.Pages per Sheet:4UP_RightBottom_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_4UP_RightBottom_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.4)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.RightBottom)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+20.Pages per Sheet:4UP_BottomRight_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_4UP_BottomRight_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.4)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+21.Pages per Sheet:4UP_LeftBottom_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_4UP_LeftBottom_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.4)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+22.Pages per Sheet:4UP_BottomLeft_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_4UP_BottomLeft_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.4)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomLeft)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+23.Pages per Sheet:6UP_RightBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_6UP_RightBottom
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.6)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.RightBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+24.Pages per Sheet:6UP_BottomRight
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_6UP_BottomRight
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.6)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+25.Pages per Sheet:6UP_LeftBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_6UP_LeftBottom
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.6)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+26.Pages per Sheet:6UP_BottomLeft
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_6UP_BottomLeft
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.6)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomLeft)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+27.Pages per Sheet:6UP_RightBottom_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_6UP_RightBottom_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.6)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.RightBottom)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+28.Pages per Sheet:6UP_BottomRight_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_6UP_BottomRight_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.6)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+29.Pages per Sheet:6UP_LeftBottom_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_6UP_LeftBottom_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.6)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+30.Pages per Sheet:6UP_BottomLeft_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_6UP_BottomLeft_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.6)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomLeft)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+31.Pages per Sheet:9UP_RightBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_9UP_RightBottom
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.9)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.RightBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+32.Pages per Sheet:9UP_BottomRight
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_9UP_BottomRight
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.9)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+33.Pages per Sheet:9UP_LeftBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_9UP_LeftBottom
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.9)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+34.Pages per Sheet:9UP_BottomLeft
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_9UP_BottomLeft
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.9)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomLeft)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+35.Pages per Sheet:9UP_RightBottom_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_9UP_RightBottom_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.9)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.RightBottom)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+36.Pages per Sheet:9UP_BottomRight_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_9UP_BottomRight_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.9)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+37.Pages per Sheet:9UP_LeftBottom_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_9UP_LeftBottom_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.9)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+38.Pages per Sheet:9UP_BottomLeft_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_9UP_BottomLeft_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.9)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomLeft)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+39.Pages per Sheet:16UP_RightBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_16UP_RightBottom
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.16)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.RightBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+40.Pages per Sheet:16UP_BottomRight
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_16UP_BottomRight
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.16)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+41.Pages per Sheet:16UP_LeftBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_16UP_LeftBottom
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.16)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+42.Pages per Sheet:16UP_BottomLeft
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_16UP_BottomLeft
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.16)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomLeft)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+43.Pages per Sheet:16UP_RightBottom_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_16UP_RightBottom_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.16)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.RightBottom)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+44.Pages per Sheet:16UP_BottomRight_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_16UP_BottomRight_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.16)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+45.Pages per Sheet:16UP_LeftBottom_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_16UP_LeftBottom_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.16)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+46.Pages per Sheet:16UP_BottomLeft_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_16UP_BottomLeft_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.16)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomLeft)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+47.Print Quality:Normal
+
+
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_NormalMode
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.JobUserResolution,Option.HPS_Normal)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+48.Print Quality:Economode   
+
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_HPS_Economode
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.JobUserResolution,Option.HPS_Economode)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+49.Copy Count:2
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Copies_2
+ ${Destination_Selection_Device}
+ Hallasan.Set TextBox (Part.JobCopiesAllDocuments.TextBox,2)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+50.Copy Count:4
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Copies_4
+ ${Destination_Selection_Device}
+ Hallasan.Set TextBox (Part.JobCopiesAllDocuments.TextBox,4)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+51.Copy Count:6
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Copies_6
+ ${Destination_Selection_Device}
+ Hallasan.Set TextBox (Part.JobCopiesAllDocuments.TextBox,6)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+52.Collate:On
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Collate_On
+ ${Destination_Selection_Device}
+ Hallasan.Set TextBox (Part.JobCopiesAllDocuments.TextBox,2)
+ ${Sleep}
+ Hallasan.Set Toggle (Part.DocumentCollate,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+53.Collate:Off
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Collate_Off
+ ${Destination_Selection_Device}
+ Hallasan.Set TextBox (Part.JobCopiesAllDocuments.TextBox,2)
+ ${Sleep}
+ Hallasan.Set Toggle (Part.DocumentCollate,Off)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+54.Orientation:Landscape
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Landscape
+ ${Destination_Selection_Device}
+ Hallasan.Set Radio (Option.Landscape)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+55.Orientation:Portrait
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Portrait
+ ${Destination_Selection_Device}
+ Hallasan.Set Radio (Option.Portrait)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+56.Paper Size:Letter                                   
+
+
+{
+    
+    Repeat:${Repeat}
+    {  
+ Destination_Selection_Application.Destination Selection_Letter
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaLetter)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+57.Paper Size:Legal      
+
+
+{
+    Repeat:${Repeat}
+    {  
+ Destination_Selection_Application.Destination Selection_Legal
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaLegal)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+
+58.Paper Size:Executive
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Executive
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaExecutive)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+59.Paper Size:A4                                       
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_A4
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ISOA4)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+60.Paper Size:A5
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_A5
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ISOA5)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+61.Paper Size:B5(JIS)
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_B5_JIS
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.JISB5)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+62.Paper Size:Envelope #10
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Envelope_10
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaNumber10Envelope)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+63.Paper Size:Envelope DL
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Envelope_DL
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ISODLEnvelope)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+
+
+64.Paper Size:Envelope C5   
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Envelope_C5
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ISOC5Envelope)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+
+
+65.Paper Size:Envelope C6
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Envelope_C6
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ISOC6Envelope)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+66.Paper Size:Envelope B5
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Envelope_B5
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ISOB5Envelope)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+
+
+
+67.Paper Size:Japanese Postcard               /Remote Support
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Japanese_Postcard
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.JapanHagakiPostcard)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+}
+}
+
+
+
+
+68.Paper Size:A6                                         /Remote Support
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_A6
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ISOA6)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+69.Paper Size:Japanese Envelope Chou #3
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Japanese_Envelope_Chou_3
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.JapanChou3Envelope)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+71.Paper Size:Double Japan Postcard Rotated
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Double_Japan_Postcard_Rotated
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.JapanDoubleHagakiPostcardRotated)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+72.Paper Size:JISB6
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_JISB6
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.JISB6)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+73.Paper Size:Oficio 8.5x13    
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Oficio_8_5x13
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaGermanLegalFanfold)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+74.Paper Size:4x6in                                     /Remote Support
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_4x6in
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.INDEX4X6INCHES)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+75.Paper Size:5x7in               
+
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_5x7in
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.INDEX5X7INCHES)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+76.Paper Size:10x15 cm
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_10x15cm
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.INDEX10X15)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+
+
+77.Paper Size:Officio 216X340MM  
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_OFFICIO216X340MM  
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.OFFICIO216X340MM)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+
+}
+
+
+78.Paper Size:16K195X270
+{
+   Repeat:${Repeat}
+    {         
+   Destination_Selection_Application.Destination Selection_ROC16K195X270
+ ${Destination_Selection_Device}
+Hallasan.Set Combobox (Part.PageMediaSize,Option.ROC16K195X270)
+${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+  
+   }
+}
+
+70.Paper Size:16K184X260
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_ROC16K184X260 
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ROC16K184X260)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+  
+    }
+
+}
+
+    
+79.Paper Size:16K197X273
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_ROC16K197X273 
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ROC16K197X273)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+
+}
+    
+80.Paper Source:Printer auto select
+
+
+{
+   Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Printer_auto_select
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageInputBin,Option.UsePrinterSetting)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+    }
+}
+
+
+
+81.Paper Source:Tray 1
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Tray_1
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageInputBin,Option.Tray1)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+82.Media Type:Plain
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Plain
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaType,Option.PLAIN_70_89)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+
+83.Media Type:Light 60-74g                              
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Light_60_74g
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaType,Option.LIGHT_60_69)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+
+
+84.Media Type:Bond
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Bond
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaType,Option.Bond)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+85.Media Type:Heavy 90-120g                         
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Heavy_111_130g
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaType,Option.HEAVY_90_120)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+     }
+}
+
+
+86.Media Type:Labels
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Label
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaType,Option.Label)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+87.Media Type:Envelope
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_EnvelopePlain
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaType,Option.EnvelopePlain)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+88.Media Type:preprinted                        
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_stationerypreprinted
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaType,Option.stationerypreprinted)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+89.Booklet Printing :Left binding    
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_BookletPrinting_Left
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentBinding,Option.Booklet)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+90.Booklet Printing :Right binding   
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_BookletPrinting_Right
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentBinding,Option.JapaneseBooklet)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+91.Page Order:Back to Front_Reverse        
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Back_to_Front
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.JobPageOrder,Option.Reverse)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+92.Page Order:Front to Back_Standard           
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Front_to_Back
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.JobPageOrder,Option.Standard)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+
+96.Delivery Mode: Secure
+
+
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_Secure
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.JobDeliveryMode,Option.Secure)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+97.Delivery Mode: NormalMode
+
+
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_NormalMode
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.JobDeliveryMode,Option.Normal)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+98.Revert Options
+
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_Revert
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.JobDeliveryMode,Option.Secure)
+  ${Sleep}
+ Windows.Click ID(ui_PresetRevertButton)
+ Windows.Click ID(ui_FeaturePopupIDS_RESTOREButton)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+99.Refresh
+
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_Refresh
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (RefreshButton,10)
+ Windows.Click ID(RefreshButton)
+  ${Sleep}
+  ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+100.Driver Version
+
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_DriverVersion
+ ${Destination_Selection_Device}
+ Windows.Is Clickable(AboutButton)
+ Windows.Click ID(AboutButton)
+ Windows.Wait For ID (ui_AboutPopupPage,10)
+ Windows.Get Text (ui_AboutPopupPage,driverver)
+ Windows.Click ID(ui_FeaturePopupIDS_OKButton)
+  ${Sleep}
+  ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+    }
+}
+
+101.Private Pickup:On
+
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_Private_Pickup_On
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+102.Private Pickup:Off
+
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_Private_Pickup_On
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,Off)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+103.Settings : Print Dialog Off
+
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_PtDialogOff
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SettingButton,10)
+ Windows.Is Clickable(SettingButton)
+ Windows.Click ID(SettingButton)
+ Windows.Wait For ID (AskDestConfirmAlways,10)
+ Windows.Click ID(AskDestConfirmAlways)
+ Windows.Click ID(ui_FeaturePopupIDS_OKButton)
+  ${Sleep}
+  ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ 
+    }
+}
+
+104.Settings : Print Dialog On
+
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_PtDialogOff
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SettingButton,10)
+ Windows.Is Clickable(SettingButton)
+ Windows.Click ID(SettingButton)
+ Windows.Wait For ID (AskDestConfirmAlways,10)
+ Windows.Click ID(AskDestConfirmAlways)
+ Windows.Click ID(ui_FeaturePopupIDS_OKButton)
+  ${Sleep}
+  ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ 
+    }
+}
+
+105.Always Show Before Printing : Uncheck 
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_UncheckAlwaysShowBeforePrinting
+ ${Destination_Selection_Device}
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.ui_AlwaysDisplay)
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+///////////////////////////     Private Pickup Test Cases     /////////////////////////////
+//Requires the device to be onboarded 
+//Private Pickup Toggle should be turned on in the HP Smart App
+//Job will be sent to the mobile app
+
+
+1.Private Pickup Paper Size:Letter                                   
+
+{
+    
+    Repeat:${Repeat}
+    {  
+ Destination_Selection_Application.Destination Selection_Letter
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaLetter)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+2.Private Pickup Paper Size:A4                                      
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_A4
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ISOA4)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+3.Private Pickup Paper Size:A5
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_A5
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ISOA5)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+4.Private Pickup Paper Size:Envelope #10
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Envelope_10
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaNumber10Envelope)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+5.Private Pickup Paper Size:A6                                        
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_A6
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ISOA6)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+6.Private Pickup Paper Size:5x7in               
+
+
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_5x7in
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.INDEX5X7INCHES)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+7.Private Pickup Two-Sided Printing:TwoSidedLongEdge    
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_TwoSidedLongEdge
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.JobDuplexAllDocumentsContiguously,Option.TwoSidedLongEdge)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+8.Private Pickup Pages per Sheet:2UP_RightBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_2UP_RightBottom
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.2)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.RightBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+9.Private Pickup Pages per Sheet:2UP_LeftBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_2UP_LeftBottom
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.2)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+10.Private Pickup Pages per Sheet:4UP_BottomRight
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_4UP_BottomRight
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.4)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+11.Private Pickup Pages per Sheet:4UP_RightBottom_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_4UP_RightBottom_Boder
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.4)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.RightBottom)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+}
+}
+
+12.Private Pickup Pages per Sheet:6UP_LeftBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_6UP_LeftBottom
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.6)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+13.Private Pickup Pages per Sheet:6UP_BottomLeft
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_6UP_BottomLeft
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.6)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomLeft)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+14.Private Pickup Pages per Sheet:9UP_RightBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_9UP_RightBottom
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.9)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.RightBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+15.Private Pickup Pages per Sheet:9UP_BottomRight
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_9UP_BottomRight
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.9)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+16.Private Pickup Pages per Sheet:16UP_BottomRight
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_16UP_BottomRight
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.16)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+17.Private Pickup Pages per Sheet:16UP_LeftBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_16UP_LeftBottom
+ ${Destination_Selection_Device}
+ Windows.Wait For ID (SSCControl,10)
+ Hallasan.Set Toggle (SSCControl,On)
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.16)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+//////////////////////////////////////Remote Test Cases////////////////////////////////
+//Requires the device to be onboarded 
+//Private Anywhere Toggle should be turned on in the HP Smart App
+//Device and PC should be in different networks
+
+1.Remote:General Everyday Printing 
+{
+ Destination_Selection_Application.Destination Selection_General_Everyday_Printing
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (ui_PresetComboBox,_GeneralPrint)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+}
+
+2.Remote:EcoSMART Settings  
+{
+ Destination_Selection_Application.Destination Selection_EcoSMART_Settings
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (ui_PresetComboBox,_EcoSmart)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+} 
+3.Remote:Envelopes 
+{
+ Destination_Selection_Application.Destination Selection_Envelopes 
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (ui_PresetComboBox,_Envelope)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+}
+4.Remote:Labels 
+{
+ Destination_Selection_Application.Destination Selection_Labels
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (ui_PresetComboBox,_Labels)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+}
+ 
+
+// Two-Sided Printing
+
+5.Remote:Two-Sided Printing:TwoSidedLongEdge    
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_TwoSidedLongEdge
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.JobDuplexAllDocumentsContiguously,Option.TwoSidedLongEdge)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+6.Remote:Two-Sided Printing:TwoSidedShortEdge   
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_TwoSidedShortEdge
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.JobDuplexAllDocumentsContiguously,Option.TwoSidedShortEdge)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+7.Booklet Printing :Left binding    
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_BookletPrinting_Left
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentBinding,Option.Booklet)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+8.Booklet Printing :Right binding   
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_BookletPrinting_Right
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentBinding,Option.JapaneseBooklet)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+}
+}
+
+
+9.Page Order:Back to Front_Reverse        
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Back_to_Front
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.JobPageOrder,Option.Reverse)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+10.Page Order:Front to Back_Standard           
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Front_to_Back
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.JobPageOrder,Option.Standard)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+11.Remote:Pages per Sheet:2UP_BottomRight
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_2UP_BottomRight
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.2)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+12.Remote:Pages per Sheet:2UP_LeftBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_2UP_LeftBottom
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.2)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+13.Remote:Pages per Sheet:4UP_BottomRight
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_4UP_BottomRight
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.4)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+14.Remote:Pages per Sheet:4UP_LeftBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_4UP_LeftBottom
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.4)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+15.Remote:Pages per Sheet:6UP_BottomRight_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_6UP_BottomRight_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.6)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+    }
+}
+
+16.Remote:Pages per Sheet:6UP_LeftBottom_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_6UP_LeftBottom_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.6)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+17.Remote:Pages per Sheet:9UP_BottomLeft
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_9UP_BottomLeft
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.9)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomLeft)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+18.Remote:Pages per Sheet:9UP_RightBottom_Boder
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_9UP_RightBottom_Boder
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.9)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.RightBottom)
+ Hallasan.Set Toggle(Part.NUpBorders,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+19.Remote:Pages per Sheet:16UP_BottomRight
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_16UP_BottomRight
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.16)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+20.Remote:Pages per Sheet:16UP_LeftBottom
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_16UP_LeftBottom
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.DocumentNUp,Option.16)
+ Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+21.Remote:Copy Count:2
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Copies_2
+ ${Destination_Selection_Device}
+ Hallasan.Set TextBox (Part.JobCopiesAllDocuments.TextBox,2)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+22.Remote:Copy Count:4
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Copies_4
+ ${Destination_Selection_Device}
+ Hallasan.Set TextBox (Part.JobCopiesAllDocuments.TextBox,4)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+23.Remote:Collate:On
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Collate_On
+ ${Destination_Selection_Device}
+ Hallasan.Set TextBox (Part.JobCopiesAllDocuments.TextBox,2)
+ ${Sleep}
+ Hallasan.Set Toggle (Part.DocumentCollate,On)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+24.Remote:Collate:Off
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Collate_Off
+ ${Destination_Selection_Device}
+ Hallasan.Set TextBox (Part.JobCopiesAllDocuments.TextBox,2)
+ ${Sleep}
+ Hallasan.Set Toggle (Part.DocumentCollate,Off)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+25.Remote:Orientation:Landscape
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Landscape
+ ${Destination_Selection_Device}
+ Hallasan.Set Radio (Option.Landscape)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+26.Remote:Paper Size:Letter                                   
+
+
+{
+    
+    Repeat:${Repeat}
+    {  
+ Destination_Selection_Application.Destination Selection_Letter
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaLetter)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+27.Remote:Paper Size:Legal      
+
+
+{
+    Repeat:${Repeat}
+    {  
+ Destination_Selection_Application.Destination Selection_Legal
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaLegal)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+
+28.Remote:Paper Size:Executive
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Executive
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaExecutive)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+29.Remote:Paper Size:A4                                       
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_A4
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ISOA4)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+
+
+30.Remote:Paper Size:A5
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_A5
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ISOA5)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+31.Remote:Paper Size:B5(JIS)
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_B5_JIS
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.JISB5)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+32.Remote:Paper Size:Envelope #10
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Envelope_10
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaNumber10Envelope)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+
+
+33.Remote:Paper Size:Envelope DL
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Envelope_DL
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ISODLEnvelope)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+
+
+34.Remote:Paper Size:Envelope C5   
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Envelope_C5
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ISOC5Envelope)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+35.Remote:Paper Size:Envelope C6
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Envelope_C6
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ISOC6Envelope)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+36.Remote:Paper Size:Japanese Postcard               
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Japanese_Postcard
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.JapanHagakiPostcard)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+
+
+37.Remote:Paper Size:A6                                         
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_A6
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.ISOA6)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ 
+    }
+}
+
+
+
+
+38.Remote:Paper Size:Japanese Envelope Chou #3
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Japanese_Envelope_Chou_3
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.JapanChou3Envelope)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+39.Paper Size:Oficio 8.5x13    
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Oficio_8_5x13
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaGermanLegalFanfold)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+
+
+40.Paper Size:4x6in                                     
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_4x6in
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.INDEX4X6INCHES)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+
+41.Paper Size:5x7in               
+
+
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_5x7in
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaSize,Option.INDEX5X7INCHES)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+
+    }
+}
+
+42.Delivery Mode: Secure
+
+
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_Secure
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.JobDeliveryMode,Option.Secure)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ Destination_Selection_Application.PT Value_Secure
+    }
+}
+
+43.Delivery Mode: NormalMode
+
+
+{
+    Repeat:${Repeat}
+    {         
+        Destination_Selection_Application.Destination Selection_NormalMode
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.JobDeliveryMode,Option.Normal)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ Destination_Selection_Application.PT Value_NormalMode
+    }
+}
+
+44.Paper Source:Tray 1
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Tray_1
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageInputBin,Option.Tray1)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ Destination_Selection_Application.PT Value_Tray1
+    }
+}
+
+45.Media Type:Light 60-74g                              
+
+
+{
+    Repeat:${Repeat}
+    {         
+ Destination_Selection_Application.Destination Selection_Light_60_74g
+ ${Destination_Selection_Device}
+ Hallasan.Set Combobox (Part.PageMediaType,Option.LIGHT_60_69)
+ ${Capture_Screen_Shot}(Capture.jpg)
+ ${Sleep}
+ ${Confirm}
+ ${Sleep}
+ ${Print}
+ Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)
+ Destination_Selection_Application.PT Value_light
+    }
+}
+

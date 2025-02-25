@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Sand">
+  <StartTime>
+2024-02-21 14:25:31
+</StartTime>
+  <TestCase Name="2.EcoSMART Settings">
+    <StartTime>
+2024-02-21 14:25:31
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_EcoSMART_Settings">
+      <StartTime>
+2024-02-21 14:25:31
+</StartTime>
+      <StartTime>
+2024-02-21 14:25:31
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_EcoSMART_Settings.pdf,HP Smart Printing)">
+        <StartTime>
+2024-02-21 14:25:31
+</StartTime>
+        <Result>
+Error
+</Result>
+        <ErrorDescription>
+Error during open program
+</ErrorDescription>
+        <ScreenShot>
+.\Hallasan_Screenshot_240221_14254467.png
+</ScreenShot>
+        <AdditionalInfo>
+System.Runtime.InteropServices.COMException (0x80131505): Operation timed out. (Exception from HRESULT: 0x80131505)
+   at UIAutomationClient.CUIAutomation8Class.GetFocusedElement()
+   at System.Windows.Automation.AutomationElement.get_FocusedElement()
+   at HP.GFriend.Keywords.Windows.OpenWithPath(String executablePath, String waitTime) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 866
+</AdditionalInfo>
+        <EndTime>
+2024-02-21 14:25:45
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+        <StartTime>
+2024-02-21 14:25:45
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Can not find element with given name : HP Smart Printing
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240221_14254802.png
+</ScreenShot>
+        <AdditionalInfo>
+System.Runtime.InteropServices.COMException (0x80131505): Operation timed out. (Exception from HRESULT: 0x80131505)
+   at UIAutomationClient.CUIAutomation8Class.GetFocusedElement()
+   at System.Windows.Automation.AutomationElement.get_FocusedElement()
+   at HP.GFriend.Keywords.Windows.SelectElement(AutomationElement rootElement, Condition condition, TimeSpan timeOut, TreeScope scope) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 134
+   at HP.GFriend.Keywords.Windows.WaitForName(String name, String timeoutInSec) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 1042
+</AdditionalInfo>
+        <EndTime>
+2024-02-21 14:25:48
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-02-21 14:25:48
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 14:25:54
+</EndTime>
+      </Statement>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2024-02-21 14:25:54
+</EndTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2024-02-21 14:25:54
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-02-21 14:25:54
+</StartTime>
+      <StartTime>
+2024-02-21 14:25:54
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 14:25:54
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 14:25:54
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_EcoSmart)">
+      <StartTime>
+2024-02-21 14:25:54
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find combobox : ui_PresetComboBox
+</ErrorDescription>
+      <EndTime>
+2024-02-21 14:25:58
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-02-21 14:25:58
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 14:26:03
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-02-21 14:26:03
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+      <ScreenShot>
+.\Hallasan_Screenshot_240221_14260697.png
+</ScreenShot>
+      <EndTime>
+2024-02-21 14:26:06
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-02-21 14:26:06
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 14:26:12
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2024-02-21 14:26:12
+</StartTime>
+      <StartTime>
+2024-02-21 14:26:12
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2024-02-21 14:26:12
+</StartTime>
+        <Result>
+Error
+</Result>
+        <ErrorDescription>
+Error during click print button
+</ErrorDescription>
+        <AdditionalInfo>
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HP.GFriend.Keywords.ApplicationUtils.ClickPrintButtonInAcrobatReader(Windows windowsController) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\ApplicationUtils.cs:line 398
+   at HP.GFriend.Keywords.Windows.ClickPrintButton() in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 935
+</AdditionalInfo>
+        <EndTime>
+2024-02-21 14:26:19
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-02-21 14:26:19
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 14:26:39
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2024-02-21 14:26:39
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+No application to close
+</ErrorDescription>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-02-21 14:26:39
+</StartTime>
+          <Block>
+            <StartTime>
+2024-02-21 14:26:39
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-02-21 14:26:39
+</EndTime>
+          </Block>
+          <EndTime>
+2024-02-21 14:26:39
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-02-21 14:26:39
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-02-21 14:26:39
+</StartTime>
+      </Statement>
+    </Statement>
+  </TestCase>
+</TestSuite>

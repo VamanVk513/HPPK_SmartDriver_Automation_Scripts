@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-04-12 11:14:07
+</StartTime>
+  <TestCase Name="Always Show Before Printing : Uncheck">
+    <StartTime>
+2022-04-12 11:14:07
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-04-12 11:14:07
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-04-12 11:14:07
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_UncheckAlwaysShowBeforePrinting">
+          <StartTime>
+2022-04-12 11:14:07
+</StartTime>
+          <StartTime>
+2022-04-12 11:14:07
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_UncheckAlwaysShowBeforePrinting.pdf,HP Smart Printing)">
+            <StartTime>
+2022-04-12 11:14:07
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find specified file
+</ErrorDescription>
+            <EndTime>
+2022-04-12 11:14:07
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2022-04-12 11:14:07
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find window
+</ErrorDescription>
+            <ScreenShot>
+.\Hallasan_Screenshot_220412_11141934.png
+</ScreenShot>
+            <EndTime>
+2022-04-12 11:14:19
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-04-12 11:14:19
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find element with given name : HP Smart Printing
+</ErrorDescription>
+            <ScreenShot>
+.\Windows_Screenshot_220412_11144946.png
+</ScreenShot>
+            <EndTime>
+2022-04-12 11:14:49
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-04-12 11:14:49
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-12 11:14:55
+</EndTime>
+          </Statement>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-04-12 11:14:55
+</EndTime>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-04-12 11:14:55
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-04-12 11:14:55
+</StartTime>
+          <StartTime>
+2022-04-12 11:14:55
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-12 11:14:55
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-12 11:14:55
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-04-12 11:14:55
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220412_11145556.png
+</ScreenShot>
+          <EndTime>
+2022-04-12 11:14:55
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-04-12 11:14:55
+</StartTime>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

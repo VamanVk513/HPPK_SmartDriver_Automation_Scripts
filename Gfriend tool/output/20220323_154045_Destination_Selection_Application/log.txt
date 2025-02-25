@@ -1,0 +1,44 @@
+2022-03-23 15:40:45.646 [T] ?::?::Parsing start
+2022-03-23 15:40:45.693 [T] ?::?::Parsing Variable File : C:\GFriend_PotG\scripts\Acual Script\Acual Script\Testfile.gfvar
+2022-03-23 15:40:45.693 [D] ?::?::Post Action
+2022-03-23 15:40:45.693 [T] ?::?::All Used Libraries::C:\GFriend_PotG\scripts\Acual Script\Acual Script\Destination_Selection_Application.gflib
+2022-03-23 15:40:45.693 [T] ?::?::Device ID : __NO__DUT__
+2022-03-23 15:40:45.693 [T] ?::?::BuiltIn is used BuiltIn
+2022-03-23 15:40:45.693 [T] ?::?::Windows is used Windows
+2022-03-23 15:40:45.693 [T] ?::?::XML is used XML
+2022-03-23 15:40:45.693 [T] ?::?::Device ID : __DEFUALT__DUT__
+2022-03-23 15:40:45.693 [T] ?::?::Hallasan is used Hallasan
+2022-03-23 15:41:07.727 [T] ?::?::Loading Library : BuiltIn -> BuiltIn
+2022-03-23 15:41:07.727 [T] ?::?::Library type is native library.
+2022-03-23 15:41:07.727 [T] ?::?::Loading Library : Windows -> Windows
+2022-03-23 15:41:07.727 [T] ?::?::Library type is native library.
+2022-03-23 15:41:07.743 [T] ?::?::Loading Library : XML -> XML
+2022-03-23 15:41:07.743 [T] ?::?::Library type is native library.
+2022-03-23 15:41:07.743 [T] ?::?::Loading Library : Hallasan -> Hallasan
+2022-03-23 15:41:07.743 [T] ?::?::Library type is native library.
+2022-03-23 15:41:07.743 [T] ?::?::Prevent PC to sleep
+2022-03-23 15:41:07.743 [D] ?::?::HP Smart printing
+2022-03-23 15:41:07.743 [T] ?::?::XML.Load From File (C:\temp\H_JobSetup_OutPT.xml) is called
+2022-03-23 15:41:07.743 [T] ?::?::Keyword executed with result = Pass
+2022-03-23 15:41:07.743 [T] ?::?::XML.Get Attribute (${value},//*[@name='ns0000:JobDeliveryMode']/psf:Option,name) is called
+2022-03-23 15:41:07.743 [T] ?::?::Keyword executed with result = Pass
+2022-03-23 15:41:07.758 [T] ?::?::Equals (${value},ns0000:Secure) is called
+2022-03-23 15:41:07.758 [T] ?::?::Keyword executed with result = Pass
+2022-03-23 15:41:07.758 [T] ?::?::XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name) is called
+2022-03-23 15:41:07.758 [T] ?::?::Keyword executed with result = Pass
+2022-03-23 15:41:07.758 [T] ?::?::Equals (${value},ns0000:OptOut) is called
+2022-03-23 15:41:07.758 [T] ?::?::Keyword executed with result = Pass
+2022-03-23 15:41:07.758 [T] ?::?::Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5) is called
+2022-03-23 15:41:07.899 [T] ?::?::Keyword executed with result = Pass
+2022-03-23 15:41:07.914 [T] ?::?::XML.Load From File (C:\temp\H_JobSetup_OutPT.xml) is called
+2022-03-23 15:41:07.930 [T] ?::?::Keyword executed with result = Pass
+2022-03-23 15:41:07.930 [T] ?::?::XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name) is called
+2022-03-23 15:41:07.946 [T] ?::?::Keyword executed with result = Pass
+2022-03-23 15:41:07.961 [T] ?::?::Equals (${value},ns0000:On) is called
+2022-03-23 15:41:07.977 [T] ?::?::Keyword executed with result = Pass
+2022-03-23 15:41:07.977 [T] ?::?::XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name) is called
+2022-03-23 15:41:07.992 [T] ?::?::Keyword executed with result = Pass
+2022-03-23 15:41:08.008 [T] ?::?::Equals (${value},ns0000:OptOut) is called
+2022-03-23 15:41:08.024 [T] ?::?::Keyword executed with result = Pass
+2022-03-23 15:41:08.024 [T] ?::?::Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5) is called
+2022-03-23 15:41:08.055 [T] ?::?::Keyword executed with result = Pass

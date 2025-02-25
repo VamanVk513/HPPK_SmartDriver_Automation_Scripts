@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-03-23 17:29:49
+</StartTime>
+  <TestCase Name="Settings : Print Dialog Off">
+    <StartTime>
+2022-03-23 17:29:49
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-03-23 17:29:49
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-03-23 17:29:49
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Settings_PtDialogOff">
+          <StartTime>
+2022-03-23 17:29:49
+</StartTime>
+          <Result>
+Error
+</Result>
+          <ErrorDescription>
+Can not find specified keyword
+</ErrorDescription>
+          <EndTime>
+2022-03-23 17:29:49
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-03-23 17:29:49
+</StartTime>
+          <StartTime>
+2022-03-23 17:29:49
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:29:49
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:29:49
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Is Clickable(SettingButton)">
+          <StartTime>
+2022-03-23 17:29:49
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : SettingButton
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_220323_17295166.png
+</ScreenShot>
+          <EndTime>
+2022-03-23 17:29:51
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(SettingButton)">
+          <StartTime>
+2022-03-23 17:29:51
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : SettingButton
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_220323_17295548.png
+</ScreenShot>
+          <EndTime>
+2022-03-23 17:29:55
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (AskDestConfirmAlways,10)">
+          <StartTime>
+2022-03-23 17:29:55
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : AskDestConfirmAlways
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_220323_17300680.png
+</ScreenShot>
+          <EndTime>
+2022-03-23 17:30:06
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(AskDestConfirmAlways)">
+          <StartTime>
+2022-03-23 17:30:06
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : AskDestConfirmAlways
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_220323_17301064.png
+</ScreenShot>
+          <EndTime>
+2022-03-23 17:30:10
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(ui_FeaturePopupIDS_OKButton)">
+          <StartTime>
+2022-03-23 17:30:10
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : ui_FeaturePopupIDS_OKButton
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_220323_17301451.png
+</ScreenShot>
+          <EndTime>
+2022-03-23 17:30:14
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-23 17:30:14
+</StartTime>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

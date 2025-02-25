@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gftool>
+  <executable>
+    GitPull.bat
+  </executable>
+  <displayname>
+    Git - Pull
+  </displayname>
+  <description>
+    Pull from remote
+  </description>
+  <args>
+  	<arg name ="ScriptFolder" mandatory = "true">
+		<value>ScriptRoot</value>
+	</arg>
+  </args>
+</gftool>

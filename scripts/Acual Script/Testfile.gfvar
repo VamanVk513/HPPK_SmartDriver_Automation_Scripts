@@ -1,0 +1,471 @@
+﻿
+//--------------Repeat Test ------------// Test Item 의 반복 작업.
+${Repeatall}=1
+${Repeat}=1
+//--------------------------------------//
+
+
+//Sleep Time--------------------------------------------// Script Run 을 위해 적절하게 Sleep을 줘야함(PC 사양에 따라 영향 있음).
+${Sleep}=Sleep(5)
+${ConstraintMSGSleep}=Sleep(1)
+${CaptureSleep}=Sleep(1)
+${PrintSleep}=Sleep(10)
+${LongSleep}=Sleep(10)
+${DestinationSelectionSleep}=Sleep(10)
+${ApplicationSleep_Print}=Sleep(12)
+${ApplicationSleep_NotPrint}=Sleep(4)
+${WaitTime}= 20
+${PPU_Time}=Sleep(6)
+//-----------------------------------------------------// Screen Shot 여부를 하기 위함.
+${Confirm}= Hallasan.Confirm
+${Capture_Screen_Shot}= Windows.Capture Screen Shot 
+//-----------------------------------------------------//
+
+// Select Target Device--------------------------------// Target Device 지정하기 위함
+${Malbec}=
+${Manhattan}= HP OfficeJet Pro 9010 series [F8364E]
+${Novelli}= HP ENVY Inspire 7200 series [FF48A7]
+${Vasari}= HP ENVY 6000 series [AF5B7C]
+${Sayan}= HP Smart Tank 7600 series [FFD677]
+${Taccola}= HP DeskJet 4100 series [D6A266]
+${Horizon}= HP LaserJet MFP M234dw
+${NEW NPI Model}= 
+//-----------------------------------------------------//
+
+
+// Print or not print-------------------------// 인쇄할지말지 선택
+${Print}= Click_Print_Button.Print
+//${Print}= Click_Print_Button.Cancel
+//-----------------------------------------------------//
+
+
+${Destination_Selection_Device}= Used_Destination_Selection_Function.not Used Destination Selection Function
+
+  //-------POtG_Destination Selection UI Option.txt------------// 해당 기능 전용
+${Destination_Selection_Malbec}= Destination_Selection_Application.Used Destination Selection Function_Malbec
+${Destination_Selection_Manhattan}= Destination_Selection_Application.Used Destination Selection Function_Manhattan
+${Destination_Selection_Novelli}= Destination_Selection_Application.Used Destination Selection Function_Novelli
+${Destination_Selection_Sayan}= Destination_Selection_Application.Used Destination Selection Function_Sayan
+${Destination_Selection_Vasari}= Destination_Selection_Application.Used Destination Selection Function_Vasari
+${Destination_Selection_Taccola}= Destination_Selection_Application.Used Destination Selection Function_Taccola
+${Destination_Selection_Horizon}= Destination_Selection_Application.Used Destination Selection Function_Horizon
+  //-------------------------------------------------------
+  //-------------------------------------------------------
+
+
+// Location of Tstfile --------------------// 각 기능별 확인을 위한  Test file 모음.
+
+${PDF}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC.pdf,HP Smart Printing
+${Word}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\letter.doc,HP Smart Printing
+${Excel}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\EX2P51MM_A4.xls,HP Smart Printing
+
+${login}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\HPsmartlogin.pdf,HP Smart Printing
+${DestinationSelection}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\DestinationSelectionUI.pdf,HP Smart Printing
+
+
+
+${BigPDF}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\Big size_TestFiles\5Standard_Testpage_200p.pdf,HP Smart Printing
+${BigWord}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\Big size_TestFiles\100page_A4.doc,HP Smart Printing
+${BigExcel}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\Big size_TestFiles\Portrait_letter_text_graphics_7 pages.xlsx,HP Smart Printing
+
+//Potg Language  
+${Language}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Language Test.pdf,HP Smart Printing
+
+//SUPD Language  
+//${Language}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Language Test.pdf,HP Smart Universal Printing
+
+
+
+${Two_sided_Duplex_Printing}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Two_sided_Duplex_Printing.pdf,HP Smart Printing
+${Photo_Printing_with_white_borders}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Photo_Printing_with_white_borders.pdf,HP Smart Printing
+${Photo_Printing_Borderless}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Photo_Printing_Borderless.pdf,HP Smart Printing
+${Fast_Economical_Printing}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Fast_Economical_Printing.pdf,HP Smart Printing
+${General_Everyday_Printing}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_General_Everyday_Printing.pdf,HP Smart Printing
+${EcoSMART_Settings}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_EcoSMART_Settings.pdf,HP Smart Printing
+${Envelopes}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Envelopes.pdf,HP Smart Printing
+${Labels}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Labels.pdf,HP Smart Printing
+
+
+// All feature Function //
+
+//Color mode----------//
+${Color}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Color.pdf,HP Smart Printing
+${Grayscale_using_CMYK_black}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Grayscale_using_CMYK_black.pdf,HP Smart Printing
+${Grayscale_using_black_only}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Grayscale_using_black_only.pdf,HP Smart Printing
+
+//Two-sided Printing -------//
+${TwoSidedLongEdge}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_TwoSidedLongEdge.pdf,HP Smart Printing
+${TwoSidedShortEdge}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_TwoSidedShortEdge.pdf,HP Smart Printing
+
+
+//Pages per Sheet-----------------------------------------------------------------------------------------------------//
+${2UP_RightBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_RightBottom.pdf,HP Smart Printing
+${2UP_BottomRight}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_ BottomRight.pdf,HP Smart Printing
+${2UP_LeftBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_LeftBottom.pdf,HP Smart Printing
+${2UP_BottomLeft}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_BottomLeft.pdf,HP Smart Printing
+${2UP_RightBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_RightBottom_Boder.pdf,HP Smart Printing
+${2UP_BottomRight_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_BottomRight_Boder.pdf,HP Smart Printing
+${2UP_LeftBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_LeftBottom_Boder.pdf,HP Smart Printing
+${2UP_BottomLeft_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_BottomLeft_Boder.pdf,HP Smart Printing
+
+${4UP_RightBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_4UP_RightBottom.pdf,HP Smart Printing
+${4UP_BottomRight}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_4UP_BottomRight.pdf,HP Smart Printing
+${4UP_LeftBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_4UP_LeftBottom.pdf,HP Smart Printing
+${4UP_BottomLeft}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_4UP_BottomLeft.pdf,HP Smart Printing
+${4UP_RightBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_4UP_RightBottom_Boder.pdf,HP Smart Printing
+${4UP_BottomRight_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_4UP_BottomRight_Boder.pdf,HP Smart Printing
+${4UP_LeftBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_4UP_LeftBottom_Boder.pdf,HP Smart Printing
+${4UP_BottomLeft_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_4UP_BottomLeft_Boder.pdf,HP Smart Printing
+
+${6UP_RightBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_RightBottom.pdf,HP Smart Printing
+${6UP_BottomRight}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_BottomRight.pdf,HP Smart Printing
+${6UP_LeftBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_LeftBottom.pdf,HP Smart Printing
+${6UP_BottomLeft}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_BottomLeft.pdf,HP Smart Printing
+${6UP_RightBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_RightBottom_Boder.pdf,HP Smart Printing
+${6UP_BottomRight_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_BottomRight_Boder.pdf,HP Smart Printing
+${6UP_LeftBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_LeftBottom_Boder.pdf,HP Smart Printing
+${6UP_BottomLeft_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_BottomLeft_Boder.pdf,HP Smart Printing
+
+${9UP_RightBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_9UP_RightBottom.pdf,HP Smart Printing
+${9UP_BottomRight}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_9UP_BottomRight.pdf,HP Smart Printing
+${9UP_LeftBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_9UP_LeftBottom.pdf,HP Smart Printing
+${9UP_BottomLeft}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_9UP_BottomLeft.pdf,HP Smart Printing
+${9UP_RightBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_9UP_RightBottom_Boder.pdf,HP Smart Printing
+${9UP_BottomRight_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_9UP_BottomRight_Boder.pdf,HP Smart Printing
+${9UP_LeftBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_9UP_LeftBottom_Boder.pdf,HP Smart Printing
+${9UP_BottomLeft_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_9UP_BottomLeft_Boder.pdf,HP Smart Printing
+
+${16UP_RightBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_RightBottom.pdf,HP Smart Printing
+${16UP_BottomRight}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_BottomRight.pdf,HP Smart Printing
+${16UP_LeftBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_LeftBottom.pdf,HP Smart Printing
+${16UP_BottomLeft}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_BottomLeft.pdf,HP Smart Printing
+${16UP_RightBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_RightBottom_Boder.pdf,HP Smart Printing
+${16UP_BottomRight_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_BottomRight_Boder.pdf,HP Smart Printing
+${16UP_LeftBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_LeftBottom_Boder.pdf,HP Smart Printing
+${16UP_BottomLeft_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_BottomLeft_Boder.pdf,HP Smart Printing
+
+//Print Quality-----------
+${Normal}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Normal.pdf,HP Smart Printing
+${Best}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Best.pdf,HP Smart Printing
+${Draft}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Draft.pdf,HP Smart Printing
+${Maximum_dpi}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Maximum_dpi.pdf,HP Smart Printing
+${PQEconomode}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_PQEconomode.pdf,HP Smart Printing
+
+
+//Copy Count---------------
+${Copies_2}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Copies_2.pdf,HP Smart Printing
+${Copies_4}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Copies_4.pdf,HP Smart Printing
+${Copies_6}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Copies_6.pdf,HP Smart Printing
+
+// Collate -------
+${Collate_On}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Collate_On.pdf,HP Smart Printing
+${Collate_Off}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Collate_Off.pdf,HP Smart Printing
+
+//Orentation -------------------------
+${Landscape}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Landscape.pdf,HP Smart Printing
+${Portrait}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Portrait.pdf,HP Smart Printing
+
+//Paper size//---------------------
+${Letter}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Letter.pdf,HP Smart Printing
+${Legal}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Legal.pdf,HP Smart Printing
+${Statement}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Statement.pdf,HP Smart Printing
+${Executive}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Excutive.pdf,HP Smart Printing
+${A4}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC A4.pdf,HP Smart Printing
+${A5}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC A5.pdf,HP Smart Printing
+${B5_JIS}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC B5_JIS.pdf,HP Smart Printing
+${Envelope_10}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_10.pdf,HP Smart Printing
+${Envelope_DL}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_DL.pdf,HP Smart Printing
+${Envelope_C5}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_C5.pdf,HP Smart Printing
+${Envelope_C6}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_C6.pdf,HP Smart Printing
+${Envelope_B5}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_B5.pdf,HP Smart Printing
+${Envelope_Monarch}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_Monarch.pdf,HP Smart Printing
+${6_34_Envelope}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 6_34_Envelope.pdf,HP Smart Printing
+${Japanese_Postcard}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Japanese_Postcard.pdf,HP Smart Printing
+${A6}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC A6.pdf,HP Smart Printing
+${Japanese_Envelope_Chou_3}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Japanese_Envelope_Chou_3.pdf,HP Smart Printing
+${Japanese_Envelope_Chou_4}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Japanese_Envelope_Chou_4.pdf,HP Smart Printing
+${Double_Japan_Postcard_Rotated}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Double_Japan_Postcard_Rotated.pdf,HP Smart Printing
+${JISB6}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC JISB6.pdf,HP Smart Printing
+${Oficio_8_5x13}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Oficio_8_5x13.pdf,HP Smart Printing
+${8_5x13in}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 8_5x13in.pdf,HP Smart Printing
+${4x6}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 4x6.pdf,HP Smart Printing
+${IndexCard_4x6in}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC IndexCard_4x6in.pdf,HP Smart Printing
+${5x7}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 5x7.pdf,HP Smart Printing
+${5x8}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 5x8.pdf,HP Smart Printing
+${10x15cm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 10x15cm.pdf,HP Smart Printing
+${3x5}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 3x5.pdf,HP Smart Printing
+${2L127x178mm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 2L127x178mm.pdf,HP Smart Printing
+${3_5x5inL89x127mm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 3_5x5inL89x127mm.pdf,HP Smart Printing
+${4x5in10x13cm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 4x5in10x13cm.pdf,HP Smart Printing
+${4x6in10x15cm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 4x6in10x15cm.pdf,HP Smart Printing
+${4x12in10x30cm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 4x12in10x30cm.pdf,HP Smart Printing
+${5x7in13x18cm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 5x7in13x18cm.pdf,HP Smart Printing
+${B5_ISO_176x250mm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC B5_ISO_176x250mm.pdf,HP Smart Printing
+${Envelope_A2_111x146mm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_A2_111x146mm.pdf,HP Smart Printing
+${Ofuku_hagaki}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Ofuku_hagaki.pdf,HP Smart Printing
+${8X10_IN}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 8X10_IN.pdf,HP Smart Printing
+${5_5in_13x13cm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 5_5in_13x13cm.pdf,HP Smart Printing
+${IndexCard_5x8in}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC IndexCard_5x8in.pdf,HP Smart Printing
+${IndexCard_A4_8_27x11_69in}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC IndexCard_A4_8_27x11_69in.pdf,HP Smart Printing
+${IndexCard_Letter_8_5x11in}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC IndexCard_Letter_8_5x11in.pdf,HP Smart Printing
+
+//Laser paper size
+${4x6in}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 4x6.pdf,HP Smart Printing
+${5x7in}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 5x7.pdf,HP Smart Printing
+${OFFICIO216X340MM}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC OFFICIO216X340MM.pdf,HP Smart Printing
+${ROC16K195X270}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC ROC16K195X270.pdf,HP Smart Printing
+${ROC16K184X260}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC ROC16K184X260.pdf,HP Smart Printing
+${ROC16K197X273}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC ROC16K197X273.pdf,HP Smart Printing
+
+//---------------------------------------------------------------------------------------
+
+//Paper Source//-------------------------------------------------------------
+${Printer_auto_select}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Printer_auto_select.pdf,HP Smart Printing
+${Tray_1}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Tray_1.pdf,HP Smart Printing
+${Photo_Tray}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Photo_Tray.pdf,HP Smart Printing
+${Manual}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Manual.pdf,HP Smart Printing
+//-----------------------------------------------------------------------------------
+
+//Paper Type//-------------------------------------------------------------
+${Plain}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Plain.pdf,HP Smart Printing
+${PlainPaper}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_PlainPaper.pdf,HP Smart Printing
+${Light_60_74g}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Light_60_74g.pdf,HP Smart Printing
+${Heavy_111_130g}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Heavy_111_130g.pdf,HP Smart Printing
+${HP_Photo_Papers}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_HP_Photo_Papers.pdf,HP Smart Printing
+${HP_Matte_Brochure_or_Professional_Paper}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_HP_Matte_Brochure_or_Professional_Paper.pdf,HP Smart Printing
+${HP_Matte_Presentation_Paper}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_HP_Matte_Presentation_Paper.pdf,HP Smart Printing
+${HP_Glossy_Brochure_or_Professional_Paper}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_HP_Glossy_Brochure_or_Professional_Paper.pdf,HP Smart Printing
+${HP_Tri-fold_Brochure_Paper_Glossy}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_HP_Tri-fold_Brochure_Paper_Glossy.pdf,HP Smart Printing
+${Other_Photo_Inkjet_Papers}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Other_Photo_Inkjet_Papers.pdf,HP Smart Printing
+${Other_Matte_Inkjet_Papers}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Other_Matte_Inkjet_Papers.pdf,HP Smart Printing
+${Other_Glossy_Inkjet_Papers}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Other_Glossy_Inkjet_Papers.pdf,HP Smart Printing
+${Glossy_Inkjet_Papers}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Glossy_Inkjet_Papers.pdf,HP Smart Printing
+${Inkjet_Hagaki}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Inkjet_Hagaki.pdf,HP Smart Printing
+${Plain_Paper_Thick}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Plain_Paper_Thick.pdf,HP Smart Printing
+${Plain_Paper_Light_Recycled}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Plain_Paper_Light_Recycled.pdf,HP Smart Printing
+${HP_Matte_Photo_Paper}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_HP_Matte_Photo_Paper.pdf,HP Smart Printing
+
+//Laser app paper type
+${Bond}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Bond.pdf,HP Smart Printing
+${Label}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Label.pdf,HP Smart Printing
+${EnvelopePlain}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_EnvelopePlain.pdf,HP Smart Printing
+${stationerypreprinted}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_stationerypreprinted.pdf,HP Smart Printing
+
+
+//Booklet Printing-------------
+${BookletPrinting_Left}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_BookletPrinting_Left.pdf,HP Smart Printing
+${BookletPrinting_Right}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_BookletPrinting_Right.pdf,HP Smart Printing
+
+
+// Paper Order --------
+${Back_to_Front}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Back_to_Front.pdf,HP Smart Printing
+${Front_to_Back}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Front_to_Back.pdf,HP Smart Printing
+
+
+//HP EasyColor-----------
+${HPEasyColor_Off}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_HPEasyColor_Off.pdf,HP Smart Printing
+${HPEasyColor_On}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_HPEasyColor_On.pdf,HP Smart Printing
+${HPEasyColor_Conservative}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_HPEasyColor_Conservative.pdf,HP Smart Printing
+
+
+// Borderless Printing ------
+${Borderless_printing_On}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Borderless_printing_On.pdf,HP Smart Printing
+${Borderless_printing_Off}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Borderless_printing_Off.pdf,HP Smart Printing
+//-----------------------------------------------------------------------------------
+
+
+// Language String Test...........//
+${AboutPopupOKButton}= Windows.Click ID With Mouse (iconImg)
+${FeaturePopupOKButton}= Windows.Click ID With Mouse (ui_FeaturePopupCloseButton)
+${ColorMode}= Windows.Click ID(Part.PageOutputColor.ConstraintMSG.Open)
+${DuplexPrinting}= Windows.Click ID(Part.JobDuplexAllDocumentsContiguously.ConstraintMSG.Open)
+${PageMediaSize}= Windows.Click ID(Part.PageMediaSize.ConstraintMSG.Open) 
+${PageMediaType}= Windows.Click ID(Part.PageMediaType.ConstraintMSG.Open) 
+${BookletPrinting}= Windows.Click ID(Part.DocumentBinding.ConstraintMSG.Open) 
+${PageBorderless}= Windows.Click ID(Part.PageBorderless.ConstraintMSG.Open)
+${AddprinterCancel}=Windows.Click ID (ui_CancelButton)
+${NotCompatibleIP}= Windows.Set Text With Send Key (ui_IPHostTextBox,193.)
+${PreferencesOK}= Windows.Click ID With Mouse(ui_FeaturePopupIDS_OKButton)
+${Basic_Tab}= Windows.Click ID With Mouse (Component.Group.IDS_TAB_NAME_BASIC)
+${Document_Tab}= Windows.Click ID With Mouse (Component.Group.IDS_TAB_NAME_DOCUMENT) 
+${Advanced_Tab}= Windows.Click ID With Mouse (Component.Group.IDS_TAB_NAME_ADVACED) 
+
+//JobDeliveryMode
+${Secure}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Secure.pdf,HP Smart Printing
+${Normal}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Normal.pdf,HP Smart Printing
+
+//Revert
+${Revert}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Revert.pdf,HP Smart Printing
+
+//Refresh
+${Refresh}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Refresh.pdf,HP Smart Printing
+
+//DriverVersion
+${DriverVersion}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_DriverVersion.pdf,HP Smart Printing
+${driverver}=
+
+//PrivatePickupToggle
+${Private_Pickup_On}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Private_Pickup_On.pdf,HP Smart Printing
+${Private_Pickup_Off}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Private_Pickup_Off.pdf,HP Smart Printing
+
+//PtDialogSettings
+${PtDialogOff} = C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_PtDialogOff.pdf,HP Smart Printing
+${PtDialogOn} = C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_PtDialogOn.pdf,HP Smart Printing
+${UncheckAlwaysShowBeforePrinting} = C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_UncheckAlwaysShowBeforePrinting.pdf,HP Smart Printing
+${CheckAlwaysShowBeforePrinting} = C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_CheckAlwaysShowBeforePrinting.pdf,HP Smart Printing
+
+
+
+
+//************************************** PSA APPLICATION **************************************
+
+
+//Preset Options
+
+${YMC_PSA_FactoryDefaults}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_FactoryDefaults.pdf,HP PSA Smart Printing
+${YMC_PSA_ENVELOPES}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_ENVELOPES.pdf,HP PSA Smart Printing
+${YMC_PSA_LABELS}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_LABELS.pdf,HP PSA Smart Printing
+${YMC_GENERAL_EVERYDAY_PRNTING}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_GENERAL_EVERYDAY_PRNTING.pdf,HP PSA Smart Printing
+${YMC_TWO_SIDED_DUPLEX_PRINTING}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_TWO_SIDED_DUPLEX_PRINTING.pdf,HP PSA Smart Printing
+${YMC_PHOTOPRINTING_WITH_WHITEBORDER}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PHOTOPRINTING_WITH_WHITEBORDER.pdf,HP PSA Smart Printing
+${YMC_PHOTOPRINTING_BORDERLESS}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PHOTOPRINTING_BORDERLESS.pdf,HP PSA Smart Printing
+${YMC_FAST_ECONOMICAL_PRINTING}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_FAST_ECONOMICAL_PRINTING.pdf,HP PSA Smart Printing
+
+
+//Pages per sheet
+${YMC_PSA_1UP}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_1UP.pdf,HP PSA Smart Printing
+
+${2UP_RightBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_RightBottom.pdf,HP PSA Smart Printing
+${2UP_BottomRight}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_ BottomRight.pdf,HP PSA Smart Printing
+${2UP_LeftBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_LeftBottom.pdf,HP PSA Smart Printing
+${2UP_BottomLeft}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_BottomLeft.pdf,HP PSA Smart Printing
+${2UP_RightBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_RightBottom_Boder.pdf,HP PSA Smart Printing
+${2UP_BottomRight_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_BottomRight_Boder.pdf,HP PSA Smart Printing
+${2UP_LeftBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_LeftBottom_Boder.pdf,HP PSA Smart Printing
+${2UP_BottomLeft_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_BottomLeft_Boder.pdf,HP PSA Smart Printing
+
+${4UP_RightBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_4UP_RightBottom.pdf,HP PSA Smart Printing
+${4UP_BottomRight}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_4UP_BottomRight.pdf,HP PSA Smart Printing
+${4UP_LeftBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_4UP_LeftBottom.pdf,HP PSA Smart Printing
+${4UP_BottomLeft}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_4UP_BottomLeft.pdf,HP PSA Smart Printing
+${4UP_RightBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_4UP_RightBottom_Boder.pdf,HP PSA Smart Printing
+${4UP_BottomRight_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_4UP_BottomRight_Boder.pdf,HP PSA Smart Printing
+${4UP_LeftBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_4UP_LeftBottom_Boder.pdf,HP PSA Smart Printing
+${4UP_BottomLeft_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_4UP_BottomLeft_Boder.pdf,HP PSA Smart Printing
+
+${6UP_RightBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_RightBottom.pdf,HP PSA Smart Printing
+${6UP_BottomRight}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_BottomRight.pdf,HP PSA Smart Printing
+${6UP_LeftBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_LeftBottom.pdf,HP PSA Smart Printing
+${6UP_BottomLeft}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_BottomLeft.pdf,HP PSA Smart Printing
+${6UP_RightBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_RightBottom_Boder.pdf,HP PSA Smart Printing
+${6UP_BottomRight_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_BottomRight_Boder.pdf,HP PSA Smart Printing
+${6UP_LeftBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_LeftBottom_Boder.pdf,HP PSA Smart Printing
+${6UP_BottomLeft_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_BottomLeft_Boder.pdf,HP PSA Smart Printing
+
+${9UP_RightBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_9UP_RightBottom.pdf,HP PSA Smart Printing
+${9UP_BottomRight}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_9UP_BottomRight.pdf,HP PSA Smart Printing
+${9UP_LeftBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_9UP_LeftBottom.pdf,HP PSA Smart Printing
+${9UP_BottomLeft}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_9UP_BottomLeft.pdf,HP PSA Smart Printing
+${9UP_RightBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_9UP_RightBottom_Boder.pdf,HP PSA Smart Printing
+${9UP_BottomRight_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_9UP_BottomRight_Boder.pdf,HP PSA Smart Printing
+${9UP_LeftBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_9UP_LeftBottom_Boder.pdf,HP PSA Smart Printing
+${9UP_BottomLeft_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_9UP_BottomLeft_Boder.pdf,HP PSA Smart Printing
+
+${16UP_RightBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_RightBottom.pdf,HP PSA Smart Printing
+${16UP_BottomRight}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_BottomRight.pdf,HP PSA Smart Printing
+${16UP_LeftBottom}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_LeftBottom.pdf,HP PSA Smart Printing
+${16UP_BottomLeft}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_BottomLeft.pdf,HP PSA Smart Printing
+${16UP_RightBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_RightBottom_Boder.pdf,HP PSA Smart Printing
+${16UP_BottomRight_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_BottomRight_Boder.pdf,HP PSA Smart Printing
+${16UP_LeftBottom_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_LeftBottom_Boder.pdf,HP PSA Smart Printing
+${16UP_BottomLeft_Boder}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_BottomLeft_Boder.pdf,HP PSA Smart Printing
+
+
+
+//Collate
+${YMC_PSA_CollateON}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_CollateON.pdf,HP PSA Smart Printing
+${YMC_PSA_CollateOFF}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_CollateOFF.pdf,HP PSA Smart Printing
+
+
+//Refresh
+${YMC_PSA_REFRESH}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_REFRESH.pdf,HP PSA Smart Printing
+
+//InformationIcon
+${YMC_PSA_InformationIcon}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_InformationIcon.pdf,HP PSA Smart Printing
+
+
+//Orientation
+${YMC_PSA_PORTRAIT}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_PORTRAIT.pdf,HP PSA Smart Printing
+${YMC_PSA_LANDSCAPE}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_LANDSCAPE.pdf,HP PSA Smart Printing
+
+
+//Delivery Mode
+${YMC_DELIVERYMODE_NORMAL}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_DELIVERYMODE_NORMAL.pdf,HP PSA Smart Printing
+${YMC_DELIVERYMODE_SECURE}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_DELIVERYMODE_SECURE.pdf,HP PSA Smart Printing
+
+//COLOR MODE
+${YMC_COLOR}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_COLOR.pdf,HP PSA Smart Printing
+${YMC_MONOCHROME}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_MONOCHROME.pdf,HP PSA Smart Printing
+${YMC_GREYSCALE}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_GREYSCALE.pdf,HP PSA Smart Printing
+
+
+
+//Two-Sided_printing
+${YMC_TWO_SIDED_PRINTING_LONGEDGE}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_TWO_SIDED_PRINTING_LONGEDGE.pdf,HP PSA Smart Printing
+${YMC_TWO_SIDED_PRINTING_NONE}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_TWO_SIDED_PRINTING_NONE.pdf,HP PSA Smart Printing
+${YMC_TWO_SIDED_PRINTING_SHORTEDGE}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_TWO_SIDED_PRINTING_SHORTEDGE.pdf,HP PSA Smart Printing
+
+
+
+//PRINQUALITY
+
+${YMC_PQ_BEST}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PQ_BEST.pdf,HP PSA Smart Printing
+${YMC_PQ_DRAFT}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PQ_DRAFT.pdf,HP PSA Smart Printing
+${YMC_PQ_MAXIMUMDPI}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PQ_MAXIMUMDPI.pdf,HP PSA Smart Printing
+${YMC_PQ_NORMAL}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PQ_NORMAL.pdf,HP PSA Smart Printing
+
+
+//Paper size//
+
+${Letter}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Letter.pdf,HP PSA Smart Printing
+${Legal}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Legal.pdf,HP PSA Smart Printing
+${Statement}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Statement.pdf,HP PSA Smart Printing
+${Executive}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Excutive.pdf,HP PSA Smart Printing
+${A4}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC A4.pdf,HP PSA Smart Printing
+${A5}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC A5.pdf,HP PSA Smart Printing
+${B5_JIS}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC B5_JIS.pdf,HP PSA Smart Printing
+${Envelope_10}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_10.pdf,HP PSA Smart Printing
+${Envelope_DL}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_DL.pdf,HP PSA Smart Printing
+${Envelope_C5}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_C5.pdf,HP PSA Smart Printing
+${Envelope_C6}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_C6.pdf,HP PSA Smart Printing
+${Envelope_B5}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_B5.pdf,HP PSA Smart Printing
+${Envelope_Monarch}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_Monarch.pdf,HP PSA Smart Printing
+${6_34_Envelope}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 6_34_Envelope.pdf,HP PSA Smart Printing
+${Japanese_Postcard}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Japanese_Postcard.pdf,HP PSA Smart Printing
+${A6}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC A6.pdf,HP PSA Smart Printing
+${Japanese_Envelope_Chou_3}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Japanese_Envelope_Chou_3.pdf,HP PSA Smart Printing
+${Japanese_Envelope_Chou_4}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Japanese_Envelope_Chou_4.pdf,HP PSA Smart Printing
+${Double_Japan_Postcard_Rotated}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Double_Japan_Postcard_Rotated.pdf,HP PSA Smart Printing
+${JISB6}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC JISB6.pdf,HP PSA Smart Printing
+${Oficio_8_5x13}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Oficio_8_5x13.pdf,HP PSA Smart Printing
+${8_5x13in}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 8_5x13in.pdf,HP PSA Smart Printing
+${4x6}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 4x6.pdf,HP PSA Smart Printing
+${IndexCard_4x6in}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC IndexCard_4x6in.pdf,HP PSA Smart Printing
+${5x7}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 5x7.pdf,HP PSA Smart Printing
+${5x8}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 5x8.pdf,HP PSA Smart Printing
+${10x15cm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 10x15cm.pdf,HP PSA Smart Printing
+${3x5}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 3x5.pdf,HP PSA Smart Printing
+${2L127x178mm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 2L127x178mm.pdf,HP PSA Smart Printing
+${3_5x5inL89x127mm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 3_5x5inL89x127mm.pdf,HP PSA Smart Printing
+${4x5in10x13cm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 4x5in10x13cm.pdf,HP PSA Smart Printing
+${4x6in10x15cm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 4x6in10x15cm.pdf,HP PSA Smart Printing
+${4x12in10x30cm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 4x12in10x30cm.pdf,HP PSA Smart Printing
+${5x7in13x18cm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 5x7in13x18cm,HP PSA Smart Printing
+${B5_ISO_176x250mm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC B5_ISO_176x250mm.pdf,HP PSA Smart Printing
+${Envelope_A2_111x146mm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_A2_111x146mm.pdf,HP PSA Smart Printing
+${Ofuku_hagaki}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Ofuku_hagaki.pdf,HP PSA Smart Printing
+${8X10_IN}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 8X10_IN.pdf,HP PSA Smart Printing
+${5_5in_13x13cm}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC 5_5in_13x13cm.pdf,HP_PrintSupport_App
+${IndexCard_5x8in}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC IndexCard_5x8in.pdf,HP_PrintSupport_App
+${IndexCard_A4_8_27x11_69in}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC IndexCard_A4_8_27x11_69in.pdf,HP_PrintSupport_App
+${IndexCard_Letter_8_5x11in}=C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC IndexCard_Letter_8_5x11in.pdf,HP_PrintSupport_App

@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_DragonFly">
+  <StartTime>
+2024-06-24 14:57:10
+</StartTime>
+  <TestCase Name="10.Pagepersheet-1UP">
+    <StartTime>
+2024-06-24 14:57:10
+</StartTime>
+    <Statement StatementName="Destination_Selection_PSA_Application.Destination Selection_1UP_PSA">
+      <StartTime>
+2024-06-24 14:57:10
+</StartTime>
+      <StartTime>
+2024-06-24 14:57:10
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_1Pagepersheet.pdf,HP_PrintSupport_App)">
+        <StartTime>
+2024-06-24 14:57:10
+</StartTime>
+        <Result>
+Error
+</Result>
+        <ErrorDescription>
+Error during open program
+</ErrorDescription>
+        <ScreenShot>
+.\Hallasan_Screenshot_240624_14572405.png
+</ScreenShot>
+        <AdditionalInfo>
+System.Runtime.InteropServices.COMException (0x80131505): Operation timed out. (Exception from HRESULT: 0x80131505)
+   at UIAutomationClient.CUIAutomation8Class.GetFocusedElement()
+   at System.Windows.Automation.AutomationElement.get_FocusedElement()
+   at HP.GFriend.Keywords.Windows.OpenWithPath(String executablePath, String waitTime) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 938
+</AdditionalInfo>
+        <EndTime>
+2024-06-24 14:57:24
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP_PrintSupport_App,30)">
+        <StartTime>
+2024-06-24 14:57:24
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Can not find element with given name : HP_PrintSupport_App
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240624_14575471.png
+</ScreenShot>
+        <EndTime>
+2024-06-24 14:57:54
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-06-24 14:57:54
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-24 14:58:00
+</EndTime>
+      </Statement>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2024-06-24 14:58:00
+</EndTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2024-06-24 14:58:00
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-06-24 14:58:00
+</StartTime>
+      <StartTime>
+2024-06-24 14:58:00
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-24 14:58:00
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-24 14:58:00
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_PSA_Application.Expections_Error">
+      <StartTime>
+2024-06-24 14:58:00
+</StartTime>
+      <StartTime>
+2024-06-24 14:58:00
+</StartTime>
+      <Statement StatementName="Windows.Capture Full Screen (SS)">
+        <StartTime>
+2024-06-24 14:58:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240624_14580080.png
+</ScreenShot>
+        <EndTime>
+2024-06-24 14:58:00
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Child Window With Title (HP_PrintSupport_App,5)">
+        <StartTime>
+2024-06-24 14:58:00
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240624_14580594.png
+</ScreenShot>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-06-24 14:58:05
+</StartTime>
+          <Block>
+            <StartTime>
+2024-06-24 14:58:05
+</StartTime>
+            <Statement StatementName="Pass (Childpop was not displayed)">
+              <StartTime>
+2024-06-24 14:58:05
+</StartTime>
+              <Result>
+Pass
+</Result>
+              <Output>
+Childpop was not displayed
+</Output>
+              <EndTime>
+2024-06-24 14:58:05
+</EndTime>
+            </Statement>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-24 14:58:05
+</EndTime>
+          </Block>
+          <EndTime>
+2024-06-24 14:58:05
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-06-24 14:58:05
+</EndTime>
+      </If>
+      <Statement StatementName="Windows.Capture Full Screen (SSS)">
+        <StartTime>
+2024-06-24 14:58:05
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240624_14580604.png
+</ScreenShot>
+        <EndTime>
+2024-06-24 14:58:06
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Application (HP_PrintSupport_App,5)">
+        <StartTime>
+2024-06-24 14:58:06
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240624_14581125.png
+</ScreenShot>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-06-24 14:58:11
+</StartTime>
+          <Block>
+            <StartTime>
+2024-06-24 14:58:11
+</StartTime>
+            <Statement StatementName="Pass (Childpop was not displayed)">
+              <StartTime>
+2024-06-24 14:58:11
+</StartTime>
+              <Result>
+Pass
+</Result>
+              <Output>
+Childpop was not displayed
+</Output>
+              <EndTime>
+2024-06-24 14:58:11
+</EndTime>
+            </Statement>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-24 14:58:11
+</EndTime>
+          </Block>
+          <EndTime>
+2024-06-24 14:58:11
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-06-24 14:58:11
+</EndTime>
+      </If>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-24 14:58:11
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-24 14:58:11
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID With Mouse (ui_NupCount)">
+      <StartTime>
+2024-06-24 14:58:11
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : ui_NupCount
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240624_14581468.png
+</ScreenShot>
+      <EndTime>
+2024-06-24 14:58:14
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-24 14:58:14
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-24 14:58:19
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Wait For Name (2 pages per sheet,5)">
+      <StartTime>
+2024-06-24 14:58:19
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given name : 2 pages per sheet
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240624_14582539.png
+</ScreenShot>
+      <EndTime>
+2024-06-24 14:58:25
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Wait For Name (6 pages per sheet,10)">
+      <StartTime>
+2024-06-24 14:58:25
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given name : 6 pages per sheet
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240624_14583583.png
+</ScreenShot>
+      <EndTime>
+2024-06-24 14:58:35
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click Name With Mouse (6 pages per sheet)">
+      <StartTime>
+2024-06-24 14:58:35
+</StartTime>
+      <Result>
+Error
+</Result>
+      <ErrorDescription>
+Error during click
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240624_14583789.png
+</ScreenShot>
+      <AdditionalInfo>
+System.Runtime.InteropServices.COMException (0x80131505): Operation timed out. (Exception from HRESULT: 0x80131505)
+   at UIAutomationClient.CUIAutomation8Class.GetFocusedElement()
+   at System.Windows.Automation.AutomationElement.get_FocusedElement()
+   at HP.GFriend.Keywords.Windows.SelectElement(AutomationElement rootElement, Condition condition, TimeSpan timeOut, TreeScope scope) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 168
+   at HP.GFriend.Keywords.Windows.ClickNameWithMouse(String name) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 1632
+</AdditionalInfo>
+      <EndTime>
+2024-06-24 14:58:37
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Capture Screen Shot(1UP.jpg)">
+      <StartTime>
+2024-06-24 14:58:37
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <ScreenShot>
+.\Windows_Screenshot_240624_14583795.png
+</ScreenShot>
+      <EndTime>
+2024-06-24 14:58:37
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-24 14:58:37
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-24 14:58:43
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-06-24 14:58:43
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+      <ScreenShot>
+.\Hallasan_Screenshot_240624_14585008.png
+</ScreenShot>
+      <EndTime>
+2024-06-24 14:58:50
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-24 14:58:50
+</StartTime>
+    </Statement>
+  </TestCase>
+</TestSuite>

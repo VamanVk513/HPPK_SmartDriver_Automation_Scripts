@@ -1,0 +1,22 @@
+2023-06-28 14:41:04.758 [T] ?::?::Parsing start
+2023-06-28 14:41:04.762 [T] ?::?::Parsing Variable File : C:\GFriend_PotG\scripts\Acual Script\Acual Script\Testfile.gfvar
+2023-06-28 14:41:04.762 [T] ?::?::Creating custom library with C:\GFriend_PotG\scripts\Acual Script\Acual Script\Destination_Selection_Application.gflib
+2023-06-28 14:41:04.763 [T] ?::?::Parsing start
+2023-06-28 14:41:04.815 [T] ?::?::Parsing Variable File : C:\GFriend_PotG\scripts\Acual Script\Acual Script\Testfile.gfvar
+2023-06-28 14:41:04.816 [D] ?::?::Post Action
+2023-06-28 14:41:04.816 [T] ?::?::All Used Libraries::C:\GFriend_PotG\scripts\Acual Script\Acual Script\Destination_Selection_Application.gflib
+2023-06-28 14:41:04.816 [T] ?::?::Device ID : __NO__DUT__
+2023-06-28 14:41:04.817 [T] ?::?::BuiltIn is used BuiltIn
+2023-06-28 14:41:04.817 [T] ?::?::Windows is used Windows
+2023-06-28 14:41:04.818 [T] ?::?::XML is used XML
+2023-06-28 14:41:04.818 [T] ?::?::Device ID : __DEFUALT__DUT__
+2023-06-28 14:41:04.818 [T] ?::?::Hallasan is used Hallasan
+2023-06-28 14:41:18.592 [E] ?::?::Unexpected Error
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.String.ReplaceInternal(String oldValue, String newValue)
+   at System.String.Replace(String oldValue, String newValue)
+   at HP.GFriend.Core.Execution.Parser.ParseTestSuite(String tsPath, Dictionary`2 executionVariables)
+   at HP.GFriend.Core.Custom.CustomLibrary..ctor(String libraryFilePath, Dictionary`2 executionVariables)
+   at HP.GFriend.Core.Execution.Parser.ParseUsing(String line, String tsPath, TestDataManager testDataManager, Dictionary`2 variables, Dictionary`2 executionVariables)
+   at HP.GFriend.Core.Execution.Parser.ParseTestSuite(String tsPath, Dictionary`2 executionVariables)
+   at HP.GFriend.Core.Execution.Runner.Run(String tsPath, TestDataManager& testDataManager, List`1 tcToRun, String libraryPath, String defaultDut, Dictionary`2 variables, Dictionary`2 executionVariables)

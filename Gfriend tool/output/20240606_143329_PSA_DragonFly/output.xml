@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_DragonFly">
+  <StartTime>
+2024-06-06 14:33:53
+</StartTime>
+  <TestCase Name="1.Factory defaults">
+    <StartTime>
+2024-06-06 14:33:53
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_Factory_defaults">
+      <StartTime>
+2024-06-06 14:33:53
+</StartTime>
+      <StartTime>
+2024-06-06 14:33:53
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_PSA_FactoryDefaults.pdf,HP2F7C2F)">
+        <StartTime>
+2024-06-06 14:33:53
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-06 14:34:25
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP2F7C2F,30)">
+        <StartTime>
+2024-06-06 14:34:25
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-06 14:34:25
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-06-06 14:34:25
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-06 14:34:31
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-06 14:34:31
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-06 14:34:31
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-06-06 14:34:31
+</StartTime>
+      <StartTime>
+2024-06-06 14:34:31
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-06 14:34:31
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-06 14:34:31
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetCombo,Factory Defaults)">
+      <StartTime>
+2024-06-06 14:34:31
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find combobox : ui_PresetCombo
+</ErrorDescription>
+      <EndTime>
+2024-06-06 14:34:33
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-06 14:34:33
+</StartTime>
+    </Statement>
+  </TestCase>
+</TestSuite>

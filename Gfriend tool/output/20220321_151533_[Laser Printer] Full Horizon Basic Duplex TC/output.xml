@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-03-21 15:15:54
+</StartTime>
+  <TestCase Name="Revert Options">
+    <StartTime>
+2022-03-21 15:15:54
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-03-21 15:15:54
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-03-21 15:15:54
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Revert">
+          <StartTime>
+2022-03-21 15:15:54
+</StartTime>
+          <StartTime>
+2022-03-21 15:15:54
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Revert.pdf,HP Smart Printing)">
+            <StartTime>
+2022-03-21 15:15:54
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 15:16:24
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2022-03-21 15:16:24
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 15:16:24
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-03-21 15:16:24
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 15:16:24
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-03-21 15:16:24
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 15:16:30
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 15:16:30
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 15:16:30
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-03-21 15:16:30
+</StartTime>
+          <StartTime>
+2022-03-21 15:16:30
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 15:16:30
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 15:16:30
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.JobDeliveryMode,Option.Normal)">
+          <StartTime>
+2022-03-21 15:16:30
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 15:16:31
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Radio(Option.PresetRevertButton)">
+          <StartTime>
+2022-03-21 15:16:31
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : Option.PresetRevertButton
+</ErrorDescription>
+          <ScreenShot>
+.\Hallasan_Screenshot_220321_15163437.png
+</ScreenShot>
+          <EndTime>
+2022-03-21 15:16:34
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-03-21 15:16:34
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220321_15163441.png
+</ScreenShot>
+          <EndTime>
+2022-03-21 15:16:34
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-21 15:16:34
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 15:16:39
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2022-03-21 15:16:39
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 15:16:39
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-21 15:16:39
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 15:16:44
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2022-03-21 15:16:44
+</StartTime>
+          <StartTime>
+2022-03-21 15:16:44
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2022-03-21 15:16:44
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 15:16:46
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-03-21 15:16:46
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 15:17:06
+</EndTime>
+          </Statement>
+          <If Condition=" Hallasan.Close Application">
+            <StartTime>
+2022-03-21 15:17:06
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2022-03-21 15:17:06
+</StartTime>
+              <Block>
+                <StartTime>
+2022-03-21 15:17:06
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2022-03-21 15:17:06
+</EndTime>
+              </Block>
+              <EndTime>
+2022-03-21 15:17:06
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2022-03-21 15:17:06
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-03-21 15:17:06
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 15:17:26
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 15:17:26
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 15:17:26
+</EndTime>
+        </Statement>
+        <Statement StatementName="Destination_Selection_Application.PT Value_Revert">
+          <StartTime>
+2022-03-21 15:17:26
+</StartTime>
+          <StartTime>
+2022-03-21 15:17:26
+</StartTime>
+          <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+            <StartTime>
+2022-03-21 15:17:26
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 15:17:26
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobDeliveryMode']/psf:Option,name)">
+            <StartTime>
+2022-03-21 15:17:26
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+ns0000:Normal
+</Output>
+            <EndTime>
+2022-03-21 15:17:26
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:Normal)">
+            <StartTime>
+2022-03-21 15:17:26
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 15:17:26
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:ui_Preset']/psf:Option,name)">
+            <StartTime>
+2022-03-21 15:17:26
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find xml node with given xpath
+</ErrorDescription>
+            <EndTime>
+2022-03-21 15:17:26
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},psk:ui_PresetRevertButton)">
+            <StartTime>
+2022-03-21 15:17:26
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+ns0000:Normal and psk:ui_PresetRevertButton are not same
+</ErrorDescription>
+            <EndTime>
+2022-03-21 15:17:27
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+            <StartTime>
+2022-03-21 15:17:27
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+ns0000:OptOut
+</Output>
+            <EndTime>
+2022-03-21 15:17:27
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:OptOut)">
+            <StartTime>
+2022-03-21 15:17:27
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 15:17:27
+</EndTime>
+          </Statement>
+          <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+            <StartTime>
+2022-03-21 15:17:27
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+        1 file(s) copied.
+
+</Output>
+            <EndTime>
+2022-03-21 15:17:27
+</EndTime>
+          </Statement>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-03-21 15:17:27
+</EndTime>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-03-21 15:17:27
+</EndTime>
+        </Statement>
+        <Result>
+FAIL
+</Result>
+        <EndTime>
+2022-03-21 15:17:27
+</EndTime>
+      </Loop>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2022-03-21 15:17:27
+</EndTime>
+    </Repeat>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2022-03-21 15:17:27
+</EndTime>
+  </TestCase>
+  <EndTime>
+2022-03-21 15:17:27
+</EndTime>
+</TestSuite>

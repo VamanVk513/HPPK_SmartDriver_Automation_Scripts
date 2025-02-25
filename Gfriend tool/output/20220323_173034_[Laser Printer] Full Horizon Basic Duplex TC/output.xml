@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-03-23 17:30:55
+</StartTime>
+  <TestCase Name="Settings : Print Dialog Off">
+    <StartTime>
+2022-03-23 17:30:55
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-03-23 17:30:55
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-03-23 17:30:55
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_PtDialogOff">
+          <StartTime>
+2022-03-23 17:30:55
+</StartTime>
+          <StartTime>
+2022-03-23 17:30:55
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_PtDialogOff.pdf,HP Smart Printing)">
+            <StartTime>
+2022-03-23 17:30:55
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 17:31:26
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2022-03-23 17:31:26
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 17:31:26
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-03-23 17:31:26
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 17:31:26
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-03-23 17:31:26
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 17:31:32
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:31:32
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:31:32
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-03-23 17:31:32
+</StartTime>
+          <StartTime>
+2022-03-23 17:31:32
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:31:32
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:31:32
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Is Clickable(SettingButton)">
+          <StartTime>
+2022-03-23 17:31:32
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:31:32
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(SettingButton)">
+          <StartTime>
+2022-03-23 17:31:32
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:31:32
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (AskDestConfirmAlways,10)">
+          <StartTime>
+2022-03-23 17:31:32
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : AskDestConfirmAlways
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_220323_17314267.png
+</ScreenShot>
+          <EndTime>
+2022-03-23 17:31:42
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(AskDestConfirmAlways)">
+          <StartTime>
+2022-03-23 17:31:42
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : AskDestConfirmAlways
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_220323_17314602.png
+</ScreenShot>
+          <EndTime>
+2022-03-23 17:31:46
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(ui_FeaturePopupIDS_OKButton)">
+          <StartTime>
+2022-03-23 17:31:46
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : ui_FeaturePopupIDS_OKButton
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_220323_17314934.png
+</ScreenShot>
+          <EndTime>
+2022-03-23 17:31:49
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-23 17:31:49
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:31:54
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-03-23 17:31:54
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220323_17315442.png
+</ScreenShot>
+          <EndTime>
+2022-03-23 17:31:54
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-23 17:31:54
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:31:59
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2022-03-23 17:31:59
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:31:59
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-23 17:31:59
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 17:32:04
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2022-03-23 17:32:04
+</StartTime>
+          <StartTime>
+2022-03-23 17:32:04
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2022-03-23 17:32:04
+</StartTime>
+            <Result>
+Error
+</Result>
+            <ErrorDescription>
+Error during click print button
+</ErrorDescription>
+            <AdditionalInfo>
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HP.GFriend.Keywords.ApplicationUtils.ClickPrintButtonInAcrobatReader(Windows windowsController) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\ApplicationUtils.cs:line 398
+   at HP.GFriend.Keywords.Windows.ClickPrintButton() in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 935
+</AdditionalInfo>
+            <EndTime>
+2022-03-23 17:32:12
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-03-23 17:32:12
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 17:32:32
+</EndTime>
+          </Statement>
+          <If Condition=" Hallasan.Close Application">
+            <StartTime>
+2022-03-23 17:32:32
+</StartTime>
+            <ConditionResult>
+ERROR
+</ConditionResult>
+            <ErrorDescription>
+Error during close
+</ErrorDescription>
+            <StatementBlock Kind="ERROR">
+              <StartTime>
+2022-03-23 17:32:32
+</StartTime>
+              <Block>
+                <StartTime>
+2022-03-23 17:32:32
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2022-03-23 17:32:32
+</EndTime>
+              </Block>
+              <EndTime>
+2022-03-23 17:32:32
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2022-03-23 17:32:32
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-03-23 17:32:32
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

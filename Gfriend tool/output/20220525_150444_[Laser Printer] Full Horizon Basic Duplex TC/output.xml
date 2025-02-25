@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-05-25 15:05:10
+</StartTime>
+  <TestCase Name="Always Show Before Printing : Uncheck">
+    <StartTime>
+2022-05-25 15:05:10
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-05-25 15:05:10
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-05-25 15:05:10
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_UncheckAlwaysShowBeforePrinting">
+          <StartTime>
+2022-05-25 15:05:10
+</StartTime>
+          <StartTime>
+2022-05-25 15:05:10
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_UncheckAlwaysShowBeforePrinting.pdf,HP Smart Printing)">
+            <StartTime>
+2022-05-25 15:05:10
+</StartTime>
+            <Result>
+Error
+</Result>
+            <ErrorDescription>
+Error during open program
+</ErrorDescription>
+            <ScreenShot>
+.\Hallasan_Screenshot_220525_15051167.png
+</ScreenShot>
+            <AdditionalInfo>
+System.InvalidOperationException: No process is associated with this object.
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_Id()
+   at HP.GFriend.Keywords.Windows.OpenWithPath(String executablePath, String waitTime) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 859
+</AdditionalInfo>
+            <EndTime>
+2022-05-25 15:05:11
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2022-05-25 15:05:11
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Sand">
+  <StartTime>
+2025-02-17 10:54:19
+</StartTime>
+  <TestCase Name="1.General Everyday Printing">
+    <StartTime>
+2025-02-17 10:54:19
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_General_Everyday_Printing">
+      <StartTime>
+2025-02-17 10:54:19
+</StartTime>
+      <StartTime>
+2025-02-17 10:54:19
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_General_Everyday_Printing.pdf,HP Smart Printing)">
+        <StartTime>
+2025-02-17 10:54:19
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Fail to get control
+</ErrorDescription>
+        <ScreenShot>
+.\Hallasan_Screenshot_250217_10551706.png
+</ScreenShot>
+        <EndTime>
+2025-02-17 10:55:17
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,20)">
+        <StartTime>
+2025-02-17 10:55:17
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Can not find element with given name : HP Smart Printing
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_250217_10553745.png
+</ScreenShot>
+        <EndTime>
+2025-02-17 10:55:37
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2025-02-17 10:55:37
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:55:43
+</EndTime>
+      </Statement>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2025-02-17 10:55:43
+</EndTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2025-02-17 10:55:43
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2025-02-17 10:55:43
+</StartTime>
+      <StartTime>
+2025-02-17 10:55:43
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-17 10:55:43
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:55:43
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_GeneralPrint)">
+      <StartTime>
+2025-02-17 10:55:43
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find combobox : ui_PresetComboBox
+</ErrorDescription>
+      <EndTime>
+2025-02-17 10:55:46
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2025-02-17 10:55:46
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:55:51
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2025-02-17 10:55:51
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+      <ScreenShot>
+.\Hallasan_Screenshot_250217_10555455.png
+</ScreenShot>
+      <EndTime>
+2025-02-17 10:55:54
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2025-02-17 10:55:54
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-17 10:55:59
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2025-02-17 10:55:59
+</StartTime>
+      <StartTime>
+2025-02-17 10:55:59
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2025-02-17 10:55:59
+</StartTime>
+        <Result>
+Error
+</Result>
+        <ErrorDescription>
+Error during click print button
+</ErrorDescription>
+        <AdditionalInfo>
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HP.GFriend.Keywords.ApplicationUtils.ClickPrintButtonInAcrobatReader(Windows windowsController) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\ApplicationUtils.cs:line 398
+   at HP.GFriend.Keywords.Windows.ClickPrintButton() in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 1009
+</AdditionalInfo>
+        <EndTime>
+2025-02-17 10:56:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2025-02-17 10:56:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:56:16
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2025-02-17 10:56:16
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+No application to close
+</ErrorDescription>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2025-02-17 10:56:16
+</StartTime>
+          <Block>
+            <StartTime>
+2025-02-17 10:56:16
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2025-02-17 10:56:16
+</EndTime>
+          </Block>
+          <EndTime>
+2025-02-17 10:56:16
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2025-02-17 10:56:16
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(12)">
+        <StartTime>
+2025-02-17 10:56:16
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-17 10:56:28
+</EndTime>
+      </Statement>
+      <Result>
+ERROR
+</Result>
+      <EndTime>
+2025-02-17 10:56:28
+</EndTime>
+      <Result>
+Error
+</Result>
+      <EndTime>
+2025-02-17 10:56:28
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+      <StartTime>
+2025-02-17 10:56:28
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : PrintingToDialog.ui_ContentFrame.PrintButton
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_250217_10563232.png
+</ScreenShot>
+      <EndTime>
+2025-02-17 10:56:32
+</EndTime>
+    </Statement>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2025-02-17 10:56:32
+</EndTime>
+  </TestCase>
+  <EndTime>
+2025-02-17 10:56:32
+</EndTime>
+</TestSuite>

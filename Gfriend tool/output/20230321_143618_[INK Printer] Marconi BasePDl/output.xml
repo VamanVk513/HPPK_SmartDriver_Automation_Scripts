@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[INK Printer] Marconi BasePDl">
+  <StartTime>
+2023-03-21 14:36:40
+</StartTime>
+  <TestCase Name="75.Media Type:HP Matte Brochure or Professional Paper">
+    <StartTime>
+2023-03-21 14:36:40
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2023-03-21 14:36:40
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2023-03-21 14:36:40
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_HP_Matte_Brochure_or_Professional_Paper">
+          <StartTime>
+2023-03-21 14:36:40
+</StartTime>
+          <StartTime>
+2023-03-21 14:36:40
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_HP_Matte_Brochure_or_Professional_Paper.pdf,HP Smart Printing)">
+            <StartTime>
+2023-03-21 14:36:40
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

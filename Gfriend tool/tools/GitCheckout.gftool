@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gftool>
+  <executable>
+    GitCheckout.bat
+  </executable>
+  <displayname>
+    Git - Checkout branch
+  </displayname>
+  <description>
+    Check out the branch
+  </description>
+  <args>
+  	<arg name ="ScriptFolder" mandatory = "true">
+		<value>ScriptRoot</value>
+	</arg>
+    <arg name ="Branch name" mandatory ="true">
+      <value>Custom</value>
+    </arg>
+  </args>
+</gftool>

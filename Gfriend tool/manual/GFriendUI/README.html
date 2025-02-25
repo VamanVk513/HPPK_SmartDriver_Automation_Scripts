@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>GFriend Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../gfmanual.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">GFriend Manual</h1>
+</header>
+<h1 id="gfriend-ui">GFriend UI</h1>
+<h3 id="gfriend---test-tool-with-user-script">GFriend - Test Tool with
+user script</h3>
+<p><img src=".images/GFriend_Main.png" alt="GFriend::Main" /></p>
+<ol type="1">
+<li><p><strong>Test Running</strong></p>
+<ol type="1">
+<li><p><strong>Makes new TC</strong></p>
+<ul>
+<li>You can make new TC from editor text on GFriend Tool.</li>
+<li>When you makes new file or open existing file, it displyed separated
+tab on Test by Test Cases.</li>
+<li>Simple guide for Statement
+<ul>
+<li>Each test case is separated by "{}". When you write "{" after test
+case name and write "}" after test case, the tc is automatically added
+on Test Cases list.</li>
+<li>If you want to use specific library like the Android, JediOmni, etc.
+, test case would include "using [library name]" for load the
+library.</li>
+<li>After loading libraries, you can use auto complete menu for each
+library and keyword on the library. <img
+src=".images/GFriend_TestbyTestCases.png"
+alt="GFriend::Test by test cases" /></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Register the test device</strong></p>
+<ul>
+<li><p>You can display device list by "Option &gt; Tool &gt; Device
+list" or "Device list button" on Targer Device layer. <img
+src=".images/GFriend_DeviceList.png"
+alt="GFriend::Device list" /></p></li>
+<li><p>Get the device information from Asset Inventory server</p>
+<ul>
+<li>You can find "Asset Inventory Server" text field and "Conncet"
+button below the Device list
+<ol type="1">
+<li>Typing Asset invertory server address on the text field.
+(<strong>Default value is STB asset inventory server on
+hppk</strong>)</li>
+<li>Click the Connect button
+<ul>
+<li>If the server address is valid, the device list on asset inventory
+server display to new device list.</li>
+</ul></li>
+<li>Select one device that you want to add the GFriend device list</li>
+<li>Click "<img src=".images/AddDevice.png"
+alt="GFriend::Add device button" />" button located on the middle of the
+device list form <img src=".images/GFriend_GetdevicefromServer.png"
+alt="GFriend::Get the device information form Asset Inventory Server" /></li>
+</ol></li>
+</ul></li>
+<li><p>Register the device by manual typing</p>
+<ul>
+<li><p>If you want to register new device on the list, click add button
+on the list.</p>
+<ul>
+<li><strong>At now, the three fields are required for testing</strong>
+<ul>
+<li>Device Id: You should use it unique value. It use for classify the
+device.</li>
+<li>Device Address: Usually, it use the IP address. At mobile device,
+you can use device ID.</li>
+<li>Debug Address: If device has a debug LAN card attached, you should
+type the address to this field</li>
+<li>Admin Password: It is required for test by the JediOmni.</li>
+</ul></li>
+<li><strong>For iOS/Mac testing</strong>*
+<ul>
+<li>Appium server information should be given (see descriptions) <img
+src=".images/GFriend_AddDevice.png"
+alt="GFriend::Add the device" /></li>
+</ul></li>
+</ul></li>
+<li><p>Also you can add device's additional capabilities and use in your
+script. If additional capabilities are given, you can refer their value
+with system defined variable : ${DUT_[Capability Key with Upper case]}.
+For example, you can get 'Mono' with variable ${DUT_COLOR}, 'A3' with
+variable ${DUT_PAPER}.</p></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Select device for test by test suites and test
+cases</strong></p>
+<ul>
+<li>You can select device from device list combobox located in right of
+the Target Device text.</li>
+<li>The combo box display all list of the device list form. <img
+src=".images/GFriend_TargetDeviceforTC.png"
+alt="GFriend::Select Device" /></li>
+</ul></li>
+<li><p><strong>Run test</strong></p>
+<ul>
+<li><p><strong>Test by Test Suites</strong></p>
+<ul>
+<li>You can run by selecting test suites on file list tree view on left
+side of the GFriend tool.</li>
+<li>Each test suites unit is file that have extention to ".txt" or
+".gfscripts"</li>
+<li>You can change displayed fil list fodler by clicking Open folder
+icon above the file list tree view.</li>
+<li>If you double click mouse button to the file list tree view or
+select open file after right click on the file, the file is opened to
+the text editor with new tab.</li>
+<li>When you right click item on the file list tree view, it display
+context menu for controlling file or directory
+<ul>
+<li>New File/Folder, Remove File/Folder, Open Folder, Open Folder in
+File Explorer.</li>
+</ul></li>
+<li>When "Run" button clicked in the Test by Test Suites layer, all
+selected test suites are run in order.<br />
+<img src=".images/GFriend_TestbyTestSuites.png"
+alt="GFriend::Test by test suites" /></li>
+</ul></li>
+<li><p><strong>Test by Test cases</strong></p>
+<ul>
+<li>You can run by selecting test cases on test cases on right side of
+the GFriend tool.</li>
+<li>Each test cases is separated by "{}".</li>
+<li>When you change tab on the editor text, the test cases list
+automatically updated by selected tab.</li>
+<li>Before testing, the test suites would be saved to latest code.</li>
+<li>When you right click to item on the tab. it display context menu for
+controlling the file.
+<ul>
+<li>Save, Save As, Open Folder, Open Folder in File Explorer, Close,
+Close All, Close All But This.</li>
+</ul></li>
+<li>When "Run" button clicked in the Test by Test cases layer, all
+select test cases are run in the order. <img
+src=".images/GFriend_TestbyTestCases.png"
+alt="GFriend::Test by test cases" /></li>
+</ul></li>
+<li><p><strong>Test by one keyword</strong></p>
+<ul>
+<li>You can run one keyword by text run layer on bottom side of the
+GFriend tool. It exist on other tab on right of the output layer.</li>
+<li>It doesn't save to specific file. You use it for simple testing for
+making new test case.</li>
+<li>Before testing, it would be pre-required connecting to specific
+device from its Target Device combo box.</li>
+<li>Also need to select libries to test with "Select Libraries"
+menu.</li>
+<li>Connecting for this test would be disconnected when test by test by
+Test Cases/Test Suites is run.</li>
+<li>When "Run" button clicked in the test by Text Run layer, the typing
+keyword on textbox is run. <img
+src=".images/GFriend_TestbytheKeyword.png"
+alt="GFriend::Test by one keyword" /></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Test result</strong></p>
+<ul>
+<li>Test Result from local GFriend
+<ul>
+<li>Simple result is displayed on output layer on bottom side of the
+GFriend tool.</li>
+<li>Report about test result is saved to specific file about each test
+suite.</li>
+<li>When you click the link on output layer, the report is executed to
+internet browser. The report has detail result about the test. <img
+src=".images/GFriend_TestResult.png" alt="GFriend::Test Result" /></li>
+</ul></li>
+</ul></li>
+</ol></li>
+<li><p><strong>More information</strong></p>
+<ul>
+<li><p><strong>Keyword List</strong></p>
+<ul>
+<li>You can check this option from "Option &gt; Help &gt; Keyword List
+&gt; [Library Name]"</li>
+<li>You can get all keyword list about each library from this menu when
+clicking the library name.</li>
+<li>The keyword list display the documents included keyword list by
+internet browser. <img src=".images/GFriend_KeywordList.png"
+alt="GFriend::Keyword List" /></li>
+</ul></li>
+<li><p><strong>External Tools</strong></p>
+<ul>
+<li><p>UI Inspector (<a
+href="../GFTools/MeGustasTu/README.html">UserManual</a>)</p>
+<ul>
+<li>You can execute UI Inspector from "Option &gt; Tool &gt; External
+Tools &gt; UI Inspector".</li>
+<li>This tool support making test case. You can get info for Android and
+JediOmni object ID from this tool.</li>
+<li>This tool get Device Address and Admin Password from selected device
+on Target Device combo box when you run it.</li>
+</ul>
+<p><img src=".images/GFriend_UI_Inspector.png"
+alt="GFriend::UI Inspector" /></p></li>
+</ul></li>
+<li><p><strong>Git Integration</strong></p>
+<p>GFriend provides built-in Git client for managing test script with
+Git/Github. See more detail in (<a
+href="../GFUtils/GitHelperControls/README.html">Git manual</a>)</p></li>
+</ul></li>
+</ol>
+</body>
+</html>

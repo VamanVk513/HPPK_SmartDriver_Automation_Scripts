@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>GFriend Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../gfmanual.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">GFriend Manual</h1>
+</header>
+<h1 id="info-library">Info Library</h1>
+<p>Info library provides keywords for measuring performance during
+execution. Please note that time of result is not accurate enough but
+see the trend to identify performance issues.</p>
+<h2 id="basic-time-measure">Basic Time Measure</h2>
+<p>Following sample script just provides usages of Info library. All
+other actions such as app launch or login are replaced to comment or
+Random Sleep.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>using Info</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Sample <span class="bu">Performance</span> Check </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    Info<span class="op">.</span><span class="at">Start</span> Time <span class="fu">Check</span> (LoginTime) <span class="co">// Define measure set for Login Time</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    Info<span class="op">.</span><span class="at">Start</span> Time <span class="fu">Check</span> (PrintingTime) <span class="co">// Define measure set for Printing Time</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    @<span class="dt">Repeat</span><span class="op">:</span><span class="dv">100</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        <span class="co">// App launch</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Check Login Screen</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        Info<span class="op">.</span><span class="at">Mark</span> <span class="fu">Start</span> (LoginTime<span class="op">,</span>${R}) <span class="co">// Set start point of login time</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Login script will be placed</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        Random <span class="fu">Sleep</span> (<span class="dv">1</span><span class="op">,</span><span class="dv">3</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        Info<span class="op">.</span><span class="at">Mark</span> <span class="fu">End</span> (LoginTime<span class="op">,</span>${R}) <span class="co">// Set end point of login time</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        <span class="co">// File select</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Set Print options</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        Info<span class="op">.</span><span class="at">Mark</span> <span class="fu">Start</span> (PrintingTime<span class="op">,</span>${R})</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Waiting until printing is done</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        Random <span class="fu">Sleep</span> (<span class="dv">2</span><span class="op">,</span><span class="dv">4</span>)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>        Info<span class="op">.</span><span class="at">Mark</span> <span class="fu">End</span> (PrintingTime<span class="op">,</span>${R})</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    Assert Last <span class="fu">Repeat</span> (Pass<span class="op">,&gt;</span><span class="dv">99</span>)</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    Info<span class="op">.</span><span class="at">Draw</span> Time <span class="fu">Graph</span> (LoginTime) <span class="co">// Generate graph for login time</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    Info<span class="op">.</span><span class="at">Draw</span> Time <span class="fu">Graph</span> (PrintingTime) <span class="co">// Generate graph for printing time</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>After execution, you can see the result of time measure data in CSV
+format in your output folder and also you can see trend graph in the
+report as below:</p>
+<p><img src=".images/report.png" alt="Report" /></p>
+<h2 id="link-stf-deviceworkflowmarker-with-gfriend-measure-set">Link STF
+DeviceWorkflowMarker with GFriend Measure Set</h2>
+<p>If you run the GFriend script inside GFriendExecutionPlugin within
+STF/STB, you can link measure set with Device Workflow
+Marker(Performance Marker) as below example.</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>using Info</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>STF Auth Perf Marker</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    Info<span class="op">.</span><span class="at">Start</span> Time <span class="fu">Check</span> (STF_Authentication)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    Info<span class="op">.</span><span class="at">Start</span> Time <span class="fu">Check</span> (STF_AppShown)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    Info<span class="op">.</span><span class="at">Mark</span> <span class="fu">Start</span> (STF_Authentication<span class="op">,</span><span class="dv">1</span>) <span class="co">// Will be recorded &quot;AuthenticationBegin&quot; in STF</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    Random <span class="fu">Sleep</span> (<span class="dv">1</span><span class="op">,</span><span class="dv">3</span>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    Info<span class="op">.</span><span class="at">Mark</span> <span class="fu">End</span> (STF_Authentication<span class="op">,</span><span class="dv">1</span>) <span class="co">// Will be recorded &quot;AuthenticationEnd&quot; in STF</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    Info<span class="op">.</span><span class="at">Mark</span> <span class="fu">Start</span> (STF_AppShown<span class="op">,</span><span class="dv">1</span>) <span class="co">// Will not be recorded.</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    Random <span class="fu">Sleep</span> (<span class="dv">1</span><span class="op">,</span><span class="dv">4</span>)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    Info<span class="op">.</span><span class="at">Mark</span> <span class="fu">End</span> (STF_AppShown<span class="op">,</span><span class="dv">1</span>) <span class="co">// Will be recorded &quot;AppShown&quot; in STF</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<h3
+id="linking-device-workflow-marker-with-gfriend-measure-set-basic-rules">Linking
+Device workflow marker with GFriend Measure Set Basic Rules</h3>
+<ul>
+<li>Should start with 'STF_' in GFriend script. (ex. Info.Start Time
+Time Check (STF_Authentication))</li>
+<li>DeviceWorkflowMarker.xxxxxBegin will be matched with Info.Mark Start
+(Do not use 'Begin' in GFriend measure set name)</li>
+<li>DeviceWorkflowMarker.xxxxxEnd will be matched with Info.Mark End (Do
+not use 'End' in GFriend measure set name)</li>
+<li>Other markers such as AppShown, DeviceButtonPress will be matched
+with Info.Mark End</li>
+</ul>
+<h3 id="device-workflow-markers-in-stf">Device Workflow Markers in
+STF</h3>
+<p>Followings are Device Workflow Markers in STF</p>
+<pre><code>    ActivityBegin : Marks when the solution activity begins
+    ActivityEnd : Marks when the solution activity ends
+    AppButtonPress : Marks the time of Application/Solution Button Press.
+    AppShown : Marks the time the application/solution screen is shown.
+    AuthenticationBegin : Marks the time Authentication begins.
+    AuthenticationEnd : Marks the time Authentication ends.
+    AuthType : Marks the time Authentication ends.
+    CalibrationBegin : Marks when a calibration begin is detected.
+    CalibrationEnd : Marks when a the calibration end is detected.
+    DeleteBegin : Marks the time when a solution begins deleting selected jobs.
+    DeleteEnd : Marks the time when a solution ends deleting selected jobs.
+    DeviceButtonPress : Marks the time when a solution ends deleting selected jobs.
+    DeviceLockBegin : Marks the time a device lock begins.
+    DeviceLockEnd : Marks the time device lock ends.
+    DeviceSignOutBegin : Marks the time a device sign out begins.
+    DeviceSignOutEnd : Marks the time device sign out ends.
+    DocumentListReady : Marks the time when the solution&#39;s document list is fully presented and ready for use.
+    EnterCredentialsBegin : Marks the time when entering the credentials for Authentication begins.
+    EnterCredentialsEnd : Marks the time when entering the credentials for Authentication ends.
+    ImagePreviewBegin : Marks the time when image preview begins.
+    ImagePreviewEnd : Marks the time when image preview has completed.
+    JobBuildBegin : Marks the time when job build begins.
+    JobBuildEnd : Marks the time when job build has completed.
+    NavigateHomeBegin : Marks when the system starts to navigate home
+    NavigateHomeEnd : Marks when the system is on the home screen
+    PrintAllBegin : Marks the time when a solution&#39;s method of printing all jobs begins.
+    PrintAllEnd : Marks the time when a solution&#39;s method of printing all jobs ends.
+    PrintDeleteBegin : Marks the time when a solution&#39;s method of deleting selected documents begins.
+    PrintDeleteEnd : Marks the time when a solution&#39;s method of deleting selected documents ends.
+    PrinterListReady : Marks the time when the solution&#39;s printer list is presented and ready for use.
+    PrintJobBegin : Marks the time when the device first starts printing the job.
+    PrintJobEnd : Marks the time a print job ends.
+    PrintKeepBegin : Marks the time a solution&#39;s (Pull Print) prints and keeps the selected jobs begins.
+    PrintKeepEnd : Marks the time a solution&#39;s (Pull Print) prints and keeps the selected jobs has ended.
+    ProcessingJobBegin : Marks the time when the device or workflow event begins process the requested job
+    ProcessingJobEnd : Marks the time that processing a job ends.
+    PullingJobFromServerBegin : Marks the time when the solution starts to pull a job from a pull print server.
+    PullingJobFromServerEnd : Marks the time when the solution ends pulling a job from a pull print server.
+    QuickSetListReady : Marks the time when the solution&#39;s QuickSet list is fully presented and ready for use.
+    RefreshBegin : Marks the time when a solution begins refreshing the document list.
+    RefreshEnd : Marks the time when a solution ends refreshing the document list.
+    ScanJobBegin : Marks the start of when a scan job begins.
+    ScanJobEnd : Marks the end of when the scan job ends
+    SelectDocumentBegin : Marks the time when a solution begins selecting documents (1 to n) from the document list.
+    SelectDocumentEnd : Marks the time when a solution ends selecting documents (1 to n) from the document list.
+    SendingJobBegin : Marks the time when the sending of a job begins.
+    SendingJobEnd : Marks the time when the sending of a job ends.
+    SignOutType : Marks the time when the sending of a job ends.
+    FirmwareUpdateBegin : Marks the time when a firmware update begins
+    FirmwareUpdateEnd : Marks the time when a firmware update ends
+    DeviceRebootBegin : Marks the time when a device begins rebooting
+    DeviceRebootEnd : Marks the time when a device finishes rebooting (EWS is up)
+    WebServicesUp : Marks the time when a web services comes up
+    EmbeddedWebServerUp : Marks the time when a device finishes rebooting (EWS is up)
+    GFriendExeuctionStart : Marks the time when a GFriend Exeuction is started
+    GFriendExeuctionEnd : Marks the time when a GFriend Exeuction is ended</code></pre>
+</body>
+</html>

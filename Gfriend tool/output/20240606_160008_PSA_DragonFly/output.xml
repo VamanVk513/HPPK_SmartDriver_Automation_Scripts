@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_DragonFly">
+  <StartTime>
+2024-06-06 16:00:32
+</StartTime>
+  <TestCase Name="Sample">
+    <StartTime>
+2024-06-06 16:00:32
+</StartTime>
+    <Statement StatementName="Windows.Select Application (PSA_Application)">
+      <StartTime>
+2024-06-06 16:00:32
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240606_16003828.png
+</ScreenShot>
+      <EndTime>
+2024-06-06 16:00:38
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Wait For ID (ui_Preset_Combo,20)">
+      <StartTime>
+2024-06-06 16:00:38
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : ui_Preset_Combo
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240606_16010012.png
+</ScreenShot>
+      <EndTime>
+2024-06-06 16:01:00
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID (ui_Preset_Combo)">
+      <StartTime>
+2024-06-06 16:01:00
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : ui_Preset_Combo
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240606_16010389.png
+</ScreenShot>
+      <EndTime>
+2024-06-06 16:01:03
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Wait For Name (Envelopes,10)">
+      <StartTime>
+2024-06-06 16:01:03
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given name : Envelopes
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240606_16011534.png
+</ScreenShot>
+      <EndTime>
+2024-06-06 16:01:15
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click Name With Mouse (Envelopes)">
+      <StartTime>
+2024-06-06 16:01:15
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : Envelopes
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240606_16011964.png
+</ScreenShot>
+      <EndTime>
+2024-06-06 16:01:19
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-06 16:01:19
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-06 16:01:24
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-06-06 16:01:24
+</StartTime>
+      <Result>
+Error
+</Result>
+      <ErrorDescription>
+Error during click confirm button in driver
+</ErrorDescription>
+      <AdditionalInfo>
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HP.GFriend.Keywords.Hallasan.Confirm() in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Hallasan\Hallasan.cs:line 175
+</AdditionalInfo>
+      <EndTime>
+2024-06-06 16:01:24
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-06 16:01:24
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-06 16:01:29
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2024-06-06 16:01:29
+</StartTime>
+      <StartTime>
+2024-06-06 16:01:29
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2024-06-06 16:01:29
+</StartTime>
+        <Result>
+Error
+</Result>
+        <ErrorDescription>
+Unexpected exception
+</ErrorDescription>
+        <AdditionalInfo>
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.NullReferenceException: Object reference not set to an instance of an object.
+   at HP.GFriend.Keywords.Hallasan.ClickPrintButton() in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Hallasan\Hallasan.cs:line 115
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+</AdditionalInfo>
+        <EndTime>
+2024-06-06 16:01:29
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-06-06 16:01:29
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-06 16:01:49
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2024-06-06 16:01:49
+</StartTime>
+        <ConditionResult>
+ERROR
+</ConditionResult>
+        <ErrorDescription>
+Unexpected exception
+</ErrorDescription>
+        <AdditionalInfo>
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.NullReferenceException: Object reference not set to an instance of an object.
+   at HP.GFriend.Keywords.Hallasan.CloseApplication() in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Hallasan\Hallasan.cs:line 107
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+</AdditionalInfo>
+        <StatementBlock Kind="ERROR">
+          <StartTime>
+2024-06-06 16:01:49
+</StartTime>
+          <Block>
+            <StartTime>
+2024-06-06 16:01:49
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-06 16:01:49
+</EndTime>
+          </Block>
+          <EndTime>
+2024-06-06 16:01:49
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-06-06 16:01:49
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-06-06 16:01:49
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-06 16:02:09
+</EndTime>
+      </Statement>
+      <Result>
+ERROR
+</Result>
+      <EndTime>
+2024-06-06 16:02:09
+</EndTime>
+      <Result>
+Error
+</Result>
+      <EndTime>
+2024-06-06 16:02:09
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+      <StartTime>
+2024-06-06 16:02:09
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : PrintingToDialog.ui_ContentFrame.PrintButton
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240606_16021414.png
+</ScreenShot>
+      <EndTime>
+2024-06-06 16:02:14
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_Application.PT Value_TwoSidedLongEdge_PSA">
+      <StartTime>
+2024-06-06 16:02:14
+</StartTime>
+      <StartTime>
+2024-06-06 16:02:14
+</StartTime>
+      <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+        <StartTime>
+2024-06-06 16:02:14
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-06 16:02:14
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:JobDuplexAllDocumentsContiguously']/psf:Option,name)">
+        <StartTime>
+2024-06-06 16:02:14
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+psk:OneSided
+</Output>
+        <EndTime>
+2024-06-06 16:02:14
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},psk:OneSided)">
+        <StartTime>
+2024-06-06 16:02:14
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-06 16:02:14
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+        <StartTime>
+2024-06-06 16:02:14
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:OptIn
+</Output>
+        <EndTime>
+2024-06-06 16:02:14
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:OptIn)">
+        <StartTime>
+2024-06-06 16:02:14
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-06 16:02:14
+</EndTime>
+      </Statement>
+      <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+        <StartTime>
+2024-06-06 16:02:14
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+        1 file(s) copied.
+
+</Output>
+        <EndTime>
+2024-06-06 16:02:14
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-06 16:02:14
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-06 16:02:14
+</EndTime>
+    </Statement>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2024-06-06 16:02:14
+</EndTime>
+  </TestCase>
+  <EndTime>
+2024-06-06 16:02:14
+</EndTime>
+</TestSuite>

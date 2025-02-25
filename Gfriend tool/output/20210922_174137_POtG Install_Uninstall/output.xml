@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="POtG Install_Uninstall">
+  <StartTime>
+2021-09-22 17:41:57
+</StartTime>
+  <TestCase Name="Printer Driver Uninstallation">
+    <StartTime>
+2021-09-22 17:41:57
+</StartTime>
+    <Statement StatementName="Hallasan.Remove Printer (HP Smart Printing)">
+      <StartTime>
+2021-09-22 17:41:57
+</StartTime>
+      <Result>
+Error
+</Result>
+      <ErrorDescription>
+Error during delete printer
+</ErrorDescription>
+      <AdditionalInfo>
+System.Printing.PrintQueueException: An exception occurred while populating the properties for the PrintQueue object. Win32 error: The printer name is invalid.
+
+   at System.Printing.PrintQueue.Initialize(PrintServer printServer, String printQueueName, String[] propertiesFilter, PrinterDefaults printerDefaults)
+   at System.Printing.PrintQueue..ctor(PrintServer printServer, String printQueueName, PrintSystemDesiredAccess desiredAccess)
+   at HP.GFriend.Keywords.PrinterDriverUtils.DeletePrinter(String printerName) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\PrinterDriverUtils.cs:line 288
+   at HP.GFriend.Keywords.Windows.RemovePrinter(String printerName) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 693
+</AdditionalInfo>
+      <EndTime>
+2021-09-22 17:41:57
+</EndTime>
+    </Statement>
+    <Result>
+ERROR
+</Result>
+    <EndTime>
+2021-09-22 17:41:57
+</EndTime>
+  </TestCase>
+  <EndTime>
+2021-09-22 17:41:57
+</EndTime>
+</TestSuite>

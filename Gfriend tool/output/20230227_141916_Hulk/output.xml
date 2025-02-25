@@ -1,0 +1,876 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Hulk">
+  <StartTime>
+2023-02-27 14:19:37
+</StartTime>
+  <TestCase Name="Always Show Before Printing : Uncheck">
+    <StartTime>
+2023-02-27 14:19:37
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2023-02-27 14:19:37
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2023-02-27 14:19:37
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_UncheckAlwaysShowBeforePrinting">
+          <StartTime>
+2023-02-27 14:19:37
+</StartTime>
+          <StartTime>
+2023-02-27 14:19:37
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_UncheckAlwaysShowBeforePrinting.pdf,HP Smart Printing)">
+            <StartTime>
+2023-02-27 14:19:37
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:20:08
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2023-02-27 14:20:08
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:20:08
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2023-02-27 14:20:08
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:20:08
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2023-02-27 14:20:08
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:20:14
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:20:14
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:20:14
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2023-02-27 14:20:14
+</StartTime>
+          <StartTime>
+2023-02-27 14:20:14
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:20:14
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:20:14
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2023-02-27 14:20:14
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_230227_14201455.png
+</ScreenShot>
+          <EndTime>
+2023-02-27 14:20:14
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2023-02-27 14:20:14
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:20:19
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2023-02-27 14:20:19
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:20:19
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2023-02-27 14:20:19
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:20:24
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2023-02-27 14:20:24
+</StartTime>
+          <StartTime>
+2023-02-27 14:20:24
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2023-02-27 14:20:24
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:20:26
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2023-02-27 14:20:26
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:20:46
+</EndTime>
+          </Statement>
+          <If Condition=" Hallasan.Close Application">
+            <StartTime>
+2023-02-27 14:20:46
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2023-02-27 14:20:46
+</StartTime>
+              <Block>
+                <StartTime>
+2023-02-27 14:20:46
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2023-02-27 14:20:46
+</EndTime>
+              </Block>
+              <EndTime>
+2023-02-27 14:20:46
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2023-02-27 14:20:46
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2023-02-27 14:20:46
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (PrintingToDialog.ui_ContentFrame.ui_AlwaysDisplay,10)">
+          <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.ui_AlwaysDisplay)">
+          <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (PrintingToDialog.ui_ContentFrame.PrintButton,10)">
+          <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+          <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+        </Statement>
+        <Statement StatementName="Destination_Selection_Application.PT Value_UncheckAlwaysShowBeforePrinting">
+          <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+          <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+          <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+            <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name)">
+            <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+ns0000:On
+</Output>
+            <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:On)">
+            <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+            <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+ns0000:OptIn
+</Output>
+            <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:OptIn)">
+            <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+          </Statement>
+          <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+            <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+        1 file(s) copied.
+
+</Output>
+            <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+        </Statement>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+      </Loop>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2023-02-27 14:21:07
+</EndTime>
+    </Repeat>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_CheckAlwaysShowBeforePrinting">
+          <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+          <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_CheckAlwaysShowBeforePrinting.pdf,HP Smart Printing)">
+            <StartTime>
+2023-02-27 14:21:07
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:21:37
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2023-02-27 14:21:37
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:21:37
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2023-02-27 14:21:37
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:21:37
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2023-02-27 14:21:37
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:21:43
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:21:43
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:21:44
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2023-02-27 14:21:44
+</StartTime>
+          <StartTime>
+2023-02-27 14:21:44
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:21:44
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:21:44
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2023-02-27 14:21:44
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_230227_14214407.png
+</ScreenShot>
+          <EndTime>
+2023-02-27 14:21:44
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2023-02-27 14:21:44
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:21:49
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2023-02-27 14:21:49
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:21:49
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2023-02-27 14:21:49
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:21:54
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2023-02-27 14:21:54
+</StartTime>
+          <StartTime>
+2023-02-27 14:21:54
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2023-02-27 14:21:54
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:21:56
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2023-02-27 14:21:56
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:22:16
+</EndTime>
+          </Statement>
+          <If Condition="If :  Hallasan.Close Application">
+            <StartTime>
+2023-02-27 14:22:16
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2023-02-27 14:22:16
+</StartTime>
+              <Block>
+                <StartTime>
+2023-02-27 14:22:16
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2023-02-27 14:22:16
+</EndTime>
+              </Block>
+              <EndTime>
+2023-02-27 14:22:16
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2023-02-27 14:22:16
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2023-02-27 14:22:16
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:22:36
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:22:36
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:22:36
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (PrintingToDialog.ui_ContentFrame.ui_AlwaysDisplay,10)">
+          <StartTime>
+2023-02-27 14:22:36
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : PrintingToDialog.ui_ContentFrame.ui_AlwaysDisplay
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_230227_14224758.png
+</ScreenShot>
+          <EndTime>
+2023-02-27 14:22:47
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.ui_AlwaysDisplay)">
+          <StartTime>
+2023-02-27 14:22:47
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : PrintingToDialog.ui_ContentFrame.ui_AlwaysDisplay
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_230227_14225134.png
+</ScreenShot>
+          <EndTime>
+2023-02-27 14:22:51
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (PrintingToDialog.ui_ContentFrame.OpenHelpWindowButton,10)">
+          <StartTime>
+2023-02-27 14:22:51
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : PrintingToDialog.ui_ContentFrame.OpenHelpWindowButton
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_230227_14230244.png
+</ScreenShot>
+          <EndTime>
+2023-02-27 14:23:02
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.OpenHelpWindowButton)">
+          <StartTime>
+2023-02-27 14:23:02
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : PrintingToDialog.ui_ContentFrame.OpenHelpWindowButton
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_230227_14230616.png
+</ScreenShot>
+          <EndTime>
+2023-02-27 14:23:06
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (HelpContentDialog.ui_CheckShowAlways,10)">
+          <StartTime>
+2023-02-27 14:23:06
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : HelpContentDialog.ui_CheckShowAlways
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_230227_14231723.png
+</ScreenShot>
+          <EndTime>
+2023-02-27 14:23:17
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(HelpContentDialog.ui_CheckShowAlways)">
+          <StartTime>
+2023-02-27 14:23:17
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : HelpContentDialog.ui_CheckShowAlways
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_230227_14232108.png
+</ScreenShot>
+          <EndTime>
+2023-02-27 14:23:21
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (PrintingToDialog.ui_ContentFrame.PrintButton,10)">
+          <StartTime>
+2023-02-27 14:23:21
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : PrintingToDialog.ui_ContentFrame.PrintButton
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_230227_14233127.png
+</ScreenShot>
+          <EndTime>
+2023-02-27 14:23:31
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+          <StartTime>
+2023-02-27 14:23:31
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : PrintingToDialog.ui_ContentFrame.PrintButton
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_230227_14233512.png
+</ScreenShot>
+          <EndTime>
+2023-02-27 14:23:35
+</EndTime>
+        </Statement>
+        <Statement StatementName="Destination_Selection_Application.PT Value_CheckAlwaysShowBeforePrinting">
+          <StartTime>
+2023-02-27 14:23:35
+</StartTime>
+          <StartTime>
+2023-02-27 14:23:35
+</StartTime>
+          <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+            <StartTime>
+2023-02-27 14:23:35
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:23:35
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name)">
+            <StartTime>
+2023-02-27 14:23:35
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+ns0000:On
+</Output>
+            <EndTime>
+2023-02-27 14:23:35
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:On)">
+            <StartTime>
+2023-02-27 14:23:35
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:23:35
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+            <StartTime>
+2023-02-27 14:23:35
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+ns0000:OptIn
+</Output>
+            <EndTime>
+2023-02-27 14:23:35
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:OptIn)">
+            <StartTime>
+2023-02-27 14:23:35
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:23:35
+</EndTime>
+          </Statement>
+          <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+            <StartTime>
+2023-02-27 14:23:35
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+        1 file(s) copied.
+
+</Output>
+            <EndTime>
+2023-02-27 14:23:35
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:23:35
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:23:35
+</EndTime>
+        </Statement>
+        <Result>
+FAIL
+</Result>
+        <EndTime>
+2023-02-27 14:23:35
+</EndTime>
+      </Loop>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2023-02-27 14:23:35
+</EndTime>
+    </Repeat>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2023-02-27 14:23:35
+</EndTime>
+  </TestCase>
+  <EndTime>
+2023-02-27 14:23:35
+</EndTime>
+</TestSuite>

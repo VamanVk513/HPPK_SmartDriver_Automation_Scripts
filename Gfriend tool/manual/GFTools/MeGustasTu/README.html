@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>GFriend Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../gfmanual.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">GFriend Manual</h1>
+</header>
+<h1 id="ui-inspector--me-gustas-tu">UI Inspector : Me Gustas Tu</h1>
+<p><img src=".images/MGT_main.png" alt="MeGustasTu::Main" /></p>
+<p>Me Gustas Tu is UI Inspector which helps get Android's UI hierarchy
+and Jedi Omni's IDs with screen shot.</p>
+<h2 id="1-connection">1. Connection</h2>
+<p><img src=".images/MGT_connection.png"
+alt="MeGustasTu::Connection" /></p>
+<ul>
+<li>Device Address : Enter device ip (in case of LAN connection) or
+device id (in case of USB connection)</li>
+<li>Admin Password (Optional) : If this field is filled-up, tool will
+connect to both Android and Omni, if not tool will connect to only
+Android</li>
+</ul>
+<p>If you start this tool within GFriend UI, these field will be filled
+and connect automatically.</p>
+<p>NOTE: Disconnect form device by clicking 'Disconnect' button before
+running test.</p>
+<h2 id="2-dump-ui">2. Dump UI</h2>
+<p>You can start UI inspection by clicking <img
+src=".images/MGT_dump.png" alt="Dump" /> button.</p>
+<p>Tool will get the screenshot of device, UI hierachy info of Android
+and list of OmniIDs on current page (if Omni connected.)</p>
+<h2 id="3-inspect-ui">3. Inspect UI</h2>
+<p>You can see the information of object by clicking screenshot in left
+pane, tree-view (Android) or list item (Omni) in right pane.</p>
+<ol type="1">
+<li>Android</li>
+</ol>
+<p><img src=".images/MGT_android.png" alt="MeGustasTu::Android" /></p>
+<p>If tab of right pane is selected as Android, you can see the android
+object info.</p>
+<p>You can use text property (ex. Touch Text) or resource-id property
+(Touch ID) in your GFriend Script.</p>
+<p>Or you can also use XPath of element in your script. By clicking
+right mouse button on treeview, you can see the menu of Copy XPath. If
+you click this XPath of selected element will be copied to
+clipboard.</p>
+<p><img src=".images/MGT_xpath.png" alt="MeGustasTu::CopyXPath" /></p>
+<ol start="2" type="1">
+<li>Omni</li>
+</ol>
+<p><img src=".images/MGT_omni.png" alt="MeGustasTu::Android" /></p>
+<p>If tab of right pane is selected as Omni, you can see the list of
+Omni IDs.</p>
+<p>By clicking mouse right button, you can copy the selected id to
+clipboard.</p>
+</body>
+</html>

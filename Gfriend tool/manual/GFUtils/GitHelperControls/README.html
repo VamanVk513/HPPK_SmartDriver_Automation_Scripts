@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>GFriend Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../gfmanual.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">GFriend Manual</h1>
+</header>
+<h1 id="gfriend-git-client">GFriend Git Client</h1>
+<p>Note : GFriend git client is only available on 64bit Operating
+System.</p>
+<h2 id="preparation">Preparation</h2>
+<ol type="1">
+<li><p>Acquire HTTP Access Token</p>
+<p>Log on to Github and goto settings. (Click your account in top left
+and select Settings.)</p>
+<p><img src=".images/GitSettings.png" alt="GitSettings" /></p>
+<p>Goto Developer Settings - Personal Access Tokens</p>
+<p><img src=".images/DeveloperSettings.png" alt="DeveloperSettings" />
+<img src=".images/PersonalAccessTokens.png"
+alt="PersonalAccessToken" /></p>
+<p>Click Generate New Token</p>
+<p><img src=".images/GenerateNewToken.png" alt="GenerateNewToken" /></p>
+<p>Fill out Note (That you can easily recognize of your purpose later)
+and check "repo" checkbox than click Generate Token button in the
+bottom.</p>
+<p><img src=".images/NewToken.png" alt="NewToken" /></p>
+<p>After click Generate Token button, you will can see the access token
+as below. To copy it to clipboard, click copy icon (red box).</p>
+<p><strong>NOTE : if you leave this page, you WILL NOT see the token
+again.</strong></p>
+<p><img src=".images/TokenGenerated.png"
+alt="TokenGenerated" /></p></li>
+<li><p>Set your information in GFriend Git Client</p>
+<p>Click Git icon which located just above folder explorer. Then Git
+client will be displayed. (If you click Git icon again, Git client will
+be disappeared.)</p>
+<p><img src=".images/GFGitIcon.png" alt="GitIcon" /></p>
+<p>In the Client, click settings button.</p>
+<p><img src=".images/GFGitSettings.png" alt="GitSettings" /></p>
+<p>Fill out User name, Email and HTTP Token in Global Config section and
+click Save button.</p>
+<p><strong>NOTE: Your http token will be saved as a
+file(gfGitConfig.xml) with encryption. This file only can be decrypted
+in the PCs that you saved.</strong></p>
+<p><img src=".images/GFGitGlobalConfig.png" alt="GlobalConfig" /></p>
+<p>Note: Your user name also can be found in home page of Github.</p>
+<p><img src=".images/GitUserName.png" alt="GitUserName" /></p></li>
+</ol>
+<h2 id="clone-a-new-repository">Clone a new Repository</h2>
+<p>You can clone new repository from Github. Go to Github repository to
+clone and get clone URL. Click Clone or download button in the
+repository and get clone URL to your clipboard by clicking copy
+button.</p>
+<p>If you see Clone With SSH instead of Clone With HTTPS, click Use
+HTTPS to get HTTPS based URL.</p>
+<p><img src=".images/GetCloneURL.png" alt="GetCloneURL" /></p>
+<p>Go back to the GFriend Git client settings, fill out Clone URL and
+select folder to clone. (NOTE: Destination folder must be empty)</p>
+<p><img src=".images/GFGitClone.png" alt="GFGitClone" /></p>
+<p>After few secondes (it depends on size of repository) clicking Clone
+button, you will see the message in GFriend output window as below:</p>
+<p><img src=".images/Cloned.png" alt="Cloned" /></p>
+<p>Also GFriend will set your script root to cloned folder.</p>
+<p><img src=".images/ScriptRoot.png" alt="ScriptRoot" /></p>
+<h2 id="using-existing-git-local-repository">Using existing Git local
+repository</h2>
+<p>If you already have local repository, you can just open folder.</p>
+<p><img src=".images/OpenFolder.png" alt="OpenFolder" /></p>
+<h2 id="basic-operations-branches-pull-changes">Basic Operations
+(Branches, Pull Changes)</h2>
+<ol type="1">
+<li><p>Sync</p>
+<p>If there is new updates on remote repository (Github), you can pull
+the changes with Pull button. After few seconds clicking Pull button (it
+also depends on size of changes), you will see complete message (Sync
+with Github.) in output window.</p>
+<p><img src=".images/GFGitPull.png" alt="GFGitPull" /></p>
+<p><img src=".images/SyncWithGithub.png" alt="Sync" /></p></li>
+<li><p>Branches</p>
+<p>You can change or create branch in GFriend Git client. Click branch
+name then branch selector will be displayed.</p>
+<p><img src=".images/GFGitBranch.png" alt="GFGitBranch" /></p>
+<p><img src=".images/GFGitBranchSelector.png"
+alt="GFGitBranchSelector" /></p>
+<p>Select one of branch in the tree or type new branch name on text box.
+Click Green arrow button will change (checkout) branch to your
+selection.</p>
+<p><img src=".images/BranchChanged.png" alt="BranchChanged" /></p></li>
+</ol>
+<h2 id="working-with-changes">Working with changes</h2>
+<ol type="1">
+<li><p>Upload Changes to Github (Add, Stage, Commit and Push) After
+changing files in your local git repository, you will see changes in
+GFriend Git Client.</p>
+<p><img src=".images/GFGitChangeList.png" alt="GFGitChangeList" /></p>
+<p>Select (check) file(s) which you want to upload.</p>
+<p><img src=".images/Itemchecked.png" alt="ItemChecked" /></p>
+<p>Enter change description and click Upload to Github button then
+changes will be uploaded to the Github. (Add, Stage, Commit and Push
+operations of git will be executed at once.)</p>
+<p><img src=".images/GFGitPush.png" alt="GFGitPush" /></p></li>
+<li><p>Check uploaded changes in Github</p>
+<p>Go to Github repository and change branch which you've selected in
+GFriend Git Client.</p>
+<p><img src=".images/GitHubBranch.png" alt="GitHubBranch" /></p>
+<p>If you click commits buttons, you can see your uploaded changes.</p>
+<p><img src=".images/Commits.png" alt="Commits" /></p></li>
+<li><p>Create Pull Request</p>
+<p>To merge changes in your branch to other branch(e.g. master), Go to
+Pull Request and Click New pull request button.</p>
+<p><img src=".images/CreatePR.png" alt="CreatePR" /></p>
+<p>Select compare branch(your branch) and base branch(branch to merge
+change) then click Create pull request button.</p>
+<p><img src=".images/PRBranch.png" alt="PRBranch" /></p>
+<p>You can leave comments of pull request and assign reviewers.</p>
+<p><img src=".images/PRDetail.png" alt="PRDetail" /></p></li>
+<li><p>Merge Pull Request</p>
+<p>After pull request verification (ex. review done), you can merge your
+pull request to base branch.</p>
+<p><img src=".images/MergePR.png" alt="MergePR" /></p></li>
+</ol>
+</body>
+</html>

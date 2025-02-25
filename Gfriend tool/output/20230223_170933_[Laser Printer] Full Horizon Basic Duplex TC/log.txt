@@ -1,0 +1,767 @@
+2023-02-23 17:09:33.693 [T] ?::?::Parsing start
+2023-02-23 17:09:33.693 [T] ?::?::Parsing Variable File : C:\GFriend_PotG\scripts\Acual Script\Acual Script\Testfile.gfvar
+2023-02-23 17:09:33.693 [T] ?::?::Creating custom library with C:\GFriend_PotG\scripts\Acual Script\Acual Script\Destination_Selection_Application.gflib
+2023-02-23 17:09:33.693 [T] ?::?::Parsing start
+2023-02-23 17:09:33.740 [T] ?::?::Parsing Variable File : C:\GFriend_PotG\scripts\Acual Script\Acual Script\Testfile.gfvar
+2023-02-23 17:09:33.740 [D] ?::?::Post Action
+2023-02-23 17:09:33.740 [T] ?::?::All Used Libraries::C:\GFriend_PotG\scripts\Acual Script\Acual Script\Destination_Selection_Application.gflib
+2023-02-23 17:09:33.740 [T] ?::?::Device ID : __NO__DUT__
+2023-02-23 17:09:33.740 [T] ?::?::BuiltIn is used BuiltIn
+2023-02-23 17:09:33.740 [T] ?::?::Windows is used Windows
+2023-02-23 17:09:33.740 [T] ?::?::XML is used XML
+2023-02-23 17:09:33.740 [T] ?::?::Device ID : __DEFUALT__DUT__
+2023-02-23 17:09:33.740 [T] ?::?::Hallasan is used Hallasan
+2023-02-23 17:09:54.861 [T] ?::?::Parsing done
+2023-02-23 17:09:54.861 [T] ?::?::Destination_Selection_Application is crated
+2023-02-23 17:09:54.861 [T] ?::?::Creating custom library with C:\GFriend_PotG\scripts\Acual Script\Acual Script\Used_Destination_Selection_Function.gflib
+2023-02-23 17:09:54.861 [T] ?::?::Parsing start
+2023-02-23 17:09:54.861 [T] ?::?::Parsing Variable File : C:\GFriend_PotG\scripts\Acual Script\Acual Script\Testfile.gfvar
+2023-02-23 17:09:54.861 [D] ?::?::Post Action
+2023-02-23 17:09:54.861 [T] ?::?::All Used Libraries::C:\GFriend_PotG\scripts\Acual Script\Acual Script\Used_Destination_Selection_Function.gflib
+2023-02-23 17:09:54.861 [T] ?::?::Device ID : __NO__DUT__
+2023-02-23 17:09:54.861 [T] ?::?::BuiltIn is used BuiltIn
+2023-02-23 17:09:54.861 [T] ?::?::Windows is used Windows
+2023-02-23 17:09:54.861 [T] ?::?::Device ID : __DEFUALT__DUT__
+2023-02-23 17:09:54.861 [T] ?::?::Hallasan is used Hallasan
+2023-02-23 17:09:54.861 [T] ?::?::Parsing done
+2023-02-23 17:09:54.861 [T] ?::?::Used_Destination_Selection_Function is crated
+2023-02-23 17:09:54.861 [T] ?::?::Creating custom library with C:\GFriend_PotG\scripts\Acual Script\Acual Script\Click_Print_Button.gflib
+2023-02-23 17:09:54.861 [T] ?::?::Parsing start
+2023-02-23 17:09:54.861 [T] ?::?::Parsing Variable File : C:\GFriend_PotG\scripts\Acual Script\Acual Script\Testfile.gfvar
+2023-02-23 17:09:54.861 [D] ?::?::Post Action
+2023-02-23 17:09:54.861 [T] ?::?::All Used Libraries::C:\GFriend_PotG\scripts\Acual Script\Acual Script\Click_Print_Button.gflib
+2023-02-23 17:09:54.861 [T] ?::?::Device ID : __NO__DUT__
+2023-02-23 17:09:54.861 [T] ?::?::BuiltIn is used BuiltIn
+2023-02-23 17:09:54.861 [T] ?::?::Windows is used Windows
+2023-02-23 17:09:54.861 [T] ?::?::Device ID : __DEFUALT__DUT__
+2023-02-23 17:09:54.861 [T] ?::?::Hallasan is used Hallasan
+2023-02-23 17:09:54.861 [T] ?::?::Parsing done
+2023-02-23 17:09:54.861 [T] ?::?::Click_Print_Button is crated
+2023-02-23 17:09:54.861 [D] ?::?::Post Action
+2023-02-23 17:09:54.861 [T] ?::?::All Used Libraries::C:\GFriend_PotG\scripts\Acual Script\Acual Script\[Laser Printer] Full Horizon Basic Duplex TC.txt
+2023-02-23 17:09:54.861 [T] ?::?::Device ID : __NO__DUT__
+2023-02-23 17:09:54.875 [T] ?::?::BuiltIn is used BuiltIn
+2023-02-23 17:09:54.875 [T] ?::?::XML is used XML
+2023-02-23 17:09:54.875 [T] ?::?::Windows is used Windows
+2023-02-23 17:09:54.875 [T] ?::?::Device ID : __DEFUALT__DUT__
+2023-02-23 17:09:54.875 [T] ?::?::Hallasan is used Hallasan
+2023-02-23 17:09:54.875 [T] ?::?::Destination_Selection_Application is used Destination_Selection_Application
+2023-02-23 17:09:54.875 [T] ?::?::Used_Destination_Selection_Function is used Used_Destination_Selection_Function
+2023-02-23 17:09:54.875 [T] ?::?::Click_Print_Button is used Click_Print_Button
+2023-02-23 17:09:54.891 [T] ?::?::Loading Library : BuiltIn -> BuiltIn
+2023-02-23 17:09:54.891 [T] ?::?::Library type is native library.
+2023-02-23 17:09:54.891 [T] ?::?::Loading Library : XML -> XML
+2023-02-23 17:09:54.891 [T] ?::?::Library type is native library.
+2023-02-23 17:09:54.891 [T] ?::?::Loading Library : Windows -> Windows
+2023-02-23 17:09:54.891 [T] ?::?::Library type is native library.
+2023-02-23 17:09:54.891 [T] ?::?::Loading Library : Hallasan -> Hallasan
+2023-02-23 17:09:54.891 [T] ?::?::Library type is native library.
+2023-02-23 17:09:54.891 [T] ?::?::Loading Library : Destination_Selection_Application -> Destination_Selection_Application
+2023-02-23 17:09:54.891 [T] ?::?::Library type is custom library.
+2023-02-23 17:09:54.891 [T] ?::?::Loading Library : Used_Destination_Selection_Function -> Used_Destination_Selection_Function
+2023-02-23 17:09:54.891 [T] ?::?::Library type is custom library.
+2023-02-23 17:09:54.891 [T] ?::?::Loading Library : Click_Print_Button -> Click_Print_Button
+2023-02-23 17:09:54.891 [T] ?::?::Library type is custom library.
+2023-02-23 17:09:54.891 [T] ?::?::Prevent PC to sleep
+2023-02-23 17:09:54.891 [D] ?::?::HP Smart printing
+2023-02-23 17:09:54.891 [T] ?::?::Loop : 1
+2023-02-23 17:09:54.891 [T] ?::?::Destination_Selection_Application.Destination Selection_16UP_BottomRight is called
+2023-02-23 17:09:54.891 [T] ?::?::Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_BottomRight.pdf,HP Smart Printing) is called
+2023-02-23 17:09:54.922 [T] ?::?::Open Acrobat Reader
+2023-02-23 17:09:54.938 [T] ?::?::Process is started with C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_BottomRight.pdf and Process Id is 24748
+2023-02-23 17:10:04.956 [T] ?::?::Current focused process id : 12452
+2023-02-23 17:10:04.956 [D] ?::?::Finding target in 
+2023-02-23 17:10:04.992 [T] ?::?::Get Acrobat Reader
+2023-02-23 17:10:04.992 [D] ?::?::Finding target in 
+2023-02-23 17:10:07.094 [D] ?::?::Get Print Dialog
+2023-02-23 17:10:12.101 [D] ?::?::Finding target in YMC_16UP_BottomRight.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:10:12.102 [D] ?::?::Select printer combobox
+2023-02-23 17:10:12.116 [D] ?::?::Finding target in 
+2023-02-23 17:10:12.117 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:10:12.117 [T] ?::?::Expand
+2023-02-23 17:10:12.289 [D] ?::?::Printer select
+2023-02-23 17:10:12.289 [D] ?::?::Finding target in Printer:
+2023-02-23 17:10:12.289 [T] ?::?::Select Pattern
+2023-02-23 17:10:15.341 [D] ?::?::Finding printer properties
+2023-02-23 17:10:15.341 [D] ?::?::Finding target in 
+2023-02-23 17:10:15.357 [D] ?::?::Properties element is null? : False
+2023-02-23 17:10:15.357 [T] ?::?::Invoke Pattern
+2023-02-23 17:10:15.373 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:10:25.379 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:10:25.379 [T] ?::?::Windows.Wait For Name (HP Smart Printing,30) is called
+2023-02-23 17:10:25.380 [D] ?::?::Finding target in YMC_16UP_BottomRight.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:10:25.385 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:10:25.386 [T] ?::?::Sleep(6) is called
+2023-02-23 17:10:31.393 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:10:31.396 [T] ?::?::Used_Destination_Selection_Function.not Used Destination Selection Function is called
+2023-02-23 17:10:31.417 [T] ?::?::Hallasan.Set Combobox (Part.DocumentNUp,Option.16) is called
+2023-02-23 17:10:31.418 [D] ?::?::Finding target in YMC_16UP_BottomRight.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:10:31.458 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:10:31.459 [T] ?::?::Expand
+2023-02-23 17:10:31.488 [D] ?::?::Finding target in Pages per Sheet
+2023-02-23 17:10:31.607 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:10:31.609 [T] ?::?::Collapse
+2023-02-23 17:10:31.628 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:10:31.630 [T] ?::?::Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight) is called
+2023-02-23 17:10:31.630 [D] ?::?::Finding target in YMC_16UP_BottomRight.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:10:31.680 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:10:31.680 [T] ?::?::Expand
+2023-02-23 17:10:31.717 [D] ?::?::Finding target in 
+2023-02-23 17:10:31.811 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:10:31.813 [T] ?::?::Collapse
+2023-02-23 17:10:31.835 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:10:31.836 [T] ?::?::Windows.Capture Screen Shot(Capture.jpg) is called
+2023-02-23 17:10:31.900 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:10:31.902 [T] ?::?::Sleep(5) is called
+2023-02-23 17:10:36.935 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:10:36.937 [T] ?::?::Hallasan.Confirm is called
+2023-02-23 17:10:36.937 [D] ?::?::Finding target in YMC_16UP_BottomRight.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:10:37.122 [T] ?::?::Selected element name : OK
+2023-02-23 17:10:37.123 [T] ?::?::Invoke Pattern
+2023-02-23 17:10:37.134 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:10:37.136 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:10:37.139 [T] ?::?::Sleep(5) is called
+2023-02-23 17:10:42.140 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:10:42.140 [T] ?::?::Click_Print_Button.Print is called
+2023-02-23 17:10:42.155 [T] ?::?::Hallasan.Click Print Button is called
+2023-02-23 17:10:44.175 [D] ?::?::Finding target in YMC_16UP_BottomRight.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:10:44.206 [T] ?::?::Invoke Pattern
+2023-02-23 17:10:44.238 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:10:44.238 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:10:44.253 [T] ?::?::Sleep(20) is called
+2023-02-23 17:11:04.276 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:11:04.278 [T] ?::?::If :  Hallasan.Close Application is called
+2023-02-23 17:11:04.292 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:11:04.296 [T] ?::?::Sleep(20) is called
+2023-02-23 17:11:24.312 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:11:24.322 [T] ?::?::Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton) is called
+2023-02-23 17:11:24.323 [D] ?::?::Missing target. Get focused
+2023-02-23 17:11:24.326 [D] ?::?::Finding target in 
+2023-02-23 17:11:24.328 [D] ?::?::Finding target in 
+2023-02-23 17:11:24.337 [T] ?::?::Selected element name : Print
+2023-02-23 17:11:24.338 [T] ?::?::Invoke Pattern
+2023-02-23 17:11:24.350 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:11:24.353 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:11:24.355 [T] ?::?::Destination_Selection_Application.PT Value_16UP_BottomRight is called
+2023-02-23 17:11:24.371 [T] ?::?::XML.Load From File (C:\temp\H_JobSetup_OutPT.xml) is called
+2023-02-23 17:11:24.384 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:11:24.386 [T] ?::?::XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value) is called
+2023-02-23 17:11:24.408 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:11:24.413 [T] ?::?::Equals (${value},4) is called
+2023-02-23 17:11:24.427 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:11:24.430 [T] ?::?::XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name) is called
+2023-02-23 17:11:24.443 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:11:24.445 [T] ?::?::Equals (${value},psk:RightBottom) is called
+2023-02-23 17:11:24.460 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:11:24.462 [T] ?::?::XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name) is called
+2023-02-23 17:11:24.476 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:11:24.478 [T] ?::?::Equals (${value},ns0000:OptIn) is called
+2023-02-23 17:11:24.495 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:11:24.497 [T] ?::?::Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5) is called
+2023-02-23 17:11:24.538 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:11:24.563 [T] ?::?::Loop : 1
+2023-02-23 17:11:24.565 [T] ?::?::Destination_Selection_Application.Destination Selection_16UP_LeftBottom is called
+2023-02-23 17:11:24.582 [T] ?::?::Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_LeftBottom.pdf,HP Smart Printing) is called
+2023-02-23 17:11:24.582 [T] ?::?::Open Acrobat Reader
+2023-02-23 17:11:24.608 [T] ?::?::Process is started with C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_LeftBottom.pdf and Process Id is 16908
+2023-02-23 17:11:34.616 [T] ?::?::Current focused process id : 22496
+2023-02-23 17:11:34.616 [D] ?::?::Finding target in 
+2023-02-23 17:11:34.663 [T] ?::?::Get Acrobat Reader
+2023-02-23 17:11:34.663 [D] ?::?::Finding target in 
+2023-02-23 17:11:36.772 [D] ?::?::Get Print Dialog
+2023-02-23 17:11:41.783 [D] ?::?::Finding target in YMC_16UP_LeftBottom.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:11:41.783 [D] ?::?::Select printer combobox
+2023-02-23 17:11:41.783 [D] ?::?::Finding target in 
+2023-02-23 17:11:41.783 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:11:41.783 [T] ?::?::Expand
+2023-02-23 17:11:41.972 [D] ?::?::Printer select
+2023-02-23 17:11:41.972 [D] ?::?::Finding target in Printer:
+2023-02-23 17:11:41.972 [T] ?::?::Select Pattern
+2023-02-23 17:11:45.022 [D] ?::?::Finding printer properties
+2023-02-23 17:11:45.022 [D] ?::?::Finding target in 
+2023-02-23 17:11:45.022 [D] ?::?::Properties element is null? : False
+2023-02-23 17:11:45.022 [T] ?::?::Invoke Pattern
+2023-02-23 17:11:45.053 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:11:55.094 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:11:55.096 [T] ?::?::Windows.Wait For Name (HP Smart Printing,30) is called
+2023-02-23 17:11:55.097 [D] ?::?::Finding target in YMC_16UP_LeftBottom.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:11:55.114 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:11:55.116 [T] ?::?::Sleep(6) is called
+2023-02-23 17:12:01.143 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:01.167 [T] ?::?::Used_Destination_Selection_Function.not Used Destination Selection Function is called
+2023-02-23 17:12:01.188 [T] ?::?::Hallasan.Set Combobox (Part.DocumentNUp,Option.16) is called
+2023-02-23 17:12:01.189 [D] ?::?::Finding target in YMC_16UP_LeftBottom.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:12:01.231 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:12:01.232 [T] ?::?::Expand
+2023-02-23 17:12:01.261 [D] ?::?::Finding target in Pages per Sheet
+2023-02-23 17:12:01.443 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:12:01.445 [T] ?::?::Collapse
+2023-02-23 17:12:01.464 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:01.466 [T] ?::?::Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom) is called
+2023-02-23 17:12:01.467 [D] ?::?::Finding target in YMC_16UP_LeftBottom.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:12:01.515 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:12:01.515 [T] ?::?::Expand
+2023-02-23 17:12:01.540 [D] ?::?::Finding target in 
+2023-02-23 17:12:01.632 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:12:01.633 [T] ?::?::Collapse
+2023-02-23 17:12:01.657 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:01.659 [T] ?::?::Windows.Capture Screen Shot(Capture.jpg) is called
+2023-02-23 17:12:01.725 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:01.727 [T] ?::?::Sleep(5) is called
+2023-02-23 17:12:06.758 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:06.759 [T] ?::?::Hallasan.Confirm is called
+2023-02-23 17:12:06.760 [D] ?::?::Finding target in YMC_16UP_LeftBottom.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:12:06.939 [T] ?::?::Selected element name : OK
+2023-02-23 17:12:06.940 [T] ?::?::Invoke Pattern
+2023-02-23 17:12:06.955 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:06.956 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:12:06.957 [T] ?::?::Sleep(5) is called
+2023-02-23 17:12:11.967 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:11.983 [T] ?::?::Click_Print_Button.Print is called
+2023-02-23 17:12:11.999 [T] ?::?::Hallasan.Click Print Button is called
+2023-02-23 17:12:14.002 [D] ?::?::Finding target in YMC_16UP_LeftBottom.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:12:14.049 [T] ?::?::Invoke Pattern
+2023-02-23 17:12:14.065 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:14.065 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:12:14.065 [T] ?::?::Sleep(20) is called
+2023-02-23 17:12:34.122 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:34.125 [T] ?::?::If :  Hallasan.Close Application is called
+2023-02-23 17:12:34.139 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:34.142 [T] ?::?::Sleep(20) is called
+2023-02-23 17:12:54.158 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:54.170 [T] ?::?::Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton) is called
+2023-02-23 17:12:54.171 [D] ?::?::Missing target. Get focused
+2023-02-23 17:12:54.174 [D] ?::?::Finding target in 
+2023-02-23 17:12:54.176 [D] ?::?::Finding target in 
+2023-02-23 17:12:54.184 [T] ?::?::Selected element name : Print
+2023-02-23 17:12:54.185 [T] ?::?::Invoke Pattern
+2023-02-23 17:12:54.202 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:54.205 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:12:54.205 [T] ?::?::Destination_Selection_Application.PT Value_16UP_LeftBottom is called
+2023-02-23 17:12:54.221 [T] ?::?::XML.Load From File (C:\temp\H_JobSetup_OutPT.xml) is called
+2023-02-23 17:12:54.242 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:54.246 [T] ?::?::XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value) is called
+2023-02-23 17:12:54.260 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:54.263 [T] ?::?::Equals (${value},4) is called
+2023-02-23 17:12:54.277 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:54.279 [T] ?::?::XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name) is called
+2023-02-23 17:12:54.292 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:54.294 [T] ?::?::Equals (${value},psk:RightBottom) is called
+2023-02-23 17:12:54.308 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:54.310 [T] ?::?::XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name) is called
+2023-02-23 17:12:54.324 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:54.328 [T] ?::?::Equals (${value},ns0000:OptIn) is called
+2023-02-23 17:12:54.342 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:54.344 [T] ?::?::Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5) is called
+2023-02-23 17:12:54.395 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:12:54.417 [T] ?::?::Loop : 1
+2023-02-23 17:12:54.419 [T] ?::?::Destination_Selection_Application.Destination Selection_16UP_BottomLeft is called
+2023-02-23 17:12:54.435 [T] ?::?::Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_BottomLeft.pdf,HP Smart Printing) is called
+2023-02-23 17:12:54.436 [T] ?::?::Open Acrobat Reader
+2023-02-23 17:12:54.462 [T] ?::?::Process is started with C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_BottomLeft.pdf and Process Id is 25536
+2023-02-23 17:13:04.466 [T] ?::?::Current focused process id : 18868
+2023-02-23 17:13:04.466 [D] ?::?::Finding target in 
+2023-02-23 17:13:04.513 [T] ?::?::Get Acrobat Reader
+2023-02-23 17:13:04.513 [D] ?::?::Finding target in 
+2023-02-23 17:13:06.610 [D] ?::?::Get Print Dialog
+2023-02-23 17:13:11.627 [D] ?::?::Finding target in YMC_16UP_BottomLeft.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:13:11.627 [D] ?::?::Select printer combobox
+2023-02-23 17:13:11.641 [D] ?::?::Finding target in 
+2023-02-23 17:13:11.641 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:13:11.641 [T] ?::?::Expand
+2023-02-23 17:13:11.830 [D] ?::?::Printer select
+2023-02-23 17:13:11.830 [D] ?::?::Finding target in Printer:
+2023-02-23 17:13:11.830 [T] ?::?::Select Pattern
+2023-02-23 17:13:14.874 [D] ?::?::Finding printer properties
+2023-02-23 17:13:14.874 [D] ?::?::Finding target in 
+2023-02-23 17:13:14.874 [D] ?::?::Properties element is null? : False
+2023-02-23 17:13:14.874 [T] ?::?::Invoke Pattern
+2023-02-23 17:13:14.906 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:13:24.933 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:13:24.936 [T] ?::?::Windows.Wait For Name (HP Smart Printing,30) is called
+2023-02-23 17:13:24.937 [D] ?::?::Finding target in YMC_16UP_BottomLeft.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:13:24.951 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:13:24.954 [T] ?::?::Sleep(6) is called
+2023-02-23 17:13:30.976 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:13:30.990 [T] ?::?::Used_Destination_Selection_Function.not Used Destination Selection Function is called
+2023-02-23 17:13:31.016 [T] ?::?::Hallasan.Set Combobox (Part.DocumentNUp,Option.16) is called
+2023-02-23 17:13:31.016 [D] ?::?::Finding target in YMC_16UP_BottomLeft.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:13:31.060 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:13:31.061 [T] ?::?::Expand
+2023-02-23 17:13:31.096 [D] ?::?::Finding target in Pages per Sheet
+2023-02-23 17:13:31.245 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:13:31.247 [T] ?::?::Collapse
+2023-02-23 17:13:31.268 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:13:31.269 [T] ?::?::Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomLeft) is called
+2023-02-23 17:13:31.269 [D] ?::?::Finding target in YMC_16UP_BottomLeft.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:13:31.317 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:13:31.320 [T] ?::?::Expand
+2023-02-23 17:13:31.373 [D] ?::?::Finding target in 
+2023-02-23 17:13:31.465 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:13:31.467 [T] ?::?::Collapse
+2023-02-23 17:13:31.491 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:13:31.493 [T] ?::?::Windows.Capture Screen Shot(Capture.jpg) is called
+2023-02-23 17:13:31.563 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:13:31.565 [T] ?::?::Sleep(5) is called
+2023-02-23 17:13:36.580 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:13:36.583 [T] ?::?::Hallasan.Confirm is called
+2023-02-23 17:13:36.583 [D] ?::?::Finding target in YMC_16UP_BottomLeft.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:13:36.765 [T] ?::?::Selected element name : OK
+2023-02-23 17:13:36.766 [T] ?::?::Invoke Pattern
+2023-02-23 17:13:36.780 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:13:36.780 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:13:36.782 [T] ?::?::Sleep(5) is called
+2023-02-23 17:13:41.798 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:13:41.798 [T] ?::?::Click_Print_Button.Print is called
+2023-02-23 17:13:41.814 [T] ?::?::Hallasan.Click Print Button is called
+2023-02-23 17:13:43.842 [D] ?::?::Finding target in YMC_16UP_BottomLeft.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:13:43.904 [T] ?::?::Invoke Pattern
+2023-02-23 17:13:43.936 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:13:43.936 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:13:43.951 [T] ?::?::Sleep(20) is called
+2023-02-23 17:14:03.976 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:14:03.979 [T] ?::?::If :  Hallasan.Close Application is called
+2023-02-23 17:14:03.994 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:14:03.997 [T] ?::?::Sleep(20) is called
+2023-02-23 17:14:24.025 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:14:24.037 [T] ?::?::Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton) is called
+2023-02-23 17:14:24.038 [D] ?::?::Missing target. Get focused
+2023-02-23 17:14:24.040 [D] ?::?::Finding target in 
+2023-02-23 17:14:24.043 [D] ?::?::Finding target in 
+2023-02-23 17:14:24.052 [T] ?::?::Selected element name : Print
+2023-02-23 17:14:24.053 [T] ?::?::Invoke Pattern
+2023-02-23 17:14:24.071 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:14:24.073 [T] ?::?::Destination_Selection_Application.PT Value_16UP_BottomLeft is called
+2023-02-23 17:14:24.076 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:14:24.089 [T] ?::?::XML.Load From File (C:\temp\H_JobSetup_OutPT.xml) is called
+2023-02-23 17:14:24.103 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:14:24.105 [T] ?::?::XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value) is called
+2023-02-23 17:14:24.127 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:14:24.129 [T] ?::?::Equals (${value},4) is called
+2023-02-23 17:14:24.146 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:14:24.148 [T] ?::?::XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name) is called
+2023-02-23 17:14:24.164 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:14:24.166 [T] ?::?::Equals (${value},psk:RightBottom) is called
+2023-02-23 17:14:24.180 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:14:24.182 [T] ?::?::XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name) is called
+2023-02-23 17:14:24.196 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:14:24.198 [T] ?::?::Equals (${value},ns0000:OptOut) is called
+2023-02-23 17:14:24.213 [T] ?::?::Keyword executed with result = Fail
+2023-02-23 17:14:24.215 [T] ?::?::XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name) is called
+2023-02-23 17:14:24.230 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:14:24.236 [T] ?::?::Equals (${value},ns0000:OptIn) is called
+2023-02-23 17:14:24.251 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:14:24.253 [T] ?::?::Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5) is called
+2023-02-23 17:14:24.305 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:14:24.327 [T] ?::?::Loop : 1
+2023-02-23 17:14:24.330 [T] ?::?::Destination_Selection_Application.Destination Selection_16UP_RightBottom_Boder is called
+2023-02-23 17:14:24.348 [T] ?::?::Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_RightBottom_Boder.pdf,HP Smart Printing) is called
+2023-02-23 17:14:24.349 [T] ?::?::Open Acrobat Reader
+2023-02-23 17:14:24.373 [T] ?::?::Process is started with C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_RightBottom_Boder.pdf and Process Id is 24076
+2023-02-23 17:14:34.381 [T] ?::?::Current focused process id : 25432
+2023-02-23 17:14:34.381 [D] ?::?::Finding target in 
+2023-02-23 17:14:34.428 [T] ?::?::Get Acrobat Reader
+2023-02-23 17:14:34.428 [D] ?::?::Finding target in 
+2023-02-23 17:14:36.544 [D] ?::?::Get Print Dialog
+2023-02-23 17:14:41.550 [D] ?::?::Finding target in YMC_16UP_RightBottom_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:14:41.550 [D] ?::?::Select printer combobox
+2023-02-23 17:14:41.550 [D] ?::?::Finding target in 
+2023-02-23 17:14:41.550 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:14:41.550 [T] ?::?::Expand
+2023-02-23 17:14:41.739 [D] ?::?::Printer select
+2023-02-23 17:14:41.739 [D] ?::?::Finding target in Printer:
+2023-02-23 17:14:41.739 [T] ?::?::Select Pattern
+2023-02-23 17:14:44.789 [D] ?::?::Finding printer properties
+2023-02-23 17:14:44.789 [D] ?::?::Finding target in 
+2023-02-23 17:14:44.790 [D] ?::?::Properties element is null? : False
+2023-02-23 17:14:44.790 [T] ?::?::Invoke Pattern
+2023-02-23 17:14:44.820 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:14:54.854 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:14:54.858 [T] ?::?::Windows.Wait For Name (HP Smart Printing,30) is called
+2023-02-23 17:14:54.859 [D] ?::?::Finding target in YMC_16UP_RightBottom_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:14:54.873 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:14:54.876 [T] ?::?::Sleep(6) is called
+2023-02-23 17:15:00.892 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:00.905 [T] ?::?::Used_Destination_Selection_Function.not Used Destination Selection Function is called
+2023-02-23 17:15:00.932 [T] ?::?::Hallasan.Set Combobox (Part.DocumentNUp,Option.16) is called
+2023-02-23 17:15:00.933 [D] ?::?::Finding target in YMC_16UP_RightBottom_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:15:00.975 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:15:00.975 [T] ?::?::Expand
+2023-02-23 17:15:01.021 [D] ?::?::Finding target in Pages per Sheet
+2023-02-23 17:15:01.162 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:15:01.163 [T] ?::?::Collapse
+2023-02-23 17:15:01.185 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:01.187 [T] ?::?::Hallasan.Set Combobox (Part.PresentationDirection,Option.RightBottom) is called
+2023-02-23 17:15:01.187 [D] ?::?::Finding target in YMC_16UP_RightBottom_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:15:01.236 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:15:01.237 [T] ?::?::Expand
+2023-02-23 17:15:01.269 [D] ?::?::Finding target in 
+2023-02-23 17:15:01.279 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:15:01.280 [T] ?::?::Collapse
+2023-02-23 17:15:01.309 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:01.311 [T] ?::?::Hallasan.Set Toggle(Part.NUpBorders,On) is called
+2023-02-23 17:15:01.311 [D] ?::?::Finding target in YMC_16UP_RightBottom_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:15:01.368 [T] ?::?::Current Toggle State : Off
+2023-02-23 17:15:01.426 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:01.427 [T] ?::?::Windows.Capture Screen Shot(Capture.jpg) is called
+2023-02-23 17:15:01.505 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:01.507 [T] ?::?::Sleep(5) is called
+2023-02-23 17:15:06.524 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:06.526 [T] ?::?::Hallasan.Confirm is called
+2023-02-23 17:15:06.527 [D] ?::?::Finding target in YMC_16UP_RightBottom_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:15:06.708 [T] ?::?::Selected element name : OK
+2023-02-23 17:15:06.709 [T] ?::?::Invoke Pattern
+2023-02-23 17:15:06.715 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:15:06.723 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:06.725 [T] ?::?::Sleep(5) is called
+2023-02-23 17:15:11.731 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:11.731 [T] ?::?::Click_Print_Button.Print is called
+2023-02-23 17:15:11.747 [T] ?::?::Hallasan.Click Print Button is called
+2023-02-23 17:15:13.769 [D] ?::?::Finding target in YMC_16UP_RightBottom_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:15:13.816 [T] ?::?::Invoke Pattern
+2023-02-23 17:15:13.835 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:13.835 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:15:13.847 [T] ?::?::Sleep(20) is called
+2023-02-23 17:15:33.868 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:33.870 [T] ?::?::If :  Hallasan.Close Application is called
+2023-02-23 17:15:33.885 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:33.887 [T] ?::?::Sleep(20) is called
+2023-02-23 17:15:53.909 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:53.920 [T] ?::?::Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton) is called
+2023-02-23 17:15:53.921 [D] ?::?::Missing target. Get focused
+2023-02-23 17:15:53.923 [D] ?::?::Finding target in 
+2023-02-23 17:15:53.925 [D] ?::?::Finding target in 
+2023-02-23 17:15:53.934 [T] ?::?::Selected element name : Print
+2023-02-23 17:15:53.935 [T] ?::?::Invoke Pattern
+2023-02-23 17:15:53.952 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:15:53.953 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:53.955 [T] ?::?::Destination_Selection_Application.PT Value_16UP_RightBottom_Boder is called
+2023-02-23 17:15:53.971 [T] ?::?::XML.Load From File (C:\temp\H_JobSetup_OutPT.xml) is called
+2023-02-23 17:15:53.986 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:53.988 [T] ?::?::XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value) is called
+2023-02-23 17:15:54.009 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:54.012 [T] ?::?::Equals (${value},4) is called
+2023-02-23 17:15:54.027 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:54.029 [T] ?::?::XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name) is called
+2023-02-23 17:15:54.043 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:54.045 [T] ?::?::Equals (${value},psk:RightBottom) is called
+2023-02-23 17:15:54.059 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:54.063 [T] ?::?::XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name) is called
+2023-02-23 17:15:54.077 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:54.079 [T] ?::?::Equals (${value},ns0000:On) is called
+2023-02-23 17:15:54.095 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:54.097 [T] ?::?::XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name) is called
+2023-02-23 17:15:54.112 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:54.114 [T] ?::?::Equals (${value},ns0000:OptIn) is called
+2023-02-23 17:15:54.129 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:54.131 [T] ?::?::Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5) is called
+2023-02-23 17:15:54.176 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:15:54.203 [T] ?::?::Loop : 1
+2023-02-23 17:15:54.205 [T] ?::?::Destination_Selection_Application.Destination Selection_16UP_BottomRight_Boder is called
+2023-02-23 17:15:54.221 [T] ?::?::Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_BottomRight_Boder.pdf,HP Smart Printing) is called
+2023-02-23 17:15:54.222 [T] ?::?::Open Acrobat Reader
+2023-02-23 17:15:54.246 [T] ?::?::Process is started with C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_BottomRight_Boder.pdf and Process Id is 16044
+2023-02-23 17:16:04.252 [T] ?::?::Current focused process id : 16368
+2023-02-23 17:16:04.252 [D] ?::?::Finding target in 
+2023-02-23 17:16:04.268 [T] ?::?::Get Acrobat Reader
+2023-02-23 17:16:04.283 [D] ?::?::Finding target in 
+2023-02-23 17:16:06.376 [D] ?::?::Get Print Dialog
+2023-02-23 17:16:11.385 [D] ?::?::Finding target in 1 - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:16:11.385 [D] ?::?::Select printer combobox
+2023-02-23 17:16:11.385 [D] ?::?::Finding target in 
+2023-02-23 17:16:11.385 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:16:11.385 [T] ?::?::Expand
+2023-02-23 17:16:11.543 [D] ?::?::Printer select
+2023-02-23 17:16:11.543 [D] ?::?::Finding target in Printer:
+2023-02-23 17:16:11.559 [T] ?::?::Select Pattern
+2023-02-23 17:16:14.594 [D] ?::?::Finding printer properties
+2023-02-23 17:16:14.596 [D] ?::?::Finding target in 
+2023-02-23 17:16:14.600 [D] ?::?::Properties element is null? : False
+2023-02-23 17:16:14.601 [T] ?::?::Invoke Pattern
+2023-02-23 17:16:14.633 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:16:24.652 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:16:24.655 [T] ?::?::Windows.Wait For Name (HP Smart Printing,30) is called
+2023-02-23 17:16:24.655 [D] ?::?::Finding target in 1 - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:16:24.671 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:16:24.673 [T] ?::?::Sleep(6) is called
+2023-02-23 17:16:30.689 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:16:30.701 [T] ?::?::Used_Destination_Selection_Function.not Used Destination Selection Function is called
+2023-02-23 17:16:30.727 [T] ?::?::Hallasan.Set Combobox (Part.DocumentNUp,Option.16) is called
+2023-02-23 17:16:30.728 [D] ?::?::Finding target in 1 - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:16:30.766 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:16:30.767 [T] ?::?::Expand
+2023-02-23 17:16:30.814 [D] ?::?::Finding target in Pages per Sheet
+2023-02-23 17:16:30.974 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:16:30.975 [T] ?::?::Collapse
+2023-02-23 17:16:30.998 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:16:31.000 [T] ?::?::Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomRight) is called
+2023-02-23 17:16:31.000 [D] ?::?::Finding target in 1 - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:16:31.053 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:16:31.054 [T] ?::?::Expand
+2023-02-23 17:16:31.093 [D] ?::?::Finding target in 
+2023-02-23 17:16:31.180 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:16:31.181 [T] ?::?::Collapse
+2023-02-23 17:16:31.210 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:16:31.212 [T] ?::?::Hallasan.Set Toggle(Part.NUpBorders,On) is called
+2023-02-23 17:16:31.212 [D] ?::?::Finding target in 1 - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:16:31.267 [T] ?::?::Current Toggle State : Off
+2023-02-23 17:16:31.327 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:16:31.329 [T] ?::?::Windows.Capture Screen Shot(Capture.jpg) is called
+2023-02-23 17:16:31.392 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:16:31.394 [T] ?::?::Sleep(5) is called
+2023-02-23 17:16:36.412 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:16:36.414 [T] ?::?::Hallasan.Confirm is called
+2023-02-23 17:16:36.414 [D] ?::?::Finding target in 1 - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:16:36.597 [T] ?::?::Selected element name : OK
+2023-02-23 17:16:36.597 [T] ?::?::Invoke Pattern
+2023-02-23 17:16:36.603 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:16:36.612 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:16:36.614 [T] ?::?::Sleep(5) is called
+2023-02-23 17:16:41.618 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:16:41.618 [T] ?::?::Click_Print_Button.Print is called
+2023-02-23 17:16:41.634 [T] ?::?::Hallasan.Click Print Button is called
+2023-02-23 17:16:43.655 [D] ?::?::Finding target in 1 - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:16:43.702 [T] ?::?::Invoke Pattern
+2023-02-23 17:16:43.718 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:16:43.718 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:16:43.733 [T] ?::?::Sleep(20) is called
+2023-02-23 17:17:03.759 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:17:03.761 [T] ?::?::If :  Hallasan.Close Application is called
+2023-02-23 17:17:03.776 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:17:03.779 [T] ?::?::Sleep(20) is called
+2023-02-23 17:17:23.808 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:17:23.818 [T] ?::?::Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton) is called
+2023-02-23 17:17:23.819 [D] ?::?::Missing target. Get focused
+2023-02-23 17:17:23.822 [D] ?::?::Finding target in 
+2023-02-23 17:17:23.825 [D] ?::?::Finding target in 
+2023-02-23 17:17:23.834 [T] ?::?::Selected element name : Print
+2023-02-23 17:17:23.835 [T] ?::?::Invoke Pattern
+2023-02-23 17:17:23.851 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:17:23.854 [T] ?::?::Destination_Selection_Application.PT Value_16UP_BottomRight_Boder is called
+2023-02-23 17:17:23.858 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:17:23.870 [T] ?::?::XML.Load From File (C:\temp\H_JobSetup_OutPT.xml) is called
+2023-02-23 17:17:23.884 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:17:23.886 [T] ?::?::XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value) is called
+2023-02-23 17:17:23.900 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:17:23.907 [T] ?::?::Equals (${value},4) is called
+2023-02-23 17:17:23.925 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:17:23.928 [T] ?::?::XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name) is called
+2023-02-23 17:17:23.946 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:17:23.948 [T] ?::?::Equals (${value},psk:RightBottom) is called
+2023-02-23 17:17:23.962 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:17:23.964 [T] ?::?::XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name) is called
+2023-02-23 17:17:23.979 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:17:23.981 [T] ?::?::Equals (${value},ns0000:On) is called
+2023-02-23 17:17:23.994 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:17:23.996 [T] ?::?::XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name) is called
+2023-02-23 17:17:24.011 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:17:24.013 [T] ?::?::Equals (${value},ns0000:OptIn) is called
+2023-02-23 17:17:24.028 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:17:24.030 [T] ?::?::Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5) is called
+2023-02-23 17:17:24.074 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:17:24.096 [T] ?::?::Loop : 1
+2023-02-23 17:17:24.098 [T] ?::?::Destination_Selection_Application.Destination Selection_16UP_LeftBottom_Boder is called
+2023-02-23 17:17:24.115 [T] ?::?::Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_LeftBottom_Boder.pdf,HP Smart Printing) is called
+2023-02-23 17:17:24.116 [T] ?::?::Open Acrobat Reader
+2023-02-23 17:17:24.141 [T] ?::?::Process is started with C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_LeftBottom_Boder.pdf and Process Id is 26468
+2023-02-23 17:17:34.149 [T] ?::?::Current focused process id : 26524
+2023-02-23 17:17:34.149 [D] ?::?::Finding target in 
+2023-02-23 17:17:34.180 [T] ?::?::Get Acrobat Reader
+2023-02-23 17:17:34.180 [D] ?::?::Finding target in 
+2023-02-23 17:17:36.273 [D] ?::?::Get Print Dialog
+2023-02-23 17:17:41.281 [D] ?::?::Finding target in YMC_16UP_LeftBottom_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:17:41.297 [D] ?::?::Select printer combobox
+2023-02-23 17:17:41.297 [D] ?::?::Finding target in 
+2023-02-23 17:17:41.297 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:17:41.297 [T] ?::?::Expand
+2023-02-23 17:17:41.485 [D] ?::?::Printer select
+2023-02-23 17:17:41.485 [D] ?::?::Finding target in Printer:
+2023-02-23 17:17:41.501 [T] ?::?::Select Pattern
+2023-02-23 17:17:44.532 [D] ?::?::Finding printer properties
+2023-02-23 17:17:44.532 [D] ?::?::Finding target in 
+2023-02-23 17:17:44.532 [D] ?::?::Properties element is null? : False
+2023-02-23 17:17:44.532 [T] ?::?::Invoke Pattern
+2023-02-23 17:17:44.563 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:17:54.582 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:17:54.585 [T] ?::?::Windows.Wait For Name (HP Smart Printing,30) is called
+2023-02-23 17:17:54.586 [D] ?::?::Finding target in YMC_16UP_LeftBottom_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:17:54.601 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:17:54.603 [T] ?::?::Sleep(6) is called
+2023-02-23 17:18:00.633 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:00.648 [T] ?::?::Used_Destination_Selection_Function.not Used Destination Selection Function is called
+2023-02-23 17:18:00.674 [T] ?::?::Hallasan.Set Combobox (Part.DocumentNUp,Option.16) is called
+2023-02-23 17:18:00.675 [D] ?::?::Finding target in YMC_16UP_LeftBottom_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:18:00.717 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:18:00.718 [T] ?::?::Expand
+2023-02-23 17:18:00.748 [D] ?::?::Finding target in Pages per Sheet
+2023-02-23 17:18:00.868 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:18:00.870 [T] ?::?::Collapse
+2023-02-23 17:18:00.889 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:00.891 [T] ?::?::Hallasan.Set Combobox (Part.PresentationDirection,Option.LeftBottom) is called
+2023-02-23 17:18:00.891 [D] ?::?::Finding target in YMC_16UP_LeftBottom_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:18:00.940 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:18:00.941 [T] ?::?::Expand
+2023-02-23 17:18:00.983 [D] ?::?::Finding target in 
+2023-02-23 17:18:01.076 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:18:01.077 [T] ?::?::Collapse
+2023-02-23 17:18:01.105 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:01.106 [T] ?::?::Hallasan.Set Toggle(Part.NUpBorders,On) is called
+2023-02-23 17:18:01.107 [D] ?::?::Finding target in YMC_16UP_LeftBottom_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:18:01.172 [T] ?::?::Current Toggle State : Off
+2023-02-23 17:18:01.231 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:01.232 [T] ?::?::Windows.Capture Screen Shot(Capture.jpg) is called
+2023-02-23 17:18:01.301 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:01.303 [T] ?::?::Sleep(5) is called
+2023-02-23 17:18:06.329 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:06.332 [T] ?::?::Hallasan.Confirm is called
+2023-02-23 17:18:06.332 [D] ?::?::Finding target in YMC_16UP_LeftBottom_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:18:06.510 [T] ?::?::Selected element name : OK
+2023-02-23 17:18:06.510 [T] ?::?::Invoke Pattern
+2023-02-23 17:18:06.516 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:18:06.525 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:06.527 [T] ?::?::Sleep(5) is called
+2023-02-23 17:18:11.540 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:11.556 [T] ?::?::Click_Print_Button.Print is called
+2023-02-23 17:18:11.571 [T] ?::?::Hallasan.Click Print Button is called
+2023-02-23 17:18:13.579 [D] ?::?::Finding target in YMC_16UP_LeftBottom_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:18:13.626 [T] ?::?::Invoke Pattern
+2023-02-23 17:18:13.642 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:18:13.658 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:13.658 [T] ?::?::Sleep(20) is called
+2023-02-23 17:18:33.698 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:33.700 [T] ?::?::If :  Hallasan.Close Application is called
+2023-02-23 17:18:33.714 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:33.717 [T] ?::?::Sleep(20) is called
+2023-02-23 17:18:53.761 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:53.773 [T] ?::?::Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton) is called
+2023-02-23 17:18:53.774 [D] ?::?::Missing target. Get focused
+2023-02-23 17:18:53.777 [D] ?::?::Finding target in 
+2023-02-23 17:18:53.779 [D] ?::?::Finding target in 
+2023-02-23 17:18:53.788 [T] ?::?::Selected element name : Print
+2023-02-23 17:18:53.789 [T] ?::?::Invoke Pattern
+2023-02-23 17:18:53.807 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:53.808 [T] ?::?::Destination_Selection_Application.PT Value_16UP_LeftBottom_Boder is called
+2023-02-23 17:18:53.814 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:18:53.823 [T] ?::?::XML.Load From File (C:\temp\H_JobSetup_OutPT.xml) is called
+2023-02-23 17:18:53.837 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:53.839 [T] ?::?::XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value) is called
+2023-02-23 17:18:53.862 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:53.864 [T] ?::?::Equals (${value},4) is called
+2023-02-23 17:18:53.880 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:53.883 [T] ?::?::XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name) is called
+2023-02-23 17:18:53.897 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:53.899 [T] ?::?::Equals (${value},psk:RightBottom) is called
+2023-02-23 17:18:53.913 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:53.915 [T] ?::?::XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name) is called
+2023-02-23 17:18:53.929 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:53.931 [T] ?::?::Equals (${value},ns0000:On) is called
+2023-02-23 17:18:53.945 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:53.948 [T] ?::?::XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name) is called
+2023-02-23 17:18:53.963 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:53.967 [T] ?::?::Equals (${value},ns0000:OptIn) is called
+2023-02-23 17:18:53.982 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:53.984 [T] ?::?::Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5) is called
+2023-02-23 17:18:54.026 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:18:54.048 [T] ?::?::Loop : 1
+2023-02-23 17:18:54.050 [T] ?::?::Destination_Selection_Application.Destination Selection_16UP_BottomLeft_Boder is called
+2023-02-23 17:18:54.066 [T] ?::?::Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_BottomLeft_Boder.pdf,HP Smart Printing) is called
+2023-02-23 17:18:54.066 [T] ?::?::Open Acrobat Reader
+2023-02-23 17:18:54.091 [T] ?::?::Process is started with C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_16UP_BottomLeft_Boder.pdf and Process Id is 26376
+2023-02-23 17:19:04.094 [T] ?::?::Current focused process id : 26184
+2023-02-23 17:19:04.094 [D] ?::?::Finding target in 
+2023-02-23 17:19:04.110 [T] ?::?::Get Acrobat Reader
+2023-02-23 17:19:04.110 [D] ?::?::Finding target in 
+2023-02-23 17:19:06.219 [D] ?::?::Get Print Dialog
+2023-02-23 17:19:11.226 [D] ?::?::Finding target in YMC_16UP_BottomLeft_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:19:11.226 [D] ?::?::Select printer combobox
+2023-02-23 17:19:11.226 [D] ?::?::Finding target in 
+2023-02-23 17:19:11.226 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:19:11.226 [T] ?::?::Expand
+2023-02-23 17:19:11.398 [D] ?::?::Printer select
+2023-02-23 17:19:11.398 [D] ?::?::Finding target in Printer:
+2023-02-23 17:19:11.398 [T] ?::?::Select Pattern
+2023-02-23 17:19:14.451 [D] ?::?::Finding printer properties
+2023-02-23 17:19:14.453 [D] ?::?::Finding target in 
+2023-02-23 17:19:14.467 [D] ?::?::Properties element is null? : False
+2023-02-23 17:19:14.467 [T] ?::?::Invoke Pattern
+2023-02-23 17:19:14.498 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:19:24.512 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:19:24.513 [T] ?::?::Windows.Wait For Name (HP Smart Printing,30) is called
+2023-02-23 17:19:24.514 [D] ?::?::Finding target in YMC_16UP_BottomLeft_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:19:24.530 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:19:24.532 [T] ?::?::Sleep(6) is called
+2023-02-23 17:19:30.563 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:19:30.577 [T] ?::?::Used_Destination_Selection_Function.not Used Destination Selection Function is called
+2023-02-23 17:19:30.603 [T] ?::?::Hallasan.Set Combobox (Part.DocumentNUp,Option.16) is called
+2023-02-23 17:19:30.604 [D] ?::?::Finding target in YMC_16UP_BottomLeft_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:19:30.646 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:19:30.647 [T] ?::?::Expand
+2023-02-23 17:19:30.674 [D] ?::?::Finding target in Pages per Sheet
+2023-02-23 17:19:30.793 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:19:30.795 [T] ?::?::Collapse
+2023-02-23 17:19:30.818 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:19:30.819 [T] ?::?::Hallasan.Set Combobox (Part.PresentationDirection,Option.BottomLeft) is called
+2023-02-23 17:19:30.819 [D] ?::?::Finding target in YMC_16UP_BottomLeft_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:19:30.870 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:19:30.870 [T] ?::?::Expand
+2023-02-23 17:19:30.905 [D] ?::?::Finding target in 
+2023-02-23 17:19:30.997 [T] ?::?::Expand/Collapse Pattern
+2023-02-23 17:19:30.999 [T] ?::?::Collapse
+2023-02-23 17:19:31.023 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:19:31.025 [T] ?::?::Hallasan.Set Toggle(Part.NUpBorders,On) is called
+2023-02-23 17:19:31.025 [D] ?::?::Finding target in YMC_16UP_BottomLeft_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:19:31.088 [T] ?::?::Current Toggle State : Off
+2023-02-23 17:19:31.147 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:19:31.149 [T] ?::?::Windows.Capture Screen Shot(Capture.jpg) is called
+2023-02-23 17:19:31.226 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:19:31.228 [T] ?::?::Sleep(5) is called
+2023-02-23 17:19:36.251 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:19:36.254 [T] ?::?::Hallasan.Confirm is called
+2023-02-23 17:19:36.255 [D] ?::?::Finding target in YMC_16UP_BottomLeft_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:19:36.479 [T] ?::?::Selected element name : OK
+2023-02-23 17:19:36.480 [T] ?::?::Invoke Pattern
+2023-02-23 17:19:36.485 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:19:36.498 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:19:36.500 [T] ?::?::Sleep(5) is called
+2023-02-23 17:19:41.521 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:19:41.521 [T] ?::?::Click_Print_Button.Print is called
+2023-02-23 17:19:41.536 [T] ?::?::Hallasan.Click Print Button is called
+2023-02-23 17:19:43.545 [D] ?::?::Finding target in YMC_16UP_BottomLeft_Boder.pdf - Adobe Acrobat Reader (64-bit)
+2023-02-23 17:19:43.592 [T] ?::?::Invoke Pattern
+2023-02-23 17:19:43.608 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:19:43.608 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:19:43.624 [T] ?::?::Sleep(20) is called
+2023-02-23 17:20:03.650 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:20:03.653 [T] ?::?::If :  Hallasan.Close Application is called
+2023-02-23 17:20:03.667 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:20:03.671 [T] ?::?::Sleep(20) is called
+2023-02-23 17:20:23.701 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:20:23.714 [T] ?::?::Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton) is called
+2023-02-23 17:20:23.715 [D] ?::?::Missing target. Get focused
+2023-02-23 17:20:23.719 [D] ?::?::Finding target in 
+2023-02-23 17:20:23.721 [D] ?::?::Finding target in 
+2023-02-23 17:20:23.730 [T] ?::?::Selected element name : Print
+2023-02-23 17:20:23.731 [T] ?::?::Invoke Pattern
+2023-02-23 17:20:23.749 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:20:23.750 [D] ?::?::UI Automation Event : InvokePatternIdentifiers.InvokedEvent
+2023-02-23 17:20:23.751 [T] ?::?::Destination_Selection_Application.PT Value_16UP_BottomLeft_Boder is called
+2023-02-23 17:20:23.766 [T] ?::?::XML.Load From File (C:\temp\H_JobSetup_OutPT.xml) is called
+2023-02-23 17:20:23.781 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:20:23.783 [T] ?::?::XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value) is called
+2023-02-23 17:20:23.797 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:20:23.806 [T] ?::?::Equals (${value},4) is called
+2023-02-23 17:20:23.822 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:20:23.824 [T] ?::?::XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name) is called
+2023-02-23 17:20:23.840 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:20:23.842 [T] ?::?::Equals (${value},psk:RightBottom) is called
+2023-02-23 17:20:23.855 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:20:23.857 [T] ?::?::XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name) is called
+2023-02-23 17:20:23.872 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:20:23.874 [T] ?::?::Equals (${value},ns0000:On) is called
+2023-02-23 17:20:23.888 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:20:23.890 [T] ?::?::XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name) is called
+2023-02-23 17:20:23.905 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:20:23.906 [T] ?::?::Equals (${value},ns0000:OptIn) is called
+2023-02-23 17:20:23.921 [T] ?::?::Keyword executed with result = Pass
+2023-02-23 17:20:23.923 [T] ?::?::Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5) is called
+2023-02-23 17:20:23.966 [T] ?::?::Keyword executed with result = Pass

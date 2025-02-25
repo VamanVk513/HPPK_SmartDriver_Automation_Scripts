@@ -1,0 +1,58 @@
+2021-09-22 15:26:50.470 [T] ?::?::Parsing start
+2021-09-22 15:26:50.470 [T] ?::?::Parsing Variable File : C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Testfile.gfvar
+2021-09-22 15:26:50.470 [T] ?::?::Creating custom library with C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Destination_Selection_Application.gflib
+2021-09-22 15:26:50.470 [T] ?::?::Parsing start
+2021-09-22 15:26:50.524 [T] ?::?::Parsing Variable File : C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Testfile.gfvar
+2021-09-22 15:26:50.526 [D] ?::?::Post Action
+2021-09-22 15:26:50.526 [T] ?::?::All Used Libraries::C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Destination_Selection_Application.gflib
+2021-09-22 15:26:50.559 [T] ?::?::Device ID : __NO__DUT__
+2021-09-22 15:26:50.559 [T] ?::?::BuiltIn is used BuiltIn
+2021-09-22 15:26:50.559 [T] ?::?::Windows is used Windows
+2021-09-22 15:26:50.559 [T] ?::?::XML is used XML
+2021-09-22 15:26:50.559 [T] ?::?::Device ID : __DEFUALT__DUT__
+2021-09-22 15:26:50.559 [T] ?::?::Hallasan is used Hallasan
+2021-09-22 15:27:09.028 [T] ?::?::Parsing done
+2021-09-22 15:27:09.029 [T] ?::?::Destination_Selection_Application is crated
+2021-09-22 15:27:09.029 [T] ?::?::Creating custom library with C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Click_Print_Button.gflib
+2021-09-22 15:27:09.029 [T] ?::?::Parsing start
+2021-09-22 15:27:09.030 [T] ?::?::Parsing Variable File : C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Testfile.gfvar
+2021-09-22 15:27:09.031 [D] ?::?::Post Action
+2021-09-22 15:27:09.031 [T] ?::?::All Used Libraries::C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Click_Print_Button.gflib
+2021-09-22 15:27:09.032 [T] ?::?::Device ID : __NO__DUT__
+2021-09-22 15:27:09.032 [T] ?::?::BuiltIn is used BuiltIn
+2021-09-22 15:27:09.032 [T] ?::?::Windows is used Windows
+2021-09-22 15:27:09.032 [T] ?::?::Device ID : __DEFUALT__DUT__
+2021-09-22 15:27:09.032 [T] ?::?::Hallasan is used Hallasan
+2021-09-22 15:27:09.032 [T] ?::?::Parsing done
+2021-09-22 15:27:09.033 [T] ?::?::Click_Print_Button is crated
+2021-09-22 15:27:09.033 [D] ?::?::Post Action
+2021-09-22 15:27:09.033 [T] ?::?::All Used Libraries::C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\POtG Install_Uninstall.txt
+2021-09-22 15:27:09.033 [T] ?::?::Device ID : __NO__DUT__
+2021-09-22 15:27:09.033 [T] ?::?::BuiltIn is used BuiltIn
+2021-09-22 15:27:09.033 [T] ?::?::Windows is used Windows
+2021-09-22 15:27:09.034 [T] ?::?::XML is used XML
+2021-09-22 15:27:09.034 [T] ?::?::Device ID : __DEFUALT__DUT__
+2021-09-22 15:27:09.034 [T] ?::?::Hallasan is used Hallasan
+2021-09-22 15:27:09.034 [T] ?::?::Destination_Selection_Application is used Destination_Selection_Application
+2021-09-22 15:27:09.034 [T] ?::?::Click_Print_Button is used Click_Print_Button
+2021-09-22 15:27:09.035 [T] ?::?::Loading Library : BuiltIn -> BuiltIn
+2021-09-22 15:27:09.035 [T] ?::?::Library type is native library.
+2021-09-22 15:27:09.036 [T] ?::?::Loading Library : Windows -> Windows
+2021-09-22 15:27:09.036 [T] ?::?::Library type is native library.
+2021-09-22 15:27:09.037 [T] ?::?::Loading Library : XML -> XML
+2021-09-22 15:27:09.037 [T] ?::?::Library type is native library.
+2021-09-22 15:27:09.037 [T] ?::?::Loading Library : Hallasan -> Hallasan
+2021-09-22 15:27:09.038 [T] ?::?::Library type is native library.
+2021-09-22 15:27:09.038 [T] ?::?::Loading Library : Destination_Selection_Application -> Destination_Selection_Application
+2021-09-22 15:27:09.038 [T] ?::?::Library type is custom library.
+2021-09-22 15:27:09.038 [T] ?::?::Loading Library : Click_Print_Button -> Click_Print_Button
+2021-09-22 15:27:09.038 [T] ?::?::Library type is custom library.
+2021-09-22 15:27:09.038 [D] ?::?::192.168.0.8
+2021-09-22 15:27:09.053 [T] ?::?::Windows.Add Certificate (C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\Potg_Driver\install_smartdriver_v2\BoiseTest.cer) is called
+2021-09-22 15:27:09.074 [T] ?::?::Keyword executed with result = Pass
+2021-09-22 15:27:09.129 [T] ?::?::Windows.Add Local Printer(HP Smart Printing,HPSmartPrintingPort,C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\Potg_Driver\HPOneDriver-1.8.1.732-V4-Release-x64\HPOneDriver_V4_x64.inf,HP Smart Printing) is called
+2021-09-22 15:27:09.519 [T] ?::?::Keyword executed with result = Pass
+2021-09-22 15:27:09.521 [T] ?::?::Sleep (10) is called
+2021-09-22 15:27:19.540 [T] ?::?::Keyword executed with result = Pass
+2021-09-22 15:27:19.556 [T] ?::?::Hallasan.Remove Printer (HP Smart Printing) is called
+2021-09-22 15:27:20.140 [T] ?::?::Keyword executed with result = Pass

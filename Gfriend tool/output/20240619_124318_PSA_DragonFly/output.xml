@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_DragonFly">
+  <StartTime>
+2024-06-19 12:43:43
+</StartTime>
+  <TestCase Name="8.Orientation-Portrait">
+    <StartTime>
+2024-06-19 12:43:43
+</StartTime>
+    <Statement StatementName="Destination_Selection_PSA_Application.Destination Selection_Portrait">
+      <StartTime>
+2024-06-19 12:43:43
+</StartTime>
+      <StartTime>
+2024-06-19 12:43:43
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_PORTRAIT.pdf,HP_PrintSupport_App)">
+        <StartTime>
+2024-06-19 12:43:43
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-19 12:44:15
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP_PrintSupport_App,30)">
+        <StartTime>
+2024-06-19 12:44:15
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-19 12:44:15
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-06-19 12:44:15
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-19 12:44:21
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-19 12:44:21
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-19 12:44:21
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-06-19 12:44:21
+</StartTime>
+      <StartTime>
+2024-06-19 12:44:21
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-19 12:44:21
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-19 12:44:21
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_PSA_Application.Expections_Error">
+      <StartTime>
+2024-06-19 12:44:21
+</StartTime>
+      <StartTime>
+2024-06-19 12:44:21
+</StartTime>
+      <Statement StatementName="Windows.Capture Full Screen (SS)">
+        <StartTime>
+2024-06-19 12:44:21
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240619_12442198.png
+</ScreenShot>
+        <EndTime>
+2024-06-19 12:44:21
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Child Window With Title (HP_PrintSupport_App,5)">
+        <StartTime>
+2024-06-19 12:44:21
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240619_12442719.png
+</ScreenShot>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-06-19 12:44:27
+</StartTime>
+          <Block>
+            <StartTime>
+2024-06-19 12:44:27
+</StartTime>
+            <Statement StatementName="Pass (Childpop was not displayed)">
+              <StartTime>
+2024-06-19 12:44:27
+</StartTime>
+              <Result>
+Pass
+</Result>
+              <Output>
+Childpop was not displayed
+</Output>
+              <EndTime>
+2024-06-19 12:44:27
+</EndTime>
+            </Statement>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-19 12:44:27
+</EndTime>
+          </Block>
+          <EndTime>
+2024-06-19 12:44:27
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-06-19 12:44:27
+</EndTime>
+      </If>
+      <Statement StatementName="Windows.Capture Full Screen (SSS)">
+        <StartTime>
+2024-06-19 12:44:27
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240619_12442730.png
+</ScreenShot>
+        <EndTime>
+2024-06-19 12:44:27
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Application (HP_PrintSupport_App,5)">
+        <StartTime>
+2024-06-19 12:44:27
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240619_12443261.png
+</ScreenShot>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-06-19 12:44:32
+</StartTime>
+          <Block>
+            <StartTime>
+2024-06-19 12:44:32
+</StartTime>
+            <Statement StatementName="Pass (Childpop was not displayed)">
+              <StartTime>
+2024-06-19 12:44:32
+</StartTime>
+              <Result>
+Pass
+</Result>
+              <Output>
+Childpop was not displayed
+</Output>
+              <EndTime>
+2024-06-19 12:44:32
+</EndTime>
+            </Statement>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-19 12:44:32
+</EndTime>
+          </Block>
+          <EndTime>
+2024-06-19 12:44:32
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-06-19 12:44:32
+</EndTime>
+      </If>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-19 12:44:32
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-19 12:44:32
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID (Option.Portrait)">
+      <StartTime>
+2024-06-19 12:44:32
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-19 12:44:32
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Capture Screen Shot(Portrait.jpg)">
+      <StartTime>
+2024-06-19 12:44:32
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <ScreenShot>
+.\Windows_Screenshot_240619_12443283.png
+</ScreenShot>
+      <EndTime>
+2024-06-19 12:44:32
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-19 12:44:32
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-19 12:44:37
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID With Mouse (App.OK)">
+      <StartTime>
+2024-06-19 12:44:37
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240619_12444110.png
+</ScreenShot>
+      <EndTime>
+2024-06-19 12:44:41
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-19 12:44:41
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-19 12:44:46
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2024-06-19 12:44:46
+</StartTime>
+      <StartTime>
+2024-06-19 12:44:46
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2024-06-19 12:44:46
+</StartTime>
+        <Result>
+Error
+</Result>
+        <ErrorDescription>
+Error during click print button
+</ErrorDescription>
+        <AdditionalInfo>
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HP.GFriend.Keywords.ApplicationUtils.ClickPrintButtonInAcrobatReader(Windows windowsController) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\ApplicationUtils.cs:line 398
+   at HP.GFriend.Keywords.Windows.ClickPrintButton() in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 1009
+</AdditionalInfo>
+        <EndTime>
+2024-06-19 12:44:53
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2024-06-19 12:44:53
+</StartTime>
+      </Statement>
+    </Statement>
+  </TestCase>
+</TestSuite>

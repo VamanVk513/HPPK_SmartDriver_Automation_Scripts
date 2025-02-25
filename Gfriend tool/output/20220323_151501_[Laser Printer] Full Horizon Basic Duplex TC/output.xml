@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-03-23 15:15:22
+</StartTime>
+  <TestCase Name="Driver Version">
+    <StartTime>
+2022-03-23 15:15:22
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-03-23 15:15:22
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-03-23 15:15:22
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_DriverVersion">
+          <StartTime>
+2022-03-23 15:15:22
+</StartTime>
+          <StartTime>
+2022-03-23 15:15:22
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_DriverVersion.pdf,HP Smart Printing)">
+            <StartTime>
+2022-03-23 15:15:22
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 15:15:53
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2022-03-23 15:15:53
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 15:15:53
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-03-23 15:15:53
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 15:15:53
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-03-23 15:15:53
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 15:15:59
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 15:15:59
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 15:15:59
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-03-23 15:15:59
+</StartTime>
+          <StartTime>
+2022-03-23 15:15:59
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 15:15:59
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 15:15:59
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (AboutButton,15)">
+          <StartTime>
+2022-03-23 15:15:59
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 15:15:59
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(AboutButton)">
+          <StartTime>
+2022-03-23 15:15:59
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 15:15:59
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-23 15:15:59
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 15:16:04
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-03-23 15:16:04
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220323_15160478.png
+</ScreenShot>
+          <EndTime>
+2022-03-23 15:16:04
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-23 15:16:04
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 15:16:09
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2022-03-23 15:16:09
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 15:16:09
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-23 15:16:09
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 15:16:14
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2022-03-23 15:16:14
+</StartTime>
+          <StartTime>
+2022-03-23 15:16:14
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2022-03-23 15:16:14
+</StartTime>
+            <Result>
+Error
+</Result>
+            <ErrorDescription>
+Error during click print button
+</ErrorDescription>
+            <AdditionalInfo>
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HP.GFriend.Keywords.ApplicationUtils.ClickPrintButtonInAcrobatReader(Windows windowsController) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\ApplicationUtils.cs:line 398
+   at HP.GFriend.Keywords.Windows.ClickPrintButton() in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 935
+</AdditionalInfo>
+            <EndTime>
+2022-03-23 15:16:21
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-03-23 15:16:21
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 15:16:41
+</EndTime>
+          </Statement>
+          <If Condition=" Hallasan.Close Application">
+            <StartTime>
+2022-03-23 15:16:41
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2022-03-23 15:16:41
+</StartTime>
+              <Block>
+                <StartTime>
+2022-03-23 15:16:41
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2022-03-23 15:16:41
+</EndTime>
+              </Block>
+              <EndTime>
+2022-03-23 15:16:41
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2022-03-23 15:16:41
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-03-23 15:16:41
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 15:17:02
+</EndTime>
+          </Statement>
+          <Result>
+Error
+</Result>
+          <EndTime>
+2022-03-23 15:17:02
+</EndTime>
+          <Result>
+Error
+</Result>
+          <EndTime>
+2022-03-23 15:17:02
+</EndTime>
+        </Statement>
+        <Statement StatementName="Destination_Selection_Application.PT Value_DriverVersion">
+          <StartTime>
+2022-03-23 15:17:02
+</StartTime>
+          <StartTime>
+2022-03-23 15:17:02
+</StartTime>
+          <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+            <StartTime>
+2022-03-23 15:17:02
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 15:17:02
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+            <StartTime>
+2022-03-23 15:17:02
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+ns0000:OptOut
+</Output>
+            <EndTime>
+2022-03-23 15:17:02
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:OptOut)">
+            <StartTime>
+2022-03-23 15:17:02
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-23 15:17:02
+</EndTime>
+          </Statement>
+          <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+            <StartTime>
+2022-03-23 15:17:02
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+        1 file(s) copied.
+
+</Output>
+            <EndTime>
+2022-03-23 15:17:02
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 15:17:02
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-23 15:17:02
+</EndTime>
+        </Statement>
+        <Result>
+ERROR
+</Result>
+        <EndTime>
+2022-03-23 15:17:02
+</EndTime>
+      </Loop>
+      <Result>
+ERROR
+</Result>
+      <EndTime>
+2022-03-23 15:17:02
+</EndTime>
+    </Repeat>
+    <Result>
+ERROR
+</Result>
+    <EndTime>
+2022-03-23 15:17:02
+</EndTime>
+  </TestCase>
+  <EndTime>
+2022-03-23 15:17:02
+</EndTime>
+</TestSuite>

@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_DragonFly">
+  <StartTime>
+2024-06-12 14:47:14
+</StartTime>
+  <TestCase Name="5.Pages per Sheet:2UP_RightDown_Border">
+    <StartTime>
+2024-06-12 14:47:14
+</StartTime>
+    <Statement StatementName="Destination_Selection_PSA_Application.Destination Selection_2UP_RightDown_Border_PSA">
+      <StartTime>
+2024-06-12 14:47:14
+</StartTime>
+      <StartTime>
+2024-06-12 14:47:14
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_2Pages_RightthenDown_withBorder.pdf,HP_PrintSupport_App)">
+        <StartTime>
+2024-06-12 14:47:14
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Fail to open Printer Dialogue
+</ErrorDescription>
+        <EndTime>
+2024-06-12 14:48:19
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP_PrintSupport_App,30)">
+        <StartTime>
+2024-06-12 14:48:19
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Can not find element with given name : HP_PrintSupport_App
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240612_14485017.png
+</ScreenShot>
+        <EndTime>
+2024-06-12 14:48:50
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-06-12 14:48:50
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-12 14:48:56
+</EndTime>
+      </Statement>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2024-06-12 14:48:56
+</EndTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2024-06-12 14:48:56
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-06-12 14:48:56
+</StartTime>
+      <StartTime>
+2024-06-12 14:48:56
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-12 14:48:56
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-12 14:48:56
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_PSA_Application.Expections_Error">
+      <StartTime>
+2024-06-12 14:48:56
+</StartTime>
+      <StartTime>
+2024-06-12 14:48:56
+</StartTime>
+      <Statement StatementName="Windows.Capture Full Screen (SS)">
+        <StartTime>
+2024-06-12 14:48:56
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240612_14485625.png
+</ScreenShot>
+        <EndTime>
+2024-06-12 14:48:56
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Child Window With Title (HP_PrintSupport_App,10)">
+        <StartTime>
+2024-06-12 14:48:56
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240612_14490659.png
+</ScreenShot>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-06-12 14:49:06
+</StartTime>
+          <Block>
+            <StartTime>
+2024-06-12 14:49:06
+</StartTime>
+            <Statement StatementName="Pass (Childpop was not displayed)">
+              <StartTime>
+2024-06-12 14:49:06
+</StartTime>
+              <Result>
+Pass
+</Result>
+              <Output>
+Childpop was not displayed
+</Output>
+              <EndTime>
+2024-06-12 14:49:06
+</EndTime>
+            </Statement>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-12 14:49:06
+</EndTime>
+          </Block>
+          <EndTime>
+2024-06-12 14:49:06
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-06-12 14:49:06
+</EndTime>
+      </If>
+      <Statement StatementName="Windows.Capture Full Screen (SSS)">
+        <StartTime>
+2024-06-12 14:49:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240612_14490665.png
+</ScreenShot>
+        <EndTime>
+2024-06-12 14:49:06
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Application (HP_PrintSupport_App,10)">
+        <StartTime>
+2024-06-12 14:49:06
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240612_14491697.png
+</ScreenShot>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-06-12 14:49:16
+</StartTime>
+          <Block>
+            <StartTime>
+2024-06-12 14:49:16
+</StartTime>
+            <Statement StatementName="Pass (Childpop was not displayed)">
+              <StartTime>
+2024-06-12 14:49:16
+</StartTime>
+              <Result>
+Pass
+</Result>
+              <Output>
+Childpop was not displayed
+</Output>
+              <EndTime>
+2024-06-12 14:49:16
+</EndTime>
+            </Statement>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-12 14:49:16
+</EndTime>
+          </Block>
+          <EndTime>
+2024-06-12 14:49:16
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-06-12 14:49:16
+</EndTime>
+      </If>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-12 14:49:16
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-12 14:49:16
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID With Mouse (ui_NupCount)">
+      <StartTime>
+2024-06-12 14:49:16
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : ui_NupCount
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240612_14492045.png
+</ScreenShot>
+      <EndTime>
+2024-06-12 14:49:20
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click Sub Item With Value (ui_NupCount,2)">
+      <StartTime>
+2024-06-12 14:49:20
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find parent object : ui_NupCount
+</ErrorDescription>
+      <EndTime>
+2024-06-12 14:49:22
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Capture Screen Shot(2UP_RightDown_Border.jpg)">
+      <StartTime>
+2024-06-12 14:49:22
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <ScreenShot>
+.\Windows_Screenshot_240612_14492282.png
+</ScreenShot>
+      <EndTime>
+2024-06-12 14:49:22
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-12 14:49:22
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-12 14:49:27
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-06-12 14:49:27
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+      <ScreenShot>
+.\Hallasan_Screenshot_240612_14493139.png
+</ScreenShot>
+      <EndTime>
+2024-06-12 14:49:31
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-12 14:49:31
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-12 14:49:36
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2024-06-12 14:49:36
+</StartTime>
+      <StartTime>
+2024-06-12 14:49:36
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2024-06-12 14:49:36
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-12 14:49:38
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2024-06-12 14:49:38
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-12 14:49:48
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2024-06-12 14:49:48
+</StartTime>
+        <ConditionResult>
+ERROR
+</ConditionResult>
+        <ErrorDescription>
+Error during close
+</ErrorDescription>
+        <StatementBlock Kind="ERROR">
+          <StartTime>
+2024-06-12 14:49:48
+</StartTime>
+          <Block>
+            <StartTime>
+2024-06-12 14:49:48
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-12 14:49:48
+</EndTime>
+          </Block>
+          <EndTime>
+2024-06-12 14:49:48
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-06-12 14:49:48
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2024-06-12 14:49:48
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-12 14:49:58
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-12 14:49:58
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-12 14:49:58
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_Application.PT Value_2UP_RightDown_Border_PSA">
+      <StartTime>
+2024-06-12 14:49:58
+</StartTime>
+      <Result>
+Error
+</Result>
+      <ErrorDescription>
+Can not find specified keyword
+</ErrorDescription>
+      <EndTime>
+2024-06-12 14:49:58
+</EndTime>
+    </Statement>
+    <Result>
+ERROR
+</Result>
+    <EndTime>
+2024-06-12 14:49:58
+</EndTime>
+  </TestCase>
+  <EndTime>
+2024-06-12 14:49:58
+</EndTime>
+</TestSuite>

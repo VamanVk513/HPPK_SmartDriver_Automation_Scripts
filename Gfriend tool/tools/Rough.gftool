@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<gftool>
+  <executable>
+    Rough.exe
+  </executable>
+  <displayname>
+    Mac/iOS UI Inspector
+  </displayname>
+  <description>
+    UI Inspector for Mac(OSX) and iOS
+  </description>
+  <args>
+    <arg name ="Device Identifier" mandatory ="false">
+      <switch>-i</switch>
+      <value>DeviceAddress</value>
+    </arg>
+    <arg name ="Admin Password" mandatory ="false">
+      <switch>-p</switch>
+      <value>AdminPassword</value>
+    </arg>
+  </args>
+</gftool>

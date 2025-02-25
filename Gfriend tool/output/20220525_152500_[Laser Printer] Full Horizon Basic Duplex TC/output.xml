@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-05-25 15:25:22
+</StartTime>
+  <TestCase Name="Always Show Before Printing : Uncheck">
+    <StartTime>
+2022-05-25 15:25:22
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-05-25 15:25:22
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-05-25 15:25:22
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_UncheckAlwaysShowBeforePrinting">
+          <StartTime>
+2022-05-25 15:25:22
+</StartTime>
+          <StartTime>
+2022-05-25 15:25:22
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_UncheckAlwaysShowBeforePrinting.pdf,HP Smart Printing)">
+            <StartTime>
+2022-05-25 15:25:22
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-05-25 15:25:53
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2022-05-25 15:25:53
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-05-25 15:25:53
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-05-25 15:25:53
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-05-25 15:25:53
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-05-25 15:25:53
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-05-25 15:25:59
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-05-25 15:25:59
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-05-25 15:25:59
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-05-25 15:25:59
+</StartTime>
+          <StartTime>
+2022-05-25 15:25:59
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-05-25 15:25:59
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-05-25 15:25:59
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-05-25 15:25:59
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220525_15255949.png
+</ScreenShot>
+          <EndTime>
+2022-05-25 15:25:59
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-05-25 15:25:59
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-05-25 15:26:04
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2022-05-25 15:26:04
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-05-25 15:26:04
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-05-25 15:26:04
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-05-25 15:26:09
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2022-05-25 15:26:09
+</StartTime>
+          <StartTime>
+2022-05-25 15:26:09
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2022-05-25 15:26:09
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-05-25 15:26:11
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-05-25 15:26:11
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-05-25 15:26:31
+</EndTime>
+          </Statement>
+          <If Condition=" Hallasan.Close Application">
+            <StartTime>
+2022-05-25 15:26:31
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2022-05-25 15:26:31
+</StartTime>
+              <Block>
+                <StartTime>
+2022-05-25 15:26:31
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2022-05-25 15:26:31
+</EndTime>
+              </Block>
+              <EndTime>
+2022-05-25 15:26:31
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2022-05-25 15:26:31
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-05-25 15:26:31
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-05-25 15:26:51
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-05-25 15:26:51
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-05-25 15:26:51
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (PrintingToDialog.ui_ContentFrame.ui_AlwaysDisplay,10)">
+          <StartTime>
+2022-05-25 15:26:51
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-05-25 15:26:51
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.ui_AlwaysDisplay)">
+          <StartTime>
+2022-05-25 15:26:51
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-05-25 15:26:51
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (PrintingToDialog.ui_ContentFrame.PrintButton,10)">
+          <StartTime>
+2022-05-25 15:26:51
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-05-25 15:26:51
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+          <StartTime>
+2022-05-25 15:26:51
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-05-25 15:26:52
+</EndTime>
+        </Statement>
+        <Statement StatementName="Destination_Selection_Application.PT Value_UncheckAlwaysShowBeforePrinting">
+          <StartTime>
+2022-05-25 15:26:52
+</StartTime>
+          <StartTime>
+2022-05-25 15:26:52
+</StartTime>
+          <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+            <StartTime>
+2022-05-25 15:26:52
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-05-25 15:26:52
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name)">
+            <StartTime>
+2022-05-25 15:26:52
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+ns0000:On
+</Output>
+            <EndTime>
+2022-05-25 15:26:52
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:On)">
+            <StartTime>
+2022-05-25 15:26:52
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-05-25 15:26:52
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+            <StartTime>
+2022-05-25 15:26:52
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+ns0000:OptOut
+</Output>
+            <EndTime>
+2022-05-25 15:26:52
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:OptOut)">
+            <StartTime>
+2022-05-25 15:26:52
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-05-25 15:26:52
+</EndTime>
+          </Statement>
+          <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+            <StartTime>
+2022-05-25 15:26:52
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+        1 file(s) copied.
+
+</Output>
+            <EndTime>
+2022-05-25 15:26:52
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-05-25 15:26:52
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-05-25 15:26:52
+</EndTime>
+        </Statement>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2022-05-25 15:26:52
+</EndTime>
+      </Loop>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2022-05-25 15:26:52
+</EndTime>
+    </Repeat>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2022-05-25 15:26:52
+</EndTime>
+  </TestCase>
+  <EndTime>
+2022-05-25 15:26:52
+</EndTime>
+</TestSuite>

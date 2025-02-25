@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-03-22 16:05:04
+</StartTime>
+  <TestCase Name="Private Pickup:On">
+    <StartTime>
+2022-03-22 16:05:04
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-03-22 16:05:04
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-03-22 16:05:04
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Private_Pickup_On">
+          <StartTime>
+2022-03-22 16:05:04
+</StartTime>
+          <StartTime>
+2022-03-22 16:05:04
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Private_Pickup_On.pdf,HP Smart Printing)">
+            <StartTime>
+2022-03-22 16:05:04
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-22 16:05:35
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2022-03-22 16:05:35
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-22 16:05:35
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-03-22 16:05:35
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-22 16:05:35
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-03-22 16:05:35
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-22 16:05:41
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 16:05:41
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 16:05:41
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-03-22 16:05:41
+</StartTime>
+          <StartTime>
+2022-03-22 16:05:41
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 16:05:41
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 16:05:41
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (SSCControl,10)">
+          <StartTime>
+2022-03-22 16:05:41
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 16:05:46
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Toggle (SSCControl,On)">
+          <StartTime>
+2022-03-22 16:05:46
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 16:05:46
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-03-22 16:05:46
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220322_16054686.png
+</ScreenShot>
+          <EndTime>
+2022-03-22 16:05:46
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-22 16:05:46
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 16:05:51
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2022-03-22 16:05:51
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 16:05:52
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-22 16:05:52
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 16:05:57
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2022-03-22 16:05:57
+</StartTime>
+          <StartTime>
+2022-03-22 16:05:57
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2022-03-22 16:05:57
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-22 16:05:59
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-03-22 16:05:59
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-22 16:06:19
+</EndTime>
+          </Statement>
+          <If Condition=" Hallasan.Close Application">
+            <StartTime>
+2022-03-22 16:06:19
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2022-03-22 16:06:19
+</StartTime>
+              <Block>
+                <StartTime>
+2022-03-22 16:06:19
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2022-03-22 16:06:19
+</EndTime>
+              </Block>
+              <EndTime>
+2022-03-22 16:06:19
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2022-03-22 16:06:19
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-03-22 16:06:19
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-22 16:06:39
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 16:06:39
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 16:06:39
+</EndTime>
+        </Statement>
+        <Statement StatementName="Destination_Selection_Application.PT Value_Private_Pickup_On">
+          <StartTime>
+2022-03-22 16:06:39
+</StartTime>
+          <StartTime>
+2022-03-22 16:06:39
+</StartTime>
+          <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+            <StartTime>
+2022-03-22 16:06:39
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-22 16:06:39
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:PrivatePickup']/psf:Option,name)">
+            <StartTime>
+2022-03-22 16:06:39
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find xml node with given xpath
+</ErrorDescription>
+            <EndTime>
+2022-03-22 16:06:39
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:On)">
+            <StartTime>
+2022-03-22 16:06:39
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+${value} and ns0000:On are not same
+</ErrorDescription>
+            <EndTime>
+2022-03-22 16:06:39
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+            <StartTime>
+2022-03-22 16:06:39
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+ns0000:OptOut
+</Output>
+            <EndTime>
+2022-03-22 16:06:39
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:OptOut)">
+            <StartTime>
+2022-03-22 16:06:39
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-22 16:06:39
+</EndTime>
+          </Statement>
+          <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+            <StartTime>
+2022-03-22 16:06:39
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+        1 file(s) copied.
+
+</Output>
+            <EndTime>
+2022-03-22 16:06:39
+</EndTime>
+          </Statement>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-03-22 16:06:39
+</EndTime>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-03-22 16:06:39
+</EndTime>
+        </Statement>
+        <Result>
+FAIL
+</Result>
+        <EndTime>
+2022-03-22 16:06:39
+</EndTime>
+      </Loop>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2022-03-22 16:06:39
+</EndTime>
+    </Repeat>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2022-03-22 16:06:39
+</EndTime>
+  </TestCase>
+  <EndTime>
+2022-03-22 16:06:39
+</EndTime>
+</TestSuite>

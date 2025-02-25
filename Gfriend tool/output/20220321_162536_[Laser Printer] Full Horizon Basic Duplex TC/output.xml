@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-03-21 16:25:57
+</StartTime>
+  <TestCase Name="Revert Options">
+    <StartTime>
+2022-03-21 16:25:57
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-03-21 16:25:57
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-03-21 16:25:57
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Revert">
+          <StartTime>
+2022-03-21 16:25:57
+</StartTime>
+          <StartTime>
+2022-03-21 16:25:57
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Revert.pdf,HP Smart Printing)">
+            <StartTime>
+2022-03-21 16:25:57
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

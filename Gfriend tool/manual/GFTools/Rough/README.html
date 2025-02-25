@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>GFriend Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../gfmanual.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">GFriend Manual</h1>
+</header>
+<h1 id="ui-inspector-for-mac-and-ios--rough">UI Inspector for Mac and
+iOS : Rough</h1>
+<p>Rough is tool for inspecting UI element for Mac and iOS. This also
+has capability to control(touch, swipe and send text) device remotely
+based on Appium connection.</p>
+<p>You can choose target device type (Mac or iOS) in the combobox
+located on left upper corner.</p>
+<p><img src=".images/rough_main.png" alt="Rough::Main" /></p>
+<h2 id="precondition">Precondition</h2>
+<p>All required component for Mac/iOS testing should be setup in Mac PC
+that serves Appium server (including enable ssh connection to Mac
+PC.)</p>
+<h2 id="utilities">Utilities</h2>
+<p>In the tab "Utils", you can query device's information which are
+required to connect to Appium server. Of course, this is not require
+connection, but we have to set Appium server address, port, Login ID and
+Password.</p>
+<p><img src=".images/utils_tab.png" alt="UtilsTab" /></p>
+<h3 id="1-for-ios-testing">1. For iOS Testing</h3>
+<ul>
+<li><p>Get Connected device</p>
+<p>By clicking "Get Connected Device" button, you can get list of active
+devices which is connected to Mac PC.</p>
+<p><img src=".images/get_connected_device.png"
+alt="Connected Device" /></p>
+<p>If you double click the list item, device information (UDID) will be
+applied in UDID text box.</p></li>
+<li><p>List of iOS Apps</p>
+<p>By clicking "List of iOS Apps" button, you can get list of installed
+app on iOS device.</p>
+<p><img src=".images/ios_apps.png" alt="apps" /></p>
+<p>If you double click the list item, app information (bundle id) will
+be applied in bundle id text box.</p></li>
+</ul>
+<p>If you filled out all desired field for iOS testing (UDID and Bundle
+ID), now you can connect to iOS device via Appium then you can do
+inspect and live control.</p>
+<h3 id="2-for-mac-testing">2. For Mac Testing</h3>
+<ul>
+<li><p>List of Mac Apps</p>
+<p>By clicking "List of Mac Apps" button, you can get list of installed
+app on Mac device.</p>
+<p><img src=".images/mac_apps.png" alt="apps" /></p>
+<p>If you double click the list item, app information (bundle id) will
+be applied in bundle id text box.</p></li>
+</ul>
+<p>If you filled out all desired field for Mac testing (Bundle ID), now
+you can connect to Mac device via Appium then you can do inspect and
+live control.</p>
+<h2 id="ui-inspector">UI Inspector</h2>
+<p>UI inspector feature is same for both iOS and Mac. After connect to
+Appium server with desired information, you can dump UI hierarchy and
+screen shot from device by clicking dump button <img
+src=".images/dump.png" alt="DumpButton" />.</p>
+<p><img src=".images/dump_result.png" alt="DumpResult" /></p>
+<p>By clicking screen shot area, tool will automatically focus element
+in Element Tree. You can check properties for testing.</p>
+<p>You can also use XPath of element in your script. By clicking right
+mouse button on treeview, you can see the menu of Copy XPath. If you
+click this XPath of selected element will be copied to clipboard.</p>
+<p><img src=".images/xpath.png" alt="XPath" /></p>
+<p>Tool uses identifier attribute as a primary attribute to build XPath.
+You can change this with by selecting attribute in combo box as below
+image.</p>
+<p><img src=".images/xpath_primary.png" alt="Primary Attribute" /></p>
+<h2 id="live-control">Live Control</h2>
+<h3 id="1-ios-live-control">1. iOS Live Control</h3>
+<p>You can click, long click, swipe and send text with live control.</p>
+<p><img src=".images/livecontrol_ios.png" alt="iOSLiveControl" /></p>
+<h3 id="2-mac-live-control">2. Mac Live Control</h3>
+<p>You can click and send text with live control. Due to limitation of
+Appium Mac driver, clicking by position (Click with mouse on the
+screenshot) is quite slow. You must wait until "Click Done" message on
+output before performing next action. For better clicking performance
+use click by xpath in right pane.</p>
+<p><img src=".images/livecontrol_mac.png" alt="MacLiveControl" /></p>
+</body>
+</html>

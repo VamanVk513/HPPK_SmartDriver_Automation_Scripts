@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_DragonFly">
+  <StartTime>
+2024-06-07 11:32:25
+</StartTime>
+  <TestCase Name="2.Dropdown">
+    <StartTime>
+2024-06-07 11:32:25
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_Envelopes_PSA">
+      <StartTime>
+2024-06-07 11:32:25
+</StartTime>
+      <StartTime>
+2024-06-07 11:32:25
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_ENVELOPES.pdf,PSA_Application)">
+        <StartTime>
+2024-06-07 11:32:25
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-07 11:32:59
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (PSA_Application,30)">
+        <StartTime>
+2024-06-07 11:32:59
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-07 11:32:59
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-06-07 11:32:59
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-07 11:33:05
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-07 11:33:05
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 11:33:05
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-06-07 11:33:05
+</StartTime>
+      <StartTime>
+2024-06-07 11:33:05
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-07 11:33:05
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 11:33:05
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Set ComboBox With Name (ui_Preset_Combo,Envelopes)">
+      <StartTime>
+2024-06-07 11:33:05
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find combobox : ui_Preset_Combo
+</ErrorDescription>
+      <EndTime>
+2024-06-07 11:33:07
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID With Mouse (TitleBar)">
+      <StartTime>
+2024-06-07 11:33:07
+</StartTime>
+      <Result>
+Error
+</Result>
+      <ErrorDescription>
+Error during click
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240607_11330857.png
+</ScreenShot>
+      <AdditionalInfo>
+System.Windows.Automation.ElementNotEnabledException: Element not enabled ---&gt; System.Runtime.InteropServices.COMException: Exception from HRESULT: 0x80040200
+   at UIAutomationClient.IUIAutomationElement.SetFocus()
+   at System.Windows.Automation.AutomationElement.SetFocus()
+   --- End of inner exception stack trace ---
+   at System.Windows.Automation.AutomationElement.SetFocus()
+   at HP.GFriend.Keywords.Windows.WaitForEndMove(AutomationElement target) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 347
+   at HP.GFriend.Keywords.Windows.ClickIDWithMouse(String automationId) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 1382
+</AdditionalInfo>
+      <EndTime>
+2024-06-07 11:33:08
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-07 11:33:08
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 11:33:13
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-06-07 11:33:13
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+      <ScreenShot>
+.\Hallasan_Screenshot_240607_11331702.png
+</ScreenShot>
+      <EndTime>
+2024-06-07 11:33:17
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-07 11:33:17
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 11:33:22
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2024-06-07 11:33:22
+</StartTime>
+      <StartTime>
+2024-06-07 11:33:22
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2024-06-07 11:33:22
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-07 11:33:24
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-06-07 11:33:24
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-07 11:33:44
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2024-06-07 11:33:44
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2024-06-07 11:33:44
+</StartTime>
+          <Block>
+            <StartTime>
+2024-06-07 11:33:44
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-07 11:33:44
+</EndTime>
+          </Block>
+          <EndTime>
+2024-06-07 11:33:44
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-06-07 11:33:44
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-06-07 11:33:44
+</StartTime>
+      </Statement>
+    </Statement>
+  </TestCase>
+</TestSuite>

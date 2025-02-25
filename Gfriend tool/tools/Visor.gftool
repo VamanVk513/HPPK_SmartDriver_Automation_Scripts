@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<gftool>
+  <executable>
+    Visor.exe
+  </executable>
+  <displayname>
+    Visor
+  </displayname>
+  <description>
+    Visor - Device remote control utility
+  </description>
+  <args>
+    <arg name ="Device Identifier" mandatory ="false">
+      <switch>-i</switch>
+      <value>DeviceAddress</value>
+    </arg>
+    <arg name ="Admin Password" mandatory ="false">
+      <switch>-p</switch>
+      <value>AdminPassword</value>
+    </arg>
+  </args>
+</gftool>

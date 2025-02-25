@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_DragonFly">
+  <StartTime>
+2024-06-06 15:00:23
+</StartTime>
+  <TestCase Name="1.Factory defaults">
+    <StartTime>
+2024-06-06 15:00:23
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_Factory_defaults">
+      <StartTime>
+2024-06-06 15:00:23
+</StartTime>
+      <StartTime>
+2024-06-06 15:00:23
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_PSA_FactoryDefaults.pdf,HP2F7C2F)">
+        <StartTime>
+2024-06-06 15:00:23
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-06 15:00:55
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP2F7C2F,30)">
+        <StartTime>
+2024-06-06 15:00:55
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-06 15:00:55
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-06-06 15:00:55
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-06 15:01:01
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-06 15:01:01
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-06 15:01:01
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-06-06 15:01:01
+</StartTime>
+      <StartTime>
+2024-06-06 15:01:01
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-06 15:01:01
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-06 15:01:01
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_Preset_Combo,CBItemTextDisplay)">
+      <StartTime>
+2024-06-06 15:01:01
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find combobox : ui_Preset_Combo
+</ErrorDescription>
+      <EndTime>
+2024-06-06 15:01:04
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-06 15:01:04
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-06 15:01:09
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-06-06 15:01:09
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+      <ScreenShot>
+.\Hallasan_Screenshot_240606_15011247.png
+</ScreenShot>
+      <EndTime>
+2024-06-06 15:01:12
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-06 15:01:12
+</StartTime>
+    </Statement>
+  </TestCase>
+</TestSuite>

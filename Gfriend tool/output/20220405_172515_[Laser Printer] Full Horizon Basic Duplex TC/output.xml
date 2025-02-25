@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-04-05 17:25:38
+</StartTime>
+  <TestCase Name="Private Pickup:On">
+    <StartTime>
+2022-04-05 17:25:38
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-04-05 17:25:38
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-04-05 17:25:38
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Private_Pickup_On">
+          <StartTime>
+2022-04-05 17:25:38
+</StartTime>
+          <StartTime>
+2022-04-05 17:25:38
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Private_Pickup_On.pdf,HP Smart Printing)">
+            <StartTime>
+2022-04-05 17:25:38
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:26:09
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2022-04-05 17:26:09
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:26:09
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-04-05 17:26:09
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:26:09
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-04-05 17:26:09
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:26:15
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:26:15
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:26:15
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-04-05 17:26:15
+</StartTime>
+          <StartTime>
+2022-04-05 17:26:15
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:26:15
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:26:15
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (SSCControl,10)">
+          <StartTime>
+2022-04-05 17:26:15
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:26:15
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Toggle (SSCControl,On)">
+          <StartTime>
+2022-04-05 17:26:15
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:26:15
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-04-05 17:26:15
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220405_17261527.png
+</ScreenShot>
+          <EndTime>
+2022-04-05 17:26:15
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-04-05 17:26:15
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:26:20
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2022-04-05 17:26:20
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:26:20
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-04-05 17:26:20
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:26:25
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2022-04-05 17:26:25
+</StartTime>
+          <StartTime>
+2022-04-05 17:26:25
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2022-04-05 17:26:25
+</StartTime>
+            <Result>
+Error
+</Result>
+            <ErrorDescription>
+Error during click print button
+</ErrorDescription>
+            <AdditionalInfo>
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HP.GFriend.Keywords.ApplicationUtils.ClickPrintButtonInAcrobatReader(Windows windowsController) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\ApplicationUtils.cs:line 398
+   at HP.GFriend.Keywords.Windows.ClickPrintButton() in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 935
+</AdditionalInfo>
+            <EndTime>
+2022-04-05 17:26:42
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-04-05 17:26:42
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:27:02
+</EndTime>
+          </Statement>
+          <If Condition=" Hallasan.Close Application">
+            <StartTime>
+2022-04-05 17:27:02
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2022-04-05 17:27:02
+</StartTime>
+              <Block>
+                <StartTime>
+2022-04-05 17:27:02
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2022-04-05 17:27:02
+</EndTime>
+              </Block>
+              <EndTime>
+2022-04-05 17:27:02
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2022-04-05 17:27:02
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-04-05 17:27:02
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:27:22
+</EndTime>
+          </Statement>
+          <Result>
+Error
+</Result>
+          <EndTime>
+2022-04-05 17:27:22
+</EndTime>
+          <Result>
+Error
+</Result>
+          <EndTime>
+2022-04-05 17:27:22
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (PrintButton,10)">
+          <StartTime>
+2022-04-05 17:27:22
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : PrintButton
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_220405_17273252.png
+</ScreenShot>
+          <EndTime>
+2022-04-05 17:27:32
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(PrintButton)">
+          <StartTime>
+2022-04-05 17:27:32
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : PrintButton
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_220405_17273598.png
+</ScreenShot>
+          <EndTime>
+2022-04-05 17:27:35
+</EndTime>
+        </Statement>
+        <Statement StatementName="Destination_Selection_Application.PT Value_Private_Pickup_On">
+          <StartTime>
+2022-04-05 17:27:35
+</StartTime>
+          <StartTime>
+2022-04-05 17:27:35
+</StartTime>
+          <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+            <StartTime>
+2022-04-05 17:27:35
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:27:36
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobDeliveryMode']/psf:Option,name)">
+            <StartTime>
+2022-04-05 17:27:36
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+ns0000:Secure
+</Output>
+            <EndTime>
+2022-04-05 17:27:36
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:Secure)">
+            <StartTime>
+2022-04-05 17:27:36
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:27:36
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+            <StartTime>
+2022-04-05 17:27:36
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+ns0000:OptOut
+</Output>
+            <EndTime>
+2022-04-05 17:27:36
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:OptOut)">
+            <StartTime>
+2022-04-05 17:27:36
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:27:36
+</EndTime>
+          </Statement>
+          <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+            <StartTime>
+2022-04-05 17:27:36
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+        1 file(s) copied.
+
+</Output>
+            <EndTime>
+2022-04-05 17:27:36
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:27:36
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:27:36
+</EndTime>
+        </Statement>
+        <Result>
+FAIL
+</Result>
+        <EndTime>
+2022-04-05 17:27:36
+</EndTime>
+      </Loop>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2022-04-05 17:27:36
+</EndTime>
+    </Repeat>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2022-04-05 17:27:36
+</EndTime>
+  </TestCase>
+  <EndTime>
+2022-04-05 17:27:36
+</EndTime>
+</TestSuite>

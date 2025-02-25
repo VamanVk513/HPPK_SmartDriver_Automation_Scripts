@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2021-10-06 11:43:50
+</StartTime>
+  <TestCase Name="Pages per Sheet:2UP_BottomLeft">
+    <StartTime>
+2021-10-06 11:43:50
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2021-10-06 11:43:50
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2021-10-06 11:43:50
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_2UP_BottomLeft">
+          <StartTime>
+2021-10-06 11:43:50
+</StartTime>
+          <StartTime>
+2021-10-06 11:43:50
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_2UP_BottomLeft.pdf,HP Smart Printing)">
+            <StartTime>
+2021-10-06 11:43:50
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_Moreto">
+  <StartTime>
+2024-07-29 13:07:53
+</StartTime>
+  <TestCase Name="11. Color:PrintMode_MonoChrome">
+    <StartTime>
+2024-07-29 13:07:53
+</StartTime>
+    <Statement StatementName="Destination_Selection_PSA_Application.Destination Selection_PrintMode_MonoChrome">
+      <StartTime>
+2024-07-29 13:07:53
+</StartTime>
+      <StartTime>
+2024-07-29 13:07:53
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_COLOR_PRINTING_MODE_MONOCHROME.pdf,HP_PrintSupport_App)">
+        <StartTime>
+2024-07-29 13:07:53
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Fail to open Printer Dialogue
+</ErrorDescription>
+        <EndTime>
+2024-07-29 13:08:57
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP_PrintSupport_App,20)">
+        <StartTime>
+2024-07-29 13:08:57
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Can not find element with given name : HP_PrintSupport_App
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240729_13091818.png
+</ScreenShot>
+        <EndTime>
+2024-07-29 13:09:18
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-07-29 13:09:18
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-07-29 13:09:24
+</EndTime>
+      </Statement>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2024-07-29 13:09:24
+</EndTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2024-07-29 13:09:24
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-07-29 13:09:24
+</StartTime>
+      <StartTime>
+2024-07-29 13:09:24
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-07-29 13:09:24
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-07-29 13:09:24
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_PSA_Application.Expections_Error">
+      <StartTime>
+2024-07-29 13:09:24
+</StartTime>
+      <StartTime>
+2024-07-29 13:09:24
+</StartTime>
+      <Statement StatementName="Windows.Capture Full Screen (SS)">
+        <StartTime>
+2024-07-29 13:09:24
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240729_13092426.png
+</ScreenShot>
+        <EndTime>
+2024-07-29 13:09:24
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Child Window With Title (HP_PrintSupport_App,5)">
+        <StartTime>
+2024-07-29 13:09:24
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240729_13092983.png
+</ScreenShot>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-07-29 13:09:29
+</StartTime>
+          <Block>
+            <StartTime>
+2024-07-29 13:09:29
+</StartTime>
+            <Statement StatementName="Pass (Childpop was not displayed)">
+              <StartTime>
+2024-07-29 13:09:29
+</StartTime>
+              <Result>
+Pass
+</Result>
+              <Output>
+Childpop was not displayed
+</Output>
+              <EndTime>
+2024-07-29 13:09:29
+</EndTime>
+            </Statement>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-07-29 13:09:29
+</EndTime>
+          </Block>
+          <EndTime>
+2024-07-29 13:09:29
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-07-29 13:09:29
+</EndTime>
+      </If>
+      <Statement StatementName="Windows.Capture Full Screen (SSS)">
+        <StartTime>
+2024-07-29 13:09:29
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240729_13092987.png
+</ScreenShot>
+        <EndTime>
+2024-07-29 13:09:29
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Application (HP_PrintSupport_App,5)">
+        <StartTime>
+2024-07-29 13:09:29
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240729_13093539.png
+</ScreenShot>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-07-29 13:09:35
+</StartTime>
+          <Block>
+            <StartTime>
+2024-07-29 13:09:35
+</StartTime>
+            <Statement StatementName="Pass (Childpop was not displayed)">
+              <StartTime>
+2024-07-29 13:09:35
+</StartTime>
+              <Result>
+Pass
+</Result>
+              <Output>
+Childpop was not displayed
+</Output>
+              <EndTime>
+2024-07-29 13:09:35
+</EndTime>
+            </Statement>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-07-29 13:09:35
+</EndTime>
+          </Block>
+          <EndTime>
+2024-07-29 13:09:35
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-07-29 13:09:35
+</EndTime>
+      </If>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-07-29 13:09:35
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-07-29 13:09:35
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Wait For ID (Option.Monochrome,5)">
+      <StartTime>
+2024-07-29 13:09:35
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : Option.Monochrome
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240729_13094103.png
+</ScreenShot>
+      <EndTime>
+2024-07-29 13:09:41
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID With Mouse (Option.Monochrome)">
+      <StartTime>
+2024-07-29 13:09:41
+</StartTime>
+    </Statement>
+  </TestCase>
+</TestSuite>

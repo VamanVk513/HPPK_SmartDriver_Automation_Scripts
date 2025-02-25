@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_DragonFly">
+  <StartTime>
+2024-06-07 11:05:02
+</StartTime>
+  <TestCase Name="2.Dropdown">
+    <StartTime>
+2024-06-07 11:05:02
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_Envelopes_PSA">
+      <StartTime>
+2024-06-07 11:05:02
+</StartTime>
+      <StartTime>
+2024-06-07 11:05:02
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_ENVELOPES.pdf,PSA_Application)">
+        <StartTime>
+2024-06-07 11:05:02
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Fail to click printer selection
+</ErrorDescription>
+        <EndTime>
+2024-06-07 11:05:21
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (PSA_Application,30)">
+        <StartTime>
+2024-06-07 11:05:21
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-07 11:05:21
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-06-07 11:05:21
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-07 11:05:27
+</EndTime>
+      </Statement>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2024-06-07 11:05:27
+</EndTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2024-06-07 11:05:27
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-06-07 11:05:27
+</StartTime>
+      <StartTime>
+2024-06-07 11:05:27
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-07 11:05:27
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 11:05:27
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Set ComboBox With Name (ui_Preset_Combo,Envelopes)">
+      <StartTime>
+2024-06-07 11:05:27
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find combobox : ui_Preset_Combo
+</ErrorDescription>
+      <EndTime>
+2024-06-07 11:05:30
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-07 11:05:30
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 11:05:35
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-06-07 11:05:35
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+      <ScreenShot>
+.\Hallasan_Screenshot_240607_11053856.png
+</ScreenShot>
+      <EndTime>
+2024-06-07 11:05:38
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-07 11:05:38
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 11:05:43
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2024-06-07 11:05:43
+</StartTime>
+      <StartTime>
+2024-06-07 11:05:43
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2024-06-07 11:05:43
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-07 11:05:45
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-06-07 11:05:45
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-07 11:06:05
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2024-06-07 11:06:05
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2024-06-07 11:06:05
+</StartTime>
+          <Block>
+            <StartTime>
+2024-06-07 11:06:05
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-07 11:06:05
+</EndTime>
+          </Block>
+          <EndTime>
+2024-06-07 11:06:05
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-06-07 11:06:05
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-06-07 11:06:05
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-07 11:06:25
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-07 11:06:25
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 11:06:25
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_Application.PT Value_EnvelopePlain_PSA">
+      <StartTime>
+2024-06-07 11:06:25
+</StartTime>
+      <StartTime>
+2024-06-07 11:06:25
+</StartTime>
+      <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+        <StartTime>
+2024-06-07 11:06:25
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-07 11:06:25
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)">
+        <StartTime>
+2024-06-07 11:06:25
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+psk:Label
+</Output>
+        <EndTime>
+2024-06-07 11:06:25
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},psk:Label)">
+        <StartTime>
+2024-06-07 11:06:25
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-07 11:06:25
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+        <StartTime>
+2024-06-07 11:06:25
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:OptIn
+</Output>
+        <EndTime>
+2024-06-07 11:06:26
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:OptIn)">
+        <StartTime>
+2024-06-07 11:06:26
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-07 11:06:26
+</EndTime>
+      </Statement>
+      <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+        <StartTime>
+2024-06-07 11:06:26
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+        1 file(s) copied.
+
+</Output>
+        <EndTime>
+2024-06-07 11:06:26
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-07 11:06:26
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 11:06:26
+</EndTime>
+    </Statement>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2024-06-07 11:06:26
+</EndTime>
+  </TestCase>
+  <EndTime>
+2024-06-07 11:06:26
+</EndTime>
+</TestSuite>

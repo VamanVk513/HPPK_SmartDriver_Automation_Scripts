@@ -1,0 +1,18 @@
+﻿2024-06-06 13:50:04.159 [T] ?::?::GFriend version : 2.55.1.1
+2024-06-06 13:50:04.159 [T] ?::?::Parsing start
+2024-06-06 13:50:04.159 [T] ?::?::Creating custom library with C:\GFriend_PotG\scripts\Acual Script\PSA_Scripts\Destination_Selection_Application.gflib
+2024-06-06 13:50:04.159 [T] ?::?::GFriend version : 2.55.1.1
+2024-06-06 13:50:04.159 [T] ?::?::Parsing start
+2024-06-06 13:50:04.159 [E] ?::?::Unexpected Error at
+System.IO.FileNotFoundException: Could not find file 'C:\GFriend_PotG\scripts\Acual Script\PSA_Scripts\Destination_Selection_Application.gflib'.
+File name: 'C:\GFriend_PotG\scripts\Acual Script\PSA_Scripts\Destination_Selection_Application.gflib'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HP.GFriend.Core.Execution.Parser.ParseTestSuite(String tsPath, Dictionary`2 executionVariables)
+   at HP.GFriend.Core.Custom.CustomLibrary..ctor(String libraryFilePath, Dictionary`2 executionVariables)
+   at HP.GFriend.Core.Execution.Parser.ParseUsing(String line, String tsPath, TestDataManager testDataManager, Dictionary`2 variables, Dictionary`2 executionVariables)
+   at HP.GFriend.Core.Execution.Parser.ParseTestSuite(String tsPath, Dictionary`2 executionVariables)
+   at HP.GFriend.Core.Execution.Runner.Run(String tsPath, TestDataManager& testDataManager, List`1 tcToRun, String libraryPath, String defaultDut, Dictionary`2 variables, Dictionary`2 executionVariables)

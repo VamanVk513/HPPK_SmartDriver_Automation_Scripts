@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Sand">
+  <StartTime>
+2023-06-28 16:47:39
+</StartTime>
+  <TestCase Name="26.Remote:Paper Size:Letter">
+    <StartTime>
+2023-06-28 16:47:39
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2023-06-28 16:47:39
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2023-06-28 16:47:39
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Letter">
+          <StartTime>
+2023-06-28 16:47:39
+</StartTime>
+          <StartTime>
+2023-06-28 16:47:39
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Letter.pdf,HP Smart Printing)">
+            <StartTime>
+2023-06-28 16:47:39
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-06-28 16:48:10
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2023-06-28 16:48:10
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-06-28 16:48:10
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2023-06-28 16:48:10
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-06-28 16:48:10
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2023-06-28 16:48:10
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-06-28 16:48:16
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-06-28 16:48:16
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-06-28 16:48:16
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2023-06-28 16:48:16
+</StartTime>
+          <StartTime>
+2023-06-28 16:48:16
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-06-28 16:48:16
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-06-28 16:48:16
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaLetter)">
+          <StartTime>
+2023-06-28 16:48:16
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-06-28 16:48:17
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2023-06-28 16:48:17
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_230628_16481725.png
+</ScreenShot>
+          <EndTime>
+2023-06-28 16:48:17
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2023-06-28 16:48:17
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-06-28 16:48:22
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2023-06-28 16:48:22
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-06-28 16:48:22
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2023-06-28 16:48:22
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-06-28 16:48:27
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2023-06-28 16:48:27
+</StartTime>
+          <StartTime>
+2023-06-28 16:48:27
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2023-06-28 16:48:27
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-06-28 16:48:29
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2023-06-28 16:48:29
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

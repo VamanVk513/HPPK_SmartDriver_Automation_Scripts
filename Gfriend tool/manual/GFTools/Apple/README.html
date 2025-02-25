@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>GFriend Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../gfmanual.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">GFriend Manual</h1>
+</header>
+<h1 id="setup-mac-and-ios-test-environment">Setup Mac and iOS Test
+Environment</h1>
+<p>For both iOS and Mac application testing, Mac OSX machine is required
+to serve Appium server. You can use one Mac OSX machine both for Appium
+server and test device.</p>
+<h2 id="precondition---for-ios-test">Precondition - For iOS test</h2>
+<h3 id="overview">Overview</h3>
+<p>GFriend uses test agent called WebDriverAgent which will be installed
+in your test phone. Due to strict policies of Apple, this agent only can
+be installed with registered device. Apple manages mapping information
+among developers, apps and devices as profile, you need to add your
+device to GFriend test agent profile.</p>
+<p><img src=".images/profile_summary.png" alt="Profile" /></p>
+<p>Unfortunately normal user can not download this updated profiles form
+Apple site, GFriend setup AWs repository to store this profile. After
+you device is registered in profile, you can request sync profile
+between Apple and GFriend AWS repository.</p>
+<p>After syncing, now you can setup your environment using environment
+setup helper tool.</p>
+<h3 id="step1-request-add-device-to-profile">Step1. Request Add device
+to profile</h3>
+<p>All profiles which is developed by HP, are managed by HP App Store
+team. To add your device(s) into GFriend Test Agent profile, you have to
+create JIRA issue.</p>
+<ul>
+<li>JIRA Project : <a
+href="https://jira.cso-hp.com/browse/APPSTRR">https://jira.cso-hp.com/browse/APPSTRR</a></li>
+<li>Issue Type : Request</li>
+<li>Title : Add device to HP Gfriend WDA Wildcard Development
+Provision</li>
+<li>Components : .None</li>
+<li>Description Contains:
+<ul>
+<li>Device Name : MUST be start with PHSQ GFriend WDA (ex. PHSQ GFriend
+WDA SST test iphone01)</li>
+<li>UDID : udid of device</li>
+<li>Target profile : HP Gfriend WDA Wildcard Development Provision</li>
+</ul></li>
+</ul>
+<p>See example below:</p>
+<p><img src=".images/jira.png" alt="JIRA Issue" /></p>
+<p>Normally, request is handled within 1 business day.</p>
+<h3 id="step2-sync-apple-profile-to-gfriend">Step2. Sync Apple profile
+to GFriend</h3>
+<p><strong>Precondition : JIRA request of step 1 is done. (Profile
+updated)</strong></p>
+<p>If you create Github issues, sync process will be automatically
+started.</p>
+<ol type="1">
+<li><p>Go to Github Enterprise WDA Repo : <a
+href="https://github.azc.ext.hp.com/HP-SMT/WebDriverAgent/issues">https://github.azc.ext.hp.com/HP-SMT/WebDriverAgent/issues</a></p></li>
+<li><p>Create new issue with title of <strong>add ios device</strong>
+<img src=".images/issue.png" alt="GHE Issue" /></p></li>
+<li><p>Email will be sent, and issue will be closed if sync is done <img
+src=".images/mail.png" alt="Mail" /></p></li>
+</ol>
+<h2 id="appium-server-requirements">Appium Server Requirements</h2>
+<p>To setup Appium server with setup helper tool, you need follow below
+steps first:</p>
+<ol type="1">
+<li><p>Enable ssh &amp; disable sleep</p>
+<ol type="1">
+<li>System Preferences - Sharing : Check Remote Login</li>
+</ol></li>
+<li><p>Install Xcode (in Mac)</p>
+<ol type="1">
+<li>Download XCode binary from <a
+href="http://developer.apple.com/download/more">http://developer.apple.com/download/more</a></li>
+<li>Open Xcode_xx.xx.xip</li>
+<li>Copy uncompressed file to /Applications</li>
+<li>Run Xcode and agree license agreement</li>
+</ol>
+<p>or you can install Xcode via AppStore</p></li>
+<li><p>Enable for Accessibility access for Xcode Helper for Mac testing
+(in Mac)</p>
+<ol type="1">
+<li>Open System Preferences - Security &amp; Privacy - Privacy -
+Accessibility</li>
+<li>open
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Xcode/Agents/</li>
+<li>Drag &amp; drop Xcode Helper to Accessibility</li>
+</ol></li>
+</ol>
+<h2 id="install-all-dependencies-with-helper-tool">Install all
+dependencies with Helper Tool</h2>
+<p>Helper tool (Apple.exe) support to install all dependencies for
+Mac/iOS testing. You can run this tool in GFriend menu.</p>
+<p><img src=".images/apple_from_menu.png" alt="GF Menu" /></p>
+<p>You can install all required component for Mac/iOS test.</p>
+<p><img src=".images/apple.png" alt="Apple" /></p>
+<p>NOTE : All other component except WDA can be installed before
+registering device. WDA must be installed after registering device and
+syncing profile.</p>
+</body>
+</html>

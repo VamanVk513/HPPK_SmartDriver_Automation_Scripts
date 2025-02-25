@@ -1,0 +1,137 @@
+﻿// Destination Selection Function Test // 해당하는 Device 선택하기 위함
+
+using Hallasan
+using Windows
+Using Testfile.gfvar
+
+
+
+Used Destination Selection Function_Malbec
+{
+ Windows.Wait For ID (ui_PresetRevertButton,${WaitTime})
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,${WaitTime})
+ ${Sleep}
+ Windows.Maximize Window
+ ${Sleep}
+ Windows.Wait For Name (${Malbec},${WaitTime})
+ ${Sleep}
+ Windows.Click Name With Mouse (${Malbec})
+ ${Sleep} 
+ ${Capture_Screen_Shot}(Capture.jpg) 
+ Windows.Click ID (ui_OkButton)
+ ${LongSleep}
+}
+
+Used Destination Selection Function_Manhattan
+{
+ Windows.Wait For ID (ui_PresetRevertButton,${WaitTime})
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,${WaitTime})
+ ${Sleep}
+ Windows.Maximize Window
+ ${Sleep}
+ Windows.Wait For Name (${Manhattan},${WaitTime})
+ ${Sleep}
+ Windows.Click Name With Mouse (${Manhattan})
+ ${Sleep} 
+ ${Capture_Screen_Shot}(Capture.jpg) 
+ Windows.Click ID (ui_OkButton)
+ ${LongSleep}
+}
+
+Used Destination Selection Function_Novelli
+{
+ Windows.Wait For ID (ui_PresetRevertButton,${WaitTime})
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,${WaitTime})
+ ${Sleep}
+ Windows.Maximize Window
+ ${Sleep}
+ Windows.Wait For Name (${Novelli},${WaitTime})
+ ${Sleep}
+ Windows.Click Name With Mouse (${Novelli})
+ ${Sleep} 
+ ${Capture_Screen_Shot}(Capture.jpg) 
+ Windows.Click ID (ui_OkButton)
+ ${LongSleep}
+}
+Used Destination Selection Function_Vasari
+{
+ Windows.Wait For ID (ui_PresetRevertButton,${WaitTime})
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,${WaitTime})
+ ${Sleep}
+ Windows.Maximize Window
+ ${Sleep}
+ Windows.Wait For Name (${Vasari},${WaitTime})
+ ${Sleep}
+ Windows.Click Name With Mouse (${Vasari})
+ ${Sleep}
+ ${Capture_Screen_Shot}(Capture.jpg) 
+ Windows.Click ID (ui_OkButton)
+ ${LongSleep}
+}
+
+Used Destination Selection Function_Sayan
+{
+ Windows.Wait For ID (ui_PresetRevertButton,${WaitTime})
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,${WaitTime})
+ ${Sleep}
+ Windows.Maximize Window
+ ${Sleep}
+ Windows.Wait For Name (${Sayan},${WaitTime})
+ ${Sleep}
+ Windows.Click Name With Mouse (${Sayan})
+ ${Sleep}
+ ${Capture_Screen_Shot}(Capture.jpg) 
+ Windows.Click ID (ui_OkButton)
+ ${LongSleep}
+}
+Used Destination Selection Function_Taccola
+{
+ Windows.Wait For ID (ui_PresetRevertButton,${WaitTime})
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,${WaitTime})
+ ${Sleep}
+ Windows.Maximize Window
+ ${Sleep}
+ Windows.Wait For Name (${Taccola},${WaitTime})
+ ${Sleep}
+ Windows.Click Name With Mouse (${Taccola})
+ ${Sleep}
+ ${Capture_Screen_Shot}(Capture.jpg) 
+ Windows.Click ID (ui_OkButton)
+ ${LongSleep}
+}
+
+Used Destination Selection Function_Horizon
+{
+ Windows.Wait For ID (ui_PresetRevertButton,${WaitTime})
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,${WaitTime})
+ ${Sleep}
+ Windows.Maximize Window
+ ${Sleep}
+ Windows.Wait For Name (${Horizon},${WaitTime})
+ ${Sleep}
+ Windows.Click Name With Mouse (${Horizon})
+ ${Capture_Screen_Shot}(Capture.jpg) 
+ ${Sleep} 
+ Windows.Click ID (ui_OkButton)
+ ${DestinationSelectionSleep}
+}
+
+not Used Destination Selection Function
+{
+
+}
+

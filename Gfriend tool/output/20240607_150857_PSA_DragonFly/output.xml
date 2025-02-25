@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_DragonFly">
+  <StartTime>
+2024-06-07 15:09:21
+</StartTime>
+  <TestCase Name="2.Envelopes">
+    <StartTime>
+2024-06-07 15:09:21
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_Envelopes_PSA">
+      <StartTime>
+2024-06-07 15:09:21
+</StartTime>
+      <StartTime>
+2024-06-07 15:09:21
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_ENVELOPES.pdf,HP2F7C2F)">
+        <StartTime>
+2024-06-07 15:09:21
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-07 15:09:55
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP2F7C2F,30)">
+        <StartTime>
+2024-06-07 15:09:55
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-07 15:09:55
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-06-07 15:09:55
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-07 15:10:02
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-07 15:10:02
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 15:10:02
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-06-07 15:10:02
+</StartTime>
+      <StartTime>
+2024-06-07 15:10:02
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-07 15:10:02
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 15:10:02
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Wait For Name (HP2F7C2F,15)">
+      <StartTime>
+2024-06-07 15:10:02
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 15:10:02
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Wait For Name (HP PrintSupportApp,10)">
+      <StartTime>
+2024-06-07 15:10:02
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given name : HP PrintSupportApp
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240607_15101256.png
+</ScreenShot>
+      <EndTime>
+2024-06-07 15:10:12
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID (iconImage)">
+      <StartTime>
+2024-06-07 15:10:12
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : iconImage
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240607_15101603.png
+</ScreenShot>
+      <EndTime>
+2024-06-07 15:10:16
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-07 15:10:16
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 15:10:21
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-06-07 15:10:21
+</StartTime>
+    </Statement>
+  </TestCase>
+</TestSuite>

@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Sand">
+  <StartTime>
+2025-02-18 11:13:22
+</StartTime>
+  <TestCase Name="1.General Everyday Printing">
+    <StartTime>
+2025-02-18 11:13:22
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_General_Everyday_Printing">
+      <StartTime>
+2025-02-18 11:13:22
+</StartTime>
+      <StartTime>
+2025-02-18 11:13:22
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_General_Everyday_Printing.pdf,HP Smart Printing)">
+        <StartTime>
+2025-02-18 11:13:22
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-18 11:13:55
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,20)">
+        <StartTime>
+2025-02-18 11:13:55
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-18 11:13:55
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2025-02-18 11:13:55
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-18 11:14:01
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-18 11:14:01
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-18 11:14:01
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2025-02-18 11:14:01
+</StartTime>
+      <StartTime>
+2025-02-18 11:14:01
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-18 11:14:01
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-18 11:14:01
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_GeneralPrint)">
+      <StartTime>
+2025-02-18 11:14:01
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-18 11:14:01
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2025-02-18 11:14:01
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-18 11:14:06
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2025-02-18 11:14:06
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-18 11:14:06
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2025-02-18 11:14:06
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-18 11:14:11
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2025-02-18 11:14:11
+</StartTime>
+      <StartTime>
+2025-02-18 11:14:11
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2025-02-18 11:14:11
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-18 11:14:14
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2025-02-18 11:14:14
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-18 11:14:24
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2025-02-18 11:14:24
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2025-02-18 11:14:24
+</StartTime>
+          <Block>
+            <StartTime>
+2025-02-18 11:14:24
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2025-02-18 11:14:24
+</EndTime>
+          </Block>
+          <EndTime>
+2025-02-18 11:14:24
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2025-02-18 11:14:24
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(12)">
+        <StartTime>
+2025-02-18 11:14:24
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-18 11:14:36
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-18 11:14:36
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-18 11:14:36
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+      <StartTime>
+2025-02-18 11:14:36
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-18 11:14:36
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2025-02-18 11:14:36
+</EndTime>
+  </TestCase>
+  <TestCase Name="2.EcoSMART Settings">
+    <StartTime>
+2025-02-18 11:14:36
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_EcoSMART_Settings">
+      <StartTime>
+2025-02-18 11:14:36
+</StartTime>
+      <StartTime>
+2025-02-18 11:14:36
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_EcoSMART_Settings.pdf,HP Smart Printing)">
+        <StartTime>
+2025-02-18 11:14:36
+</StartTime>
+      </Statement>
+    </Statement>
+  </TestCase>
+</TestSuite>

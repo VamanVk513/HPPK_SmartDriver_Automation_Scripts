@@ -1,0 +1,1305 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Hulk">
+  <StartTime>
+2024-02-21 15:14:07
+</StartTime>
+  <TestCase Name="1.General Everyday Printing">
+    <StartTime>
+2024-02-21 15:14:07
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_General_Everyday_Printing">
+      <StartTime>
+2024-02-21 15:14:07
+</StartTime>
+      <StartTime>
+2024-02-21 15:14:07
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_General_Everyday_Printing.pdf,HP Smart Printing)">
+        <StartTime>
+2024-02-21 15:14:07
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:14:37
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+        <StartTime>
+2024-02-21 15:14:37
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:14:38
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-02-21 15:14:38
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:14:44
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:14:44
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:14:44
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-02-21 15:14:44
+</StartTime>
+      <StartTime>
+2024-02-21 15:14:44
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:14:44
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:14:44
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_GeneralPrint_PCL6)">
+      <StartTime>
+2024-02-21 15:14:44
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:14:44
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-02-21 15:14:44
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:14:49
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-02-21 15:14:49
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:14:49
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-02-21 15:14:49
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:14:54
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2024-02-21 15:14:54
+</StartTime>
+      <StartTime>
+2024-02-21 15:14:54
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2024-02-21 15:14:54
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:14:56
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-02-21 15:14:56
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:15:16
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2024-02-21 15:15:16
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2024-02-21 15:15:16
+</StartTime>
+          <Block>
+            <StartTime>
+2024-02-21 15:15:16
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-02-21 15:15:16
+</EndTime>
+          </Block>
+          <EndTime>
+2024-02-21 15:15:16
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-02-21 15:15:16
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-02-21 15:15:16
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:15:36
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:15:36
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:15:36
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+      <StartTime>
+2024-02-21 15:15:36
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:15:36
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_Application.PT Value_TwoSidedLongEdge">
+      <StartTime>
+2024-02-21 15:15:36
+</StartTime>
+      <StartTime>
+2024-02-21 15:15:36
+</StartTime>
+      <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+        <StartTime>
+2024-02-21 15:15:36
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:15:36
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:JobDuplexAllDocumentsContiguously']/psf:Option,name)">
+        <StartTime>
+2024-02-21 15:15:36
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+psk:OneSided
+</Output>
+        <EndTime>
+2024-02-21 15:15:36
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},psk:OneSided)">
+        <StartTime>
+2024-02-21 15:15:36
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:15:36
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+        <StartTime>
+2024-02-21 15:15:36
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:OptIn
+</Output>
+        <EndTime>
+2024-02-21 15:15:36
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:OptIn)">
+        <StartTime>
+2024-02-21 15:15:36
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:15:36
+</EndTime>
+      </Statement>
+      <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+        <StartTime>
+2024-02-21 15:15:36
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+        1 file(s) copied.
+
+</Output>
+        <EndTime>
+2024-02-21 15:15:36
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:15:36
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:15:36
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2024-02-21 15:15:36
+</EndTime>
+  </TestCase>
+  <TestCase Name="2.EcoSMART Settings">
+    <StartTime>
+2024-02-21 15:15:36
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_EcoSMART_Settings">
+      <StartTime>
+2024-02-21 15:15:36
+</StartTime>
+      <StartTime>
+2024-02-21 15:15:36
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_EcoSMART_Settings.pdf,HP Smart Printing)">
+        <StartTime>
+2024-02-21 15:15:36
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:16:07
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+        <StartTime>
+2024-02-21 15:16:07
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:16:07
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-02-21 15:16:07
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:16:13
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:16:13
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:16:13
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-02-21 15:16:13
+</StartTime>
+      <StartTime>
+2024-02-21 15:16:13
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:16:13
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:16:13
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_EcoSmart)">
+      <StartTime>
+2024-02-21 15:16:13
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:16:13
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-02-21 15:16:13
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:16:18
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-02-21 15:16:18
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:16:18
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-02-21 15:16:18
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:16:24
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2024-02-21 15:16:24
+</StartTime>
+      <StartTime>
+2024-02-21 15:16:24
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2024-02-21 15:16:24
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:16:26
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-02-21 15:16:26
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:16:46
+</EndTime>
+      </Statement>
+      <If Condition="If :  Hallasan.Close Application">
+        <StartTime>
+2024-02-21 15:16:46
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2024-02-21 15:16:46
+</StartTime>
+          <Block>
+            <StartTime>
+2024-02-21 15:16:46
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-02-21 15:16:46
+</EndTime>
+          </Block>
+          <EndTime>
+2024-02-21 15:16:46
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-02-21 15:16:46
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-02-21 15:16:46
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:17:06
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:17:06
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:17:06
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+      <StartTime>
+2024-02-21 15:17:06
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:17:06
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_Application.PT Value_TwoSidedLongEdge">
+      <StartTime>
+2024-02-21 15:17:06
+</StartTime>
+      <StartTime>
+2024-02-21 15:17:06
+</StartTime>
+      <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+        <StartTime>
+2024-02-21 15:17:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:17:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:JobDuplexAllDocumentsContiguously']/psf:Option,name)">
+        <StartTime>
+2024-02-21 15:17:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+psk:OneSided
+</Output>
+        <EndTime>
+2024-02-21 15:17:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},psk:OneSided)">
+        <StartTime>
+2024-02-21 15:17:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:17:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+        <StartTime>
+2024-02-21 15:17:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:OptIn
+</Output>
+        <EndTime>
+2024-02-21 15:17:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:OptIn)">
+        <StartTime>
+2024-02-21 15:17:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:17:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+        <StartTime>
+2024-02-21 15:17:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+        1 file(s) copied.
+
+</Output>
+        <EndTime>
+2024-02-21 15:17:06
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:17:06
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:17:06
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2024-02-21 15:17:06
+</EndTime>
+  </TestCase>
+  <TestCase Name="3.Envelopes">
+    <StartTime>
+2024-02-21 15:17:06
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_Envelopes">
+      <StartTime>
+2024-02-21 15:17:06
+</StartTime>
+      <StartTime>
+2024-02-21 15:17:06
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Envelopes.pdf,HP Smart Printing)">
+        <StartTime>
+2024-02-21 15:17:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:17:36
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+        <StartTime>
+2024-02-21 15:17:36
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:17:37
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-02-21 15:17:37
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:17:43
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:17:43
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:17:43
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-02-21 15:17:43
+</StartTime>
+      <StartTime>
+2024-02-21 15:17:43
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:17:43
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:17:43
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_Envelope_PCL6)">
+      <StartTime>
+2024-02-21 15:17:43
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:17:43
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-02-21 15:17:43
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:17:48
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-02-21 15:17:48
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:17:48
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-02-21 15:17:48
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:17:53
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2024-02-21 15:17:53
+</StartTime>
+      <StartTime>
+2024-02-21 15:17:53
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2024-02-21 15:17:53
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:17:55
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-02-21 15:17:55
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:18:15
+</EndTime>
+      </Statement>
+      <If Condition="If :  Hallasan.Close Application">
+        <StartTime>
+2024-02-21 15:18:15
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2024-02-21 15:18:15
+</StartTime>
+          <Block>
+            <StartTime>
+2024-02-21 15:18:15
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-02-21 15:18:15
+</EndTime>
+          </Block>
+          <EndTime>
+2024-02-21 15:18:15
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-02-21 15:18:15
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-02-21 15:18:15
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:18:35
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:18:35
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:18:35
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+      <StartTime>
+2024-02-21 15:18:35
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:18:35
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_Application.PT Value_EnvelopePlain">
+      <StartTime>
+2024-02-21 15:18:35
+</StartTime>
+      <StartTime>
+2024-02-21 15:18:35
+</StartTime>
+      <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+        <StartTime>
+2024-02-21 15:18:35
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:18:35
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)">
+        <StartTime>
+2024-02-21 15:18:35
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:_8_1076_0000_0_600x600
+</Output>
+        <EndTime>
+2024-02-21 15:18:35
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:_8_1076_0000_0_600x600)">
+        <StartTime>
+2024-02-21 15:18:35
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:18:35
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+        <StartTime>
+2024-02-21 15:18:35
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:OptIn
+</Output>
+        <EndTime>
+2024-02-21 15:18:35
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:OptIn)">
+        <StartTime>
+2024-02-21 15:18:35
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:18:35
+</EndTime>
+      </Statement>
+      <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+        <StartTime>
+2024-02-21 15:18:35
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+        1 file(s) copied.
+
+</Output>
+        <EndTime>
+2024-02-21 15:18:36
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:18:36
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:18:36
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2024-02-21 15:18:36
+</EndTime>
+  </TestCase>
+  <TestCase Name="4.Labels">
+    <StartTime>
+2024-02-21 15:18:36
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_Labels">
+      <StartTime>
+2024-02-21 15:18:36
+</StartTime>
+      <StartTime>
+2024-02-21 15:18:36
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Labels.pdf,HP Smart Printing)">
+        <StartTime>
+2024-02-21 15:18:36
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:19:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+        <StartTime>
+2024-02-21 15:19:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:19:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-02-21 15:19:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:19:12
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:19:12
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:19:12
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-02-21 15:19:12
+</StartTime>
+      <StartTime>
+2024-02-21 15:19:12
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:19:12
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:19:12
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_Labels)">
+      <StartTime>
+2024-02-21 15:19:12
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:19:12
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-02-21 15:19:12
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:19:17
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-02-21 15:19:17
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:19:18
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-02-21 15:19:18
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:19:23
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2024-02-21 15:19:23
+</StartTime>
+      <StartTime>
+2024-02-21 15:19:23
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2024-02-21 15:19:23
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:19:25
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-02-21 15:19:25
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:19:45
+</EndTime>
+      </Statement>
+      <If Condition="If :  Hallasan.Close Application">
+        <StartTime>
+2024-02-21 15:19:45
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2024-02-21 15:19:45
+</StartTime>
+          <Block>
+            <StartTime>
+2024-02-21 15:19:45
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-02-21 15:19:45
+</EndTime>
+          </Block>
+          <EndTime>
+2024-02-21 15:19:45
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-02-21 15:19:45
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-02-21 15:19:45
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:20:05
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:20:05
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:20:05
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+      <StartTime>
+2024-02-21 15:20:05
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:20:05
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_Application.PT Value_Label">
+      <StartTime>
+2024-02-21 15:20:05
+</StartTime>
+      <StartTime>
+2024-02-21 15:20:05
+</StartTime>
+      <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+        <StartTime>
+2024-02-21 15:20:05
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:20:05
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)">
+        <StartTime>
+2024-02-21 15:20:05
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:_8_1076_0000_0_600x600
+</Output>
+        <EndTime>
+2024-02-21 15:20:05
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:_8_1076_0000_0_600x600)">
+        <StartTime>
+2024-02-21 15:20:05
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:20:05
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+        <StartTime>
+2024-02-21 15:20:05
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:OptIn
+</Output>
+        <EndTime>
+2024-02-21 15:20:05
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:OptIn)">
+        <StartTime>
+2024-02-21 15:20:05
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:20:05
+</EndTime>
+      </Statement>
+      <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+        <StartTime>
+2024-02-21 15:20:05
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+        1 file(s) copied.
+
+</Output>
+        <EndTime>
+2024-02-21 15:20:05
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:20:05
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:20:05
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2024-02-21 15:20:05
+</EndTime>
+  </TestCase>
+  <EndTime>
+2024-02-21 15:20:05
+</EndTime>
+</TestSuite>

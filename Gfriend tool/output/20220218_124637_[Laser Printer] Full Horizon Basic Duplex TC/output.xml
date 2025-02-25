@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-02-18 12:46:55
+</StartTime>
+  <TestCase Name="Two-Sided Printing:TwoSidedLongEdge">
+    <StartTime>
+2022-02-18 12:46:55
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-02-18 12:46:55
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-02-18 12:46:55
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_TwoSidedLongEdge">
+          <StartTime>
+2022-02-18 12:46:55
+</StartTime>
+          <StartTime>
+2022-02-18 12:46:55
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_TwoSidedLongEdge.pdf,HP Smart Printing)">
+            <StartTime>
+2022-02-18 12:46:55
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Fail to click target printer
+</ErrorDescription>
+            <EndTime>
+2022-02-18 12:47:13
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-02-18 12:47:13
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find element with given name : HP Smart Printing
+</ErrorDescription>
+            <ScreenShot>
+.\Windows_Screenshot_220218_12474447.png
+</ScreenShot>
+            <EndTime>
+2022-02-18 12:47:44
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-02-18 12:47:44
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-02-18 12:47:50
+</EndTime>
+          </Statement>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-02-18 12:47:50
+</EndTime>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-02-18 12:47:50
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-02-18 12:47:50
+</StartTime>
+          <StartTime>
+2022-02-18 12:47:50
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-02-18 12:47:50
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-02-18 12:47:50
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.JobDuplexAllDocumentsContiguously,Option.TwoSidedLongEdge)">
+          <StartTime>
+2022-02-18 12:47:50
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find combobox : Part.JobDuplexAllDocumentsContiguously
+</ErrorDescription>
+          <EndTime>
+2022-02-18 12:47:52
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-02-18 12:47:52
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220218_12475353.png
+</ScreenShot>
+          <EndTime>
+2022-02-18 12:47:53
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-02-18 12:47:53
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-02-18 12:47:58
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2022-02-18 12:47:58
+</StartTime>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

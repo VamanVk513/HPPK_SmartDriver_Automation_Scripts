@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Sand">
+  <StartTime>
+2023-06-28 15:24:23
+</StartTime>
+  <TestCase Name="5.Remote:Two-Sided Printing:TwoSidedLongEdge">
+    <StartTime>
+2023-06-28 15:24:23
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2023-06-28 15:24:23
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2023-06-28 15:24:23
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_TwoSidedLongEdge">
+          <StartTime>
+2023-06-28 15:24:23
+</StartTime>
+          <StartTime>
+2023-06-28 15:24:23
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_TwoSidedLongEdge.pdf,HP Smart Printing)">
+            <StartTime>
+2023-06-28 15:24:23
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-06-28 15:24:54
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2023-06-28 15:24:54
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-06-28 15:24:54
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2023-06-28 15:24:54
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-06-28 15:25:00
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-06-28 15:25:00
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-06-28 15:25:00
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2023-06-28 15:25:00
+</StartTime>
+          <StartTime>
+2023-06-28 15:25:00
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-06-28 15:25:00
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-06-28 15:25:00
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.JobDuplexAllDocumentsContiguously,Option.TwoSidedLongEdge)">
+          <StartTime>
+2023-06-28 15:25:00
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-06-28 15:25:00
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2023-06-28 15:25:00
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_230628_15250068.png
+</ScreenShot>
+          <EndTime>
+2023-06-28 15:25:00
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2023-06-28 15:25:00
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-06-28 15:25:05
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2023-06-28 15:25:05
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-06-28 15:25:05
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2023-06-28 15:25:05
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-06-28 15:25:10
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2023-06-28 15:25:10
+</StartTime>
+          <StartTime>
+2023-06-28 15:25:10
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2023-06-28 15:25:10
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-06-28 15:25:12
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2023-06-28 15:25:12
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

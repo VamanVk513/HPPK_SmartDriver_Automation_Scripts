@@ -1,0 +1,62 @@
+﻿ 
+using Hallasan
+using Windows
+Using Testfile.gfvar
+
+Print // 인쇄 출력후 Application 종료
+{
+Hallasan.Click Print Button
+${PrintSleep}      
+
+  If: Hallasan.Close Application 
+     {
+     }
+         
+         Fail:
+          {
+      
+          }
+          Error:
+          {
+       
+          }    
+          
+     ${ApplicationSleep_Print}
+  
+
+
+}
+
+
+
+Cancel // Application 강제 종료 하기위함
+{
+   
+  If: Windows.Click Name With Mouse (Cancel)
+     {
+     }
+         
+         Fail:
+          {
+       Hallasan.Close Application 
+          }
+          Error:
+          {
+       Hallasan.Close Application 
+          }
+     
+ If: Hallasan.Close Application 
+     
+     {
+     }
+         
+         Fail:
+          {
+      
+          }
+          Error:
+          {
+       
+          }
+    ${ApplicationSleep_NotPrint} 
+}

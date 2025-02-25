@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gftool>
+  <executable>
+    GitCommit.bat
+  </executable>
+  <displayname>
+    Git - Commit and Push
+  </displayname>
+  <description>
+    Commit all changed and push to remote
+  </description>
+  <args>
+  	<arg name ="ScriptFolder" mandatory = "true">
+		<value>ScriptRoot</value>
+	</arg>
+    <arg name ="Commit comment" mandatory ="true">
+      <value>Custom</value>
+    </arg>
+  </args>
+</gftool>

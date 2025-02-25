@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Hulk">
+  <StartTime>
+2024-02-21 15:01:40
+</StartTime>
+  <TestCase Name="1.General Everyday Printing">
+    <StartTime>
+2024-02-21 15:01:40
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_General_Everyday_Printing">
+      <StartTime>
+2024-02-21 15:01:40
+</StartTime>
+      <StartTime>
+2024-02-21 15:01:40
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_General_Everyday_Printing.pdf,HP Smart Printing)">
+        <StartTime>
+2024-02-21 15:01:40
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:02:10
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+        <StartTime>
+2024-02-21 15:02:10
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:02:10
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-02-21 15:02:10
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:02:16
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:02:16
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:02:16
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-02-21 15:02:16
+</StartTime>
+      <StartTime>
+2024-02-21 15:02:16
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:02:16
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:02:16
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,CBItemTextDisplay)">
+      <StartTime>
+2024-02-21 15:02:16
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find combobox : ui_PresetComboBox
+</ErrorDescription>
+      <EndTime>
+2024-02-21 15:02:23
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-02-21 15:02:23
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:02:28
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-02-21 15:02:28
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+      <ScreenShot>
+.\Hallasan_Screenshot_240221_15033809.png
+</ScreenShot>
+      <EndTime>
+2024-02-21 15:03:38
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-02-21 15:03:38
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:03:43
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2024-02-21 15:03:43
+</StartTime>
+      <StartTime>
+2024-02-21 15:03:43
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2024-02-21 15:03:43
+</StartTime>
+        <Result>
+Error
+</Result>
+        <ErrorDescription>
+Error during click print button
+</ErrorDescription>
+        <AdditionalInfo>
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HP.GFriend.Keywords.ApplicationUtils.ClickPrintButtonInAcrobatReader(Windows windowsController) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\ApplicationUtils.cs:line 398
+   at HP.GFriend.Keywords.Windows.ClickPrintButton() in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 935
+</AdditionalInfo>
+        <EndTime>
+2024-02-21 15:03:50
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-02-21 15:03:50
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:04:10
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2024-02-21 15:04:10
+</StartTime>
+        <ConditionResult>
+ERROR
+</ConditionResult>
+        <ErrorDescription>
+Unexpected exception
+</ErrorDescription>
+        <AdditionalInfo>
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.Windows.Automation.ElementNotAvailableException: Element not available ---&gt; System.Runtime.InteropServices.COMException: An event was unable to invoke any of the subscribers (Exception from HRESULT: 0x80040201)
+   at UIAutomationClient.IUIAutomationElement.GetCurrentPattern(Int32 patternId)
+   at System.Windows.Automation.AutomationElement.TryGetCurrentPattern(AutomationPattern pattern, Object&amp; patternObject)
+   --- End of inner exception stack trace ---
+   at System.Windows.Automation.AutomationElement.TryGetCurrentPattern(AutomationPattern pattern, Object&amp; patternObject)
+   at HP.GFriend.Keywords.ApplicationUtils.CloseApplication() in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\ApplicationUtils.cs:line 104
+   at HP.GFriend.Keywords.Windows.CloseApplication() in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 926
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+</AdditionalInfo>
+        <StatementBlock Kind="ERROR">
+          <StartTime>
+2024-02-21 15:04:10
+</StartTime>
+          <Block>
+            <StartTime>
+2024-02-21 15:04:10
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-02-21 15:04:10
+</EndTime>
+          </Block>
+          <EndTime>
+2024-02-21 15:04:10
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-02-21 15:04:10
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2024-02-21 15:04:10
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:04:30
+</EndTime>
+      </Statement>
+      <Result>
+Error
+</Result>
+      <EndTime>
+2024-02-21 15:04:30
+</EndTime>
+      <Result>
+Error
+</Result>
+      <EndTime>
+2024-02-21 15:04:30
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+      <StartTime>
+2024-02-21 15:04:30
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : PrintingToDialog.ui_ContentFrame.PrintButton
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240221_15043356.png
+</ScreenShot>
+      <EndTime>
+2024-02-21 15:04:33
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_Application.PT Value_TwoSidedLongEdge">
+      <StartTime>
+2024-02-21 15:04:33
+</StartTime>
+      <StartTime>
+2024-02-21 15:04:33
+</StartTime>
+      <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+        <StartTime>
+2024-02-21 15:04:33
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:04:33
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:JobDuplexAllDocumentsContiguously']/psf:Option,name)">
+        <StartTime>
+2024-02-21 15:04:33
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+psk:OneSided
+</Output>
+        <EndTime>
+2024-02-21 15:04:33
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},psk:OneSided)">
+        <StartTime>
+2024-02-21 15:04:33
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:04:33
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+        <StartTime>
+2024-02-21 15:04:33
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:OptIn
+</Output>
+        <EndTime>
+2024-02-21 15:04:33
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:OptIn)">
+        <StartTime>
+2024-02-21 15:04:33
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-02-21 15:04:34
+</EndTime>
+      </Statement>
+      <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+        <StartTime>
+2024-02-21 15:04:34
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+        1 file(s) copied.
+
+</Output>
+        <EndTime>
+2024-02-21 15:04:34
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:04:34
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-02-21 15:04:34
+</EndTime>
+    </Statement>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2024-02-21 15:04:34
+</EndTime>
+  </TestCase>
+  <TestCase Name="2.EcoSMART Settings">
+    <StartTime>
+2024-02-21 15:04:34
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_EcoSMART_Settings">
+      <StartTime>
+2024-02-21 15:04:34
+</StartTime>
+      <StartTime>
+2024-02-21 15:04:34
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_EcoSMART_Settings.pdf,HP Smart Printing)">
+        <StartTime>
+2024-02-21 15:04:34
+</StartTime>
+      </Statement>
+    </Statement>
+  </TestCase>
+</TestSuite>

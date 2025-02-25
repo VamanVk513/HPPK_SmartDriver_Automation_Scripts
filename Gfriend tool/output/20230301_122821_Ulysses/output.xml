@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Ulysses">
+  <StartTime>
+2023-03-01 12:28:42
+</StartTime>
+  <TestCase Name="1.General Everyday Printing">
+    <StartTime>
+2023-03-01 12:28:42
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_General_Everyday_Printing">
+      <StartTime>
+2023-03-01 12:28:42
+</StartTime>
+      <StartTime>
+2023-03-01 12:28:42
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_General_Everyday_Printing.pdf,HP Smart Printing)">
+        <StartTime>
+2023-03-01 12:28:42
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-03-01 12:29:13
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+        <StartTime>
+2023-03-01 12:29:13
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-03-01 12:29:13
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2023-03-01 12:29:13
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-03-01 12:29:19
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-03-01 12:29:19
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-03-01 12:29:19
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2023-03-01 12:29:19
+</StartTime>
+      <StartTime>
+2023-03-01 12:29:19
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-03-01 12:29:19
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-03-01 12:29:19
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_GeneralPrint_PCL6)">
+      <StartTime>
+2023-03-01 12:29:19
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-03-01 12:29:19
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2023-03-01 12:29:19
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-03-01 12:29:24
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2023-03-01 12:29:24
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-03-01 12:29:25
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2023-03-01 12:29:25
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-03-01 12:29:30
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2023-03-01 12:29:30
+</StartTime>
+      <StartTime>
+2023-03-01 12:29:30
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2023-03-01 12:29:30
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-03-01 12:29:32
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2023-03-01 12:29:32
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-03-01 12:29:52
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2023-03-01 12:29:52
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2023-03-01 12:29:52
+</StartTime>
+          <Block>
+            <StartTime>
+2023-03-01 12:29:52
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2023-03-01 12:29:52
+</EndTime>
+          </Block>
+          <EndTime>
+2023-03-01 12:29:52
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2023-03-01 12:29:52
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2023-03-01 12:29:52
+</StartTime>
+      </Statement>
+    </Statement>
+  </TestCase>
+</TestSuite>

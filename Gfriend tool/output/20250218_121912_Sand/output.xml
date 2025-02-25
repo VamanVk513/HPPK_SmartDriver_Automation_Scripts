@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Sand">
+  <StartTime>
+2025-02-18 12:19:36
+</StartTime>
+  <TestCase Name="1.General Everyday Printing">
+    <StartTime>
+2025-02-18 12:19:36
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_General_Everyday_Printing">
+      <StartTime>
+2025-02-18 12:19:36
+</StartTime>
+      <StartTime>
+2025-02-18 12:19:36
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_General_Everyday_Printing.pdf,HP Smart Printing)">
+        <StartTime>
+2025-02-18 12:19:36
+</StartTime>
+        <Result>
+Error
+</Result>
+        <ErrorDescription>
+Error during open program
+</ErrorDescription>
+        <ScreenShot>
+.\Hallasan_Screenshot_250218_12195116.png
+</ScreenShot>
+        <AdditionalInfo>
+System.Runtime.InteropServices.COMException (0x80131505): Operation timed out. (Exception from HRESULT: 0x80131505)
+   at UIAutomationClient.CUIAutomation8Class.GetFocusedElement()
+   at System.Windows.Automation.AutomationElement.get_FocusedElement()
+   at HP.GFriend.Keywords.Windows.OpenWithPath(String executablePath, String waitTime) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 938
+</AdditionalInfo>
+        <EndTime>
+2025-02-18 12:19:51
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,20)">
+        <StartTime>
+2025-02-18 12:19:51
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Can not find element with given name : HP Smart Printing
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_250218_12201156.png
+</ScreenShot>
+        <EndTime>
+2025-02-18 12:20:11
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2025-02-18 12:20:11
+</StartTime>
+      </Statement>
+    </Statement>
+  </TestCase>
+</TestSuite>

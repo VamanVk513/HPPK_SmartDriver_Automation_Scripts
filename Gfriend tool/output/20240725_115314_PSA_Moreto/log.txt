@@ -1,0 +1,40 @@
+﻿2024-07-25 11:53:14.728 [T] ?::?::GFriend version : 2.55.1.3
+2024-07-25 11:53:14.728 [T] ?::?::Parsing start
+2024-07-25 11:53:14.728 [T] ?::?::Parsing Variable File : C:\GFriend_PotG\scripts\Acual Script\Acual Script\Testfile.gfvar
+2024-07-25 11:53:14.728 [T] ?::?::Creating custom library with C:\GFriend_PotG\scripts\Acual Script\Acual Script\Destination_Selection_Application.gflib
+2024-07-25 11:53:14.728 [T] ?::?::GFriend version : 2.55.1.3
+2024-07-25 11:53:14.728 [T] ?::?::Parsing start
+2024-07-25 11:53:14.728 [E] ?::?::System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at FastColoredTextBoxNS.TextSource.get_Item(Int32 i)
+   at FastColoredTextBoxNS.FastColoredTextBox.get_Item(Int32 iLine)
+   at FastColoredTextBoxNS.Range.GetText(String& text, List`1& charIndexToPlace)
+   at FastColoredTextBoxNS.Range.<GetRanges>d__0.MoveNext()
+   at FastColoredTextBoxNS.Range.SetStyle(StyleIndex styleLayer, String regexPattern, RegexOptions options)
+   at FastColoredTextBoxNS.Range.SetStyle(Style style, String regexPattern, RegexOptions options)
+   at HP.GFriend.UI.Controls.GFOutputBox.TextChanged_On_Output(Object sender, TextChangedEventArgs e)
+2024-07-25 11:53:14.775 [E] ?::?::Unexpected Error at
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at FastColoredTextBoxNS.TextSource.LineHasFoldingStartMarker(Int32 iLine)
+   at FastColoredTextBoxNS.FastColoredTextBox.HighlightFoldings()
+   at FastColoredTextBoxNS.FastColoredTextBox.OnSelectionChanged()
+   at FastColoredTextBoxNS.Range.OnSelectionChanged()
+   at FastColoredTextBoxNS.Range.EndUpdate()
+   at FastColoredTextBoxNS.FastColoredTextBox.AppendText(String text, Style style)
+   at FastColoredTextBoxNS.FastColoredTextBox.AppendText(String text)
+   at HP.GFriend.UI.TextBoxStreamWriter.WriteLine(String value)
+   at System.IO.TextWriter.SyncTextWriter.WriteLine(String format, Object arg0, Object arg1)
+   at System.Console.WriteLine(String format, Object arg0, Object arg1)
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+   at HP.GFriend.Core.Execution.Statement.Run(TestDataManager testDataManager, Int32 repeatCount, Int32 stackLevel, Dictionary`2 arguments)
+   at HP.GFriend.Core.Custom.CustomKeyword.Run(TestDataManager testDataManager, Object[] parameters, Int32 repeat)
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+   at HP.GFriend.Core.Execution.Statement.Run(TestDataManager testDataManager, Int32 repeatCount, Int32 stackLevel, Dictionary`2 arguments)
+   at HP.GFriend.Core.Execution.TestCase.Run(TestDataManager testDataManager, Int32 repeatCount, Int32 stackLevel, Dictionary`2 arguments)
+   at HP.GFriend.Core.Execution.TestSuite.Run(TestDataManager testDataManager, List`1 tcToRun)
+   at HP.GFriend.Core.Execution.Runner.Run(String tsPath, TestDataManager& testDataManager, List`1 tcToRun, String libraryPath, String defaultDut, Dictionary`2 variables, Dictionary`2 executionVariables)

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-03-22 11:22:35
+</StartTime>
+  <TestCase Name="Refresh">
+    <StartTime>
+2022-03-22 11:22:35
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-03-22 11:22:35
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-03-22 11:22:35
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Refresh">
+          <StartTime>
+2022-03-22 11:22:35
+</StartTime>
+          <Result>
+Error
+</Result>
+          <ErrorDescription>
+Can not find specified keyword
+</ErrorDescription>
+          <EndTime>
+2022-03-22 11:22:35
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-03-22 11:22:35
+</StartTime>
+          <StartTime>
+2022-03-22 11:22:35
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 11:22:35
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 11:22:35
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (RefreshButton,10)">
+          <StartTime>
+2022-03-22 11:22:35
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : RefreshButton
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_220322_11224633.png
+</ScreenShot>
+          <EndTime>
+2022-03-22 11:22:46
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(RefreshButton)">
+          <StartTime>
+2022-03-22 11:22:46
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : RefreshButton
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_220322_11225009.png
+</ScreenShot>
+          <EndTime>
+2022-03-22 11:22:50
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-22 11:22:50
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 11:22:55
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-03-22 11:22:55
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220322_11225519.png
+</ScreenShot>
+          <EndTime>
+2022-03-22 11:22:55
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-22 11:22:55
+</StartTime>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<gftool>
+  <executable>
+    MeGustasTu.exe
+  </executable>
+  <displayname>
+    UI Inspector
+  </displayname>
+  <description>
+    UI Inspector for Gemstone and Android devices
+  </description>
+  <args>
+    <arg name ="Device Identifier" mandatory ="false">
+      <switch>-i</switch>
+      <value>DeviceAddress</value>
+    </arg>
+    <arg name ="Admin Password" mandatory ="false">
+      <switch>-p</switch>
+      <value>AdminPassword</value>
+    </arg>
+  </args>
+</gftool>

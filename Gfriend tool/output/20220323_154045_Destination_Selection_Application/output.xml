@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Destination_Selection_Application">
+  <StartTime>
+2022-03-23 15:41:07
+</StartTime>
+  <TestCase Name="PT Value_Private_Pickup_On">
+    <StartTime>
+2022-03-23 15:41:07
+</StartTime>
+    <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+      <StartTime>
+2022-03-23 15:41:07
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-03-23 15:41:07
+</EndTime>
+    </Statement>
+    <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobDeliveryMode']/psf:Option,name)">
+      <StartTime>
+2022-03-23 15:41:07
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <Output>
+ns0000:Secure
+</Output>
+      <EndTime>
+2022-03-23 15:41:07
+</EndTime>
+    </Statement>
+    <Statement StatementName="Equals (${value},ns0000:Secure)">
+      <StartTime>
+2022-03-23 15:41:07
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-03-23 15:41:07
+</EndTime>
+    </Statement>
+    <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+      <StartTime>
+2022-03-23 15:41:07
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <Output>
+ns0000:OptOut
+</Output>
+      <EndTime>
+2022-03-23 15:41:07
+</EndTime>
+    </Statement>
+    <Statement StatementName="Equals (${value},ns0000:OptOut)">
+      <StartTime>
+2022-03-23 15:41:07
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-03-23 15:41:07
+</EndTime>
+    </Statement>
+    <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+      <StartTime>
+2022-03-23 15:41:07
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <Output>
+        1 file(s) copied.
+
+</Output>
+      <EndTime>
+2022-03-23 15:41:07
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2022-03-23 15:41:07
+</EndTime>
+  </TestCase>
+  <TestCase Name="PT Value_Private_Pickup_Off">
+    <StartTime>
+2022-03-23 15:41:07
+</StartTime>
+    <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+      <StartTime>
+2022-03-23 15:41:07
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-03-23 15:41:07
+</EndTime>
+    </Statement>
+    <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name)">
+      <StartTime>
+2022-03-23 15:41:07
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <Output>
+ns0000:On
+</Output>
+      <EndTime>
+2022-03-23 15:41:07
+</EndTime>
+    </Statement>
+    <Statement StatementName="Equals (${value},ns0000:On)">
+      <StartTime>
+2022-03-23 15:41:07
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-03-23 15:41:07
+</EndTime>
+    </Statement>
+    <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+      <StartTime>
+2022-03-23 15:41:07
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <Output>
+ns0000:OptOut
+</Output>
+      <EndTime>
+2022-03-23 15:41:07
+</EndTime>
+    </Statement>
+    <Statement StatementName="Equals (${value},ns0000:OptOut)">
+      <StartTime>
+2022-03-23 15:41:07
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-03-23 15:41:08
+</EndTime>
+    </Statement>
+    <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+      <StartTime>
+2022-03-23 15:41:08
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <Output>
+        1 file(s) copied.
+
+</Output>
+      <EndTime>
+2022-03-23 15:41:08
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2022-03-23 15:41:08
+</EndTime>
+  </TestCase>
+  <EndTime>
+2022-03-23 15:41:08
+</EndTime>
+</TestSuite>

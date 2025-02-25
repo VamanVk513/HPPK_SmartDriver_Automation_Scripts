@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Sand">
+  <StartTime>
+2023-06-28 17:39:42
+</StartTime>
+  <TestCase Name="34.Remote:Paper Size:Envelope C5">
+    <StartTime>
+2023-06-28 17:39:42
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2023-06-28 17:39:42
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2023-06-28 17:39:42
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Envelope_C5">
+          <StartTime>
+2023-06-28 17:39:42
+</StartTime>
+          <StartTime>
+2023-06-28 17:39:42
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_C5.pdf,HP Smart Printing)">
+            <StartTime>
+2023-06-28 17:39:42
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-06-28 17:40:11
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2023-06-28 17:40:11
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

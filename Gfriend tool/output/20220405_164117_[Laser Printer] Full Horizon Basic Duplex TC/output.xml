@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-04-05 16:41:40
+</StartTime>
+  <TestCase Name="Delivery Mode: NormalMode">
+    <StartTime>
+2022-04-05 16:41:40
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-04-05 16:41:40
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-04-05 16:41:40
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_NormalMode">
+          <StartTime>
+2022-04-05 16:41:40
+</StartTime>
+          <StartTime>
+2022-04-05 16:41:40
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Normal.pdf,HP Smart Printing)">
+            <StartTime>
+2022-04-05 16:41:40
+</StartTime>
+            <Result>
+Error
+</Result>
+            <ErrorDescription>
+Error during open program
+</ErrorDescription>
+            <ScreenShot>
+.\Hallasan_Screenshot_220405_16415529.png
+</ScreenShot>
+            <AdditionalInfo>
+System.Runtime.InteropServices.COMException (0x80131505): Operation timed out. (Exception from HRESULT: 0x80131505)
+   at UIAutomationClient.CUIAutomation8Class.GetFocusedElement()
+   at System.Windows.Automation.AutomationElement.get_FocusedElement()
+   at HP.GFriend.Keywords.Windows.OpenWithPath(String executablePath, String waitTime) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 866
+</AdditionalInfo>
+            <EndTime>
+2022-04-05 16:41:55
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2022-04-05 16:41:55
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find window
+</ErrorDescription>
+            <ScreenShot>
+.\Hallasan_Screenshot_220405_16420622.png
+</ScreenShot>
+            <EndTime>
+2022-04-05 16:42:06
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-04-05 16:42:06
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find element with given name : HP Smart Printing
+</ErrorDescription>
+            <ScreenShot>
+.\Windows_Screenshot_220405_16423662.png
+</ScreenShot>
+            <EndTime>
+2022-04-05 16:42:36
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-04-05 16:42:36
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 16:42:42
+</EndTime>
+          </Statement>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-04-05 16:42:42
+</EndTime>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-04-05 16:42:42
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-04-05 16:42:42
+</StartTime>
+          <StartTime>
+2022-04-05 16:42:42
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 16:42:42
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 16:42:42
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.JobDeliveryMode,Option.Normal)">
+          <StartTime>
+2022-04-05 16:42:42
+</StartTime>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

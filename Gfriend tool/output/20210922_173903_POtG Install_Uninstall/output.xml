@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="POtG Install_Uninstall">
+  <StartTime>
+2021-09-22 17:39:23
+</StartTime>
+  <TestCase Name="Printer Driver Installation">
+    <StartTime>
+2021-09-22 17:39:23
+</StartTime>
+    <Statement StatementName="Windows.Add Certificate (C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\Potg_Driver\install_smartdriver_v2\BoiseTest.cer)">
+      <StartTime>
+2021-09-22 17:39:23
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-09-22 17:39:23
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Add Local Printer(HP Smart Printing,HPSmartPrintingPort,C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\Potg_Driver\HPOneDriver-1.8.1.732-V4-Release-x64\HPOneDriver_V4_x64.inf,HP Smart Printing)">
+      <StartTime>
+2021-09-22 17:39:23
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-09-22 17:39:24
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep (10)">
+      <StartTime>
+2021-09-22 17:39:24
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-09-22 17:39:34
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2021-09-22 17:39:34
+</EndTime>
+  </TestCase>
+  <TestCase Name="Printer Driver Uninstallation">
+    <StartTime>
+2021-09-22 17:39:34
+</StartTime>
+    <Statement StatementName="Hallasan.Remove Printer (HP Smart Printing)">
+      <StartTime>
+2021-09-22 17:39:34
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-09-22 17:39:34
+</EndTime>
+    </Statement>
+    <Statement StatementName="BuiltIn.Run Command (powershell C:\Temp\script.ps1,${out})">
+      <StartTime>
+2021-09-22 17:39:34
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2021-09-22 17:39:35
+</EndTime>
+    </Statement>
+    <Statement StatementName="BuiltIn.Run Command (PowerShell C:\GFriend_PotG\Potg_Driver\GothamUltron131-131.1.238\Add-AppDevPackage.ps1,${HP Smart})">
+      <StartTime>
+2021-09-22 17:39:35
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2021-09-22 17:39:36
+</EndTime>
+    </Statement>
+    <Statement StatementName="BuiltIn.Run Command As Admin (Run with PowerShell C:\GFriend_PotG\Potg_Driver\GothamUltron131-131.1.238\Add-AppDevPackage.ps1,${out})">
+      <StartTime>
+2021-09-22 17:39:36
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Exception during run command
+</ErrorDescription>
+      <EndTime>
+2021-09-22 17:39:36
+</EndTime>
+    </Statement>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2021-09-22 17:39:36
+</EndTime>
+  </TestCase>
+  <EndTime>
+2021-09-22 17:39:36
+</EndTime>
+</TestSuite>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Hulk">
+  <StartTime>
+2024-05-31 17:23:07
+</StartTime>
+  <TestCase Name="1.General Everyday Printing">
+    <StartTime>
+2024-05-31 17:23:07
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_General_Everyday_Printing">
+      <StartTime>
+2024-05-31 17:23:07
+</StartTime>
+      <StartTime>
+2024-05-31 17:23:07
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_General_Everyday_Printing.pdf,HP Smart Printing)">
+        <StartTime>
+2024-05-31 17:23:07
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Fail to open Printer Dialogue
+</ErrorDescription>
+        <EndTime>
+2024-05-31 17:24:12
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+        <StartTime>
+2024-05-31 17:24:12
+</StartTime>
+      </Statement>
+    </Statement>
+  </TestCase>
+</TestSuite>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-03-22 15:29:07
+</StartTime>
+  <TestCase Name="Driver Version">
+    <StartTime>
+2022-03-22 15:29:07
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-03-22 15:29:07
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-03-22 15:29:07
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_DriverVersion">
+          <StartTime>
+2022-03-22 15:29:07
+</StartTime>
+          <Result>
+Error
+</Result>
+          <ErrorDescription>
+Can not find specified keyword
+</ErrorDescription>
+          <EndTime>
+2022-03-22 15:29:07
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-03-22 15:29:07
+</StartTime>
+          <StartTime>
+2022-03-22 15:29:07
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 15:29:07
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 15:29:07
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (AboutButton,10)">
+          <StartTime>
+2022-03-22 15:29:07
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : AboutButton
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_220322_15291863.png
+</ScreenShot>
+          <EndTime>
+2022-03-22 15:29:18
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(AboutButton)">
+          <StartTime>
+2022-03-22 15:29:18
+</StartTime>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

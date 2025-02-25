@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2023-02-24 16:23:53
+</StartTime>
+  <TestCase Name="Private Pickup:On">
+    <StartTime>
+2023-02-24 16:23:53
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2023-02-24 16:23:53
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2023-02-24 16:23:53
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Private_Pickup_On">
+          <StartTime>
+2023-02-24 16:23:53
+</StartTime>
+          <StartTime>
+2023-02-24 16:23:53
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Private_Pickup_On.pdf,HP Smart Printing)">
+            <StartTime>
+2023-02-24 16:23:53
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-24 16:24:24
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2023-02-24 16:24:24
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-24 16:24:24
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2023-02-24 16:24:24
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-24 16:24:24
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2023-02-24 16:24:24
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-24 16:24:30
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-24 16:24:30
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-24 16:24:30
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2023-02-24 16:24:30
+</StartTime>
+          <StartTime>
+2023-02-24 16:24:30
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-24 16:24:30
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-24 16:24:30
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (SSCControl,10)">
+          <StartTime>
+2023-02-24 16:24:30
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : SSCControl
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_230224_16244128.png
+</ScreenShot>
+          <EndTime>
+2023-02-24 16:24:41
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Toggle (SSCControl,On)">
+          <StartTime>
+2023-02-24 16:24:41
+</StartTime>
+          <Result>
+Error
+</Result>
+          <ErrorDescription>
+Error during Toggle
+</ErrorDescription>
+          <AdditionalInfo>
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HP.GFriend.Keywords.Windows.SetToggle(String toggleAutomationID, String toggleOnOff) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 2329
+</AdditionalInfo>
+          <EndTime>
+2023-02-24 16:24:43
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2023-02-24 16:24:43
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_230224_16244333.png
+</ScreenShot>
+          <EndTime>
+2023-02-24 16:24:43
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2023-02-24 16:24:43
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-24 16:24:48
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2023-02-24 16:24:48
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-24 16:24:48
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2023-02-24 16:24:48
+</StartTime>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

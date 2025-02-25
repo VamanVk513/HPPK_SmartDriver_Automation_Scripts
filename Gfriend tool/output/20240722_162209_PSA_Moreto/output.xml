@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_Moreto">
+  <StartTime>
+2024-07-22 16:22:32
+</StartTime>
+  <TestCase Name="8. Delivery Mode_Normal">
+    <StartTime>
+2024-07-22 16:22:32
+</StartTime>
+    <Statement StatementName="Destination_Selection_PSA_Application.Destination Selection_Delivery_Mode_Normal">
+      <StartTime>
+2024-07-22 16:22:32
+</StartTime>
+      <StartTime>
+2024-07-22 16:22:32
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_DELIVERYMODE_NORMAL.pdf,HP_PrintSupport_App)">
+        <StartTime>
+2024-07-22 16:22:32
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-07-22 16:23:04
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP_PrintSupport_App,30)">
+        <StartTime>
+2024-07-22 16:23:04
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-07-22 16:23:04
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-07-22 16:23:04
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-07-22 16:23:10
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-07-22 16:23:10
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-07-22 16:23:10
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-07-22 16:23:10
+</StartTime>
+      <StartTime>
+2024-07-22 16:23:10
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-07-22 16:23:10
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-07-22 16:23:10
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_PSA_Application.Expections_Error">
+      <StartTime>
+2024-07-22 16:23:10
+</StartTime>
+      <StartTime>
+2024-07-22 16:23:10
+</StartTime>
+      <Statement StatementName="Windows.Capture Full Screen (SS)">
+        <StartTime>
+2024-07-22 16:23:10
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240722_16231094.png
+</ScreenShot>
+        <EndTime>
+2024-07-22 16:23:10
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Child Window With Title (HP_PrintSupport_App,5)">
+        <StartTime>
+2024-07-22 16:23:10
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240722_16231651.png
+</ScreenShot>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-07-22 16:23:16
+</StartTime>
+          <Block>
+            <StartTime>
+2024-07-22 16:23:16
+</StartTime>
+            <Statement StatementName="Pass (Childpop was not displayed)">
+              <StartTime>
+2024-07-22 16:23:16
+</StartTime>
+              <Result>
+Pass
+</Result>
+              <Output>
+Childpop was not displayed
+</Output>
+              <EndTime>
+2024-07-22 16:23:16
+</EndTime>
+            </Statement>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-07-22 16:23:16
+</EndTime>
+          </Block>
+          <EndTime>
+2024-07-22 16:23:16
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-07-22 16:23:16
+</EndTime>
+      </If>
+      <Statement StatementName="Windows.Capture Full Screen (SSS)">
+        <StartTime>
+2024-07-22 16:23:16
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240722_16231662.png
+</ScreenShot>
+        <EndTime>
+2024-07-22 16:23:16
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Application (HP_PrintSupport_App,5)">
+        <StartTime>
+2024-07-22 16:23:16
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240722_16232206.png
+</ScreenShot>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-07-22 16:23:22
+</StartTime>
+          <Block>
+            <StartTime>
+2024-07-22 16:23:22
+</StartTime>
+            <Statement StatementName="Pass (Childpop was not displayed)">
+              <StartTime>
+2024-07-22 16:23:22
+</StartTime>
+              <Result>
+Pass
+</Result>
+              <Output>
+Childpop was not displayed
+</Output>
+              <EndTime>
+2024-07-22 16:23:22
+</EndTime>
+            </Statement>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-07-22 16:23:22
+</EndTime>
+          </Block>
+          <EndTime>
+2024-07-22 16:23:22
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-07-22 16:23:22
+</EndTime>
+      </If>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-07-22 16:23:22
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-07-22 16:23:22
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Wait For ID (Part.JobDeliveryMode,5)">
+      <StartTime>
+2024-07-22 16:23:22
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-07-22 16:23:22
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID With Mouse (Part.JobDeliveryMode)">
+      <StartTime>
+2024-07-22 16:23:22
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-07-22 16:23:22
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Wait For Name (Normal,5)">
+      <StartTime>
+2024-07-22 16:23:22
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-07-22 16:23:22
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click Name (Normal)">
+      <StartTime>
+2024-07-22 16:23:22
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-07-22 16:23:22
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Capture Screen Shot(Normal.jpg)">
+      <StartTime>
+2024-07-22 16:23:22
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <ScreenShot>
+.\Windows_Screenshot_240722_16232305.png
+</ScreenShot>
+      <EndTime>
+2024-07-22 16:23:23
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-07-22 16:23:23
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-07-22 16:23:28
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-07-22 16:23:28
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-07-22 16:23:28
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-07-22 16:23:28
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-07-22 16:23:33
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2024-07-22 16:23:33
+</StartTime>
+      <StartTime>
+2024-07-22 16:23:33
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2024-07-22 16:23:33
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-07-22 16:23:35
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2024-07-22 16:23:35
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-07-22 16:23:45
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2024-07-22 16:23:45
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2024-07-22 16:23:45
+</StartTime>
+          <Block>
+            <StartTime>
+2024-07-22 16:23:45
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-07-22 16:23:45
+</EndTime>
+          </Block>
+          <EndTime>
+2024-07-22 16:23:45
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-07-22 16:23:45
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2024-07-22 16:23:45
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-07-22 16:23:55
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-07-22 16:23:55
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-07-22 16:23:55
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID (PrintButton)">
+      <StartTime>
+2024-07-22 16:23:55
+</StartTime>
+    </Statement>
+  </TestCase>
+</TestSuite>

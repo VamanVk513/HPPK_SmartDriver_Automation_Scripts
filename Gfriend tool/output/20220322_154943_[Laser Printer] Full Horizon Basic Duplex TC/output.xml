@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-03-22 15:50:04
+</StartTime>
+  <TestCase Name="Private Pickup:On">
+    <StartTime>
+2022-03-22 15:50:04
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-03-22 15:50:04
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-03-22 15:50:04
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Private_Pickup_On">
+          <StartTime>
+2022-03-22 15:50:04
+</StartTime>
+          <StartTime>
+2022-03-22 15:50:04
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Private_Pickup_On.pdf,HP Smart Printing)">
+            <StartTime>
+2022-03-22 15:50:04
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find specified file
+</ErrorDescription>
+            <EndTime>
+2022-03-22 15:50:04
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2022-03-22 15:50:04
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find window
+</ErrorDescription>
+            <ScreenShot>
+.\Hallasan_Screenshot_220322_15501577.png
+</ScreenShot>
+            <EndTime>
+2022-03-22 15:50:15
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-03-22 15:50:15
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find element with given name : HP Smart Printing
+</ErrorDescription>
+            <ScreenShot>
+.\Windows_Screenshot_220322_15504661.png
+</ScreenShot>
+            <EndTime>
+2022-03-22 15:50:46
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-03-22 15:50:46
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-22 15:50:52
+</EndTime>
+          </Statement>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-03-22 15:50:52
+</EndTime>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-03-22 15:50:52
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-03-22 15:50:52
+</StartTime>
+          <StartTime>
+2022-03-22 15:50:52
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 15:50:52
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-22 15:50:52
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Toggle (Component.PrivatePickup,On)">
+          <StartTime>
+2022-03-22 15:50:52
+</StartTime>
+          <Result>
+Error
+</Result>
+          <ErrorDescription>
+Error during Toggle
+</ErrorDescription>
+          <AdditionalInfo>
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HP.GFriend.Keywords.Windows.SetToggle(String toggleAutomationID, String toggleOnOff) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 2329
+</AdditionalInfo>
+          <EndTime>
+2022-03-22 15:50:56
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-03-22 15:50:56
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220322_15505656.png
+</ScreenShot>
+          <EndTime>
+2022-03-22 15:50:56
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-22 15:50:56
+</StartTime>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

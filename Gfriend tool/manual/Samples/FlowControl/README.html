@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>GFriend Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../gfmanual.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">GFriend Manual</h1>
+</header>
+<h1 id="flow-control-and-operators">Flow Control and Operators</h1>
+<h2 id="repeat">Repeat</h2>
+<p>For simple repeating the Keywords use Repeat with repeat count.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>using Android</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Repetation Test</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Press back key for 5 times</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Repeat</span><span class="op">:</span><span class="dv">5</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        Android<span class="op">.</span><span class="at">Press</span> Back Key</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Can use system defined variable ${R} within the Repeat to get the
+current repeat count.</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>using Android</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Create Multiple Job</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Repeat</span><span class="op">:</span><span class="dv">10</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        Android<span class="op">.</span><span class="at">Touch</span> <span class="bu">Text</span>(Scan)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        Android<span class="op">.</span><span class="at">Set</span> <span class="bu">Text</span>(hp<span class="op">.</span><span class="at">scan</span><span class="op">:</span>id<span class="op">/</span>JobName<span class="op">,</span>ScanJob${R})</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        Android<span class="op">.</span><span class="at">Touch</span> <span class="bu">Text</span>(Send)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">Sleep</span>(<span class="dv">10</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>By using Repeat and Assert Last Repeat keyword, you can create
+stability, reliability test script as below example. (See also usage of
+ignore fail operator @)</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>using Web</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Cloud Solution Reliability Test</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="fu">Open</span> (<span class="dt">localhost</span><span class="op">:</span><span class="dv">8000</span><span class="op">/</span>mysolution)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">// use @ to ignore result of Repeat block</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    @<span class="dt">Repeat</span><span class="op">:</span><span class="dv">1000</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        Web<span class="op">.</span><span class="at">Click</span> <span class="bu">Object</span>(<span class="co">//*[@id=&#39;AddButton&#39;])</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>        Web<span class="op">.</span><span class="at">Set</span> <span class="bu">Text</span>(<span class="co">//*[@id=&#39;Name&#39;],User${R})</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>        Web<span class="op">.</span><span class="at">Click</span> <span class="bu">Object</span>(<span class="co">//*[@id=&#39;OkButton&#39;])</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>        Web<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Text</span>(User${R})</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="co">// out of 1000 repetation, pass rate should be 99%</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    Assert Last <span class="fu">Repeat</span>(PASS<span class="op">,&gt;</span><span class="dv">990</span>)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<h2 id="new-feature-in-repeat">New Feature in Repeat</h2>
+<p>For repeating the Keywords for specified duration, can use Repeat
+with time in seconds/minutes/hours.</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>${count}<span class="op">=</span><span class="dv">0</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>Repetition Test With Time In Seconds</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">//will repeat the below repeat block for 90 seconds</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Repeat</span><span class="op">:</span><span class="dv">90</span><span class="er">s</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>        Calculate And <span class="fu">Assign</span> (${count}<span class="op">+</span><span class="dv">1</span><span class="op">,</span>${count})</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">Pass</span> (${count})</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>For repeating the Keywords for minutes use Repeat with time in
+minutes.</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>using JediOmni</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>Repetition Test With Time In Seconds</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">//will repeat the below block for 10 minutes</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Repeat</span><span class="op">:</span><span class="dv">10</span><span class="er">m</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span> (hpid<span class="op">-</span>reports<span class="op">-</span>app<span class="op">-</span><span class="bu">screen</span><span class="op">,</span><span class="dv">5</span>)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="fu">ID</span> (hpid<span class="op">-</span>reports<span class="op">-</span>app<span class="op">-</span><span class="bu">screen</span>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span> (hpid<span class="op">-</span>tree<span class="op">-</span>node<span class="op">-</span>listitem<span class="op">-</span>configurationpages<span class="op">,</span><span class="dv">5</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="fu">ID</span> (hpid<span class="op">-</span>tree<span class="op">-</span>node<span class="op">-</span>listitem<span class="op">-</span>configurationpages)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span> (hpid<span class="op">-</span>report<span class="op">-</span>page<span class="op">-</span>checkbox<span class="op">-</span><span class="dv">5</span><span class="er">fa225be</span><span class="op">-</span>ceec<span class="op">-</span><span class="dv">4152</span><span class="op">-</span><span class="dv">987</span><span class="er">c</span><span class="op">-</span>e2417938de74<span class="op">,</span><span class="dv">5</span>)</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="fu">ID</span> (hpid<span class="op">-</span>report<span class="op">-</span>page<span class="op">-</span>checkbox<span class="op">-</span><span class="dv">5</span><span class="er">fa225be</span><span class="op">-</span>ceec<span class="op">-</span><span class="dv">4152</span><span class="op">-</span><span class="dv">987</span><span class="er">c</span><span class="op">-</span>e2417938de74)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="bu">Text</span> (Cancel)</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>        <span class="fu">sleep</span>(<span class="dv">3</span>)</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Press</span> Home Key</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>For repeating the Keywords for hours use Repeat with time in
+hours.</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>using JediOmni</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>Repetition Test With Time In Seconds</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">//will repeat the below block for 72 hours</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Repeat</span><span class="op">:</span><span class="dv">72</span><span class="er">h</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span> (hpid<span class="op">-</span>reports<span class="op">-</span>app<span class="op">-</span><span class="bu">screen</span><span class="op">,</span><span class="dv">5</span>)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="fu">ID</span> (hpid<span class="op">-</span>reports<span class="op">-</span>app<span class="op">-</span><span class="bu">screen</span>)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span> (hpid<span class="op">-</span>tree<span class="op">-</span>node<span class="op">-</span>listitem<span class="op">-</span>configurationpages<span class="op">,</span><span class="dv">5</span>)</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="fu">ID</span> (hpid<span class="op">-</span>tree<span class="op">-</span>node<span class="op">-</span>listitem<span class="op">-</span>configurationpages)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span> (hpid<span class="op">-</span>report<span class="op">-</span>page<span class="op">-</span>checkbox<span class="op">-</span><span class="dv">5</span><span class="er">fa225be</span><span class="op">-</span>ceec<span class="op">-</span><span class="dv">4152</span><span class="op">-</span><span class="dv">987</span><span class="er">c</span><span class="op">-</span>e2417938de74<span class="op">,</span><span class="dv">5</span>)</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="fu">ID</span> (hpid<span class="op">-</span>report<span class="op">-</span>page<span class="op">-</span>checkbox<span class="op">-</span><span class="dv">5</span><span class="er">fa225be</span><span class="op">-</span>ceec<span class="op">-</span><span class="dv">4152</span><span class="op">-</span><span class="dv">987</span><span class="er">c</span><span class="op">-</span>e2417938de74)</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="bu">Text</span> (Cancel)</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>        <span class="fu">sleep</span>(<span class="dv">3</span>)</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Press</span> Home Key</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<h2 id="while">While</h2>
+<p>With While, you can repeat certaion block with condition.</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>using Android</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>HP Smart App Launch</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    Android<span class="op">.</span><span class="fu">Launch</span> (com<span class="op">.</span><span class="at">hp</span><span class="op">.</span><span class="at">printercontrol</span><span class="op">/</span>com<span class="op">.</span><span class="at">hp</span><span class="op">.</span><span class="at">printercontrol</span><span class="op">.</span><span class="at">base</span><span class="op">.</span><span class="at">PrinterControlActivity</span>)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Wait until GFriend can touch App Settings text</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">While</span><span class="op">:!</span>Android<span class="op">.</span><span class="at">Touch</span> <span class="bu">Text</span> (App Settings)<span class="op">:</span><span class="dv">10</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">Sleep</span>(<span class="dv">1</span>)</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>As example above, you can use ! operator to use false condition.</p>
+<p>While loop is usuallly used for waiting job is finished. Following
+example is sample linux printing.</p>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Resource test<span class="op">.</span><span class="at">pdf</span> As TestPDF</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>using Ssh</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>using LP</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>Linux Print Test</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    Ssh<span class="op">.</span><span class="at">Connect</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Preparing document to print</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    Ssh<span class="op">.</span><span class="at">Push</span> <span class="bu">File</span> (TestPDF<span class="op">,</span>test<span class="op">.</span><span class="at">pdf</span>)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Setting jobs</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    LP<span class="op">.</span><span class="at">Select</span> <span class="bu">File</span> (test<span class="op">.</span><span class="at">pdf</span>)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    LP<span class="op">.</span><span class="at">Select</span> <span class="fu">Printer</span> (testPrinter)</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    LP<span class="op">.</span><span class="at">Set</span> <span class="fu">Option</span> (MediaType<span class="op">,</span>Plain)</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    LP<span class="op">.</span><span class="at">Set</span> <span class="fu">Option</span> (PageSize<span class="op">,</span>Letter)</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    LP<span class="op">.</span><span class="at">Get</span> Lp <span class="fu">Command</span> (${printcmd})</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Send Job</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    Ssh<span class="op">.</span><span class="fu">Send</span> (${printcmd})</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>    Ssh<span class="op">.</span><span class="fu">Send</span> (lpstat <span class="op">-</span>R)</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Wait until job done</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Check lpstat -R output is empty</span></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>    <span class="dt">While</span><span class="op">:!</span><span class="fu">Equals</span>(${KEYWORD_OUTPUT}<span class="op">,</span>${EMPTY})</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>        <span class="fu">Sleep</span>(<span class="dv">2</span>)</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>        Ssh<span class="op">.</span><span class="fu">Send</span> (lpstat <span class="op">-</span>R)</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Download File to local</span></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>    Ssh<span class="op">.</span><span class="at">Sudo</span> <span class="fu">Send</span> (chmod <span class="dv">777</span> test<span class="op">.</span><span class="at">prn</span>)</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>    Ssh<span class="op">.</span><span class="at">Get</span> <span class="bu">File</span> (test<span class="op">.</span><span class="at">prn</span><span class="op">,</span>${OUTPUT_FOLDER}\test<span class="op">.</span><span class="at">prn</span>)</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Verify prn file</span></span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>    <span class="bu">File</span> Contains <span class="bu">Text</span> (${OUTPUT_FOLDER}\test<span class="op">.</span><span class="at">prn</span><span class="op">,&lt;&lt;/</span>MediaType \(Plain\)<span class="op">&gt;&gt;</span> setpagedevice)</span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>    <span class="bu">File</span> Contains <span class="bu">Text</span> (${OUTPUT_FOLDER}\test<span class="op">.</span><span class="at">prn</span><span class="op">,&lt;&lt;/</span>PageSize [<span class="dv">612</span> <span class="dv">792</span>] <span class="op">/</span>ImagingBBox <span class="kw">null</span><span class="op">&gt;&gt;</span> setpagedevice)</span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>    Ssh<span class="op">.</span><span class="at">Disconnect</span></span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<h2 id="if">IF</h2>
+<p>You can handle pop-up message or unexpected behavior during test with
+if blocks.</p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>using Android</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>SIO_Logout </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">If</span><span class="op">:</span> Android<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span>(com<span class="op">.</span><span class="at">hp</span><span class="op">.</span><span class="at">print</span><span class="op">.</span><span class="at">horizontalconnector</span><span class="op">.</span><span class="at">box</span><span class="op">:</span>id<span class="op">/</span>fab<span class="op">,</span><span class="dv">30</span>)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>        Android<span class="op">.</span><span class="at">Press</span> Back Key</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>        <span class="dt">If</span><span class="op">:</span>Android<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Text</span> (Exit<span class="op">,</span><span class="dv">10</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>        {</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>            Android<span class="op">.</span><span class="at">Touch</span> <span class="bu">Text</span> (Exit)</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Stop Test Suite or Stop Test Case can be used with if block to insure
+clean up.</p>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>using Web</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>using BHST<span class="op">.</span><span class="at">gflib</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>TestRail Create Test Run</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    BHST<span class="op">.</span><span class="at">TestRail</span> <span class="fu">Login</span> (${UserID}<span class="op">,</span>${UserPW})</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Create Test Run</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Go</span> <span class="fu">To</span> (<span class="dt">https</span><span class="op">:</span><span class="co">//testrail.tools.cso-hp.com/index.php?/runs/add/${BH_SuiteID})</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Input Test Run Details</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Set</span> <span class="bu">Text</span> (<span class="co">//*[@id=&quot;name&quot;],${TestRunName})</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Click</span> <span class="bu">Object</span> (<span class="co">//*[@id=&quot;includeSpecific&quot;])</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Click</span> <span class="bu">Object</span> (<span class="co">//*[@id=&quot;includeSpecificInfo&quot;]/a)</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Select Secton</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Click</span> <span class="bu">Text</span> (GoogleTest)</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Text</span> (Google Positive Test<span class="op">,</span><span class="dv">10</span>)</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Click</span> <span class="bu">Object</span> (<span class="co">//*[@id=&quot;selectCasesGroupAll&quot;])</span></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Click</span> <span class="bu">Object</span> (<span class="co">//*[@id=&quot;selectCasesSubmit&quot;])</span></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>    @Web<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span> <span class="fu">Disappear</span> (<span class="co">//*[@id=&quot;selectCasesSubmit&quot;],30)</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>    <span class="dt">If</span><span class="op">:</span>Web<span class="op">.</span><span class="at">Click</span> <span class="bu">Object</span> (<span class="co">//*[@id=&quot;form&quot;]/div[9]/button)</span></span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>        <span class="fu">Pass</span>(Test Run Created)</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a>    <span class="co">// If test fail or error delete script which is uploaded in previous test case</span></span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Fail</span><span class="op">:</span></span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a>        <span class="fu">Fail</span>(Fail to create test run)</span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a>        BlackHole<span class="op">.</span><span class="at">Delete</span> Script</span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a>        Stop Test Suite</span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Error</span><span class="op">:</span></span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a>        <span class="bu">Error</span>(<span class="bu">Error</span> during create test run)</span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>        BlackHole<span class="op">.</span><span class="at">Delete</span> Script</span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a>        Stop Test Suite</span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Get</span> <span class="bu">Text</span> (<span class="co">//*[@id=&quot;content-header&quot;]/div/div[1],${TestRunID})</span></span>
+<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a>    BuiltIn<span class="op">.</span><span class="fu">Trim</span> (${TestRunID}<span class="op">,</span>R)</span>
+<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Close</span></span>
+<span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+</body>
+</html>

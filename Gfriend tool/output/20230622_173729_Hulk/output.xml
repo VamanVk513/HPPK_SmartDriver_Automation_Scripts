@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Hulk">
+  <StartTime>
+2023-06-22 17:37:52
+</StartTime>
+  <TestCase Name="80.Paper Source:Tray 1">
+    <StartTime>
+2023-06-22 17:37:52
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2023-06-22 17:37:52
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2023-06-22 17:37:52
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Tray_1">
+          <StartTime>
+2023-06-22 17:37:52
+</StartTime>
+          <StartTime>
+2023-06-22 17:37:52
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Tray_1.pdf,HP Smart Printing)">
+            <StartTime>
+2023-06-22 17:37:52
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

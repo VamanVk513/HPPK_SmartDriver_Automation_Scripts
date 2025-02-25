@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-03-21 16:51:42
+</StartTime>
+  <TestCase Name="Revert Options">
+    <StartTime>
+2022-03-21 16:51:42
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-03-21 16:51:42
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-03-21 16:51:42
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Revert">
+          <StartTime>
+2022-03-21 16:51:42
+</StartTime>
+          <StartTime>
+2022-03-21 16:51:42
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Revert.pdf,HP Smart Printing)">
+            <StartTime>
+2022-03-21 16:51:42
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 16:52:12
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2022-03-21 16:52:12
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 16:52:12
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-03-21 16:52:12
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 16:52:12
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-03-21 16:52:12
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 16:52:18
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 16:52:18
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 16:52:18
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-03-21 16:52:18
+</StartTime>
+          <StartTime>
+2022-03-21 16:52:18
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 16:52:19
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 16:52:19
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.JobDeliveryMode,Option.Secure)">
+          <StartTime>
+2022-03-21 16:52:19
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find combobox : Part.JobDeliveryMode
+</ErrorDescription>
+          <EndTime>
+2022-03-21 16:52:21
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(ui_PresetRevertButton)">
+          <StartTime>
+2022-03-21 16:52:21
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 16:52:21
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-03-21 16:52:21
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220321_16522122.png
+</ScreenShot>
+          <EndTime>
+2022-03-21 16:52:21
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-21 16:52:21
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 16:52:26
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2022-03-21 16:52:26
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 16:52:26
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-21 16:52:26
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 16:52:31
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2022-03-21 16:52:31
+</StartTime>
+          <StartTime>
+2022-03-21 16:52:31
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2022-03-21 16:52:31
+</StartTime>
+            <Result>
+Error
+</Result>
+            <ErrorDescription>
+Error during click print button
+</ErrorDescription>
+            <AdditionalInfo>
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HP.GFriend.Keywords.ApplicationUtils.ClickPrintButtonInAcrobatReader(Windows windowsController) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\ApplicationUtils.cs:line 398
+   at HP.GFriend.Keywords.Windows.ClickPrintButton() in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 935
+</AdditionalInfo>
+            <EndTime>
+2022-03-21 16:52:38
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-03-21 16:52:38
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 16:52:58
+</EndTime>
+          </Statement>
+          <If Condition=" Hallasan.Close Application">
+            <StartTime>
+2022-03-21 16:52:58
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2022-03-21 16:52:58
+</StartTime>
+              <Block>
+                <StartTime>
+2022-03-21 16:52:58
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2022-03-21 16:52:58
+</EndTime>
+              </Block>
+              <EndTime>
+2022-03-21 16:52:58
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2022-03-21 16:52:58
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-03-21 16:52:58
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

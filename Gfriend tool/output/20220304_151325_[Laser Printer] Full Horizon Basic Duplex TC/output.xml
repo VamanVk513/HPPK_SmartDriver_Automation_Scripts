@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-03-04 15:13:45
+</StartTime>
+  <TestCase Name="Labels">
+    <StartTime>
+2022-03-04 15:13:45
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_Labels">
+      <StartTime>
+2022-03-04 15:13:45
+</StartTime>
+      <StartTime>
+2022-03-04 15:13:45
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Labels.pdf,HP Smart Printing)">
+        <StartTime>
+2022-03-04 15:13:45
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2022-03-04 15:14:15
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+        <StartTime>
+2022-03-04 15:14:15
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2022-03-04 15:14:15
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2022-03-04 15:14:15
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2022-03-04 15:14:21
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-03-04 15:14:21
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-03-04 15:14:21
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2022-03-04 15:14:21
+</StartTime>
+      <StartTime>
+2022-03-04 15:14:21
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-03-04 15:14:22
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-03-04 15:14:22
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_Labels)">
+      <StartTime>
+2022-03-04 15:14:22
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-03-04 15:14:22
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2022-03-04 15:14:22
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-03-04 15:14:27
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2022-03-04 15:14:27
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-03-04 15:14:27
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2022-03-04 15:14:27
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-03-04 15:14:32
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2022-03-04 15:14:32
+</StartTime>
+      <StartTime>
+2022-03-04 15:14:32
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2022-03-04 15:14:32
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2022-03-04 15:14:34
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2022-03-04 15:14:34
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2022-03-04 15:14:54
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2022-03-04 15:14:54
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2022-03-04 15:14:54
+</StartTime>
+          <Block>
+            <StartTime>
+2022-03-04 15:14:54
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2022-03-04 15:14:54
+</EndTime>
+          </Block>
+          <EndTime>
+2022-03-04 15:14:54
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2022-03-04 15:14:54
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2022-03-04 15:14:54
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2022-03-04 15:15:14
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-03-04 15:15:14
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-03-04 15:15:14
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_Application.PT Value_Label">
+      <StartTime>
+2022-03-04 15:15:14
+</StartTime>
+      <StartTime>
+2022-03-04 15:15:14
+</StartTime>
+      <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+        <StartTime>
+2022-03-04 15:15:14
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2022-03-04 15:15:14
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)">
+        <StartTime>
+2022-03-04 15:15:14
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+psk:AutoSelect
+</Output>
+        <EndTime>
+2022-03-04 15:15:14
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},psk:Label)">
+        <StartTime>
+2022-03-04 15:15:14
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+psk:AutoSelect and psk:Label are not same
+</ErrorDescription>
+        <EndTime>
+2022-03-04 15:15:14
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+        <StartTime>
+2022-03-04 15:15:14
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:OptIn
+</Output>
+        <EndTime>
+2022-03-04 15:15:14
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:OptIn)">
+        <StartTime>
+2022-03-04 15:15:14
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2022-03-04 15:15:14
+</EndTime>
+      </Statement>
+      <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+        <StartTime>
+2022-03-04 15:15:14
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+        1 file(s) copied.
+
+</Output>
+        <EndTime>
+2022-03-04 15:15:14
+</EndTime>
+      </Statement>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2022-03-04 15:15:14
+</EndTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2022-03-04 15:15:14
+</EndTime>
+    </Statement>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2022-03-04 15:15:14
+</EndTime>
+  </TestCase>
+  <EndTime>
+2022-03-04 15:15:14
+</EndTime>
+</TestSuite>

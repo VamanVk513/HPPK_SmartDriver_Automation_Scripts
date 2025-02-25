@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>GFriend Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../gfmanual.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">GFriend Manual</h1>
+</header>
+<h1 id="data-driven-test">Data Driven Test</h1>
+<h2 id="basic-repetation-with-excel-file">Basic repetation with Excel
+file</h2>
+<p>You can repeat each row of Excel table while GFriend execution. With
+this you can load variables from Excel file and write result to it.</p>
+<p>Following table is option combination test cases of Printer driver.
+(You can get full Excel file <a
+href=".resources/HallasanCombination.xlsx">here</a>.)</p>
+<table>
+<thead>
+<tr class="header">
+<th>TC_ID</th>
+<th>TestFile</th>
+<th>DocumentMargin</th>
+<th>Orientation</th>
+<th>ColorMode</th>
+<th>HPEasyColor</th>
+<th>TestResult</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>pdf</td>
+<td>On</td>
+<td>Portrait</td>
+<td>Color</td>
+<td>HPEasyColorConservative</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>xls</td>
+<td>Off</td>
+<td>Landscape</td>
+<td>Grayscale</td>
+<td>HPEasyColorOn</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>doc</td>
+<td>Off</td>
+<td>Portrait</td>
+<td>Monochrome</td>
+<td>HPEasyColorOff</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>doc</td>
+<td>On</td>
+<td>Portrait</td>
+<td>Color</td>
+<td>HPEasyColorOff</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>pdf</td>
+<td>On</td>
+<td>Landscape</td>
+<td>Grayscale</td>
+<td>HPEasyColorOn</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>With this table, you can make option combination test as follow:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>DataSet HallasanCombination<span class="op">.</span><span class="at">xlsx</span> <span class="im">as</span> HallasanOptions</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Resource TESTFILES\office_A4<span class="op">.</span><span class="at">pdf</span> As pdf</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Resource TESTFILES\Office_A4<span class="op">.</span><span class="at">xls</span> As xls</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Resource TESTFILES\Office_A4<span class="op">.</span><span class="at">doc</span> As doc</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>using Hallasan</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Option Combination Test</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    For Each <span class="dt">Row</span><span class="op">:</span>HallasanOptions<span class="op">.</span><span class="at">OptionCombination</span><span class="op">.</span><span class="at">Combination1</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>      Hallasan<span class="op">.</span><span class="at">Open</span> <span class="bu">File</span> For <span class="fu">Print</span> (${TestFile}<span class="op">,</span>Hallasan)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>      Hallasan<span class="op">.</span><span class="at">Get</span> Driver <span class="bu">Window</span>(Hallasan)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>      Hallasan<span class="op">.</span><span class="at">Set</span> <span class="fu">Toggle</span> (Part<span class="op">.</span><span class="at">DocumentMargins</span><span class="op">,</span>${DocumentMargin})</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>      Hallasan<span class="op">.</span><span class="at">Set</span> <span class="fu">Radio</span> (Option<span class="op">.</span><span class="at">$</span>{Orientation})</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>      Hallasan<span class="op">.</span><span class="at">Set</span> <span class="fu">Radio</span> (Option<span class="op">.</span><span class="at">$</span>{ColorMode})</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>      Hallasan<span class="op">.</span><span class="at">Set</span> <span class="fu">Combobox</span> (Part<span class="op">.</span><span class="at">DocumentHPEasyColor</span><span class="op">,</span>Option<span class="op">.</span><span class="at">$</span>{HPEasyColor})</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>      Hallasan<span class="op">.</span> <span class="at">Confirm</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>      <span class="fu">sleep</span>(<span class="dv">5</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>      Hallasan<span class="op">.</span><span class="at">Click</span> Print Button</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>      <span class="fu">sleep</span>(<span class="dv">5</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>      Hallasan<span class="op">.</span><span class="at">Close</span> Application</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<h2 id="guided-semi-auto-test-with-gfriend">Guided semi auto test with
+GFriend</h2>
+<p>Following table is option combination test cases with paper handling.
+(You can get full Excel file <a
+href=".resources/BasicPrintTest.xlsx">here</a>.)</p>
+<table>
+<thead>
+<tr class="header">
+<th>TC ID</th>
+<th>Tray</th>
+<th>Paper Size</th>
+<th>Paper Type</th>
+<th>Test Prn</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Tray2</td>
+<td>Letter</td>
+<td>Plain</td>
+<td>Letter_Plain_Tray2.prn</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Tray3</td>
+<td>A4</td>
+<td>Thick</td>
+<td>A4_Thick_Tray3.prn</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Tray1</td>
+<td>A3</td>
+<td>Plain</td>
+<td>A3_Plain_Tray1.prn</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Tray3</td>
+<td>Letter</td>
+<td>Thin</td>
+<td>Letter_Thin_Tray3.prn</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Tray2</td>
+<td>Legal</td>
+<td>Thin</td>
+<td>Legal_Thin_Tray2.prn</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>With this data set, you can create guide auto test as below:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Dataset BasicPrintTest<span class="op">.</span><span class="at">xlsx</span> <span class="im">as</span> BasicPrint</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>using Fleet</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>Guided Autotest Sample</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    For Each <span class="dt">Row</span><span class="op">:</span>BasicPrint<span class="op">.</span><span class="at">Combination</span><span class="op">.</span><span class="at">PaperTest</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Request user to load proper paper</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        Wait For User <span class="fu">Confirm</span>(Please load ${PaperType} ${PaperSize} at ${Tray} and Click OK)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Send prn file to device</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        Fleet<span class="op">.</span><span class="at">Send</span> <span class="bu">File</span> (TestFile<span class="op">/</span>${TestPrn})</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Request user to verify the printed output</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        Request User <span class="fu">Verification</span> (Check output)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Update result to Excel file</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>        Write To Data <span class="bu">Set</span> (Result<span class="op">,</span>${KEYWORD_OUTPUT})</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Tester's verification message will be written in result Excel file
+after test execution.</p>
+<h2 id="run-keyword-with-data-driven">Run Keyword with Data Driven</h2>
+<p>You can call keyword which is defined in dataset by using Builtin.Run
+Keyword. Following table is sample web open test cases. (You can get
+full Excel file <a href=".resources/WebTestData.xlsx">here</a>.)</p>
+<table>
+<thead>
+<tr class="header">
+<th>TCNum</th>
+<th>Keyword To Run</th>
+<th>Start Time</th>
+<th>End Time</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>WebOpen.Open Google(${TCNum})</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>WebOpen.Open HP(${TCNum})</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>WebOpen.Open Microsoft(${TCNum})</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>WebOpen.Open HP(${TCNum})</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>WebOpen.Open Microsoft(${TCNum})</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>And WebOpen.gflib is defined as below</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>using Web</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Open <span class="fu">Google</span>(${iteration})</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Open</span> <span class="cf">with</span> <span class="fu">Chrome</span> (google<span class="op">.</span><span class="at">com</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Capture</span> <span class="fu">Screenshot</span> (${iteration}_google<span class="op">.</span><span class="at">com</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Close</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>Open <span class="fu">HP</span>(${iteration})</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Open</span> With <span class="fu">Chrome</span>(www<span class="op">.</span><span class="at">hp</span><span class="op">.</span><span class="at">com</span>)</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Capture</span> <span class="fu">Screenshot</span> (${iteration}_hp<span class="op">.</span><span class="at">com</span>)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Close</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>Open <span class="fu">Microsoft</span>(${iteration})</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Open</span> <span class="cf">with</span> <span class="fu">Chrome</span> (www<span class="op">.</span><span class="at">microsoft</span><span class="op">.</span><span class="at">com</span>)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Capture</span> <span class="fu">Screenshot</span> (${iteration}_ms<span class="op">.</span><span class="at">com</span>)</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    Web<span class="op">.</span><span class="at">Close</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>With dataset and custom library above, you can create test suite like
+below:</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Dataset WebTestData<span class="op">.</span><span class="at">xlsx</span> As Data</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>using WebOpen<span class="op">.</span><span class="at">gflib</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>Page Open Test</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    For Each <span class="dt">Row</span><span class="op">:</span>Data<span class="op">.</span><span class="at">WebTest</span><span class="op">.</span><span class="at">TestCases</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Write start time to dataset</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        Get Time <span class="fu">Stamp</span> (${time})</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>        Write To Data <span class="bu">Set</span> (StartTime<span class="op">,</span>${time})</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Run dataset defined keyword</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>        Run <span class="fu">Keyword</span> (${KeywordToRun})</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Write test result to dataset</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>        Write To Data <span class="bu">Set</span> (Result<span class="op">,</span>${KEYWORD_RESULT})</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Write end time to dataset</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>        Get Time <span class="fu">Stamp</span> (${time})</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>        Write To Data <span class="bu">Set</span> (EndTime<span class="op">,</span>${time})</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>This test will repeatably execute keyword in Keyword To Run column
+within For Each Row block.</p>
+</body>
+</html>

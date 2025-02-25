@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="POtG Install_Uninstall">
+  <StartTime>
+2021-09-22 17:38:14
+</StartTime>
+  <TestCase Name="Printer Driver Installation">
+    <StartTime>
+2021-09-22 17:38:14
+</StartTime>
+    <Statement StatementName="Windows.Add Certificate (C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\Potg_Driver\install_smartdriver_v2\BoiseTest.cer)">
+      <StartTime>
+2021-09-22 17:38:14
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-09-22 17:38:14
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Add Local Printer(HP Smart Printing,HPSmartPrintingPort,C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\Potg_Driver\HPOneDriver-1.8.1.732-V4-Release-x64\HPOneDriver_V4_x64.inf,HP Smart Printing)">
+      <StartTime>
+2021-09-22 17:38:14
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-09-22 17:38:18
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep (10)">
+      <StartTime>
+2021-09-22 17:38:18
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-09-22 17:38:28
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2021-09-22 17:38:28
+</EndTime>
+  </TestCase>
+  <EndTime>
+2021-09-22 17:38:28
+</EndTime>
+</TestSuite>

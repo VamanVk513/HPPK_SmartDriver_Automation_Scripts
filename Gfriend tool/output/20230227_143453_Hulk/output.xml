@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Hulk">
+  <StartTime>
+2023-02-27 14:35:15
+</StartTime>
+  <TestCase Name="Always Show Before Printing : Uncheck">
+    <StartTime>
+2023-02-27 14:35:15
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2023-02-27 14:35:15
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2023-02-27 14:35:15
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_UncheckAlwaysShowBeforePrinting">
+          <StartTime>
+2023-02-27 14:35:15
+</StartTime>
+          <StartTime>
+2023-02-27 14:35:15
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_UncheckAlwaysShowBeforePrinting.pdf,HP Smart Printing)">
+            <StartTime>
+2023-02-27 14:35:15
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:35:45
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2023-02-27 14:35:45
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:35:45
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2023-02-27 14:35:45
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:35:45
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2023-02-27 14:35:45
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:35:51
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:35:51
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:35:51
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2023-02-27 14:35:51
+</StartTime>
+          <StartTime>
+2023-02-27 14:35:51
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:35:51
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:35:51
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2023-02-27 14:35:51
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_230227_14355159.png
+</ScreenShot>
+          <EndTime>
+2023-02-27 14:35:51
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2023-02-27 14:35:51
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:35:56
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2023-02-27 14:35:56
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:35:56
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2023-02-27 14:35:56
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-27 14:36:01
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2023-02-27 14:36:01
+</StartTime>
+          <StartTime>
+2023-02-27 14:36:01
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2023-02-27 14:36:01
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:36:03
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2023-02-27 14:36:03
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-27 14:36:23
+</EndTime>
+          </Statement>
+          <If Condition=" Hallasan.Close Application">
+            <StartTime>
+2023-02-27 14:36:23
+</StartTime>
+            <ConditionResult>
+ERROR
+</ConditionResult>
+            <ErrorDescription>
+Error during close
+</ErrorDescription>
+            <StatementBlock Kind="ERROR">
+              <StartTime>
+2023-02-27 14:36:23
+</StartTime>
+              <Block>
+                <StartTime>
+2023-02-27 14:36:23
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2023-02-27 14:36:23
+</EndTime>
+              </Block>
+              <EndTime>
+2023-02-27 14:36:23
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2023-02-27 14:36:23
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2023-02-27 14:36:23
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

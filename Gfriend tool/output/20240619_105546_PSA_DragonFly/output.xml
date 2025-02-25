@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_DragonFly">
+  <StartTime>
+2024-06-19 10:56:12
+</StartTime>
+  <TestCase Name="3.Preset-Label">
+    <StartTime>
+2024-06-19 10:56:12
+</StartTime>
+    <Statement StatementName="Destination_Selection_PSA_Application.Destination Selection_Labels_PSA">
+      <StartTime>
+2024-06-19 10:56:12
+</StartTime>
+      <StartTime>
+2024-06-19 10:56:12
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_LABELS.pdf,HP_PrintSupport_App)">
+        <StartTime>
+2024-06-19 10:56:12
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Fail to open Printer Dialogue
+</ErrorDescription>
+        <EndTime>
+2024-06-19 10:57:16
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP_PrintSupport_App,30)">
+        <StartTime>
+2024-06-19 10:57:16
+</StartTime>
+      </Statement>
+    </Statement>
+  </TestCase>
+</TestSuite>

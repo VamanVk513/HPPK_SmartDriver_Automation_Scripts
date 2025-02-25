@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_DragonFly">
+  <StartTime>
+2024-06-10 17:55:39
+</StartTime>
+  <TestCase Name="5.Label">
+    <StartTime>
+2024-06-10 17:55:39
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_Labels_PSA">
+      <StartTime>
+2024-06-10 17:55:39
+</StartTime>
+      <StartTime>
+2024-06-10 17:55:39
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_LABELS.pdf,HP_PrintSupport_App)">
+        <StartTime>
+2024-06-10 17:55:39
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-10 17:56:12
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP_PrintSupport_App,30)">
+        <StartTime>
+2024-06-10 17:56:12
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-10 17:56:12
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-06-10 17:56:12
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-10 17:56:18
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-10 17:56:18
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-10 17:56:18
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-06-10 17:56:18
+</StartTime>
+      <StartTime>
+2024-06-10 17:56:18
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-10 17:56:18
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-10 17:56:18
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Select Child Window With Title (TitleBar,10)">
+      <StartTime>
+2024-06-10 17:56:18
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240610_17562878.png
+</ScreenShot>
+      <EndTime>
+2024-06-10 17:56:28
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID (RefreshIcon)">
+      <StartTime>
+2024-06-10 17:56:28
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : RefreshIcon
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240610_17562888.png
+</ScreenShot>
+      <EndTime>
+2024-06-10 17:56:28
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-10 17:56:28
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-10 17:56:33
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Wait For ID (ui_Preset_Combo)">
+      <StartTime>
+2024-06-10 17:56:33
+</StartTime>
+      <Result>
+Error
+</Result>
+      <ErrorDescription>
+Unexpected exception
+</ErrorDescription>
+      <AdditionalInfo>
+System.MissingMethodException: Method 'HP.GFriend.Keywords.Windows.WaitForId' not found.
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+</AdditionalInfo>
+      <EndTime>
+2024-06-10 17:56:33
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set ComboBox (ui_Preset_Combo,Envelopes)">
+      <StartTime>
+2024-06-10 17:56:33
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Combobx click fail : ui_Preset_Combo - Envelopes
+</ErrorDescription>
+      <ScreenShot>
+.\Hallasan_Screenshot_240610_17563608.png
+</ScreenShot>
+      <EndTime>
+2024-06-10 17:56:36
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-10 17:56:36
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-10 17:56:41
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-06-10 17:56:41
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-10 17:56:41
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-10 17:56:41
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-10 17:56:46
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2024-06-10 17:56:46
+</StartTime>
+      <StartTime>
+2024-06-10 17:56:46
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2024-06-10 17:56:46
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-10 17:56:48
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2024-06-10 17:56:48
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-10 17:56:58
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2024-06-10 17:56:58
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2024-06-10 17:56:58
+</StartTime>
+          <Block>
+            <StartTime>
+2024-06-10 17:56:58
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-10 17:56:58
+</EndTime>
+          </Block>
+          <EndTime>
+2024-06-10 17:56:58
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-06-10 17:56:58
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2024-06-10 17:56:58
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-10 17:57:08
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-10 17:57:08
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-10 17:57:08
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_Application.PT Value_Label_PSA">
+      <StartTime>
+2024-06-10 17:57:08
+</StartTime>
+      <StartTime>
+2024-06-10 17:57:08
+</StartTime>
+      <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+        <StartTime>
+2024-06-10 17:57:08
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-10 17:57:08
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)">
+        <StartTime>
+2024-06-10 17:57:08
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+psk:Label
+</Output>
+        <EndTime>
+2024-06-10 17:57:08
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},psk:Label)">
+        <StartTime>
+2024-06-10 17:57:08
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-10 17:57:08
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+        <StartTime>
+2024-06-10 17:57:08
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:OptIn
+</Output>
+        <EndTime>
+2024-06-10 17:57:08
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:OptIn)">
+        <StartTime>
+2024-06-10 17:57:08
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-10 17:57:08
+</EndTime>
+      </Statement>
+      <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+        <StartTime>
+2024-06-10 17:57:08
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+        1 file(s) copied.
+
+</Output>
+        <EndTime>
+2024-06-10 17:57:08
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-10 17:57:08
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-10 17:57:08
+</EndTime>
+    </Statement>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2024-06-10 17:57:08
+</EndTime>
+  </TestCase>
+  <EndTime>
+2024-06-10 17:57:08
+</EndTime>
+</TestSuite>

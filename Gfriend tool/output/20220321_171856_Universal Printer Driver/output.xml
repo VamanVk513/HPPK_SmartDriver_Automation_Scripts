@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Universal Printer Driver">
+  <StartTime>
+2022-03-21 17:19:16
+</StartTime>
+  <TestCase Name="240  Revert Options">
+    <StartTime>
+2022-03-21 17:19:16
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-03-21 17:19:16
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-03-21 17:19:16
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Language">
+          <StartTime>
+2022-03-21 17:19:16
+</StartTime>
+          <StartTime>
+2022-03-21 17:19:16
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Language Test.pdf,HP Smart Printing)">
+            <StartTime>
+2022-03-21 17:19:16
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 17:19:47
+</EndTime>
+          </Statement>
+          <If Condition=" Windows.Click Name With Mouse(Properties)">
+            <StartTime>
+2022-03-21 17:19:47
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2022-03-21 17:19:47
+</StartTime>
+              <Block>
+                <StartTime>
+2022-03-21 17:19:47
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2022-03-21 17:19:47
+</EndTime>
+              </Block>
+              <EndTime>
+2022-03-21 17:19:47
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2022-03-21 17:19:47
+</EndTime>
+          </If>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-03-21 17:19:47
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 17:19:47
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-03-21 17:19:47
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 17:19:54
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 17:19:54
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 17:19:54
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-03-21 17:19:54
+</StartTime>
+          <StartTime>
+2022-03-21 17:19:54
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 17:19:54
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 17:19:54
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.JobDeliveryMode,Option.Secure)">
+          <StartTime>
+2022-03-21 17:19:54
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find combobox : Part.JobDeliveryMode
+</ErrorDescription>
+          <EndTime>
+2022-03-21 17:19:56
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(ui_PresetRevertButton)">
+          <StartTime>
+2022-03-21 17:19:56
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 17:19:56
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-03-21 17:19:56
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220321_17195648.png
+</ScreenShot>
+          <EndTime>
+2022-03-21 17:19:56
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-21 17:19:56
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 17:20:01
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2022-03-21 17:20:01
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 17:20:01
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-21 17:20:01
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 17:20:06
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2022-03-21 17:20:06
+</StartTime>
+          <StartTime>
+2022-03-21 17:20:06
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2022-03-21 17:20:06
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 17:20:11
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-03-21 17:20:11
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 17:20:31
+</EndTime>
+          </Statement>
+          <If Condition=" Hallasan.Close Application">
+            <StartTime>
+2022-03-21 17:20:31
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2022-03-21 17:20:31
+</StartTime>
+              <Block>
+                <StartTime>
+2022-03-21 17:20:31
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2022-03-21 17:20:31
+</EndTime>
+              </Block>
+              <EndTime>
+2022-03-21 17:20:31
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2022-03-21 17:20:31
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-03-21 17:20:31
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 17:20:51
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 17:20:51
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 17:20:51
+</EndTime>
+        </Statement>
+        <Result>
+FAIL
+</Result>
+        <EndTime>
+2022-03-21 17:20:51
+</EndTime>
+      </Loop>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2022-03-21 17:20:51
+</EndTime>
+    </Repeat>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2022-03-21 17:20:51
+</EndTime>
+  </TestCase>
+  <EndTime>
+2022-03-21 17:20:51
+</EndTime>
+</TestSuite>

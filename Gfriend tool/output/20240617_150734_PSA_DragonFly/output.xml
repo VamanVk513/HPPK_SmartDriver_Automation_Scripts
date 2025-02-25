@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_DragonFly">
+  <StartTime>
+2024-06-17 15:07:59
+</StartTime>
+  <TestCase Name="5.Information Icon">
+    <StartTime>
+2024-06-17 15:07:59
+</StartTime>
+    <Statement StatementName="Destination_Selection_PSA_Application.Destination Selection_InfoIcon">
+      <StartTime>
+2024-06-17 15:07:59
+</StartTime>
+      <StartTime>
+2024-06-17 15:07:59
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_InformationIcon.pdf,HP_PrintSupport_App)">
+        <StartTime>
+2024-06-17 15:07:59
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-17 15:08:32
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP_PrintSupport_App,30)">
+        <StartTime>
+2024-06-17 15:08:32
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-17 15:08:32
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-06-17 15:08:32
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-17 15:08:38
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-17 15:08:38
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-17 15:08:38
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-06-17 15:08:38
+</StartTime>
+      <StartTime>
+2024-06-17 15:08:38
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-17 15:08:38
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-17 15:08:38
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_PSA_Application.Expections_Error">
+      <StartTime>
+2024-06-17 15:08:38
+</StartTime>
+      <StartTime>
+2024-06-17 15:08:38
+</StartTime>
+      <Statement StatementName="Windows.Capture Full Screen (SS)">
+        <StartTime>
+2024-06-17 15:08:38
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240617_15083854.png
+</ScreenShot>
+        <EndTime>
+2024-06-17 15:08:38
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Child Window With Title (HP_PrintSupport_App,10)">
+        <StartTime>
+2024-06-17 15:08:38
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240617_15084894.png
+</ScreenShot>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-06-17 15:08:48
+</StartTime>
+          <Block>
+            <StartTime>
+2024-06-17 15:08:48
+</StartTime>
+            <Statement StatementName="Pass (Childpop was not displayed)">
+              <StartTime>
+2024-06-17 15:08:48
+</StartTime>
+              <Result>
+Pass
+</Result>
+              <Output>
+Childpop was not displayed
+</Output>
+              <EndTime>
+2024-06-17 15:08:48
+</EndTime>
+            </Statement>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-17 15:08:48
+</EndTime>
+          </Block>
+          <EndTime>
+2024-06-17 15:08:48
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-06-17 15:08:48
+</EndTime>
+      </If>
+      <Statement StatementName="Windows.Capture Full Screen (SSS)">
+        <StartTime>
+2024-06-17 15:08:48
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240617_15084903.png
+</ScreenShot>
+        <EndTime>
+2024-06-17 15:08:49
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Application (HP_PrintSupport_App,10)">
+        <StartTime>
+2024-06-17 15:08:49
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240617_15085961.png
+</ScreenShot>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-06-17 15:08:59
+</StartTime>
+          <Block>
+            <StartTime>
+2024-06-17 15:08:59
+</StartTime>
+            <Statement StatementName="Pass (Childpop was not displayed)">
+              <StartTime>
+2024-06-17 15:08:59
+</StartTime>
+              <Result>
+Pass
+</Result>
+              <Output>
+Childpop was not displayed
+</Output>
+              <EndTime>
+2024-06-17 15:08:59
+</EndTime>
+            </Statement>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-17 15:08:59
+</EndTime>
+          </Block>
+          <EndTime>
+2024-06-17 15:08:59
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-06-17 15:08:59
+</EndTime>
+      </If>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-17 15:08:59
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-17 15:08:59
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID (AboutIcon)">
+      <StartTime>
+2024-06-17 15:08:59
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : AboutIcon
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240617_15090278.png
+</ScreenShot>
+      <EndTime>
+2024-06-17 15:09:02
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Is Exist (DriverNameTextBlock)">
+      <StartTime>
+2024-06-17 15:09:02
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : DriverNameTextBlock
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240617_15090594.png
+</ScreenShot>
+      <EndTime>
+2024-06-17 15:09:05
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click Name (OK)">
+      <StartTime>
+2024-06-17 15:09:05
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given Text : OK
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240617_15090910.png
+</ScreenShot>
+      <EndTime>
+2024-06-17 15:09:09
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Capture Screen Shot(RefreshButton.jpg)">
+      <StartTime>
+2024-06-17 15:09:09
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <ScreenShot>
+.\Windows_Screenshot_240617_15090916.png
+</ScreenShot>
+      <EndTime>
+2024-06-17 15:09:09
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-17 15:09:09
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-17 15:09:14
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-06-17 15:09:14
+</StartTime>
+    </Statement>
+  </TestCase>
+</TestSuite>

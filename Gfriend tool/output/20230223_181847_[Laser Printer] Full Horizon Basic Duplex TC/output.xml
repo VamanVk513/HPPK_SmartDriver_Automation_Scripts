@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2023-02-23 18:19:09
+</StartTime>
+  <TestCase Name="Print Quality:Economode">
+    <StartTime>
+2023-02-23 18:19:09
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2023-02-23 18:19:09
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2023-02-23 18:19:09
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_HPS_Economode">
+          <StartTime>
+2023-02-23 18:19:09
+</StartTime>
+          <StartTime>
+2023-02-23 18:19:09
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_PQEconomode.pdf,HP Smart Printing)">
+            <StartTime>
+2023-02-23 18:19:09
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-23 18:19:40
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2023-02-23 18:19:40
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-23 18:19:40
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2023-02-23 18:19:40
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-23 18:19:40
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2023-02-23 18:19:40
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-23 18:19:46
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-23 18:19:46
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-23 18:19:46
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2023-02-23 18:19:46
+</StartTime>
+          <StartTime>
+2023-02-23 18:19:46
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-23 18:19:46
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-23 18:19:46
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.JobUserResolution,Option.Economode)">
+          <StartTime>
+2023-02-23 18:19:46
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Combobx click fail : Part.JobUserResolution - Option.Economode
+</ErrorDescription>
+          <ScreenShot>
+.\Hallasan_Screenshot_230223_18194865.png
+</ScreenShot>
+          <EndTime>
+2023-02-23 18:19:48
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2023-02-23 18:19:48
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_230223_18194869.png
+</ScreenShot>
+          <EndTime>
+2023-02-23 18:19:48
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2023-02-23 18:19:48
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-23 18:19:53
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2023-02-23 18:19:53
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-23 18:19:53
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2023-02-23 18:19:53
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-02-23 18:19:58
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2023-02-23 18:19:58
+</StartTime>
+          <StartTime>
+2023-02-23 18:19:58
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2023-02-23 18:19:58
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-23 18:20:01
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2023-02-23 18:20:01
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-23 18:20:21
+</EndTime>
+          </Statement>
+          <If Condition=" Hallasan.Close Application">
+            <StartTime>
+2023-02-23 18:20:21
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2023-02-23 18:20:21
+</StartTime>
+              <Block>
+                <StartTime>
+2023-02-23 18:20:21
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2023-02-23 18:20:21
+</EndTime>
+              </Block>
+              <EndTime>
+2023-02-23 18:20:21
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2023-02-23 18:20:21
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2023-02-23 18:20:21
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

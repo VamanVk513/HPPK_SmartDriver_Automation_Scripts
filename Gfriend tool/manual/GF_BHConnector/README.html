@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>GFriend Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="../gfmanual.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">GFriend Manual</h1>
+</header>
+<h1 id="blackhole-integration">BlackHole Integration</h1>
+<h2 id="configure-the-blackhole-server-address">Configure the BlackHole server address</h2>
+<p>Testers can set the BlackHole server address in the GFriend UI -&gt; Menu -&gt; Tool -&gt; Option</p>
+<p><img src=".images/menu_tool_option.png" alt="OptionMenu" /></p>
+<p>In the option form, tester can set the BlackHole server address as below</p>
+<p><img src=".images/option_form.png" alt="OptionForm" /></p>
+<h2 id="login-to-the-blackhole">Login to the BlackHole</h2>
+<p>If testers try to uplaod or download script, login window will be displayed.</p>
+<p><img src=".images/login.png" alt="Login" /></p>
+<p>Tester can login with their testrail id (email address) and API Key to the BlackHole. Login session will be maintained until closing the GFriend. If tester check 'Remember my login information' checkbox, GFriend will save email and encrypted API Key.</p>
+<h2 id="upload-test-script-to-the-blackhole">Upload Test Script To the BlackHole</h2>
+<ol>
+<li><p>Before uploading script</p>
+<p>In the TestRail, GFriend script will be managed as test section. And test cases in the script file will be managed as test case in the section. BlackHole requires descriptions for all test cases to upload. This description will be updated to testrail's test case step column. To set the decsription of test case, tester write description with /// (three slash and space) and &lt;Description&gt; tag in just above the test case name.</p>
+<p><img src=".images/tc_description.png" alt="TC_Description" /></p>
+<p>When tester type /// (three slash) in blank line, description template will automatically inserted. If tester want to change the template, tester can set the their own template in Options (Menu - Tool - Options.) See below example (It also support multiple line.)</p>
+<p><img src=".images/description_template.png" alt="TC_Description_Template" /> <img src=".images/multiline_description.png" alt="Multilie_Description" /></p></li>
+<li><p>Upload button</p>
+<p>Tester can start upload by clicking upload button in side panel(or Menu - Tool - BlackHole - Upload Script.) Then GFriend will upload currently selected script file.</p>
+<p><img src=".images/upload_icon.png" alt="Upload_Icon" /></p></li>
+<li><p>Upload Window</p>
+<p>After login, tester can see the upload window with all information for uploading script.</p>
+<p><img src=".images/upload_form.png" alt="Upload_Form" /></p>
+<ol>
+<li><p>Project and Test Suite</p>
+<p>Tester have to select TestRail project and test suite where GFriend script will be uploaded. List of Test Suite will be changed based on selected project.</p></li>
+<li><p>Script to Upload</p>
+<p>Tester can check script file path</p></li>
+<li><p>Additional Files to Uplaod</p>
+<p>GFriend automatically upload all files (custom library(.gflib), variable file(.gfvar) and resource files) that used in the script. List of files which will be uploaded with script will be displayed.</p></li>
+<li><p>Test Cases</p>
+<p>All list of test cases will be displayed. If test case is ready to upload (have description), marker at top right will be blue check mark. Else if test case do not have description, marker will be read x mark.</p>
+<p><img src=".images/upload_fail_case.png" alt="Upload_Fail_Case" /></p>
+<p>If tester double-clicks the test case in the list, cursor will be moved to GFriend editor window with position of the selected test case. After fix the issue (insert description), tester can check status with refresh button (<img src=".images/refresh.png" />) which is just next to Script to Uplaod.</p></li>
+<li><p>Uplaod Button</p>
+<p>If script file is ready to upload, tester can upload the script by clicking Upload button.</p></li>
+<li><p>Change description</p>
+<p>Tester should input change description of current upload to maintain change history.</p>
+<p><img src=".images/upload_change_description.png" alt="Change_Description" /></p>
+<p>This change description will be placed in the very top of the script file with comment format.</p>
+<p><img src=".images/script_change_description.png" alt="Script_Change_Description" /></p></li>
+</ol></li>
+<li><p>After Upload</p>
+<p>After success upload, tester can see the message box with success message.</p>
+<p><img src=".images/upload_success.png" alt="Upload_Success" /></p>
+<p>Also script editor will be refrehed with more test case meta data from the BlackHole system. This will contains Autor, BlackHoleID and TestRailID as below example.</p>
+<p><img src=".images/updated_script.png" alt="Updated_Script" /></p></li>
+</ol>
+<h2 id="download-from-the-blackhole">Download from the BlackHole</h2>
+<ol>
+<li><p>Download button</p>
+<p>Tester can start download by clicking download button in side panel(or Menu - Tool - BlackHole - Download Script.) Then GFriend will BlackHole server trees next to local file tree.</p>
+<p><img src=".images/download_icon.png" alt="Download_Icon" /></p></li>
+</ol>
+<p>1.BlackHole Server Tree</p>
+<pre><code>After login, tester can see BlackHole server tree as below.
+
+![Server_Tree](.images/blackhole_server_tree.png)
+
+1. Close icon
+
+    Server tree pane will be closed when tester clicks the close button (read X button at top right)
+
+1. Tree Hierarchy
+
+    Tester can see the list of TestRail project in the 1st level of the tree. If tester double-clicks the project, it will retrieve sub test suite of selected project.
+    
+    ![TestSuites](.images/tree_testsuites.png)
+
+    When tester double-clicks the test suite, it will retrieve list of test sections (GFriend script). (NOTE. Only test sections which are managed under the BlackHole will be displayed.)
+
+    ![TestSection](.images/tree_testsection.png)
+
+    Test section also have children which are test cases.
+
+1. Download Script(s)
+
+    When tester clicks download button (![Download](.images/download_button.png)), GFriend will download script to local PC. It will download all scripts (and file used in the scripts) under selected tree item. If tester selects project and clicks the download button, it will download all retrieved test sections under project (Same as test suite.)
+
+1. Download locations
+
+    GFriend will download selected script with hierachy of the BlackHole. Script will be downloaded to [Local Script Root]\\[Project Name]\\[Test Suite Name] as below example.
+
+    ![Local](.images/local_downloaded.png)
+</code></pre>
+<h2 id="execute-blackhole-test-in-local-environment">Execute BlackHole test in local environment</h2>
+<ol>
+<li><p>Execute button</p>
+<p>Tester can exeucte BlackHole test locally. To trigger the test, click the Execute BH Test icon in side panel.</p>
+<p><img src=".images/local_execution.png" alt="Execute_Icon" /></p></li>
+<li><p>Trigger Test</p>
+<p>Like BlackHole exeuction in the Web page, tester can trigger test with TestRail Test Run ID or Test Suite ID as below image. Tester can select with radio button whether trigger with Run ID of Suite ID.</p>
+<p>Also tool automatically identify the trigger method with format of ID. If id starts with 'R' (ex. R85156) tool identify that it is a Run ID. Likely, id starts with 'S', tool identify that it is a Suite ID.</p>
+<p><img src=".images/trigger_test.png" alt="Trigger_Test" /></p></li>
+<li><p>Input Variables</p>
+<p>Tester need to input variables just same as in the Web page. (If test need DUT(s) and tester already registerd DUT(s) in their GFriend, DUT information will be automatically filled out.)</p>
+<p><img src=".images/input_variables.png" alt="Input_Variable" /></p>
+<p>Tester also can select Test Result Auto upload to the TestRail from the BlackHole options:</p>
+<pre><code> . Off : Do not upload result. Tester can upload/discard result in portal.
+ . Always : BlackHole will automatically upload test results to the TestRail.
+ . If test cases are all passed : BlackHole will automatically upload test results to the TestRail just if all test cases are passed.
+</code></pre>
+<p>If tester triggers test with Suite ID, tool requires test run creation configurations. Tester shall fill out the Test Run Name and select Test Run creation Type :</p>
+<pre><code> . Made on Test Run Standalone : Tester can create run without Test Plan. Also test run can be created under Milestone if tester specify the Milestone ID.
+ . Made on Test Run withtin Test Plan : Tester can create run within the Test Plan. Test Plan ID shall be filled out.
+</code></pre>
+<p><img src=".images/test_run_creation.png" alt="Create_Run" /></p>
+<ol>
+<li><p>Execute test in local and upload result to the BlackHole in one step</p>
+<p>After clicking Save and Run button, GFriend will download test script from the BlackHole and store them under [ScriptRoot]\BlackHoleExecution[Black Hole ID] folder. After download, it will start test with downloaded script(s). The progress will displays in output as below.</p>
+<p><img src=".images/download_complete.png" alt="Download_Script" /></p>
+<p>While executing test in local,the BlackHole will displays its status as 'Local Running'. GFriend will open current executed script file on the editor while execution. After all executions are finished, GFriend will upload test result to the BlackHole and its progress also will displays in output as below.</p>
+<p><img src=".images/upload_result.png" alt="Upload_Result" /></p>
+<p>After that, tester can recive notification via email just like other test.</p></li>
+<li><p>Save test script Only</p>
+<p>If tester clcik the Save Only button on Variable Input window, GFriend will download test script from the BlackHole and store them under [ScriptRoot]\BlackHoleExecution[Black Hole ID] folder. Also all information of tests are saved in BHTestPlan.json file in that folder so tester can execute test with BHTestPlan.json file later.</p></li>
+</ol></li>
+<li><p>Run with Downloaded Data</p>
+<p>If tester click Run with Downloaded Data on the top of the window, tester can execute test with downloaded data.</p>
+<p><img src=".images/run_with_downloaded_data.png" alt="RunWithDownload" /></p>
+<p>By click browse button (...) test can select BHTestPlan.json file to execute test. Checkbox belows indicate to upload test output to the BlackHole after execute. If not checked GFriend will save test output in local and test can upload them later.</p></li>
+<li><p>Upload Test Output to the BlackHole</p>
+<p>If tester click Upload Test Output to BlackHole on the top of the window, tester can upload test output to the BlackHole.</p>
+<p><img src=".images/upload_result_manual.png" alt="Upload_result" /></p>
+<p>By click browse button (...) test can select BHTestPlan.json file to execute test. Checkbox belows indicate to upload test output to the BlackHole after execute. If not checked GFriend will save test output in local and test can upload them later.</p></li>
+</ol>
+<h2 id="local-execution-tips">Local Execution Tips</h2>
+<p>If BlackHole connection environment and test execution environment are seperated, tester can execute BlackHole local execution as below step.</p>
+<p>(BH : PC that can connect to the BlackHole, EX : PC that can not connect to the BlackHole and will run the test)</p>
+<ol>
+<li>[BH] Download test script by clicking Save Only button</li>
+<li>[BH] Copy [ScriptRoot]\BlackHoleExecution[Black Hole ID] folder to [EX]machine that test will be executed. (No connection tothe BlackHole)</li>
+<li>[EX] Run GFriend and click local execution. Click Run with Downloaded data and select BHTestPlan.json file under copied folder in previous step.</li>
+<li>[EX] After execution, copy same folder again to the [BH] PC.</li>
+<li>[BH] Run GFriend and click local execution. Click Upload Test Output to BlackHole and select BHTestPlan.json file under copied folder in previous step.</li>
+</ol>
+</body>
+</html>

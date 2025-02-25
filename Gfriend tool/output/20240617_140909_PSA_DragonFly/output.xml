@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_DragonFly">
+  <StartTime>
+2024-06-17 14:09:33
+</StartTime>
+  <TestCase Name="5.Collate-OFF">
+    <StartTime>
+2024-06-17 14:09:33
+</StartTime>
+    <Statement StatementName="Destination_Selection_PSA_Application.Destination Selection_Collate_Off">
+      <StartTime>
+2024-06-17 14:09:33
+</StartTime>
+      <StartTime>
+2024-06-17 14:09:33
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_PSA_CollateOFF.pdf,HP_PrintSupport_App)">
+        <StartTime>
+2024-06-17 14:09:33
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-17 14:10:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP_PrintSupport_App,30)">
+        <StartTime>
+2024-06-17 14:10:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-17 14:10:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-06-17 14:10:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-17 14:10:12
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-17 14:10:12
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-17 14:10:12
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-06-17 14:10:12
+</StartTime>
+      <StartTime>
+2024-06-17 14:10:12
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-17 14:10:12
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-17 14:10:12
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_PSA_Application.Expections_Error">
+      <StartTime>
+2024-06-17 14:10:12
+</StartTime>
+      <StartTime>
+2024-06-17 14:10:12
+</StartTime>
+      <Statement StatementName="Windows.Capture Full Screen (SS)">
+        <StartTime>
+2024-06-17 14:10:12
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240617_14101244.png
+</ScreenShot>
+        <EndTime>
+2024-06-17 14:10:12
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Child Window With Title (HP_PrintSupport_App,10)">
+        <StartTime>
+2024-06-17 14:10:12
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240617_14102276.png
+</ScreenShot>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-06-17 14:10:22
+</StartTime>
+          <Block>
+            <StartTime>
+2024-06-17 14:10:22
+</StartTime>
+            <Statement StatementName="Pass (Childpop was not displayed)">
+              <StartTime>
+2024-06-17 14:10:22
+</StartTime>
+              <Result>
+Pass
+</Result>
+              <Output>
+Childpop was not displayed
+</Output>
+              <EndTime>
+2024-06-17 14:10:22
+</EndTime>
+            </Statement>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-17 14:10:22
+</EndTime>
+          </Block>
+          <EndTime>
+2024-06-17 14:10:22
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-06-17 14:10:22
+</EndTime>
+      </If>
+      <Statement StatementName="Windows.Capture Full Screen (SSS)">
+        <StartTime>
+2024-06-17 14:10:22
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240617_14102287.png
+</ScreenShot>
+        <EndTime>
+2024-06-17 14:10:22
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Application (HP_PrintSupport_App,10)">
+        <StartTime>
+2024-06-17 14:10:22
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240617_14103297.png
+</ScreenShot>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-06-17 14:10:32
+</StartTime>
+          <Block>
+            <StartTime>
+2024-06-17 14:10:32
+</StartTime>
+            <Statement StatementName="Pass (Childpop was not displayed)">
+              <StartTime>
+2024-06-17 14:10:32
+</StartTime>
+              <Result>
+Pass
+</Result>
+              <Output>
+Childpop was not displayed
+</Output>
+              <EndTime>
+2024-06-17 14:10:33
+</EndTime>
+            </Statement>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-17 14:10:33
+</EndTime>
+          </Block>
+          <EndTime>
+2024-06-17 14:10:33
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-06-17 14:10:33
+</EndTime>
+      </If>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-17 14:10:33
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-17 14:10:33
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Set Toggle (SSCControl,Off)">
+      <StartTime>
+2024-06-17 14:10:33
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-17 14:10:33
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Capture Screen Shot(1UP.jpg)">
+      <StartTime>
+2024-06-17 14:10:33
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <ScreenShot>
+.\Windows_Screenshot_240617_14103335.png
+</ScreenShot>
+      <EndTime>
+2024-06-17 14:10:33
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-17 14:10:33
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-17 14:10:38
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2024-06-17 14:10:38
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-17 14:10:38
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2024-06-17 14:10:38
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-17 14:10:43
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2024-06-17 14:10:43
+</StartTime>
+      <StartTime>
+2024-06-17 14:10:43
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2024-06-17 14:10:43
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-17 14:10:45
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2024-06-17 14:10:45
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-17 14:10:55
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2024-06-17 14:10:55
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2024-06-17 14:10:55
+</StartTime>
+          <Block>
+            <StartTime>
+2024-06-17 14:10:55
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-17 14:10:55
+</EndTime>
+          </Block>
+          <EndTime>
+2024-06-17 14:10:55
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-06-17 14:10:55
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2024-06-17 14:10:55
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-17 14:11:05
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-17 14:11:05
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-17 14:11:05
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_PSA_Application.PT Value_UnCollated">
+      <StartTime>
+2024-06-17 14:11:05
+</StartTime>
+      <StartTime>
+2024-06-17 14:11:05
+</StartTime>
+      <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+        <StartTime>
+2024-06-17 14:11:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-17 14:11:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:DocumentCollate']/psf:Option,name)">
+        <StartTime>
+2024-06-17 14:11:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+psk:Collated
+</Output>
+        <EndTime>
+2024-06-17 14:11:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},psk:Collated)">
+        <StartTime>
+2024-06-17 14:11:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-17 14:11:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+        <StartTime>
+2024-06-17 14:11:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:OptIn
+</Output>
+        <EndTime>
+2024-06-17 14:11:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:OptIn)">
+        <StartTime>
+2024-06-17 14:11:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-06-17 14:11:06
+</EndTime>
+      </Statement>
+      <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+        <StartTime>
+2024-06-17 14:11:06
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+        1 file(s) copied.
+
+</Output>
+        <EndTime>
+2024-06-17 14:11:06
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-17 14:11:06
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-17 14:11:06
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2024-06-17 14:11:06
+</EndTime>
+  </TestCase>
+  <EndTime>
+2024-06-17 14:11:06
+</EndTime>
+</TestSuite>

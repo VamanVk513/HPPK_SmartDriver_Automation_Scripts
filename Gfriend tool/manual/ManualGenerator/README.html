@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>GFriend Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../gfmanual.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">GFriend Manual</h1>
+</header>
+<h1 id="documentation-guide">Documentation Guide</h1>
+<h2 id="documentation-format">Documentation Format</h2>
+<p>GFriend Documentation need to be written with GFM(Github Flavored
+Markdown.)</p>
+<p>Refer following link for GFM Spec:</p>
+<p><a
+href="https://github.github.com/gfm/">https://github.github.com/gfm/</a></p>
+<h2 id="naming-conventions-and-path-of-documentations">Naming
+conventions and Path of documentations</h2>
+<ul>
+<li><p>README.html file</p>
+<p>All GFM file for used for manual must have name of "README.html"</p>
+<p>It is recommended to store root directory of project (not the
+solution)</p></li>
+<li><p>Images</p>
+<p>All images which will be used within documentation, must be placed
+under ".images" folder.</p>
+<p>In the README.html, image link should be used as relative path as
+example below:</p>
+<pre><code>![GFriend::Main](.images/GFriend_Main.png)</code></pre></li>
+</ul>
+<h2 id="document-generation">Document Generation</h2>
+<p>In the build step, GenerateManual.py file will copy all related files
+(README.html and images) to manual location</p>
+<p>and convert GFM to HTML format and change links.</p>
+<p>To run this script, following tools should be installed :</p>
+<p>Python 3.7.0 (or latest) : <a
+href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
+<p>Pandoc 2.9.2.1 (or latest) : <a
+href="https://github.com/jgm/pandoc/releases/tag/2.9.2.1">https://github.com/jgm/pandoc/releases/tag/2.9.2.1</a></p>
+</body>
+</html>

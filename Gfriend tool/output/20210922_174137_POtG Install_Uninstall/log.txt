@@ -1,0 +1,59 @@
+2021-09-22 17:41:37.800 [T] ?::?::Parsing start
+2021-09-22 17:41:37.800 [T] ?::?::Parsing Variable File : C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Testfile.gfvar
+2021-09-22 17:41:37.801 [T] ?::?::Creating custom library with C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Destination_Selection_Application.gflib
+2021-09-22 17:41:37.802 [T] ?::?::Parsing start
+2021-09-22 17:41:37.845 [T] ?::?::Parsing Variable File : C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Testfile.gfvar
+2021-09-22 17:41:37.847 [D] ?::?::Post Action
+2021-09-22 17:41:37.847 [T] ?::?::All Used Libraries::C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Destination_Selection_Application.gflib
+2021-09-22 17:41:37.848 [T] ?::?::Device ID : __NO__DUT__
+2021-09-22 17:41:37.848 [T] ?::?::BuiltIn is used BuiltIn
+2021-09-22 17:41:37.848 [T] ?::?::Windows is used Windows
+2021-09-22 17:41:37.849 [T] ?::?::XML is used XML
+2021-09-22 17:41:37.849 [T] ?::?::Device ID : __DEFUALT__DUT__
+2021-09-22 17:41:37.849 [T] ?::?::Hallasan is used Hallasan
+2021-09-22 17:41:57.338 [T] ?::?::Parsing done
+2021-09-22 17:41:57.339 [T] ?::?::Destination_Selection_Application is crated
+2021-09-22 17:41:57.339 [T] ?::?::Creating custom library with C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Click_Print_Button.gflib
+2021-09-22 17:41:57.340 [T] ?::?::Parsing start
+2021-09-22 17:41:57.340 [T] ?::?::Parsing Variable File : C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Testfile.gfvar
+2021-09-22 17:41:57.341 [D] ?::?::Post Action
+2021-09-22 17:41:57.342 [T] ?::?::All Used Libraries::C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Click_Print_Button.gflib
+2021-09-22 17:41:57.342 [T] ?::?::Device ID : __NO__DUT__
+2021-09-22 17:41:57.342 [T] ?::?::BuiltIn is used BuiltIn
+2021-09-22 17:41:57.342 [T] ?::?::Windows is used Windows
+2021-09-22 17:41:57.342 [T] ?::?::Device ID : __DEFUALT__DUT__
+2021-09-22 17:41:57.343 [T] ?::?::Hallasan is used Hallasan
+2021-09-22 17:41:57.343 [T] ?::?::Parsing done
+2021-09-22 17:41:57.343 [T] ?::?::Click_Print_Button is crated
+2021-09-22 17:41:57.343 [D] ?::?::Post Action
+2021-09-22 17:41:57.344 [T] ?::?::All Used Libraries::C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\POtG Install_Uninstall.txt
+2021-09-22 17:41:57.344 [T] ?::?::Device ID : __NO__DUT__
+2021-09-22 17:41:57.344 [T] ?::?::BuiltIn is used BuiltIn
+2021-09-22 17:41:57.344 [T] ?::?::Windows is used Windows
+2021-09-22 17:41:57.344 [T] ?::?::XML is used XML
+2021-09-22 17:41:57.344 [T] ?::?::Device ID : __DEFUALT__DUT__
+2021-09-22 17:41:57.344 [T] ?::?::Hallasan is used Hallasan
+2021-09-22 17:41:57.345 [T] ?::?::Destination_Selection_Application is used Destination_Selection_Application
+2021-09-22 17:41:57.345 [T] ?::?::Click_Print_Button is used Click_Print_Button
+2021-09-22 17:41:57.345 [T] ?::?::Loading Library : BuiltIn -> BuiltIn
+2021-09-22 17:41:57.345 [T] ?::?::Library type is native library.
+2021-09-22 17:41:57.346 [T] ?::?::Loading Library : Windows -> Windows
+2021-09-22 17:41:57.346 [T] ?::?::Library type is native library.
+2021-09-22 17:41:57.348 [T] ?::?::Loading Library : XML -> XML
+2021-09-22 17:41:57.348 [T] ?::?::Library type is native library.
+2021-09-22 17:41:57.349 [T] ?::?::Loading Library : Hallasan -> Hallasan
+2021-09-22 17:41:57.349 [T] ?::?::Library type is native library.
+2021-09-22 17:41:57.349 [T] ?::?::Loading Library : Destination_Selection_Application -> Destination_Selection_Application
+2021-09-22 17:41:57.349 [T] ?::?::Library type is custom library.
+2021-09-22 17:41:57.349 [T] ?::?::Loading Library : Click_Print_Button -> Click_Print_Button
+2021-09-22 17:41:57.350 [T] ?::?::Library type is custom library.
+2021-09-22 17:41:57.350 [D] ?::?::192.168.0.8
+2021-09-22 17:41:57.370 [T] ?::?::Hallasan.Remove Printer (HP Smart Printing) is called
+2021-09-22 17:41:57.376 [E] ?::?::Error during delete printer
+System.Printing.PrintQueueException: An exception occurred while populating the properties for the PrintQueue object. Win32 error: The printer name is invalid.
+
+   at System.Printing.PrintQueue.Initialize(PrintServer printServer, String printQueueName, String[] propertiesFilter, PrinterDefaults printerDefaults)
+   at System.Printing.PrintQueue..ctor(PrintServer printServer, String printQueueName, PrintSystemDesiredAccess desiredAccess)
+   at HP.GFriend.Keywords.PrinterDriverUtils.DeletePrinter(String printerName) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\PrinterDriverUtils.cs:line 288
+   at HP.GFriend.Keywords.Windows.RemovePrinter(String printerName) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 693
+2021-09-22 17:41:57.458 [T] ?::?::Keyword executed with result = Error

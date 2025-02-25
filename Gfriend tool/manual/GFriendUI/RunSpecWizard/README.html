@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>GFriend Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../gfmanual.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">GFriend Manual</h1>
+</header>
+<h1 id="test-run-spec-wizard">Test Run Spec Wizard</h1>
+<p>This menu helps to create GFriend test run spec. xml file within
+UI.</p>
+<p>Tester can access this menu via Tool - Test Run Spec Wizard.</p>
+<h2 id="step1-select-test-scripts-to-run">Step1. Select test script(s)
+to run</h2>
+<p><img src=".images/step1.png" alt="Step1" /></p>
+<p>You can selet test script files to run by clicking file name at file
+browser tree in left pane. If you want to run same script with different
+configurations (repeate count, test case selection or devices), you can
+add same script file. (Press 'X' icon to remove script for list.)</p>
+<p><img src=".images/step1-1.png" alt="Step1-1" /></p>
+<p>In script configuration, you can select repeat count and test case to
+run if you wants.</p>
+<h2 id="step2-select-device-to-test">Step2. Select Device to test</h2>
+<p><img src=".images/step2.png" alt="Step2" /></p>
+<p>In this step, you can select deivces under test and select default
+device for each test script.</p>
+<h2 id="step3-configurate-global-test-run-settings">Step3. Configurate
+global test run settings</h2>
+<p><img src=".images/step3.png" alt="Step3" /></p>
+<p>In this step, you can configure global settings of entire test
+run.</p>
+<p>Specify output folder which test results are saved. GFriend will
+create seperate output folder based on each repeatation under given
+output folder.</p>
+<p>You can repeat entire selected tests with set the total repeat count.
+If one script's repeat count is 3 and Toatl repeat count is 10 (for
+example hallasan.txt test script in above screenshot), the script will
+repeate 30 times (3 x 10 times) in this test run.</p>
+<h2 id="final-step-save-test-run-spec-or-execute-now">Final step. Save
+test run spec or Execute now</h2>
+<p><img src=".images/final.png" alt="FinalStep" /></p>
+<p>You can save test run spec to file for future use, or execute with
+this test run spec.</p>
+<p>After save test run spec, you can run with this spec file in windows
+command window. Run "GF_Runner.exe -s [SpecfileName]" to run with
+spec.</p>
+<p>If you click Execute Now button, GFriend will run the test with spec
+in new command windows. This command window is sperate process with
+GFriend, so it will remain even after GFriend UI is closed. <img
+src=".images/executeNow.png" alt="ExecuteNow" /></p>
+</body>
+</html>

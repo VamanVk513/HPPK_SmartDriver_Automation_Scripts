@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2023-02-23 14:51:51
+</StartTime>
+  <TestCase Name="General Everyday Printing">
+    <StartTime>
+2023-02-23 14:51:51
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_General_Everyday_Printing">
+      <StartTime>
+2023-02-23 14:51:51
+</StartTime>
+      <StartTime>
+2023-02-23 14:51:51
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_General_Everyday_Printing.pdf,HP Smart Printing)">
+        <StartTime>
+2023-02-23 14:51:51
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-02-23 14:52:21
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+        <StartTime>
+2023-02-23 14:52:21
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-02-23 14:52:21
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2023-02-23 14:52:21
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-02-23 14:52:27
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-02-23 14:52:27
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-02-23 14:52:27
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2023-02-23 14:52:27
+</StartTime>
+      <StartTime>
+2023-02-23 14:52:27
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-02-23 14:52:27
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-02-23 14:52:27
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_GeneralPrint_)">
+      <StartTime>
+2023-02-23 14:52:27
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Combobx click fail : ui_PresetComboBox - _GeneralPrint_
+</ErrorDescription>
+      <ScreenShot>
+.\Hallasan_Screenshot_230223_14523007.png
+</ScreenShot>
+      <EndTime>
+2023-02-23 14:52:30
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2023-02-23 14:52:30
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-02-23 14:52:35
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2023-02-23 14:52:35
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-02-23 14:52:35
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2023-02-23 14:52:35
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-02-23 14:52:40
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2023-02-23 14:52:40
+</StartTime>
+      <StartTime>
+2023-02-23 14:52:40
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2023-02-23 14:52:40
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-02-23 14:52:42
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2023-02-23 14:52:42
+</StartTime>
+      </Statement>
+    </Statement>
+  </TestCase>
+</TestSuite>

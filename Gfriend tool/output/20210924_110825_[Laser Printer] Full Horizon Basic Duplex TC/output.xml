@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2021-09-24 11:08:44
+</StartTime>
+  <TestCase Name="General Everyday Printing">
+    <StartTime>
+2021-09-24 11:08:44
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_General_Everyday_Printing">
+      <StartTime>
+2021-09-24 11:08:44
+</StartTime>
+      <StartTime>
+2021-09-24 11:08:44
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_General_Everyday_Printing.pdf,HP Smart Printing)">
+        <StartTime>
+2021-09-24 11:08:44
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Can not find specified file
+</ErrorDescription>
+        <EndTime>
+2021-09-24 11:08:44
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+        <StartTime>
+2021-09-24 11:08:44
+</StartTime>
+      </Statement>
+    </Statement>
+  </TestCase>
+</TestSuite>

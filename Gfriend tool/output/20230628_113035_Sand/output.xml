@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Sand">
+  <StartTime>
+2023-06-28 11:30:58
+</StartTime>
+  <TestCase Name="48.Print Quality:Economode">
+    <StartTime>
+2023-06-28 11:30:58
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2023-06-28 11:30:58
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2023-06-28 11:30:58
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_HPS_Economode">
+          <StartTime>
+2023-06-28 11:30:58
+</StartTime>
+          <StartTime>
+2023-06-28 11:30:58
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_PQEconomode.pdf,HP Smart Printing)">
+            <StartTime>
+2023-06-28 11:30:58
+</StartTime>
+            <Result>
+Error
+</Result>
+            <ErrorDescription>
+Unexpected exception
+</ErrorDescription>
+            <AdditionalInfo>
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.Windows.Automation.ElementNotAvailableException: The target element corresponds to UI that is no longer available (for example, the parent window has closed).
+   at MS.Internal.Automation.HwndProxyElementProvider.System.Windows.Automation.Provider.IRawElementProviderSimple.GetPropertyValue(Int32 propertyId)
+   at MS.Internal.Automation.UiaCoreApi.CheckError(Int32 hr)
+   at System.Windows.Automation.AutomationElement.GetCurrentPropertyValue(AutomationProperty property, Boolean ignoreDefaultValue)
+   at System.Windows.Automation.AutomationElement.AutomationElementInformation.get_ProcessId()
+   at HP.GFriend.Utils.UIAManaged.WindowsManaged.SelectElement(AutomationElement rootElement, Condition condition, TimeSpan timeOut, TreeScope scope) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFUtils\UIAManaged\WindowsManaged.cs:line 99
+   at HP.GFriend.Utils.UIAManaged.ApplicationUtilsManaged.OpenAcrobatReader(String filePath, String printerName, WindowsManaged windowsController) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFUtils\UIAManaged\ApplicationUtilsManaged.cs:line 73
+   at HP.GFriend.Keywords.ApplicationUtils.OpenAcrobatReader(String filePath, String printerName, Windows windowsController) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\ApplicationUtils.cs:line 292
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+</AdditionalInfo>
+            <EndTime>
+2023-06-28 11:31:27
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2023-06-28 11:31:27
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

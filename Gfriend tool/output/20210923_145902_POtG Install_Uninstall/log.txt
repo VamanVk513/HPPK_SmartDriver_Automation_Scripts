@@ -1,0 +1,70 @@
+2021-09-23 14:59:02.033 [T] ?::?::Parsing start
+2021-09-23 14:59:02.034 [T] ?::?::Parsing Variable File : C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Testfile.gfvar
+2021-09-23 14:59:02.035 [T] ?::?::Creating custom library with C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Destination_Selection_Application.gflib
+2021-09-23 14:59:02.035 [T] ?::?::Parsing start
+2021-09-23 14:59:02.074 [T] ?::?::Parsing Variable File : C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Testfile.gfvar
+2021-09-23 14:59:02.075 [D] ?::?::Post Action
+2021-09-23 14:59:02.076 [T] ?::?::All Used Libraries::C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Destination_Selection_Application.gflib
+2021-09-23 14:59:02.118 [T] ?::?::Device ID : __NO__DUT__
+2021-09-23 14:59:02.119 [T] ?::?::BuiltIn is used BuiltIn
+2021-09-23 14:59:02.120 [T] ?::?::Windows is used Windows
+2021-09-23 14:59:02.120 [T] ?::?::XML is used XML
+2021-09-23 14:59:02.120 [T] ?::?::Device ID : __DEFUALT__DUT__
+2021-09-23 14:59:02.121 [T] ?::?::Hallasan is used Hallasan
+2021-09-23 14:59:20.598 [T] ?::?::Parsing done
+2021-09-23 14:59:20.598 [T] ?::?::Destination_Selection_Application is crated
+2021-09-23 14:59:20.598 [T] ?::?::Creating custom library with C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Click_Print_Button.gflib
+2021-09-23 14:59:20.599 [T] ?::?::Parsing start
+2021-09-23 14:59:20.599 [T] ?::?::Parsing Variable File : C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Testfile.gfvar
+2021-09-23 14:59:20.600 [D] ?::?::Post Action
+2021-09-23 14:59:20.600 [T] ?::?::All Used Libraries::C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Click_Print_Button.gflib
+2021-09-23 14:59:20.600 [T] ?::?::Device ID : __NO__DUT__
+2021-09-23 14:59:20.601 [T] ?::?::BuiltIn is used BuiltIn
+2021-09-23 14:59:20.601 [T] ?::?::Windows is used Windows
+2021-09-23 14:59:20.601 [T] ?::?::Device ID : __DEFUALT__DUT__
+2021-09-23 14:59:20.601 [T] ?::?::Hallasan is used Hallasan
+2021-09-23 14:59:20.601 [T] ?::?::Parsing done
+2021-09-23 14:59:20.601 [T] ?::?::Click_Print_Button is crated
+2021-09-23 14:59:20.602 [D] ?::?::Post Action
+2021-09-23 14:59:20.602 [T] ?::?::All Used Libraries::C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\POtG Install_Uninstall.txt
+2021-09-23 14:59:20.602 [T] ?::?::Device ID : __NO__DUT__
+2021-09-23 14:59:20.602 [T] ?::?::BuiltIn is used BuiltIn
+2021-09-23 14:59:20.602 [T] ?::?::Windows is used Windows
+2021-09-23 14:59:20.602 [T] ?::?::XML is used XML
+2021-09-23 14:59:20.602 [T] ?::?::Device ID : __DEFUALT__DUT__
+2021-09-23 14:59:20.603 [T] ?::?::Hallasan is used Hallasan
+2021-09-23 14:59:20.604 [T] ?::?::Destination_Selection_Application is used Destination_Selection_Application
+2021-09-23 14:59:20.604 [T] ?::?::Click_Print_Button is used Click_Print_Button
+2021-09-23 14:59:20.604 [T] ?::?::Loading Library : BuiltIn -> BuiltIn
+2021-09-23 14:59:20.604 [T] ?::?::Library type is native library.
+2021-09-23 14:59:20.605 [T] ?::?::Loading Library : Windows -> Windows
+2021-09-23 14:59:20.605 [T] ?::?::Library type is native library.
+2021-09-23 14:59:20.606 [T] ?::?::Loading Library : XML -> XML
+2021-09-23 14:59:20.606 [T] ?::?::Library type is native library.
+2021-09-23 14:59:20.606 [T] ?::?::Loading Library : Hallasan -> Hallasan
+2021-09-23 14:59:20.606 [T] ?::?::Library type is native library.
+2021-09-23 14:59:20.607 [T] ?::?::Loading Library : Destination_Selection_Application -> Destination_Selection_Application
+2021-09-23 14:59:20.607 [T] ?::?::Library type is custom library.
+2021-09-23 14:59:20.607 [T] ?::?::Loading Library : Click_Print_Button -> Click_Print_Button
+2021-09-23 14:59:20.607 [T] ?::?::Library type is custom library.
+2021-09-23 14:59:20.607 [D] ?::?::192.168.0.8
+2021-09-23 14:59:20.623 [T] ?::?::Windows.Add Certificate (C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\Potg_Driver\install_smartdriver_v2\BoiseTest.cer) is called
+2021-09-23 14:59:20.656 [T] ?::?::Keyword executed with result = Pass
+2021-09-23 14:59:20.711 [T] ?::?::Windows.Add Local Printer(HP Smart Printing,HPSmartPrintingPort, C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\Potg_Driver\HPOneDriver-1.8.1.732-V4-Release-x64\HPOneDriver_V4_x64.inf,HP Smart Printing) is called
+2021-09-23 14:59:20.768 [E] ?::?::Unspecified error : 87
+2021-09-23 14:59:20.783 [T] ?::?::Keyword executed with result = Fail
+2021-09-23 14:59:20.785 [T] ?::?::Sleep (10) is called
+2021-09-23 14:59:27.205 [E] ?::?::Unexpected exception : Sleep
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+2021-09-23 14:59:27.207 [E] ?::?::Unexpected Error
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+   at HP.GFriend.Core.Execution.Statement.Run(TestDataManager testDataManager, Int32 repeatCount, Int32 stackLevel, Dictionary`2 arguments)
+   at HP.GFriend.Core.Execution.TestCase.Run(TestDataManager testDataManager, Int32 repeatCount, Int32 stackLevel, Dictionary`2 arguments)
+   at HP.GFriend.Core.Execution.TestSuite.Run(TestDataManager testDataManager, List`1 tcToRun)
+   at HP.GFriend.Core.Execution.Runner.Run(String tsPath, TestDataManager& testDataManager, List`1 tcToRun, String libraryPath, String defaultDut, Dictionary`2 variables)

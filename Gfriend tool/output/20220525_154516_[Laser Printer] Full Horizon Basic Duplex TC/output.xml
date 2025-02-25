@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-05-25 15:45:39
+</StartTime>
+  <TestCase Name="Always Show Before Printing : Check">
+    <StartTime>
+2022-05-25 15:45:39
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-05-25 15:45:39
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-05-25 15:45:39
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_CheckAlwaysShowBeforePrinting">
+          <StartTime>
+2022-05-25 15:45:39
+</StartTime>
+          <StartTime>
+2022-05-25 15:45:39
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_CheckAlwaysShowBeforePrinting.pdf,HP Smart Printing)">
+            <StartTime>
+2022-05-25 15:45:39
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find specified file
+</ErrorDescription>
+            <EndTime>
+2022-05-25 15:45:39
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2022-05-25 15:45:39
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find window
+</ErrorDescription>
+            <ScreenShot>
+.\Hallasan_Screenshot_220525_15455479.png
+</ScreenShot>
+            <EndTime>
+2022-05-25 15:45:54
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-05-25 15:45:54
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

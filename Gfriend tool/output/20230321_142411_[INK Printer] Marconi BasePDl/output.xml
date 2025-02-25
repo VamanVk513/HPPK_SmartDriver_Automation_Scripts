@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[INK Printer] Marconi BasePDl">
+  <StartTime>
+2023-03-21 14:24:32
+</StartTime>
+  <TestCase Name="74.Media Type:Plain Paper">
+    <StartTime>
+2023-03-21 14:24:32
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2023-03-21 14:24:32
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2023-03-21 14:24:32
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_PlainPaper">
+          <StartTime>
+2023-03-21 14:24:32
+</StartTime>
+          <StartTime>
+2023-03-21 14:24:32
+</StartTime>
+          <Statement StatementName="Halasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_PlainPaper.pdf,HP Smart Printing)">
+            <StartTime>
+2023-03-21 14:24:32
+</StartTime>
+            <Result>
+Error
+</Result>
+            <ErrorDescription>
+Can not find specified keyword
+</ErrorDescription>
+            <EndTime>
+2023-03-21 14:24:32
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2023-03-21 14:24:32
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find window
+</ErrorDescription>
+            <ScreenShot>
+.\Hallasan_Screenshot_230321_14244296.png
+</ScreenShot>
+            <EndTime>
+2023-03-21 14:24:42
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2023-03-21 14:24:42
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

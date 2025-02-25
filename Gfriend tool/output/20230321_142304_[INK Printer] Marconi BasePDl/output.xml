@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[INK Printer] Marconi BasePDl">
+  <StartTime>
+2023-03-21 14:23:25
+</StartTime>
+  <TestCase Name="74.Media Type:Plain Paper">
+    <StartTime>
+2023-03-21 14:23:25
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2023-03-21 14:23:25
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2023-03-21 14:23:25
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_PlainPaper">
+          <StartTime>
+2023-03-21 14:23:25
+</StartTime>
+          <StartTime>
+2023-03-21 14:23:25
+</StartTime>
+          <Statement StatementName="Halasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_PlainPaper.pdf,HP Smart Printing)">
+            <StartTime>
+2023-03-21 14:23:25
+</StartTime>
+            <Result>
+Error
+</Result>
+            <ErrorDescription>
+Can not find specified keyword
+</ErrorDescription>
+            <EndTime>
+2023-03-21 14:23:25
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2023-03-21 14:23:25
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-03-21 14:23:26
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2023-03-21 14:23:26
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-03-21 14:23:26
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2023-03-21 14:23:26
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-03-21 14:23:32
+</EndTime>
+          </Statement>
+          <Result>
+Error
+</Result>
+          <EndTime>
+2023-03-21 14:23:32
+</EndTime>
+          <Result>
+Error
+</Result>
+          <EndTime>
+2023-03-21 14:23:32
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2023-03-21 14:23:32
+</StartTime>
+          <StartTime>
+2023-03-21 14:23:32
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-03-21 14:23:33
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-03-21 14:23:33
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set ComboBox (Part.JobDuplexAllDocumentsContiguously,Option.OneSided)">
+          <StartTime>
+2023-03-21 14:23:33
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-03-21 14:23:33
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.PageMediaType,Option.Plain)">
+          <StartTime>
+2023-03-21 14:23:33
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-03-21 14:23:33
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2023-03-21 14:23:33
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_230321_14233335.png
+</ScreenShot>
+          <EndTime>
+2023-03-21 14:23:33
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2023-03-21 14:23:33
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-03-21 14:23:38
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2023-03-21 14:23:38
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-03-21 14:23:38
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2023-03-21 14:23:38
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2023-03-21 14:23:43
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2023-03-21 14:23:43
+</StartTime>
+          <StartTime>
+2023-03-21 14:23:43
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2023-03-21 14:23:43
+</StartTime>
+            <Result>
+Error
+</Result>
+            <ErrorDescription>
+Error during click print button
+</ErrorDescription>
+            <AdditionalInfo>
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HP.GFriend.Keywords.ApplicationUtils.ClickPrintButtonInAcrobatReader(Windows windowsController) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\ApplicationUtils.cs:line 398
+   at HP.GFriend.Keywords.Windows.ClickPrintButton() in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 935
+</AdditionalInfo>
+            <EndTime>
+2023-03-21 14:23:50
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2023-03-21 14:23:50
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

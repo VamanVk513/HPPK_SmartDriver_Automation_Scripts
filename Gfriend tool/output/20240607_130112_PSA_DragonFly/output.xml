@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_DragonFly">
+  <StartTime>
+2024-06-07 13:01:37
+</StartTime>
+  <TestCase Name="Test">
+    <StartTime>
+2024-06-07 13:01:37
+</StartTime>
+    <Statement StatementName="Windows.Wait For ID (ui_Preset_Combo,5)">
+      <StartTime>
+2024-06-07 13:01:37
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 13:01:37
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID With Mouse (ui_Preset_Combo)">
+      <StartTime>
+2024-06-07 13:01:37
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 13:01:38
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Wait For Name (Envelopes,5)">
+      <StartTime>
+2024-06-07 13:01:38
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 13:01:38
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click Name (Envelopes)">
+      <StartTime>
+2024-06-07 13:01:38
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-07 13:01:38
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2024-06-07 13:01:38
+</EndTime>
+  </TestCase>
+  <EndTime>
+2024-06-07 13:01:38
+</EndTime>
+</TestSuite>

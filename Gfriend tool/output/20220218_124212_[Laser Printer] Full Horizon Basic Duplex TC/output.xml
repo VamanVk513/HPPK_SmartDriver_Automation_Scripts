@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-02-18 12:42:30
+</StartTime>
+  <TestCase Name="Two-Sided Printing:TwoSidedLongEdge">
+    <StartTime>
+2022-02-18 12:42:30
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-02-18 12:42:30
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-02-18 12:42:30
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_TwoSidedLongEdge">
+          <StartTime>
+2022-02-18 12:42:30
+</StartTime>
+          <StartTime>
+2022-02-18 12:42:30
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_TwoSidedLongEdge.pdf,HP Smart Printing)">
+            <StartTime>
+2022-02-18 12:42:30
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

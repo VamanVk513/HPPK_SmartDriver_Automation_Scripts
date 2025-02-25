@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>GFriend Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../gfmanual.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">GFriend Manual</h1>
+</header>
+<h1 id="library-implementation-guide">Library Implementation Guide</h1>
+<h2 id="project">Project</h2>
+<p>Project name MUST start with "GFK." such as GFK.Android</p>
+<p>Classes which implement IGFLibrary should use same name of the
+project name without 'GFK.'</p>
+<p>Set build output path to following:</p>
+<ul>
+<li>Debug : ..\bin\Debug\GFriendUI\libs\</li>
+<li>Release : ..\bin\Release\GFriendUI\libs\</li>
+</ul>
+<h2 id="library-classes">Library Classes</h2>
+<p>Must inherit IGFLibray interface and implement following methods:</p>
+<ul>
+<li>Initialize(DeviceUnderTest, OutputDir) : Make connection to DUT, set
+output directory which all output will be stored.</li>
+<li>GetName() : Returns library name</li>
+<li>Dispose() : Close all connection from DUT</li>
+<li>GetDependencies() : Returns list of referenced GF Libraries' name as
+List<string>. Return null if no dependencies.</li>
+</ul>
+<h2 id="keywords">Keywords</h2>
+<p>All methods which implement Keywords must return KeywordResult</p>
+<p>Keyword can have following attributes:</p>
+<ul>
+<li>KeywordDescription : Description of keyword</li>
+<li>KeywordDisplayName : Keyword name which actually used in GFriend
+Script</li>
+<li>KeywordParameters : Description of parameters</li>
+<li>GetKeyword : If keyword use variable to store value, use this
+attribute</li>
+</ul>
+</body>
+</html>

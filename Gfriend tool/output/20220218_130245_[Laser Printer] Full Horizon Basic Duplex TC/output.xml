@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-02-18 13:03:03
+</StartTime>
+  <TestCase Name="Two-Sided Printing:TwoSidedLongEdge">
+    <StartTime>
+2022-02-18 13:03:03
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-02-18 13:03:03
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-02-18 13:03:03
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_TwoSidedLongEdge">
+          <StartTime>
+2022-02-18 13:03:03
+</StartTime>
+          <StartTime>
+2022-02-18 13:03:03
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_TwoSidedLongEdge.pdf,HP Smart Printing)">
+            <StartTime>
+2022-02-18 13:03:03
+</StartTime>
+            <Result>
+Error
+</Result>
+            <ErrorDescription>
+Error during open program
+</ErrorDescription>
+            <ScreenShot>
+.\Hallasan_Screenshot_220218_13031791.png
+</ScreenShot>
+            <AdditionalInfo>
+System.Runtime.InteropServices.COMException (0x800705B4): This operation returned because the timeout period expired. (Exception from HRESULT: 0x800705B4)
+   at UIAutomationClient.CUIAutomation8Class.GetFocusedElement()
+   at System.Windows.Automation.AutomationElement.get_FocusedElement()
+   at HP.GFriend.Keywords.Windows.OpenWithPath(String executablePath, String waitTime) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 866
+</AdditionalInfo>
+            <EndTime>
+2022-02-18 13:03:17
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-02-18 13:03:17
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find element with given name : HP Smart Printing
+</ErrorDescription>
+            <ScreenShot>
+.\Windows_Screenshot_220218_13031997.png
+</ScreenShot>
+            <AdditionalInfo>
+System.Runtime.InteropServices.COMException (0x800705B4): This operation returned because the timeout period expired. (Exception from HRESULT: 0x800705B4)
+   at UIAutomationClient.CUIAutomation8Class.GetFocusedElement()
+   at System.Windows.Automation.AutomationElement.get_FocusedElement()
+   at HP.GFriend.Keywords.Windows.SelectElement(AutomationElement rootElement, Condition condition, TimeSpan timeOut, TreeScope scope) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 134
+   at HP.GFriend.Keywords.Windows.WaitForName(String name, String timeoutInSec) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 1042
+</AdditionalInfo>
+            <EndTime>
+2022-02-18 13:03:19
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-02-18 13:03:19
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-02-18 13:03:25
+</EndTime>
+          </Statement>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-02-18 13:03:25
+</EndTime>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-02-18 13:03:26
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-02-18 13:03:26
+</StartTime>
+          <StartTime>
+2022-02-18 13:03:26
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-02-18 13:03:26
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-02-18 13:03:26
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.JobDuplexAllDocumentsContiguously,Option.TwoSidedLongEdge)">
+          <StartTime>
+2022-02-18 13:03:26
+</StartTime>
+          <Result>
+Error
+</Result>
+          <ErrorDescription>
+Unexpected exception
+</ErrorDescription>
+          <AdditionalInfo>
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.Runtime.InteropServices.COMException: This operation returned because the timeout period expired. (Exception from HRESULT: 0x800705B4)
+   at UIAutomationClient.CUIAutomation8Class.GetFocusedElement()
+   at System.Windows.Automation.AutomationElement.get_FocusedElement()
+   at HP.GFriend.Keywords.Windows.SelectElement(AutomationElement rootElement, Condition condition, TimeSpan timeOut, TreeScope scope) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 134
+   at HP.GFriend.Keywords.Windows.SetComboBox(String comboboxAutomationID, String valueAutomationID) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 2123
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+</AdditionalInfo>
+          <EndTime>
+2022-02-18 13:03:28
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-02-18 13:03:28
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220218_13032822.png
+</ScreenShot>
+          <EndTime>
+2022-02-18 13:03:28
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-02-18 13:03:28
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-02-18 13:03:33
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2022-02-18 13:03:33
+</StartTime>
+          <Result>
+Error
+</Result>
+          <ErrorDescription>
+Error during click
+</ErrorDescription>
+          <ScreenShot>
+.\Hallasan_Screenshot_220218_13033590.png
+</ScreenShot>
+          <AdditionalInfo>
+System.Runtime.InteropServices.COMException (0x80131505): Operation timed out. (Exception from HRESULT: 0x80131505)
+   at UIAutomationClient.CUIAutomation8Class.GetFocusedElement()
+   at System.Windows.Automation.AutomationElement.get_FocusedElement()
+   at HP.GFriend.Keywords.Windows.SelectElement(AutomationElement rootElement, Condition condition, TimeSpan timeOut, TreeScope scope) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 134
+   at HP.GFriend.Keywords.Windows.ClickId(String automationId) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 1177
+</AdditionalInfo>
+          <EndTime>
+2022-02-18 13:03:35
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-02-18 13:03:35
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-02-18 13:03:40
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2022-02-18 13:03:40
+</StartTime>
+          <StartTime>
+2022-02-18 13:03:40
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2022-02-18 13:03:40
+</StartTime>
+            <Result>
+Error
+</Result>
+            <ErrorDescription>
+Error during click print button
+</ErrorDescription>
+            <AdditionalInfo>
+System.Windows.Automation.ElementNotAvailableException: Element not available ---&gt; System.Runtime.InteropServices.COMException: An event was unable to invoke any of the subscribers (Exception from HRESULT: 0x80040201)
+   at UIAutomationClient.CUIAutomation8Class.GetFocusedElement()
+   at System.Windows.Automation.AutomationElement.get_FocusedElement()
+   --- End of inner exception stack trace ---
+   at System.Windows.Automation.AutomationElement.get_FocusedElement()
+   at HP.GFriend.Keywords.Windows.SelectElement(AutomationElement rootElement, Condition condition, TimeSpan timeOut, TreeScope scope) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 134
+   at HP.GFriend.Keywords.ApplicationUtils.ClickPrintButtonInAcrobatReader(Windows windowsController) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\ApplicationUtils.cs:line 396
+   at HP.GFriend.Keywords.Windows.ClickPrintButton() in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 935
+</AdditionalInfo>
+            <EndTime>
+2022-02-18 13:03:43
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-02-18 13:03:43
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-02-18 13:04:03
+</EndTime>
+          </Statement>
+          <If Condition=" Hallasan.Close Application">
+            <StartTime>
+2022-02-18 13:04:03
+</StartTime>
+            <ConditionResult>
+FAIL
+</ConditionResult>
+            <ErrorDescription>
+No application to close
+</ErrorDescription>
+            <StatementBlock Kind="FAIL">
+              <StartTime>
+2022-02-18 13:04:03
+</StartTime>
+              <Block>
+                <StartTime>
+2022-02-18 13:04:03
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2022-02-18 13:04:03
+</EndTime>
+              </Block>
+              <EndTime>
+2022-02-18 13:04:03
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2022-02-18 13:04:03
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-02-18 13:04:03
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-02-18 13:04:23
+</EndTime>
+          </Statement>
+          <Result>
+Error
+</Result>
+          <EndTime>
+2022-02-18 13:04:23
+</EndTime>
+          <Result>
+Error
+</Result>
+          <EndTime>
+2022-02-18 13:04:23
+</EndTime>
+        </Statement>
+        <Statement StatementName="Destination_Selection_Application.PT Value_TwoSidedLongEdge">
+          <StartTime>
+2022-02-18 13:04:23
+</StartTime>
+          <StartTime>
+2022-02-18 13:04:23
+</StartTime>
+          <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+            <StartTime>
+2022-02-18 13:04:23
+</StartTime>
+            <Result>
+Error
+</Result>
+            <ErrorDescription>
+File not exist : C:\temp\H_JobSetup_OutPT.xml
+</ErrorDescription>
+            <EndTime>
+2022-02-18 13:04:24
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:JobDuplexAllDocumentsContiguously']/psf:Option,name)">
+            <StartTime>
+2022-02-18 13:04:24
+</StartTime>
+            <Result>
+Error
+</Result>
+            <ErrorDescription>
+XML is not loaded. Use Load or Load From File before getting values
+</ErrorDescription>
+            <EndTime>
+2022-02-18 13:04:24
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},psk:TwoSidedLongEdge)">
+            <StartTime>
+2022-02-18 13:04:24
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+${value} and psk:TwoSidedLongEdge are not same
+</ErrorDescription>
+            <EndTime>
+2022-02-18 13:04:24
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+            <StartTime>
+2022-02-18 13:04:24
+</StartTime>
+            <Result>
+Error
+</Result>
+            <ErrorDescription>
+XML is not loaded. Use Load or Load From File before getting values
+</ErrorDescription>
+            <EndTime>
+2022-02-18 13:04:24
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:OptIn)">
+            <StartTime>
+2022-02-18 13:04:24
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+${value} and ns0000:OptIn are not same
+</ErrorDescription>
+            <EndTime>
+2022-02-18 13:04:24
+</EndTime>
+          </Statement>
+          <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+            <StartTime>
+2022-02-18 13:04:24
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <EndTime>
+2022-02-18 13:04:24
+</EndTime>
+          </Statement>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-02-18 13:04:24
+</EndTime>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-02-18 13:04:24
+</EndTime>
+        </Statement>
+        <Result>
+FAIL
+</Result>
+        <EndTime>
+2022-02-18 13:04:24
+</EndTime>
+      </Loop>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2022-02-18 13:04:24
+</EndTime>
+    </Repeat>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2022-02-18 13:04:24
+</EndTime>
+  </TestCase>
+  <EndTime>
+2022-02-18 13:04:24
+</EndTime>
+</TestSuite>

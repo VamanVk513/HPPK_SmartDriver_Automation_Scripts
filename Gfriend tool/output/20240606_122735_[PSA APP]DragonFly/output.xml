@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[PSA APP]DragonFly">
+  <StartTime>
+2024-06-06 12:27:59
+</StartTime>
+  <TestCase Name="Paper Size:Letter">
+    <StartTime>
+2024-06-06 12:27:59
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2024-06-06 12:27:59
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2024-06-06 12:27:59
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.PSA_Destination Selection_Letter">
+          <StartTime>
+2024-06-06 12:27:59
+</StartTime>
+          <StartTime>
+2024-06-06 12:27:59
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Letter.pdf,HP Smart Printing)">
+            <StartTime>
+2024-06-06 12:27:59
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

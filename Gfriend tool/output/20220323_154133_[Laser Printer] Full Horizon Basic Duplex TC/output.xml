@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-03-23 15:41:55
+</StartTime>
+  <TestCase Name="Private Pickup:On">
+    <StartTime>
+2022-03-23 15:41:55
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-03-23 15:41:55
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-03-23 15:41:55
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Private_Pickup_On">
+          <StartTime>
+2022-03-23 15:41:55
+</StartTime>
+          <StartTime>
+2022-03-23 15:41:55
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Private_Pickup_On.pdf,HP Smart Printing)">
+            <StartTime>
+2022-03-23 15:41:55
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

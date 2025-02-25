@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>GFriend Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../gfmanual.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">GFriend Manual</h1>
+</header>
+<h1 id="custom-library-documentation-guide">Custom library documentation
+guide</h1>
+<p>This section describes documentation guide for custom library, but it
+also can be applied for test script and test cases.</p>
+<h2 id="prepare-documentation-template">Prepare documentation
+template</h2>
+<p>Goto Tool-Options in GFriend menu, you can set template that will be
+used for describing Test Script or Custom library file (Test Script
+section), Test case (Test Case section) and Custom Keyword(Custom
+Keyword section.) GFriend suggest to use descriptions in format of XML
+so that you can use these values laster.</p>
+<p><img src=".images/optionsetting.png" alt="OptionSetting" /></p>
+<h2 id="test-script--custom-library-file-descriptions">Test Script /
+Custom library file descriptions</h2>
+<p>If you type "/// " (Three slashes and space) in the first line of
+file, template from Test Script section will be automatically inserted.
+Note that scrip/custom library file description MUST be placed in the
+first line of file.</p>
+<h2 id="custom-keyword--test-case">Custom Keyword / Test Case</h2>
+<p>If you type "/// " in custom library file (Note that, to insert
+correctly you need to save file first with .gflib extension) template
+from Custom Keyword section will be inserted. You can insert this
+descriptions above every custom keyword name. (This behavior is almost
+same as Test cases in normal test script file.)</p>
+<h2
+id="converting-user-inserted-documentation-to-keyword-manual">Converting
+user inserted documentation to Keyword manual</h2>
+<p>Well-documented custom library can be converted to keyword
+manual.</p>
+<p><img src=".images/keywordmanual.png" alt="KeywordManul" /></p>
+<h3 id="custom-library-description">Custom library description</h3>
+<p>All information that you wrote in custom library description will be
+displayed in description section in keyword manual. (see Red box)</p>
+<h3 id="keyword-description">Keyword description</h3>
+<p>Inner text of XML node <Description> will be placed in keyword
+description section (see blue box) and <Parameters> will be placed in
+argument section (see green box)</p>
+<h2 id="generating-custom-keyword-manual">Generating custom keyword
+manual</h2>
+<p>You need to do nothing but by saving custom library file to generate
+keyword manual. Also GFriend will search in local script repository and
+generate keyword manual for all custom library in the local script
+repository. You can check this keyword manuals in Help-Keyword List in
+GFriend menubar.</p>
+</body>
+</html>

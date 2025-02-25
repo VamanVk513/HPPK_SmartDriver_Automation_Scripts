@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2021-09-29 16:04:09
+</StartTime>
+  <TestCase Name="General Everyday Printing">
+    <StartTime>
+2021-09-29 16:04:09
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_General_Everyday_Printing">
+      <StartTime>
+2021-09-29 16:04:09
+</StartTime>
+      <StartTime>
+2021-09-29 16:04:09
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_General_Everyday_Printing.pdf,HP Smart Printing)">
+        <StartTime>
+2021-09-29 16:04:09
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Can not find specified file
+</ErrorDescription>
+        <EndTime>
+2021-09-29 16:04:09
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+        <StartTime>
+2021-09-29 16:04:09
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Can not find element with given name : HP Smart Printing
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_210929_16044006.png
+</ScreenShot>
+        <EndTime>
+2021-09-29 16:04:40
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2021-09-29 16:04:40
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2021-09-29 16:04:46
+</EndTime>
+      </Statement>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2021-09-29 16:04:46
+</EndTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2021-09-29 16:04:46
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2021-09-29 16:04:46
+</StartTime>
+      <StartTime>
+2021-09-29 16:04:46
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-09-29 16:04:46
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-09-29 16:04:46
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_GeneralPrint)">
+      <StartTime>
+2021-09-29 16:04:46
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find combobox : ui_PresetComboBox
+</ErrorDescription>
+      <EndTime>
+2021-09-29 16:04:48
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2021-09-29 16:04:48
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-09-29 16:04:53
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2021-09-29 16:04:53
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+      <ScreenShot>
+.\Hallasan_Screenshot_210929_16045642.png
+</ScreenShot>
+      <EndTime>
+2021-09-29 16:04:56
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2021-09-29 16:04:56
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-09-29 16:05:01
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2021-09-29 16:05:01
+</StartTime>
+      <StartTime>
+2021-09-29 16:05:01
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2021-09-29 16:05:01
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Can not click print button
+</ErrorDescription>
+        <EndTime>
+2021-09-29 16:05:07
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2021-09-29 16:05:07
+</StartTime>
+      </Statement>
+    </Statement>
+  </TestCase>
+</TestSuite>

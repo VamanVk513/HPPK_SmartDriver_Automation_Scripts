@@ -1,0 +1,3485 @@
+﻿using Hallasan
+using Windows
+using XML
+Using Testfile.gfvar
+
+
+Destination Selection_DestinationSelectionUI
+{
+ Hallasan.Open File For Print (${DestinationSelection}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+
+Used Destination Selection Function_Malbec
+{
+ Windows.Wait For ID (ui_PresetRevertButton,${WaitTime})
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,${WaitTime})
+ ${Sleep}
+ Windows.Maximize Window
+ ${Sleep}
+ Windows.Wait For Name (${Malbec},${WaitTime})
+ Windows.Click Name With Mouse (${Malbec})
+ ${DestinationSelectionSleep}
+ ${Capture_Screen_Shot}(Capture.jpg) 
+ Windows.Click ID (ui_OkButton)
+ ${LongSleep}
+}
+
+Used Destination Selection Function_Manhattan
+{
+ Windows.Wait For ID (ui_PresetRevertButton,${WaitTime})
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,${WaitTime})
+ ${Sleep}
+ Windows.Maximize Window
+ ${Sleep}
+ Windows.Wait For Name (${Manhattan},${WaitTime})
+ Windows.Click Name With Mouse (${Manhattan})
+ ${DestinationSelectionSleep} 
+ ${Capture_Screen_Shot}(Capture.jpg) 
+ Windows.Click ID (ui_OkButton)
+ ${LongSleep}
+}
+
+Used Destination Selection Function_Novelli
+{
+ Windows.Wait For ID (ui_PresetRevertButton,${WaitTime})
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,${WaitTime})
+ ${Sleep}
+ Windows.Maximize Window
+ ${Sleep}
+ Windows.Wait For Name (${Novelli},${WaitTime})
+ Windows.Click Name With Mouse (${Novelli})
+ ${DestinationSelectionSleep}
+ ${Capture_Screen_Shot}(Capture.jpg) 
+ Windows.Click ID (ui_OkButton)
+ ${LongSleep}
+}
+Used Destination Selection Function_Vasari
+{
+ Windows.Wait For ID (ui_PresetRevertButton,${WaitTime})
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,${WaitTime})
+ ${Sleep}
+ Windows.Maximize Window
+ ${Sleep}
+ Windows.Wait For Name (${Vasari},${WaitTime})
+ Windows.Click Name With Mouse (${Vasari})
+ ${DestinationSelectionSleep}
+ ${Capture_Screen_Shot}(Capture.jpg) 
+ Windows.Click ID (ui_OkButton)
+ ${LongSleep}
+}
+
+Used Destination Selection Function_Sayan
+{
+ Windows.Wait For ID (ui_PresetRevertButton,${WaitTime})
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,${WaitTime})
+ ${Sleep}
+ Windows.Maximize Window
+ ${Sleep}
+ Windows.Wait For Name (${Sayan},${WaitTime})
+ Windows.Click Name With Mouse (${Sayan})
+ ${DestinationSelectionSleep}
+ ${Capture_Screen_Shot}(Capture.jpg) 
+ Windows.Click ID (ui_OkButton)
+ ${LongSleep}
+}
+Used Destination Selection Function_Taccola
+{
+ Windows.Wait For ID (ui_PresetRevertButton,${WaitTime})
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,${WaitTime})
+ ${Sleep}
+ Windows.Maximize Window
+ ${Sleep}
+ Windows.Wait For Name (${Taccola},${WaitTime})
+ Windows.Click Name With Mouse (${Taccola})
+ ${DestinationSelectionSleep}
+ ${Capture_Screen_Shot}(Capture.jpg) 
+ Windows.Click ID (ui_OkButton)
+ ${LongSleep}
+}
+
+Used Destination Selection Function_Horizon
+{
+ Windows.Wait For ID (ui_PresetRevertButton,${WaitTime})
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,${WaitTime})
+ ${Sleep}
+ Windows.Maximize Window
+ ${Sleep}
+ Windows.Wait For Name (${Horizon},${WaitTime})
+ Windows.Click Name With Mouse (${Horizon})
+ ${Capture_Screen_Shot}(Capture.jpg) 
+ ${DestinationSelectionSleep}
+ Windows.Click ID (ui_OkButton)
+ ${DestinationSelectionSleep}
+}
+
+not Used Destination Selection Function
+{
+
+}
+
+
+ Destination Selection_login
+{
+ //${PDF}함수는 Testfile.gfvar 에 있는 함수를 호출한다.
+ Hallasan.Open File For Print (${login}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,10)
+ If:Windows.Click Name With Mouse (Printer Properties)
+     {
+     }     
+         Fail:
+          {
+          }
+          Error:
+          {
+          }
+${LongSleep}
+ Windows.Wait For ID (ui_PresetRevertButton,20)
+ // Driver 기본 설정값을 유지 하기 위해 Windows.Click ID (ui_PresetRevertButton) 함수를 사용했다.
+ If:Windows.Click ID (ui_PresetRevertButton) 
+     {
+     }     
+         Fail:
+          {
+          }
+          Error:
+          {
+          }
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,30)
+ ${Sleep}
+ Windows.Maximize Window
+}
+ 
+
+ Destination Selection_PDF
+{
+ //${PDF}함수는 Testfile.gfvar 에 있는 함수를 호출한다.
+ Hallasan.Open File For Print (${PDF}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,30)
+ ${Sleep}
+ Windows.Wait For ID (ui_PresetRevertButton,30)
+ // Driver 기본 설정값을 유지 하기 위해 Windows.Click ID (ui_PresetRevertButton) 함수를 사용했다.
+ //If:Windows.Click ID (ui_PresetRevertButton) 
+ //   {
+ //   }     
+ //      Fail:
+ //       {
+ //       }
+ //       Error:
+ //       {
+ //       }
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,30)
+ ${Sleep}
+ Windows.Maximize Window
+ ${Sleep}
+}
+ 
+
+Destination Selection_Word
+{
+ Hallasan.Open File For Print (${Word})
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,30)
+ Sleep (5)
+ Windows.Wait For ID (ui_PresetRevertButton,30)
+ If:Windows.Click ID (ui_PresetRevertButton) 
+     {
+     }     
+         Fail:
+          {
+          }
+          Error:
+          {
+          }
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,30)
+ Sleep (5)
+ Windows.Maximize Window
+ sleep(5)
+}
+ 
+
+Destination Selection_Excel
+{
+ Hallasan.Open File For Print (${Excel})
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,30)
+ Sleep (5)
+ Windows.Wait For ID (ui_PresetRevertButton,30)
+ If:Windows.Click ID (ui_PresetRevertButton) 
+     {
+     }     
+         Fail:
+          {
+          }
+          Error:
+          {
+          }
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,30)
+ Sleep (5)
+ Windows.Maximize Window
+ sleep(5)
+}
+ 
+
+ Destination Selection_BigPDF
+{
+ //${PDF}함수는 Testfile.gfvar 에 있는 함수를 호출한다.
+ Hallasan.Open File For Print (${BigPDF}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,30)
+ Sleep (5)
+ Windows.Wait For ID (ui_PresetRevertButton,30)
+ // Driver 기본 설정값을 유지 하기 위해 Windows.Click ID (ui_PresetRevertButton) 함수를 사용했다.
+ If:Windows.Click ID (ui_PresetRevertButton) 
+     {
+     }     
+         Fail:
+          {
+          }
+          Error:
+          {
+          }
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,30)
+ Sleep (5)
+ Windows.Maximize Window
+ sleep(5)
+}
+ 
+
+Destination Selection_BigWord
+{
+ Hallasan.Open File For Print (${BigWord})
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,30)
+ Sleep (5)
+ Windows.Wait For ID (ui_PresetRevertButton,30)
+ If:Windows.Click ID (ui_PresetRevertButton) 
+     {
+     }     
+         Fail:
+          {
+          }
+          Error:
+          {
+          }
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,30)
+ Sleep (5)
+ Windows.Maximize Window
+ sleep(5)
+}
+ 
+
+Destination Selection_BigExcel
+{
+ Hallasan.Open File For Print (${BigExcel})
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,30)
+ Sleep (5)
+ Windows.Wait For ID (ui_PresetRevertButton,30)
+ If:Windows.Click ID (ui_PresetRevertButton) 
+     {
+     }     
+         Fail:
+          {
+          }
+          Error:
+          {
+          }
+ Windows.Click ID (PrinterNameCombobox)
+ Windows.Select Application (HP Smart)
+ Windows.Wait For Name (HP Smart,30)
+ Sleep (5)
+ Windows.Maximize Window
+ sleep(5)
+}
+ 
+
+Destination Selection_Language
+{
+ Hallasan.Open File For Print (${Language}) 
+     If: Windows.Click Name With Mouse(Properties)
+     {
+     }
+         
+         Fail:
+          {
+      
+          }
+          Error:
+          {
+       
+          } 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Two_sided_Duplex_Printing
+{
+ Hallasan.Open File For Print (${Two_sided_Duplex_Printing}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Photo_Printing_with_white_borders
+{
+ Hallasan.Open File For Print (${Photo_Printing_with_white_borders}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Photo_Printing_Borderless
+{
+ Hallasan.Open File For Print (${Photo_Printing_Borderless}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+
+Destination Selection_Fast_Economical_Printing
+{
+ Hallasan.Open File For Print (${Fast_Economical_Printing}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_General_Everyday_Printing
+{
+ Hallasan.Open File For Print (${General_Everyday_Printing}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+
+Destination Selection_EcoSMART_Settings
+{
+ Hallasan.Open File For Print (${EcoSMART_Settings}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+
+Destination Selection_Envelopes 
+{
+ Hallasan.Open File For Print (${Envelopes}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+
+
+
+Destination Selection_Labels
+{
+ Hallasan.Open File For Print (${Labels}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+
+// Basic feature _Color Mode                   //
+//---------------------------------------------//
+
+Destination Selection_Color
+{
+ Hallasan.Open File For Print (${Color}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Grayscale_using_CMYK_black
+{
+ Hallasan.Open File For Print (${Grayscale_using_CMYK_black}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Grayscale_using_black_only
+{
+ Hallasan.Open File For Print (${Grayscale_using_black_only}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+//----------------------------------------------//
+
+// Basic feature_Two-sided Printing//
+//--------------------------------------------//
+Destination Selection_TwoSidedLongEdge
+{
+ Hallasan.Open File For Print (${TwoSidedLongEdge}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_TwoSidedShortEdge
+{
+ Hallasan.Open File For Print (${TwoSidedShortEdge}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+// Basic feature_Pages Per Sheet//
+//--------------------------------------------//
+Destination Selection_2UP_RightBottom
+{
+    Hallasan.Open File For Print (${2UP_RightBottom}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_2UP_BottomRight
+{
+ Hallasan.Open File For Print (${2UP_BottomRight}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_2UP_LeftBottom
+{
+ Hallasan.Open File For Print (${2UP_LeftBottom}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_2UP_BottomLeft
+{
+ Hallasan.Open File For Print (${2UP_BottomLeft}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_2UP_RightBottom_Boder
+{
+ Hallasan.Open File For Print (${2UP_RightBottom_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_2UP_BottomRight_Boder
+{
+ Hallasan.Open File For Print (${2UP_BottomRight_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_2UP_LeftBottom_Boder
+{
+ Hallasan.Open File For Print (${2UP_LeftBottom_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_2UP_BottomLeft_Boder
+{
+ Hallasan.Open File For Print (${2UP_BottomLeft_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_4UP_RightBottom
+{
+ Hallasan.Open File For Print (${4UP_RightBottom}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_4UP_BottomRight
+{
+ Hallasan.Open File For Print (${4UP_BottomRight}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_4UP_LeftBottom
+{
+ Hallasan.Open File For Print (${4UP_LeftBottom}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_4UP_BottomLeft
+{
+ Hallasan.Open File For Print (${4UP_BottomLeft}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_4UP_RightBottom_Boder
+{
+ Hallasan.Open File For Print (${4UP_RightBottom_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_4UP_BottomRight_Boder
+{
+ Hallasan.Open File For Print (${4UP_BottomRight_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_4UP_LeftBottom_Boder
+{
+ Hallasan.Open File For Print (${4UP_LeftBottom_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_4UP_BottomLeft_Boder
+{
+ Hallasan.Open File For Print (${4UP_BottomLeft_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_6UP_RightBottom
+{
+ Hallasan.Open File For Print (${6UP_RightBottom}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_6UP_BottomRight
+{
+ Hallasan.Open File For Print (${6UP_BottomRight}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_6UP_LeftBottom
+{
+ Hallasan.Open File For Print (${6UP_LeftBottom}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_6UP_BottomLeft
+{
+ Hallasan.Open File For Print (${6UP_BottomLeft}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_6UP_RightBottom_Boder
+{
+ Hallasan.Open File For Print (${6UP_RightBottom_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_6UP_BottomRight_Boder
+{
+ Hallasan.Open File For Print (${6UP_BottomRight_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_6UP_LeftBottom_Boder
+{
+ Hallasan.Open File For Print (${6UP_LeftBottom_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_6UP_BottomLeft_Boder
+{
+ Hallasan.Open File For Print (${6UP_BottomLeft_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+
+Destination Selection_9UP_RightBottom
+{
+ Hallasan.Open File For Print (${9UP_RightBottom}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_9UP_BottomRight
+{
+ Hallasan.Open File For Print (${9UP_BottomRight}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_9UP_LeftBottom
+{
+ Hallasan.Open File For Print (${9UP_LeftBottom}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_9UP_BottomLeft
+{
+ Hallasan.Open File For Print (${9UP_BottomLeft}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_9UP_RightBottom_Boder
+{
+ Hallasan.Open File For Print (${9UP_RightBottom_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_9UP_BottomRight_Boder
+{
+ Hallasan.Open File For Print (${9UP_BottomRight_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_9UP_LeftBottom_Boder
+{
+ Hallasan.Open File For Print (${9UP_LeftBottom_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_9UP_BottomLeft_Boder
+{
+ Hallasan.Open File For Print (${9UP_BottomLeft_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+
+Destination Selection_16UP_RightBottom
+{
+ Hallasan.Open File For Print (${16UP_RightBottom}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_16UP_BottomRight
+{
+ Hallasan.Open File For Print (${16UP_BottomRight}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_16UP_LeftBottom
+{
+ Hallasan.Open File For Print (${16UP_LeftBottom}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_16UP_BottomLeft
+{
+ Hallasan.Open File For Print (${16UP_BottomLeft}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_16UP_RightBottom_Boder
+{
+ Hallasan.Open File For Print (${16UP_RightBottom_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_16UP_BottomRight_Boder
+{
+ Hallasan.Open File For Print (${16UP_BottomRight_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_16UP_LeftBottom_Boder
+{
+ Hallasan.Open File For Print (${16UP_LeftBottom_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_16UP_BottomLeft_Boder
+{
+ Hallasan.Open File For Print (${16UP_BottomLeft_Boder}) 
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+// Basic feature _Print Quality                 //
+//---------------------------------------------//
+Destination Selection_NormalMode
+{
+ Hallasan.Open File For Print (${Normal}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Best
+{
+ Hallasan.Open File For Print (${Best}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Draft
+{
+ Hallasan.Open File For Print (${Draft}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_Maximum_dpi
+{
+    Hallasan.Open File For Print (${Maximum_dpi}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_HPS_Economode
+{
+    Hallasan.Open File For Print (${PQEconomode}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ //---------------------------------------------//
+
+ // Document feature _Copy Count               //
+//---------------------------------------------//
+Destination Selection_Copies_2
+{
+ Hallasan.Open File For Print (${Copies_2}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_Copies_4
+{
+    Hallasan.Open File For Print (${Copies_4}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_Copies_6
+{
+    Hallasan.Open File For Print (${Copies_6}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+// Document feature _ Collate                  //
+//---------------------------------------------//
+Destination Selection_Collate_On
+{
+ Hallasan.Open File For Print (${Collate_On}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Collate_Off
+{
+ Hallasan.Open File For Print (${Collate_Off}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+// Document feature _ Orentation               //
+//---------------------------------------------//
+Destination Selection_Landscape
+{
+ Hallasan.Open File For Print (${Landscape}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Portrait
+
+{
+ Hallasan.Open File For Print (${Portrait}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+//----------------------------------------------//
+
+
+//---------------------------------------------//
+// Document feature _ Paper Size              //
+//--------------------------------------------//
+
+
+Destination Selection_Letter
+{
+ Hallasan.Open File For Print (${Letter}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Legal
+{
+ Hallasan.Open File For Print (${Legal}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Statement
+{
+ Hallasan.Open File For Print (${Statement}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_Executive
+{
+ Hallasan.Open File For Print (${Executive}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_A4
+{
+ Hallasan.Open File For Print (${A4}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+ 
+Destination Selection_A5
+{
+ Hallasan.Open File For Print (${A5}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_B5_JIS
+{
+ Hallasan.Open File For Print (${B5_JIS}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_Envelope_10
+{
+ Hallasan.Open File For Print (${Envelope_10}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_Envelope_DL
+{
+ Hallasan.Open File For Print (${Envelope_DL}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_Envelope_C5
+{
+ Hallasan.Open File For Print (${Envelope_C5}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_Envelope_C6
+{
+ Hallasan.Open File For Print (${Envelope_C6}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Envelope_B5
+{
+ Hallasan.Open File For Print (${Envelope_B5}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_Envelope_Monarch
+{
+ Hallasan.Open File For Print (${Envelope_Monarch}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_6_34_Envelope
+{
+ Hallasan.Open File For Print (${6_34_Envelope}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_Japanese_Postcard
+{
+ Hallasan.Open File For Print (${Japanese_Postcard}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_A6
+{
+ Hallasan.Open File For Print (${A6}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_Japanese_Envelope_Chou_3
+{
+ Hallasan.Open File For Print (${Japanese_Envelope_Chou_3}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_Japanese_Envelope_Chou_4
+{
+ Hallasan.Open File For Print (${Japanese_Envelope_Chou_4}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_Double_Japan_Postcard_Rotated
+{
+ Hallasan.Open File For Print (${Double_Japan_Postcard_Rotated}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_JISB6
+{
+ Hallasan.Open File For Print (${JISB6}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+
+Destination Selection_Oficio_8_5x13
+{
+ Hallasan.Open File For Print (${Oficio_8_5x13}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+
+Destination Selection_8_5x13in
+{
+ Hallasan.Open File For Print (${8_5x13in}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_4x6
+{
+ Hallasan.Open File For Print (${4x6}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_4x6in
+{
+ Hallasan.Open File For Print (${4x6in}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+ 
+Destination Selection_IndexCard_4x6in
+{
+ Hallasan.Open File For Print (${IndexCard_4x6in}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_5x7
+{
+ Hallasan.Open File For Print (${5x7}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+ 
+Destination Selection_5x7in
+{
+ Hallasan.Open File For Print (${5x7in}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_5x8
+{
+ Hallasan.Open File For Print (${5x8}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_10x15cm
+{
+ Hallasan.Open File For Print (${10x15cm}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_3x5
+{
+ Hallasan.Open File For Print (${3x5}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_2L127x178mm
+{
+ Hallasan.Open File For Print (${2L127x178mm}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_3_5x5inL89x127mm
+{
+ Hallasan.Open File For Print (${3_5x5inL89x127mm}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_4x5in10x13cm
+{
+ Hallasan.Open File For Print (${4x5in10x13cm}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_4x6in10x15cm
+{
+ Hallasan.Open File For Print (${4x6in10x15cm}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_4x12in10x30cm
+{
+ Hallasan.Open File For Print (${4x12in10x30cm}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_5x7in13x18cm
+{
+ Hallasan.Open File For Print (${5x7in13x18cm}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_B5_ISO_176x250mm
+{
+ Hallasan.Open File For Print (${B5_ISO_176x250mm}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_Envelope_A2_111x146mm
+{
+ Hallasan.Open File For Print (${Envelope_A2_111x146mm}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+ 
+Destination Selection_Ofuku_hagaki
+{
+ Hallasan.Open File For Print (${Ofuku_hagaki}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_8X10_IN
+{
+ Hallasan.Open File For Print (${8X10_IN}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_5_5in_13x13cm
+{
+ Hallasan.Open File For Print (${5_5in_13x13cm}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+
+
+Destination Selection_OFFICIO216X340MM 
+{
+ Hallasan.Open File For Print (${OFFICIO216X340MM}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_ROC16K195X270 
+{
+ Hallasan.Open File For Print (${ROC16K195X270}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_ROC16K184X260 
+{
+ Hallasan.Open File For Print (${ROC16K184X260}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+
+Destination Selection_ROC16K197X273 
+{
+ Hallasan.Open File For Print (${ROC16K197X273}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_IndexCard_5x8in
+{
+ Hallasan.Open File For Print (${IndexCard_5x8in}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_IndexCard_A4_8_27x11_69in
+{
+ Hallasan.Open File For Print (${IndexCard_A4_8_27x11_69in}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_IndexCard_Letter_8_5x11in
+{
+ Hallasan.Open File For Print (${IndexCard_Letter_8_5x11in}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+
+
+//------------------------------------------------//
+
+// Document feature _ Paper Source              //
+//---------------------------------------------//
+Destination Selection_Printer_auto_select
+{
+ Hallasan.Open File For Print (${Printer_auto_select}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+
+Destination Selection_Tray_1
+{
+ Hallasan.Open File For Print (${Tray_1}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Photo_Tray
+{
+ Hallasan.Open File For Print (${Photo_Tray}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Manual
+{
+ Hallasan.Open File For Print (${Manual}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+//----------------------------------------------//
+
+
+// Document feature _ Paper Type               //
+//---------------------------------------------//
+
+Destination Selection_PLAIN
+{
+ Hallasan.Open File For Print (${Plain}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_PlainPaper
+{
+  Halasan.Open File For Print (${PlainPaper}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_Light_60_74g
+{
+ Hallasan.Open File For Print (${Light_60_74g}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Heavy_111_130g
+{
+ Hallasan.Open File For Print (${Heavy_111_130g}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_HP_Photo_Papers
+{
+ Hallasan.Open File For Print (${HP_Photo_Papers}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_HP_Matte_Brochure_or_Professional_Paper
+{
+ Hallasan.Open File For Print (${HP_Matte_Brochure_or_Professional_Paper}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_HP_Matte_Presentation_Paper
+{
+ Hallasan.Open File For Print (${HP_Matte_Presentation_Paper}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_HP_Glossy_Brochure_or_Professional_Paper
+{
+ Hallasan.Open File For Print (${HP_Glossy_Brochure_or_Professional_Paper}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_HP_Tri-fold_Brochure_Paper_Glossy
+{
+ Hallasan.Open File For Print (${HP_Tri-fold_Brochure_Paper_Glossy}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Other_Photo_Inkjet_Papers
+{
+ Hallasan.Open File For Print (${Other_Photo_Inkjet_Papers}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Other_Matte_Inkjet_Papers
+{
+ Hallasan.Open File For Print (${Other_Matte_Inkjet_Papers}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Other_Glossy_Inkjet_Papers
+{
+ Hallasan.Open File For Print (${Other_Glossy_Inkjet_Papers}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Inkjet_Hagaki
+{
+ Hallasan.Open File For Print (${Inkjet_Hagaki}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Plain_Paper_Thick
+{
+ Hallasan.Open File For Print (${Plain_Paper_Thick}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Plain_Paper_Light_Recycled
+{
+ Hallasan.Open File For Print (${Plain_Paper_Light_Recycled}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_HP_Matte_Photo_Paper
+{
+ Hallasan.Open File For Print (${HP_Matte_Photo_Paper}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+
+//Laser add paper type
+
+Destination Selection_Bond
+{
+ Hallasan.Open File For Print (${Bond}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Label
+{
+ Hallasan.Open File For Print (${Label}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_EnvelopePlain
+{
+ Hallasan.Open File For Print (${EnvelopePlain}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_stationerypreprinted 
+{
+ Hallasan.Open File For Print (${stationerypreprinted}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+//------------------------------------------------------------//
+
+
+// Document feature _Booklet Printing               //
+//---------------------------------------------//
+Destination Selection_BookletPrinting_Left
+{
+ Hallasan.Open File For Print (${BookletPrinting_Left}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_BookletPrinting_Right
+{
+ Hallasan.Open File For Print (${BookletPrinting_Right}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+//----------------------------------------------//
+
+// Advanced feature _Page Order                 //
+//---------------------------------------------//
+Destination Selection_Back_to_Front
+{
+ Hallasan.Open File For Print (${Back_to_Front}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Front_to_Back
+{
+ Hallasan.Open File For Print (${Front_to_Back}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+//----------------------------------------------//
+
+// Advanced feature _HP EasyColor                //
+//---------------------------------------------//
+Destination Selection_HPEasyColor_Off 
+{
+ Hallasan.Open File For Print (${HPEasyColor_Off}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_HPEasyColor_On
+{
+ Hallasan.Open File For Print (${HPEasyColor_On}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+Destination Selection_HPEasyColor_Conservative
+{
+ Hallasan.Open File For Print (${HPEasyColor_Conservative}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+//----------------------------------------------//
+
+//---------------------------------------------//
+
+ // Advanced feature _ Borderless Printing      //
+//---------------------------------------------//
+
+Destination Selection_Borderless_printing_On
+{
+ Hallasan.Open File For Print (${Borderless_printing_On}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Borderless_printing_Off
+{
+ Hallasan.Open File For Print (${Borderless_printing_Off}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Secure
+{
+ Hallasan.Open File For Print (${Secure}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Revert
+{
+    Hallasan.Open File For Print (${Revert}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Refresh
+{
+    Hallasan.Open File For Print (${Refresh}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_DriverVersion
+{
+    Hallasan.Open File For Print (${DriverVersion}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Private_Pickup_On
+{
+    Hallasan.Open File For Print (${Private_Pickup_On}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_Private_Pickup_Off
+{
+    Hallasan.Open File For Print (${Private_Pickup_Off}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_PtDialogOff
+{
+    Hallasan.Open File For Print (${PtDialogOff}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_PtDialogOn
+{
+    Hallasan.Open File For Print (${PtDialogOn}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_UncheckAlwaysShowBeforePrinting
+{
+    Hallasan.Open File For Print (${UncheckAlwaysShowBeforePrinting}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+Destination Selection_CheckAlwaysShowBeforePrinting
+{
+ Hallasan.Open File For Print (${CheckAlwaysShowBeforePrinting}) 
+ Hallasan.Get Driver Window(HP Smart Printing)
+ Windows.Wait For Name (HP Smart Printing,${WaitTime})
+ ${PPU_Time}
+}
+
+
+
+ //---------------------------------------------//
+ PT Value_Color
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageOutputColor']/psf:Option,name)
+ Equals (${value},psk:Color)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_Grayscale
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageOutputColor']/psf:Option,name)
+ Equals (${value},psk:Color)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_Monochrome
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageOutputColor']/psf:Option,name)
+ Equals (${value},psk:Color)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_TwoSidedLongEdge
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:JobDuplexAllDocumentsContiguously']/psf:Option,name)
+ Equals (${value},psk:OneSided)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_TwoSidedShortEdge
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:JobDuplexAllDocumentsContiguously']/psf:Option,name)
+ Equals (${value},psk:OneSided)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_2UP_RightBottom
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_2UP_BottomRight
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_2UP_LeftBottom
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_2UP_BottomLeft
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_2UP_RightBottom_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_2UP_BottomRight_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_2UP_LeftBottom_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_2UP_BottomLeft_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_4UP_RightBottom
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_4UP_BottomRight
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_4UP_LeftBottom
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_4UP_BottomLeft
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_4UP_RightBottom_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_4UP_BottomRight_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_4UP_LeftBottom_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_4UP_BottomLeft_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_6UP_RightBottom
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_6UP_BottomRight
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_6UP_LeftBottom
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_6UP_BottomLeft
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_6UP_RightBottom_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_6UP_BottomRight_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_6UP_LeftBottom_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_6UP_BottomLeft_Boder
+{ 
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_9UP_RightBottom
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_9UP_BottomRight
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_9UP_LeftBottom
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_9UP_BottomLeft
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_9UP_RightBottom_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_9UP_BottomRight_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_9UP_LeftBottom_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_9UP_BottomLeft_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_16UP_RightBottom
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_16UP_BottomRight
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_16UP_LeftBottom
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_16UP_BottomLeft
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+  XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+  Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_16UP_RightBottom_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+  XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+  Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_16UP_BottomRight_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+  XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+  Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_16UP_LeftBottom_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+  XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+  Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_16UP_BottomLeft_Boder
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:PagesPerSheet']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='psk:PresentationDirection']/psf:Option,name)
+ Equals (${value},psk:RightBottom)
+ XML.Get Attribute (${value},//*[@name='ns0000:NUpBorders']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+  XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+  Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+    
+PT Value_Normal
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobUserResolution']/psf:Option,name)
+ Equals (${value},ns0000:HPS_Normal)
+  XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+  Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_Best
+{ 
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobUserResolution']/psf:Option,name)
+ Equals (${value},ns0000:HPS_Best)
+  XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+  Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_Draft
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobUserResolution']/psf:Option,name)
+ Equals (${value},ns0000:HPS_Normal)
+  XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+  Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_Max
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobUserResolution']/psf:Option,name)
+ Equals (${value},ns0000:HPS_Max)
+  XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+  Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_HPS_Economode
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobUserResolution']/psf:Option,name)
+ Equals (${value},ns0000:HPS_Normal)
+  XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+  Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_Copies_2
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:JobCopiesAllDocuments']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+
+PT Value_Copies_4
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:JobCopiesAllDocuments']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_Copies_6
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Inner Text (${value},//*[@name='psk:JobCopiesAllDocuments']/psf:Value)
+ Equals (${value},1)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_Collated
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:DocumentCollate']/psf:Option,name)
+ Equals (${value},psk:Collated)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+
+PT Value_UnCollated
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:DocumentCollate']/psf:Option,name)
+ Equals (${value},psk:Collated)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_Landscape
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageOrientation']/psf:Option,name)
+ Equals (${value},psk:Portrait)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_Portrait
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageOrientation']/psf:Option,name)
+ Equals (${value},psk:Portrait)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_NorthAmericaLetter
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_NorthAmericaLegal
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_NorthAmericaStatement
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_NorthAmericaExecutive
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_ISOA4
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_ISOA5
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_JISB5
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+
+PT Value_NorthAmericaNumber10Envelope
+{ 
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_ISODLEnvelope
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_ISOC5Envelope
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_ISOC6Envelope
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_ISOB5Envelope
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_NorthAmericaMonarchEnvelope
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_NorthAmericaPersonalEnvelope
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaPersonalEnvelope
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_JapanHagakiPostcard
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_ISOA6
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_JapanChou3Envelope
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_JapanChou4Envelope
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_JapanDoubleHagakiPostcardRotated
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_JISB6
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_NorthAmericaGermanLegalFanfold
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_INDEX4X6
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:ISOA4)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_INDEX4X6INCHES
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_INDEXCARD4X6
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:ISOA4)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+
+PT Value_INDEX5X7
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:ISOA4)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_INDEX5X7INCHES
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+
+PT Value_INDEX5X8
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:ISOA4)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_INDEX10X15
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_INDEX3X5
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:ISOA4)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_HP_2L_MM
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:HP_2L_MM)
+}
+
+
+PT Value_HP_3_5X5_IN_L_MM
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:HP_3_5X5_IN_L_MM)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_HP_4X5_IN_10X13_CM
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:HP_4X5_IN_10X13_CM)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_HP_4X6_IN_10x15_CM
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_HP_4X12_IN_10X30_CM
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_HP_5X7_IN_13X18_CM
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_HP_8X10_IN
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:HP_8X10_IN)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_8_5x13in
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:HP_8_5X13_IN)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_HP_B5_ISO_176X250_MM
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:HP_B5_ISO_176X250_MM)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_HP_ENV_A2
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:HP_ENV_A2)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+
+}
+
+PT Value_INDEX5X5
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:INDEX5X5)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_HP_OFUKU_HAGAKI_200X148_MM
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:HP_OFUKU_HAGAKI_200X148_MM)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_OFFICIO216X340MM
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_ROC16K195X270
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_ROC16K184X260
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_ROC16K197X273
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},psk:NorthAmericaLetter)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+PT Value_IndexCard_5x8in
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:HP_INDEX_CARD_5X8_IN)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_IndexCard_A4_8_27x11_69in
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:HP_INDEX_CARD_A4)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_IndexCard_Letter_8_5x11in
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)
+ Equals (${value},ns0000:HP_INDEX_CARD_LETTER)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_UsePrinterSetting
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageInputBin']/psf:Option,name)
+ Equals (${value},ns0000:Tray1)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_Manual
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageInputBin']/psf:Option,name)
+ Equals (${value},psk:Manual)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+ 
+ 
+ 
+PT Value_Tray1
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageInputBin']/psf:Option,name)
+ Equals (${value},ns0000:Tray1)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_PhotoTray
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageInputBin']/psf:Option,name)
+ Equals (${value},ns0000:PhotoTray)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_Plain
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:OptIn)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_PlainPaper
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:OptIn)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+//Laser
+PT Value_light
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:OptIn)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+//Laser
+PT Value_heavy
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:OptIn)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_EnvelopePlain
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},psk:Label)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_Label
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},psk:Label)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_Bond
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:OptIn)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_preprinted
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:OptIn)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value__5_1069_0000_0_600x600
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:_5_1069_0000_0_600x600)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value__2_1077_0000_0_600x600
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:OptIn)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value__2_1005_0000_0_600x600
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:_2_1005_0000_0_600x600)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value__8_1076_0000_0_600x600
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:OptIn)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value__8_1054_0000_2_600x600
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:_8_1054_0000_2_600x600)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value__5_1045_0000_0_600x600
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:_5_1045_0000_0_600x600)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value__2_1077_0000_1_600x600
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:_2_1077_0000_1_600x600)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value__8_1054_0000_0_600x600
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:_8_1054_0000_0_600x600)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value__8_1054_0000_1_600x600
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:_8_1054_0000_1_600x600)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value__0_0009_0000_0_600x600
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:_0_0009_0000_0_600x600)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value__1_1121_0000_0_600x600
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:OptIn)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value__4_1083_0000_0_600x600
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},ns0000:_4_1083_0000_0_600x600)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_Booklet
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:DocumentBinding']/psf:Option,name)
+ Equals (${value},psk:None)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_JapaneseBooklet
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:DocumentBinding']/psf:Option,name)
+ Equals (${value},psk:None)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_Reverse
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:JobPageOrder']/psf:Option,name)
+ Equals (${value},psk:Reverse)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_Standard
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:JobPageOrder']/psf:Option,name)
+ Equals (${value},psk:Reverse)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+PT Value_HPEasyColorOff
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:DocumentHPEasyColor']/psf:Option,name)
+ Equals (${value},ns0000:HPEasyColorConservative)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_HPEasyColorOn
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:DocumentHPEasyColor']/psf:Option,name)
+ Equals (${value},ns0000:HPEasyColorConservative)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_HPEasyColorConservative
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:DocumentHPEasyColor']/psf:Option,name)
+ Equals (${value},ns0000:HPEasyColorConservative)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_Borderless
+{ 
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageBorderless']/psf:Option,name)
+ Equals (${value},psk:None)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_Borderless_None
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageBorderless']/psf:Option,name)
+ Equals (${value},psk:None)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_Local
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobDestination']/psf:Option,name)
+ Equals (${value},ns0000:LocalNW_Device)
+ XML.Get Attribute (${value},//*[@name='psk:JobDeviceLanguage']/psf:Option,name)
+ Equals (${value},psk:PCL)
+ XML.Get Inner Text (${value},//*[@name='ns0000:JobLocalNW_Device_Protocols_Supported']/psf:Value)
+ Equals (${value},TCP)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_PCLmS
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobDestination']/psf:Option,name)
+ Equals (${value},ns0000:LocalNW_Device)
+ XML.Get Attribute (${value},//*[@name='psk:JobDeviceLanguage']/psf:Option,name)
+ Equals (${value},PCLmS)
+ XML.Get Inner Text (${value},//*[@name='ns0000:JobLocalNW_Device_Protocols_Supported']/psf:Value)
+ Equals (${value},TCP)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_PrintAnywhere
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobDestination']/psf:Option,name)
+ Equals (${value},ns0000:LocalNW_Device)
+ XML.Get Attribute (${value},//*[@name='psk:JobDeviceLanguage']/psf:Option,name)
+ Equals (${value},psk:PCL)
+ XML.Get Inner Text (${value},//*[@name='ns0000:JobLocalNW_Device_Protocols_Supported']/psf:Value)
+ XML.Get Inner Text (${value},//*[@name='ns0000:JobLocalNW_Device_Protocols_Supported']/psf:Value)
+ Equals (${value},TCP)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_PrivatePickup
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobDestination']/psf:Option,name)
+ Equals (${value},ns0000:LocalNW_Device)
+ XML.Get Attribute (${value},//*[@name='psk:JobDeviceLanguage']/psf:Option,name)
+ Equals (${value},psk:PCL)
+ XML.Get Inner Text (${value},//*[@name='ns0000:JobLocalNW_Device_Protocols_Supported']/psf:Value)
+ XML.Get Inner Text (${value},//*[@name='ns0000:JobLocalNW_Device_Protocols_Supported']/psf:Value)
+ Equals (${value},TCP)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_Secure
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobDeliveryMode']/psf:Option,name)
+ Equals (${value},ns0000:Normal)
+  XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+  Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_NormalMode
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobDeliveryMode']/psf:Option,name)
+ Equals (${value},ns0000:Normal)
+  XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+  Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_Revert
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobDeliveryMode']/psf:Option,name)
+ Equals (${value},ns0000:Normal)
+  XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+  Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+PT Value_Refresh
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+  Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_DriverVersion
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+  Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_Private_Pickup_On
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobDeliveryMode']/psf:Option,name)
+ Equals (${value},ns0000:Normal)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_Private_Pickup_Off
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_PtDialogOff
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_PtDialogOn
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_UncheckAlwaysShowBeforePrinting
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+PT Value_CheckAlwaysShowBeforePrinting
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name)
+ Equals (${value},ns0000:Off)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+// ******************************** PSA APPLICATION *********************************
+
+//FACTORYDEFAULTS - Preset Options
+
+Destination Selection_Factory_defaults_PSA
+{
+ Hallasan.Open File For Print (${YMC_PSA_FactoryDefaults}) 
+ Windows.Wait For Name (HP_PrintSupport_App,${WaitTime})
+ ${PPU_Time}
+}
+
+PT Value_Factory_defaults_PSA
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:JobDuplexAllDocumentsContiguously']/psf:Option,name)
+ Equals (${value},psk:OneSided)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+//Envelopes - Preset Options
+
+Destination Selection_Envelopes_PSA 
+{
+ Hallasan.Open File For Print (${YMC_PSA_ENVELOPES}) 
+ Windows.Wait For Name (HP_PrintSupport_App,${WaitTime})
+ ${PPU_Time}
+}
+
+PT Value_EnvelopePlain_PSA
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},psk:Label)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+
+
+
+//Labels - Preset Options
+
+Destination Selection_Labels_PSA
+{
+ Hallasan.Open File For Print (${YMC_PSA_LABELS}) 
+ Windows.Wait For Name (HP_PrintSupport_App,${WaitTime})
+ ${PPU_Time}
+}
+
+PT Value_Label_PSA
+{
+ XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)
+ XML.Get Attribute (${value},//*[@name='psk:PageMediaType']/psf:Option,name)
+ Equals (${value},psk:Label)
+ XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)
+ Equals (${value},ns0000:OptIn) 
+ Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml "${OUTPUT_FOLDER}",${commandOutput},5)
+}
+
+Expections_Error
+{
+    Windows.Capture Full Screen (SS)
+    If: Windows.Select Child Window With Title (HP_PrintSupport_App,10)
+    {
+        Pass (Childpop was displayed)
+    }
+    Fail:
+    {
+        Pass (Childpop was not displayed)
+    }
+    Windows.Capture Full Screen (SSS)
+    If: Windows.Select Application (HP_PrintSupport_App,10)
+    {
+        Pass (Childpop was displayed)
+    }
+    Fail:
+    {
+        Pass (Childpop was not displayed)
+    }  
+}

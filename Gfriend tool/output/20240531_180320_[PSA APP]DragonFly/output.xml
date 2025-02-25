@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[PSA APP]DragonFly">
+  <StartTime>
+2024-05-31 18:03:43
+</StartTime>
+  <TestCase Name="Paper Size:Letter">
+    <StartTime>
+2024-05-31 18:03:43
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2024-05-31 18:03:43
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2024-05-31 18:03:43
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.PSA_Destination Selection_Letter">
+          <StartTime>
+2024-05-31 18:03:43
+</StartTime>
+          <StartTime>
+2024-05-31 18:03:43
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Letter.pdf,HP Smart Printing)">
+            <StartTime>
+2024-05-31 18:03:43
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Fail to click target printer
+</ErrorDescription>
+            <EndTime>
+2024-05-31 18:04:03
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(&quot;HP2F7C2F&quot;)">
+            <StartTime>
+2024-05-31 18:04:03
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find window
+</ErrorDescription>
+            <ScreenShot>
+.\Hallasan_Screenshot_240531_18041471.png
+</ScreenShot>
+            <EndTime>
+2024-05-31 18:04:14
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (&quot;HP2F7C2F&quot;,30)">
+            <StartTime>
+2024-05-31 18:04:14
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find element with given name : "HP2F7C2F"
+</ErrorDescription>
+            <ScreenShot>
+.\Windows_Screenshot_240531_18044500.png
+</ScreenShot>
+            <EndTime>
+2024-05-31 18:04:45
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2024-05-31 18:04:45
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2024-05-31 18:04:51
+</EndTime>
+          </Statement>
+          <Result>
+FAIL
+</Result>
+          <EndTime>
+2024-05-31 18:04:51
+</EndTime>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2024-05-31 18:04:51
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2024-05-31 18:04:51
+</StartTime>
+          <StartTime>
+2024-05-31 18:04:51
+</StartTime>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2024-05-31 18:04:51
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2024-05-31 18:04:51
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaLetter)">
+          <StartTime>
+2024-05-31 18:04:51
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find combobox : Part.PageMediaSize
+</ErrorDescription>
+          <EndTime>
+2024-05-31 18:04:53
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2024-05-31 18:04:53
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_240531_18045336.png
+</ScreenShot>
+          <EndTime>
+2024-05-31 18:04:53
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2024-05-31 18:04:53
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2024-05-31 18:04:58
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2024-05-31 18:04:58
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+          <ScreenShot>
+.\Hallasan_Screenshot_240531_18050180.png
+</ScreenShot>
+          <EndTime>
+2024-05-31 18:05:01
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2024-05-31 18:05:01
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2024-05-31 18:05:06
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2024-05-31 18:05:06
+</StartTime>
+          <StartTime>
+2024-05-31 18:05:06
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2024-05-31 18:05:06
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2024-05-31 18:05:08
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2024-05-31 18:05:08
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2024-05-31 18:05:28
+</EndTime>
+          </Statement>
+          <If Condition=" Hallasan.Close Application">
+            <StartTime>
+2024-05-31 18:05:28
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2024-05-31 18:05:28
+</StartTime>
+              <Block>
+                <StartTime>
+2024-05-31 18:05:28
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2024-05-31 18:05:28
+</EndTime>
+              </Block>
+              <EndTime>
+2024-05-31 18:05:28
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-05-31 18:05:28
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2024-05-31 18:05:28
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2024-05-31 18:05:48
+</EndTime>
+          </Statement>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2024-05-31 18:05:48
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2024-05-31 18:05:48
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+          <StartTime>
+2024-05-31 18:05:48
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : PrintingToDialog.ui_ContentFrame.PrintButton
+</ErrorDescription>
+          <ScreenShot>
+.\Windows_Screenshot_240531_18055219.png
+</ScreenShot>
+          <EndTime>
+2024-05-31 18:05:52
+</EndTime>
+        </Statement>
+        <Statement StatementName="Destination_Selection_Application.PT Value_NorthAmericaLetter">
+          <StartTime>
+2024-05-31 18:05:52
+</StartTime>
+          <StartTime>
+2024-05-31 18:05:52
+</StartTime>
+          <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+            <StartTime>
+2024-05-31 18:05:52
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2024-05-31 18:05:52
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)">
+            <StartTime>
+2024-05-31 18:05:52
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+psk:NorthAmericaLetter
+</Output>
+            <EndTime>
+2024-05-31 18:05:52
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},psk:NorthAmericaLetter)">
+            <StartTime>
+2024-05-31 18:05:52
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2024-05-31 18:05:52
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+            <StartTime>
+2024-05-31 18:05:52
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+ns0000:OptIn
+</Output>
+            <EndTime>
+2024-05-31 18:05:52
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:OptIn)">
+            <StartTime>
+2024-05-31 18:05:52
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2024-05-31 18:05:52
+</EndTime>
+          </Statement>
+          <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+            <StartTime>
+2024-05-31 18:05:52
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+        1 file(s) copied.
+
+</Output>
+            <EndTime>
+2024-05-31 18:05:52
+</EndTime>
+          </Statement>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2024-05-31 18:05:52
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2024-05-31 18:05:52
+</EndTime>
+        </Statement>
+        <Result>
+FAIL
+</Result>
+        <EndTime>
+2024-05-31 18:05:52
+</EndTime>
+      </Loop>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2024-05-31 18:05:52
+</EndTime>
+    </Repeat>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2024-05-31 18:05:52
+</EndTime>
+  </TestCase>
+  <EndTime>
+2024-05-31 18:05:52
+</EndTime>
+</TestSuite>

@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-04-05 17:06:57
+</StartTime>
+  <TestCase Name="Settings : Print Dialog Off">
+    <StartTime>
+2022-04-05 17:06:57
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-04-05 17:06:57
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-04-05 17:06:57
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_PtDialogOff">
+          <StartTime>
+2022-04-05 17:06:57
+</StartTime>
+          <StartTime>
+2022-04-05 17:06:57
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_PtDialogOff.pdf,HP Smart Printing)">
+            <StartTime>
+2022-04-05 17:06:57
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:07:28
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2022-04-05 17:07:28
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:07:28
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-04-05 17:07:28
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:07:28
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-04-05 17:07:28
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:07:34
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:07:34
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:07:34
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-04-05 17:07:34
+</StartTime>
+          <StartTime>
+2022-04-05 17:07:34
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:07:34
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:07:34
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (SettingButton,10)">
+          <StartTime>
+2022-04-05 17:07:34
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:07:34
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Is Clickable(SettingButton)">
+          <StartTime>
+2022-04-05 17:07:34
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:07:34
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(SettingButton)">
+          <StartTime>
+2022-04-05 17:07:34
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:07:34
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Wait For ID (AskDestConfirmAlways,10)">
+          <StartTime>
+2022-04-05 17:07:34
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:07:34
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(AskDestConfirmAlways)">
+          <StartTime>
+2022-04-05 17:07:34
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:07:35
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Click ID(ui_FeaturePopupIDS_OKButton)">
+          <StartTime>
+2022-04-05 17:07:35
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:07:35
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-04-05 17:07:35
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:07:40
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-04-05 17:07:40
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220405_17074044.png
+</ScreenShot>
+          <EndTime>
+2022-04-05 17:07:40
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-04-05 17:07:40
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:07:45
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2022-04-05 17:07:45
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:07:45
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-04-05 17:07:45
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:07:50
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2022-04-05 17:07:50
+</StartTime>
+          <StartTime>
+2022-04-05 17:07:50
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2022-04-05 17:07:50
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:07:52
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-04-05 17:07:52
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:08:12
+</EndTime>
+          </Statement>
+          <If Condition=" Hallasan.Close Application">
+            <StartTime>
+2022-04-05 17:08:12
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2022-04-05 17:08:12
+</StartTime>
+              <Block>
+                <StartTime>
+2022-04-05 17:08:12
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2022-04-05 17:08:12
+</EndTime>
+              </Block>
+              <EndTime>
+2022-04-05 17:08:12
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2022-04-05 17:08:12
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-04-05 17:08:12
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:08:32
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:08:32
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:08:32
+</EndTime>
+        </Statement>
+        <Statement StatementName="Destination_Selection_Application.PT Value_PtDialogOff">
+          <StartTime>
+2022-04-05 17:08:32
+</StartTime>
+          <StartTime>
+2022-04-05 17:08:32
+</StartTime>
+          <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+            <StartTime>
+2022-04-05 17:08:32
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:08:32
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name)">
+            <StartTime>
+2022-04-05 17:08:32
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+ns0000:On
+</Output>
+            <EndTime>
+2022-04-05 17:08:32
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:On)">
+            <StartTime>
+2022-04-05 17:08:32
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:08:32
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+            <StartTime>
+2022-04-05 17:08:32
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+ns0000:OptOut
+</Output>
+            <EndTime>
+2022-04-05 17:08:32
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:OptOut)">
+            <StartTime>
+2022-04-05 17:08:32
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-04-05 17:08:32
+</EndTime>
+          </Statement>
+          <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+            <StartTime>
+2022-04-05 17:08:32
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+        1 file(s) copied.
+
+</Output>
+            <EndTime>
+2022-04-05 17:08:33
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:08:33
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-04-05 17:08:33
+</EndTime>
+        </Statement>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2022-04-05 17:08:33
+</EndTime>
+      </Loop>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2022-04-05 17:08:33
+</EndTime>
+    </Repeat>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2022-04-05 17:08:33
+</EndTime>
+  </TestCase>
+  <EndTime>
+2022-04-05 17:08:33
+</EndTime>
+</TestSuite>

@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-03-21 16:32:05
+</StartTime>
+  <TestCase Name="Revert Options">
+    <StartTime>
+2022-03-21 16:32:05
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-03-21 16:32:05
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-03-21 16:32:05
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Revert">
+          <StartTime>
+2022-03-21 16:32:05
+</StartTime>
+          <StartTime>
+2022-03-21 16:32:05
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_Revert.pdf,HP Smart Printing)">
+            <StartTime>
+2022-03-21 16:32:05
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 16:32:35
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2022-03-21 16:32:35
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 16:32:35
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-03-21 16:32:35
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 16:32:35
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-03-21 16:32:35
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 16:32:41
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 16:32:41
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 16:32:41
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-03-21 16:32:41
+</StartTime>
+          <StartTime>
+2022-03-21 16:32:41
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 16:32:41
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 16:32:41
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.JobDeliveryMode,Option.Secure)">
+          <StartTime>
+2022-03-21 16:32:41
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 16:32:43
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Option (Part.ui_Preset,Option.ui_PresetRevertButton)">
+          <StartTime>
+2022-03-21 16:32:43
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Not Supported option : Part.ui_Preset
+</ErrorDescription>
+          <EndTime>
+2022-03-21 16:32:43
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-03-21 16:32:43
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220321_16324398.png
+</ScreenShot>
+          <EndTime>
+2022-03-21 16:32:43
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-21 16:32:43
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 16:32:49
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2022-03-21 16:32:49
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 16:32:49
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-03-21 16:32:49
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-03-21 16:32:54
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2022-03-21 16:32:54
+</StartTime>
+          <StartTime>
+2022-03-21 16:32:54
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2022-03-21 16:32:54
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-03-21 16:32:56
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2022-03-21 16:32:56
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

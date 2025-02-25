@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-02-18 12:40:48
+</StartTime>
+  <TestCase Name="Two-Sided Printing:TwoSidedLongEdge">
+    <StartTime>
+2022-02-18 12:40:48
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2022-02-18 12:40:48
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2022-02-18 12:40:48
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_TwoSidedLongEdge">
+          <StartTime>
+2022-02-18 12:40:48
+</StartTime>
+          <StartTime>
+2022-02-18 12:40:48
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_TwoSidedLongEdge.pdf,HP Smart Printing)">
+            <StartTime>
+2022-02-18 12:40:48
+</StartTime>
+            <Result>
+Error
+</Result>
+            <ErrorDescription>
+Error during open program
+</ErrorDescription>
+            <ScreenShot>
+.\Hallasan_Screenshot_220218_12404902.png
+</ScreenShot>
+            <AdditionalInfo>
+System.InvalidOperationException: No process is associated with this object.
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_Id()
+   at HP.GFriend.Keywords.Windows.OpenWithPath(String executablePath, String waitTime) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.Windows\Windows.cs:line 859
+</AdditionalInfo>
+            <EndTime>
+2022-02-18 12:40:49
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2022-02-18 12:40:49
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find element with given name : HP Smart Printing
+</ErrorDescription>
+            <ScreenShot>
+.\Windows_Screenshot_220218_12411976.png
+</ScreenShot>
+            <EndTime>
+2022-02-18 12:41:19
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2022-02-18 12:41:19
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2022-02-18 12:41:25
+</EndTime>
+          </Statement>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-02-18 12:41:25
+</EndTime>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2022-02-18 12:41:25
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2022-02-18 12:41:25
+</StartTime>
+          <StartTime>
+2022-02-18 12:41:25
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-02-18 12:41:25
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-02-18 12:41:25
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.JobDuplexAllDocumentsContiguously,Option.TwoSidedLongEdge)">
+          <StartTime>
+2022-02-18 12:41:25
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find combobox : Part.JobDuplexAllDocumentsContiguously
+</ErrorDescription>
+          <EndTime>
+2022-02-18 12:41:27
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2022-02-18 12:41:27
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_220218_12412804.png
+</ScreenShot>
+          <EndTime>
+2022-02-18 12:41:28
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-02-18 12:41:28
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2022-02-18 12:41:33
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2022-02-18 12:41:33
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+          <ScreenShot>
+.\Hallasan_Screenshot_220218_12413651.png
+</ScreenShot>
+          <EndTime>
+2022-02-18 12:41:36
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2022-02-18 12:41:36
+</StartTime>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

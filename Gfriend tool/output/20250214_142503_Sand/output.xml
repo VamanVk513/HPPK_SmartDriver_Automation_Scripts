@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Sand">
+  <StartTime>
+2025-02-14 14:25:27
+</StartTime>
+  <TestCase Name="1.General Everyday Printing">
+    <StartTime>
+2025-02-14 14:25:27
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_General_Everyday_Printing">
+      <StartTime>
+2025-02-14 14:25:27
+</StartTime>
+      <StartTime>
+2025-02-14 14:25:27
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_General_Everyday_Printing.pdf,HP2F7C2F)">
+        <StartTime>
+2025-02-14 14:25:27
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Fail to click target printer
+</ErrorDescription>
+        <EndTime>
+2025-02-14 14:26:03
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,20)">
+        <StartTime>
+2025-02-14 14:26:03
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-14 14:26:04
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2025-02-14 14:26:04
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-14 14:26:10
+</EndTime>
+      </Statement>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2025-02-14 14:26:10
+</EndTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2025-02-14 14:26:10
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2025-02-14 14:26:10
+</StartTime>
+      <StartTime>
+2025-02-14 14:26:10
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-14 14:26:10
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-14 14:26:10
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_GeneralPrint)">
+      <StartTime>
+2025-02-14 14:26:10
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find combobox : ui_PresetComboBox
+</ErrorDescription>
+      <EndTime>
+2025-02-14 14:26:18
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2025-02-14 14:26:18
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-14 14:26:23
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2025-02-14 14:26:23
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+      <ScreenShot>
+.\Hallasan_Screenshot_250214_14262640.png
+</ScreenShot>
+      <EndTime>
+2025-02-14 14:26:26
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2025-02-14 14:26:26
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-14 14:26:31
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2025-02-14 14:26:31
+</StartTime>
+      <StartTime>
+2025-02-14 14:26:31
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2025-02-14 14:26:31
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-14 14:26:33
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(10)">
+        <StartTime>
+2025-02-14 14:26:33
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-14 14:26:43
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2025-02-14 14:26:43
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2025-02-14 14:26:43
+</StartTime>
+          <Block>
+            <StartTime>
+2025-02-14 14:26:43
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2025-02-14 14:26:43
+</EndTime>
+          </Block>
+          <EndTime>
+2025-02-14 14:26:43
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2025-02-14 14:26:43
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(12)">
+        <StartTime>
+2025-02-14 14:26:43
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2025-02-14 14:26:55
+</EndTime>
+      </Statement>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2025-02-14 14:26:55
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-14 14:26:55
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID(PrintingToDialog.ui_ContentFrame.PrintButton)">
+      <StartTime>
+2025-02-14 14:26:55
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2025-02-14 14:26:56
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_Application.PT Value_TwoSidedLongEdge">
+      <StartTime>
+2025-02-14 14:26:56
+</StartTime>
+      <StartTime>
+2025-02-14 14:26:56
+</StartTime>
+      <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+        <StartTime>
+2025-02-14 14:26:56
+</StartTime>
+        <Result>
+Error
+</Result>
+        <ErrorDescription>
+File not exist : C:\temp\H_JobSetup_OutPT.xml
+</ErrorDescription>
+        <EndTime>
+2025-02-14 14:26:56
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:JobDuplexAllDocumentsContiguously']/psf:Option,name)">
+        <StartTime>
+2025-02-14 14:26:56
+</StartTime>
+        <Result>
+Error
+</Result>
+        <ErrorDescription>
+XML is not loaded. Use Load or Load From File before getting values
+</ErrorDescription>
+        <EndTime>
+2025-02-14 14:26:56
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},psk:OneSided)">
+        <StartTime>
+2025-02-14 14:26:56
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+${value} and psk:OneSided are not same
+</ErrorDescription>
+        <EndTime>
+2025-02-14 14:26:56
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+        <StartTime>
+2025-02-14 14:26:56
+</StartTime>
+        <Result>
+Error
+</Result>
+        <ErrorDescription>
+XML is not loaded. Use Load or Load From File before getting values
+</ErrorDescription>
+        <EndTime>
+2025-02-14 14:26:56
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:OptIn)">
+        <StartTime>
+2025-02-14 14:26:56
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+${value} and ns0000:OptIn are not same
+</ErrorDescription>
+        <EndTime>
+2025-02-14 14:26:56
+</EndTime>
+      </Statement>
+      <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+        <StartTime>
+2025-02-14 14:26:56
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <EndTime>
+2025-02-14 14:26:56
+</EndTime>
+      </Statement>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2025-02-14 14:26:56
+</EndTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2025-02-14 14:26:56
+</EndTime>
+    </Statement>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2025-02-14 14:26:56
+</EndTime>
+  </TestCase>
+  <EndTime>
+2025-02-14 14:26:56
+</EndTime>
+</TestSuite>

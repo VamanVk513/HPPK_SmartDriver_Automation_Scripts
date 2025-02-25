@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_Moreto">
+  <StartTime>
+2024-07-30 10:48:15
+</StartTime>
+  <TestCase Name="21. Paper Size-Envelope DL">
+    <StartTime>
+2024-07-30 10:48:15
+</StartTime>
+    <Statement StatementName="Destination_Selection_PSA_Application.Destination Selection_Envelope_DL">
+      <StartTime>
+2024-07-30 10:48:15
+</StartTime>
+      <StartTime>
+2024-07-30 10:48:15
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_DL.pdf,HP_PrintSupport_App)">
+        <StartTime>
+2024-07-30 10:48:15
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Fail to open Printer Dialogue
+</ErrorDescription>
+        <EndTime>
+2024-07-30 10:49:20
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP_PrintSupport_App,20)">
+        <StartTime>
+2024-07-30 10:49:20
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Can not find element with given name : HP_PrintSupport_App
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240730_10494069.png
+</ScreenShot>
+        <EndTime>
+2024-07-30 10:49:40
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2024-07-30 10:49:40
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2024-07-30 10:49:46
+</EndTime>
+      </Statement>
+      <Result>
+FAIL
+</Result>
+      <EndTime>
+2024-07-30 10:49:46
+</EndTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2024-07-30 10:49:46
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-07-30 10:49:46
+</StartTime>
+      <StartTime>
+2024-07-30 10:49:46
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-07-30 10:49:46
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-07-30 10:49:46
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_PSA_Application.Expections_Error">
+      <StartTime>
+2024-07-30 10:49:46
+</StartTime>
+      <StartTime>
+2024-07-30 10:49:46
+</StartTime>
+      <Statement StatementName="Windows.Capture Full Screen (SS)">
+        <StartTime>
+2024-07-30 10:49:46
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240730_10494678.png
+</ScreenShot>
+        <EndTime>
+2024-07-30 10:49:46
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Child Window With Title (HP_PrintSupport_App,5)">
+        <StartTime>
+2024-07-30 10:49:46
+</StartTime>
+        <ConditionResult>
+FAIL
+</ConditionResult>
+        <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+        <ScreenShot>
+.\Windows_Screenshot_240730_10495201.png
+</ScreenShot>
+        <StatementBlock Kind="FAIL">
+          <StartTime>
+2024-07-30 10:49:52
+</StartTime>
+          <Block>
+            <StartTime>
+2024-07-30 10:49:52
+</StartTime>
+            <Statement StatementName="Pass (Childpop was not displayed)">
+              <StartTime>
+2024-07-30 10:49:52
+</StartTime>
+              <Result>
+Pass
+</Result>
+              <Output>
+Childpop was not displayed
+</Output>
+              <EndTime>
+2024-07-30 10:49:52
+</EndTime>
+            </Statement>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-07-30 10:49:52
+</EndTime>
+          </Block>
+          <EndTime>
+2024-07-30 10:49:52
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2024-07-30 10:49:52
+</EndTime>
+      </If>
+      <Statement StatementName="Windows.Capture Full Screen (SSS)">
+        <StartTime>
+2024-07-30 10:49:52
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <ScreenShot>
+.\Windows_Screenshot_240730_10495208.png
+</ScreenShot>
+        <EndTime>
+2024-07-30 10:49:52
+</EndTime>
+      </Statement>
+      <If Condition=" Windows.Select Application (HP_PrintSupport_App,5)">
+        <StartTime>
+2024-07-30 10:49:52
+</StartTime>
+      </If>
+    </Statement>
+  </TestCase>
+</TestSuite>

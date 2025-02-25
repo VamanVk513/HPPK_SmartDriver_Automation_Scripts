@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Hulk">
+  <StartTime>
+2023-03-30 11:24:59
+</StartTime>
+  <TestCase Name="12.Private Pickup Pages per Sheet:6UP_LeftBottom">
+    <StartTime>
+2023-03-30 11:24:59
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2023-03-30 11:24:59
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2023-03-30 11:24:59
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_6UP_LeftBottom">
+          <StartTime>
+2023-03-30 11:24:59
+</StartTime>
+          <StartTime>
+2023-03-30 11:24:59
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_6UP_LeftBottom.pdf,HP Smart Printing)">
+            <StartTime>
+2023-03-30 11:24:59
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

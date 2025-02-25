@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite  Name="PSA_DragonFly">
+<StartTime>
+2024-06-06 15:59:49
+</StartTime>
+<TestCase  Name="Sample">
+<StartTime>
+2024-06-06 15:59:49
+</StartTime>
+<Statement  StatementName="Windows.Select Application (PSA_Application)">
+<StartTime>
+2024-06-06 15:59:49
+</StartTime>
+<Result>
+Fail
+</Result>
+<ErrorDescription>
+Can not find target application
+</ErrorDescription>
+<ScreenShot>
+.\Windows_Screenshot_240606_15595530.png
+</ScreenShot>
+<EndTime>
+2024-06-06 15:59:55
+</EndTime>
+</Statement>
+<Statement  StatementName="Windows.Wait For ID (ui_Preset_Combo,20)">
+<StartTime>
+2024-06-06 15:59:55
+</StartTime>

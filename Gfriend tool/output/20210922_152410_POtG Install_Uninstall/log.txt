@@ -1,0 +1,68 @@
+2021-09-22 15:24:10.544 [T] ?::?::Parsing start
+2021-09-22 15:24:10.545 [T] ?::?::Parsing Variable File : C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Testfile.gfvar
+2021-09-22 15:24:10.547 [T] ?::?::Creating custom library with C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Destination_Selection_Application.gflib
+2021-09-22 15:24:10.547 [T] ?::?::Parsing start
+2021-09-22 15:24:10.589 [T] ?::?::Parsing Variable File : C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Testfile.gfvar
+2021-09-22 15:24:10.591 [D] ?::?::Post Action
+2021-09-22 15:24:10.591 [T] ?::?::All Used Libraries::C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Destination_Selection_Application.gflib
+2021-09-22 15:24:10.591 [T] ?::?::Device ID : __NO__DUT__
+2021-09-22 15:24:10.591 [T] ?::?::BuiltIn is used BuiltIn
+2021-09-22 15:24:10.591 [T] ?::?::Windows is used Windows
+2021-09-22 15:24:10.591 [T] ?::?::XML is used XML
+2021-09-22 15:24:10.591 [T] ?::?::Device ID : __DEFUALT__DUT__
+2021-09-22 15:24:10.591 [T] ?::?::Hallasan is used Hallasan
+2021-09-22 15:24:29.116 [T] ?::?::Parsing done
+2021-09-22 15:24:29.116 [T] ?::?::Destination_Selection_Application is crated
+2021-09-22 15:24:29.116 [T] ?::?::Creating custom library with C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Click_Print_Button.gflib
+2021-09-22 15:24:29.116 [T] ?::?::Parsing start
+2021-09-22 15:24:29.116 [T] ?::?::Parsing Variable File : C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Testfile.gfvar
+2021-09-22 15:24:29.116 [D] ?::?::Post Action
+2021-09-22 15:24:29.116 [T] ?::?::All Used Libraries::C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Click_Print_Button.gflib
+2021-09-22 15:24:29.116 [T] ?::?::Device ID : __NO__DUT__
+2021-09-22 15:24:29.116 [T] ?::?::BuiltIn is used BuiltIn
+2021-09-22 15:24:29.116 [T] ?::?::Windows is used Windows
+2021-09-22 15:24:29.116 [T] ?::?::Device ID : __DEFUALT__DUT__
+2021-09-22 15:24:29.116 [T] ?::?::Hallasan is used Hallasan
+2021-09-22 15:24:29.116 [T] ?::?::Parsing done
+2021-09-22 15:24:29.116 [T] ?::?::Click_Print_Button is crated
+2021-09-22 15:24:29.116 [D] ?::?::Post Action
+2021-09-22 15:24:29.116 [T] ?::?::All Used Libraries::C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\POtG Install_Uninstall.txt
+2021-09-22 15:24:29.116 [T] ?::?::Device ID : __NO__DUT__
+2021-09-22 15:24:29.116 [T] ?::?::BuiltIn is used BuiltIn
+2021-09-22 15:24:29.116 [T] ?::?::Windows is used Windows
+2021-09-22 15:24:29.116 [T] ?::?::XML is used XML
+2021-09-22 15:24:29.116 [T] ?::?::Device ID : __DEFUALT__DUT__
+2021-09-22 15:24:29.132 [T] ?::?::Hallasan is used Hallasan
+2021-09-22 15:24:29.132 [T] ?::?::Destination_Selection_Application is used Destination_Selection_Application
+2021-09-22 15:24:29.132 [T] ?::?::Click_Print_Button is used Click_Print_Button
+2021-09-22 15:24:29.132 [T] ?::?::Loading Library : BuiltIn -> BuiltIn
+2021-09-22 15:24:29.132 [T] ?::?::Library type is native library.
+2021-09-22 15:24:29.132 [T] ?::?::Loading Library : Windows -> Windows
+2021-09-22 15:24:29.132 [T] ?::?::Library type is native library.
+2021-09-22 15:24:29.132 [T] ?::?::Loading Library : XML -> XML
+2021-09-22 15:24:29.132 [T] ?::?::Library type is native library.
+2021-09-22 15:24:29.132 [T] ?::?::Loading Library : Hallasan -> Hallasan
+2021-09-22 15:24:29.132 [T] ?::?::Library type is native library.
+2021-09-22 15:24:29.132 [T] ?::?::Loading Library : Destination_Selection_Application -> Destination_Selection_Application
+2021-09-22 15:24:29.132 [T] ?::?::Library type is custom library.
+2021-09-22 15:24:29.132 [T] ?::?::Loading Library : Click_Print_Button -> Click_Print_Button
+2021-09-22 15:24:29.132 [T] ?::?::Library type is custom library.
+2021-09-22 15:24:29.132 [D] ?::?::192.168.0.8
+2021-09-22 15:24:29.148 [T] ?::?::Windows.Add Certificate (C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\Potg_Driver\install_smartdriver_v2\BoiseTest.cer) is called
+2021-09-22 15:24:29.169 [T] ?::?::Keyword executed with result = Pass
+2021-09-22 15:24:29.184 [T] ?::?::Windows.Add Local Printer(HP Smart Printing,HPSmartPrintingPort,C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\Potg_Driver\HPOneDriver-1.8.1.732-V4-Release-x64\HPOneDriver_V4_x64.inf,HP Smart Printing) is called
+2021-09-22 15:24:29.567 [T] ?::?::Keyword executed with result = Pass
+2021-09-22 15:24:29.567 [T] ?::?::Sleep (10) is called
+2021-09-22 15:24:39.607 [T] ?::?::Keyword executed with result = Pass
+2021-09-22 15:24:39.623 [T] ?::?::Hallasan.Remove Printer (HP Smart Printing) is called
+2021-09-22 15:24:40.241 [T] ?::?::Keyword executed with result = Pass
+2021-09-22 15:24:40.273 [T] ?::?::BuiltIn.Run Command (powershell C:\Temp\script.ps1,${out}) is called
+2021-09-22 15:24:41.174 [T] ?::?::Keyword executed with result = Fail
+2021-09-22 15:24:41.174 [T] ?::?::BuiltIn.Run Command (PowerShell C:\GFriend_PotG\Potg_Driver\GothamUltron131-131.1.238\Add-AppDevPackage.ps1,${HP Smart}) is called
+2021-09-22 15:24:42.002 [T] ?::?::Keyword executed with result = Fail
+2021-09-22 15:24:42.019 [T] ?::?::BuiltIn.Run Command As Admin (Run with PowerShell C:\GFriend_PotG\Potg_Driver\GothamUltron131-131.1.238\Add-AppDevPackage.ps1,${out}) is called
+2021-09-22 15:24:42.020 [E] ?::?::Exception during run command
+System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   at HP.GFriend.Keywords.BuiltInLibrary.RunCommandAsAdmin(String command, String saveTo)
+2021-09-22 15:24:42.031 [T] ?::?::Keyword executed with result = Fail

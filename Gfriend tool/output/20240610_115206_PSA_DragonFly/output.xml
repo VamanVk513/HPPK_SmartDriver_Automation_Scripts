@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_DragonFly">
+  <StartTime>
+2024-06-10 11:52:30
+</StartTime>
+  <TestCase Name="1.Factory defaults">
+    <StartTime>
+2024-06-10 11:52:30
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_Factory_defaults">
+      <StartTime>
+2024-06-10 11:52:30
+</StartTime>
+      <Result>
+Error
+</Result>
+      <ErrorDescription>
+Can not find specified keyword
+</ErrorDescription>
+      <EndTime>
+2024-06-10 11:52:31
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2024-06-10 11:52:31
+</StartTime>
+      <StartTime>
+2024-06-10 11:52:31
+</StartTime>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-10 11:52:31
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2024-06-10 11:52:31
+</EndTime>
+    </Statement>
+    <If Condition=" Windows.Select Child Window With Title (HP_PrintSupport_App,5)">
+      <StartTime>
+2024-06-10 11:52:31
+</StartTime>
+      <ConditionResult>
+FAIL
+</ConditionResult>
+      <ErrorDescription>
+Can not find target application
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240610_11523645.png
+</ScreenShot>
+      <StatementBlock Kind="FAIL">
+        <StartTime>
+2024-06-10 11:52:36
+</StartTime>
+        <Block>
+          <StartTime>
+2024-06-10 11:52:36
+</StartTime>
+          <Statement StatementName="Pass (Childpop was not displayed)">
+            <StartTime>
+2024-06-10 11:52:36
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+Childpop was not displayed
+</Output>
+            <EndTime>
+2024-06-10 11:52:36
+</EndTime>
+          </Statement>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2024-06-10 11:52:36
+</EndTime>
+        </Block>
+        <EndTime>
+2024-06-10 11:52:36
+</EndTime>
+        <Result>
+PASS
+</Result>
+      </StatementBlock>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2024-06-10 11:52:36
+</EndTime>
+    </If>
+    <Statement StatementName="Windows.Wait For ID (ui_Preset_Combo,5)">
+      <StartTime>
+2024-06-10 11:52:36
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given automation ID : ui_Preset_Combo
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240610_11524171.png
+</ScreenShot>
+      <EndTime>
+2024-06-10 11:52:41
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click ID With Mouse (ui_Preset_Combo,5)">
+      <StartTime>
+2024-06-10 11:52:41
+</StartTime>
+      <Result>
+Error
+</Result>
+      <ErrorDescription>
+Unexpected exception
+</ErrorDescription>
+      <AdditionalInfo>
+System.MissingMethodException: Method 'HP.GFriend.Keywords.Windows.ClickIDWithMouse' not found.
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+</AdditionalInfo>
+      <EndTime>
+2024-06-10 11:52:41
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Wait For Name (Factory Defaults,5)">
+      <StartTime>
+2024-06-10 11:52:41
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Can not find element with given name : Factory Defaults
+</ErrorDescription>
+      <ScreenShot>
+.\Windows_Screenshot_240610_11524716.png
+</ScreenShot>
+      <EndTime>
+2024-06-10 11:52:47
+</EndTime>
+    </Statement>
+    <Statement StatementName="Windows.Click Name (Factory Defaults)">
+      <StartTime>
+2024-06-10 11:52:47
+</StartTime>
+    </Statement>
+  </TestCase>
+</TestSuite>

@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2021-10-06 15:33:31
+</StartTime>
+  <TestCase Name="Paper Size:Legal">
+    <StartTime>
+2021-10-06 15:33:31
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2021-10-06 15:33:31
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2021-10-06 15:33:31
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Legal">
+          <StartTime>
+2021-10-06 15:33:31
+</StartTime>
+          <StartTime>
+2021-10-06 15:33:31
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Legal.pdf,HP Smart Printing)">
+            <StartTime>
+2021-10-06 15:33:31
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2021-10-06 15:34:01
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2021-10-06 15:34:01
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2021-10-06 15:34:01
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2021-10-06 15:34:01
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2021-10-06 15:34:01
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2021-10-06 15:34:01
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2021-10-06 15:34:07
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2021-10-06 15:34:07
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2021-10-06 15:34:07
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2021-10-06 15:34:07
+</StartTime>
+          <StartTime>
+2021-10-06 15:34:07
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2021-10-06 15:34:07
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2021-10-06 15:34:07
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaLegal)">
+          <StartTime>
+2021-10-06 15:34:07
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2021-10-06 15:34:08
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2021-10-06 15:34:08
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_211006_15340824.png
+</ScreenShot>
+          <EndTime>
+2021-10-06 15:34:08
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2021-10-06 15:34:08
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2021-10-06 15:34:13
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2021-10-06 15:34:13
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2021-10-06 15:34:13
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2021-10-06 15:34:13
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2021-10-06 15:34:18
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2021-10-06 15:34:18
+</StartTime>
+          <StartTime>
+2021-10-06 15:34:18
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2021-10-06 15:34:18
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2021-10-06 15:34:20
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2021-10-06 15:34:20
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2021-10-06 15:34:40
+</EndTime>
+          </Statement>
+          <If Condition=" Hallasan.Close Application">
+            <StartTime>
+2021-10-06 15:34:40
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2021-10-06 15:34:40
+</StartTime>
+              <Block>
+                <StartTime>
+2021-10-06 15:34:40
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2021-10-06 15:34:40
+</EndTime>
+              </Block>
+              <EndTime>
+2021-10-06 15:34:40
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2021-10-06 15:34:40
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2021-10-06 15:34:40
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2021-10-06 15:35:00
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2021-10-06 15:35:00
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2021-10-06 15:35:00
+</EndTime>
+        </Statement>
+        <Statement StatementName="Destination_Selection_Application.PT Value_NorthAmericaLegal">
+          <StartTime>
+2021-10-06 15:35:00
+</StartTime>
+          <StartTime>
+2021-10-06 15:35:00
+</StartTime>
+          <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+            <StartTime>
+2021-10-06 15:35:00
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2021-10-06 15:35:00
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:PageMediaSize']/psf:Option,name)">
+            <StartTime>
+2021-10-06 15:35:00
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+psk:NorthAmericaLegal
+</Output>
+            <EndTime>
+2021-10-06 15:35:00
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},psk:NorthAmericaLegal)">
+            <StartTime>
+2021-10-06 15:35:00
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2021-10-06 15:35:00
+</EndTime>
+          </Statement>
+          <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+            <StartTime>
+2021-10-06 15:35:00
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+ns0000:OptIn
+</Output>
+            <EndTime>
+2021-10-06 15:35:00
+</EndTime>
+          </Statement>
+          <Statement StatementName="Equals (${value},ns0000:OptIn)">
+            <StartTime>
+2021-10-06 15:35:00
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2021-10-06 15:35:00
+</EndTime>
+          </Statement>
+          <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+            <StartTime>
+2021-10-06 15:35:00
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <Output>
+        1 file(s) copied.
+
+</Output>
+            <EndTime>
+2021-10-06 15:35:01
+</EndTime>
+          </Statement>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2021-10-06 15:35:01
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2021-10-06 15:35:01
+</EndTime>
+        </Statement>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2021-10-06 15:35:01
+</EndTime>
+      </Loop>
+      <Result>
+PASS
+</Result>
+      <EndTime>
+2021-10-06 15:35:01
+</EndTime>
+    </Repeat>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2021-10-06 15:35:01
+</EndTime>
+  </TestCase>
+  <EndTime>
+2021-10-06 15:35:01
+</EndTime>
+</TestSuite>

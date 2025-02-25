@@ -1,0 +1,80 @@
+2021-09-24 10:40:38.395 [T] ?::?::Parsing start
+2021-09-24 10:40:38.395 [T] ?::?::Parsing Variable File : C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Testfile.gfvar
+2021-09-24 10:40:38.395 [T] ?::?::Creating custom library with C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Destination_Selection_Application.gflib
+2021-09-24 10:40:38.395 [T] ?::?::Parsing start
+2021-09-24 10:40:38.442 [T] ?::?::Parsing Variable File : C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Testfile.gfvar
+2021-09-24 10:40:38.442 [D] ?::?::Post Action
+2021-09-24 10:40:38.442 [T] ?::?::All Used Libraries::C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Destination_Selection_Application.gflib
+2021-09-24 10:40:38.459 [T] ?::?::Device ID : __NO__DUT__
+2021-09-24 10:40:38.459 [T] ?::?::BuiltIn is used BuiltIn
+2021-09-24 10:40:38.475 [T] ?::?::Windows is used Windows
+2021-09-24 10:40:38.475 [T] ?::?::XML is used XML
+2021-09-24 10:40:38.475 [T] ?::?::Device ID : __DEFUALT__DUT__
+2021-09-24 10:40:38.475 [T] ?::?::Hallasan is used Hallasan
+2021-09-24 10:40:56.809 [T] ?::?::Parsing done
+2021-09-24 10:40:56.809 [T] ?::?::Destination_Selection_Application is crated
+2021-09-24 10:40:56.809 [T] ?::?::Creating custom library with C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Click_Print_Button.gflib
+2021-09-24 10:40:56.809 [T] ?::?::Parsing start
+2021-09-24 10:40:56.820 [T] ?::?::Parsing Variable File : C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Testfile.gfvar
+2021-09-24 10:40:56.820 [D] ?::?::Post Action
+2021-09-24 10:40:56.820 [T] ?::?::All Used Libraries::C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\Click_Print_Button.gflib
+2021-09-24 10:40:56.820 [T] ?::?::Device ID : __NO__DUT__
+2021-09-24 10:40:56.820 [T] ?::?::BuiltIn is used BuiltIn
+2021-09-24 10:40:56.820 [T] ?::?::Windows is used Windows
+2021-09-24 10:40:56.820 [T] ?::?::Device ID : __DEFUALT__DUT__
+2021-09-24 10:40:56.820 [T] ?::?::Hallasan is used Hallasan
+2021-09-24 10:40:56.820 [T] ?::?::Parsing done
+2021-09-24 10:40:56.820 [T] ?::?::Click_Print_Button is crated
+2021-09-24 10:40:56.820 [D] ?::?::Post Action
+2021-09-24 10:40:56.820 [T] ?::?::All Used Libraries::C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\scripts\Acual Script\POtG Install_HPSmart.txt
+2021-09-24 10:40:56.820 [T] ?::?::Device ID : __NO__DUT__
+2021-09-24 10:40:56.824 [T] ?::?::BuiltIn is used BuiltIn
+2021-09-24 10:40:56.824 [T] ?::?::Windows is used Windows
+2021-09-24 10:40:56.824 [T] ?::?::XML is used XML
+2021-09-24 10:40:56.824 [T] ?::?::Device ID : __DEFUALT__DUT__
+2021-09-24 10:40:56.824 [T] ?::?::Hallasan is used Hallasan
+2021-09-24 10:40:56.824 [T] ?::?::Destination_Selection_Application is used Destination_Selection_Application
+2021-09-24 10:40:56.824 [T] ?::?::Click_Print_Button is used Click_Print_Button
+2021-09-24 10:40:56.824 [T] ?::?::Loading Library : BuiltIn -> BuiltIn
+2021-09-24 10:40:56.824 [T] ?::?::Library type is native library.
+2021-09-24 10:40:56.824 [T] ?::?::Loading Library : Windows -> Windows
+2021-09-24 10:40:56.824 [T] ?::?::Library type is native library.
+2021-09-24 10:40:56.824 [T] ?::?::Loading Library : XML -> XML
+2021-09-24 10:40:56.824 [T] ?::?::Library type is native library.
+2021-09-24 10:40:56.824 [T] ?::?::Loading Library : Hallasan -> Hallasan
+2021-09-24 10:40:56.824 [T] ?::?::Library type is native library.
+2021-09-24 10:40:56.824 [T] ?::?::Loading Library : Destination_Selection_Application -> Destination_Selection_Application
+2021-09-24 10:40:56.824 [T] ?::?::Library type is custom library.
+2021-09-24 10:40:56.824 [T] ?::?::Loading Library : Click_Print_Button -> Click_Print_Button
+2021-09-24 10:40:56.824 [T] ?::?::Library type is custom library.
+2021-09-24 10:40:56.824 [D] ?::?::192.168.0.8
+2021-09-24 10:40:56.824 [T] ?::?::Windows.Add Certificate (C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\Potg_Driver\install_smartdriver_v2\BoiseTest.cer) is called
+2021-09-24 10:40:56.840 [T] ?::?::Keyword executed with result = Pass
+2021-09-24 10:40:56.840 [T] ?::?::Windows.Add Local Printer(HP Smart Printing,HPSmartPrintingPort,C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\Potg_Driver\HPOneDriver-1.8.1.732-V4-Release-x64\HPOneDriver_V4_x64.inf,HP Smart Printing) is called
+2021-09-24 10:41:00.969 [T] ?::?::Keyword executed with result = Pass
+2021-09-24 10:41:00.969 [T] ?::?::Sleep (10) is called
+2021-09-24 10:41:11.001 [T] ?::?::Keyword executed with result = Pass
+2021-09-24 10:41:11.018 [T] ?::?::BuiltIn.Run Command (powershell C:\Temp\script.ps1,${out}) is called
+2021-09-24 10:41:11.966 [T] ?::?::Keyword executed with result = Fail
+2021-09-24 10:41:11.986 [T] ?::?::BuiltIn.Run Command (PowerShell C:\Automation_GFriend\GFriend_PotG\GFriend_PotG\Potg_Driver\GothamUltron-132.0.4028\Add-AppDevPackage.ps1,${HP Smart}) is called
+2021-09-24 10:42:39.954 [E] ?::?::Exception during run command
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.WaitHandle.WaitOneNative(SafeHandle waitableSafeHandle, UInt32 millisecondsTimeout, Boolean hasThreadAffinity, Boolean exitContext)
+   at System.Threading.WaitHandle.InternalWaitOne(SafeHandle waitableSafeHandle, Int64 millisecondsTimeout, Boolean hasThreadAffinity, Boolean exitContext)
+   at System.Threading.WaitHandle.WaitOne(Int32 millisecondsTimeout, Boolean exitContext)
+   at System.Diagnostics.Process.WaitForExit(Int32 milliseconds)
+   at HP.GFriend.Keywords.BuiltInLibrary.RunCommand(String command, String saveTo)
+2021-09-24 10:42:39.980 [E] ?::?::Unexpected exception : RunCommand
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+2021-09-24 10:42:39.980 [E] ?::?::Unexpected Error
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+   at HP.GFriend.Core.Execution.Statement.Run(TestDataManager testDataManager, Int32 repeatCount, Int32 stackLevel, Dictionary`2 arguments)
+   at HP.GFriend.Core.Execution.TestCase.Run(TestDataManager testDataManager, Int32 repeatCount, Int32 stackLevel, Dictionary`2 arguments)
+   at HP.GFriend.Core.Execution.TestSuite.Run(TestDataManager testDataManager, List`1 tcToRun)
+   at HP.GFriend.Core.Execution.Runner.Run(String tsPath, TestDataManager& testDataManager, List`1 tcToRun, String libraryPath, String defaultDut, Dictionary`2 variables)

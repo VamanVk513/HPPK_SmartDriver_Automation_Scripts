@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>GFriend Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../gfmanual.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">GFriend Manual</h1>
+</header>
+<h1 id="memory-monitoring-sample-scripts">Memory monitoring sample
+scripts</h1>
+<h2 id="script-for-android-devices">Script for Android Devices</h2>
+<p>Android memory monitoring collects size of memory by process.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>using Android</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Memory Monitoring Example</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Define Memory Monitoring task</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    Android<span class="op">.</span><span class="at">Start</span> Memory Monitoring</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Repeat test scenario and dump memory usage</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Repeat</span><span class="op">:</span><span class="dv">100</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Simple scenario : Open contacts app and click navigation drawer button and exit app.</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        Android<span class="op">.</span><span class="fu">Launch</span> (com<span class="op">.</span><span class="at">android</span><span class="op">.</span><span class="at">contacts</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        Android<span class="op">.</span><span class="at">Touch</span> <span class="fu">XPath</span> (<span class="co">//node[@content-desc=&#39;Open navigation drawer&#39;])</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        Android<span class="op">.</span><span class="at">Press</span> Back Key</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        Android<span class="op">.</span><span class="at">Press</span> Back Key</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        Android<span class="op">.</span><span class="at">Press</span> Home Key</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Collect Memory data after each repetition</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        Android<span class="op">.</span><span class="at">Collect</span> Memory <span class="fu">Info</span> (REPEAT_${R})</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="co">// See the memory usage trend with the help of Graph.</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    Android<span class="op">.</span><span class="at">Draw</span> Memory Usage Graph</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>See the memory usage trend over repetitions (check if memory usage is
+increased over time) To check more details of memory usage, see the csv
+file in output folder. (Path of csv file is also placed in report in
+keyword of Start Memory Monitoring)</p>
+<p><img src=".images/Android_Screenshot_220420_13565113.png"
+alt="MemoryCollectors::Main" /></p>
+<p>Find the report in csv format <a
+href=".resources/AndroidMemoryMonitoring_220420_12061501.csv">here</a></p>
+<h2 id="script-for-jediomni-devices">Script for JediOmni Devices</h2>
+<p>JediOmni library collects memory information of</p>
+<ul>
+<li>JediMem_Extensibility <br></li>
+<li>JediMem_NonJediManaged <br></li>
+<li>JediMem_OpenSourceLib <br></li>
+<li>JediMem_WebkitSmall <br></li>
+<li>JediMem_WebkitLarge <br></li>
+<li>JediMem_JavaScriptAligned<br></li>
+<li>JediMem_PdlPersonality<br></li>
+<li>ToolHelpAPI <br></li>
+<li>Partition_Extensibility <br></li>
+<li>Partition_CustomerData <br></li>
+<li>GlobalMemoryStatus <br></li>
+<li>UI_Total_Memory_Statistics <br></li>
+<li>Web_Process_Memory_Statistics <br></li>
+<li>Network_Process_Memory_Mappings <br></li>
+<li>Web_Process_Memory_Mappings <br></li>
+<li>Browser_Process_Memory_Mappings <br></li>
+</ul>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">// This test case captures JediOmni Devices Memory collectors</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Using JediOmni</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>TestSingInSingOutLoop</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>{ </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Define memory monitoring Task and this creates a CSV file in output folder.</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    JediOmni<span class="op">.</span><span class="at">Start</span> Memory Monitoring</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Repeat the Sing In and Sing Out steps with the device for atleast 100 repetitions to detect memory leak in devices under test.</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Repeat</span><span class="op">:</span><span class="dv">50</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    {    </span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>      <span class="co">// Using GFriend UI Inspector captured below controls and doing sing in and singout scenario</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span> (hpid<span class="op">-</span>control<span class="op">-</span>signin<span class="op">,</span><span class="dv">10</span>)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="fu">ID</span> (hpid<span class="op">-</span>control<span class="op">-</span>signin)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span> (hpid<span class="op">-</span>dropdown<span class="op">-</span>agent<span class="op">,</span><span class="dv">5</span>)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="fu">ID</span> (hpid<span class="op">-</span>dropdown<span class="op">-</span>agent)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span> (hpid<span class="op">-</span>dropdown<span class="op">-</span>agent<span class="op">-</span>hp_EmbeddedWindows_v1<span class="op">,</span><span class="dv">5</span>)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="fu">ID</span> (hpid<span class="op">-</span>dropdown<span class="op">-</span>agent<span class="op">-</span>hp_EmbeddedWindows_v1)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>      <span class="co">// Sleep for 5 seconds for the device to load the next screen</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>      <span class="fu">Sleep</span> (<span class="dv">5</span>)</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span> (hpid<span class="op">-</span>signin<span class="op">-</span>textbox<span class="op">-</span>UserNameTextBox<span class="op">,</span><span class="dv">10</span>)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="fu">ID</span> (hpid<span class="op">-</span>signin<span class="op">-</span>textbox<span class="op">-</span>UserNameTextBox)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>      <span class="co">// Type administrator userid</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Input</span> <span class="bu">Text</span>(Administrator)</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span> (hpid<span class="op">-</span>keyboard<span class="op">-</span>key<span class="op">-</span>done<span class="op">,</span><span class="dv">5</span>)</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="fu">ID</span> (hpid<span class="op">-</span>keyboard<span class="op">-</span>key<span class="op">-</span>done)</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>      <span class="co">// Sleep for 5 seconds for the device to load the next screen</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>      <span class="fu">Sleep</span> (<span class="dv">5</span>)</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span> (hpid<span class="op">-</span>signin<span class="op">-</span>textbox<span class="op">-</span>PasswordTextBox<span class="op">,</span><span class="dv">10</span>)</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="fu">ID</span> (hpid<span class="op">-</span>signin<span class="op">-</span>textbox<span class="op">-</span>PasswordTextBox)</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>      <span class="co">// Type password for the administrator</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="fu">InputText</span> (rdl@<span class="dv">12345</span>)</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span> (hpid<span class="op">-</span>keyboard<span class="op">-</span>key<span class="op">-</span>done<span class="op">,</span><span class="dv">5</span>)</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="fu">ID</span> (hpid<span class="op">-</span>keyboard<span class="op">-</span>key<span class="op">-</span>done)</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span> (hpid<span class="op">-</span>button<span class="op">-</span>signin<span class="op">-</span>ok<span class="op">,</span><span class="dv">5</span>)</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="fu">ID</span> (hpid<span class="op">-</span>button<span class="op">-</span>signin<span class="op">-</span>ok)</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Wait</span> For <span class="bu">Object</span> (hp<span class="op">-</span>button<span class="op">-</span>signin<span class="op">-</span>or<span class="op">-</span>signout<span class="op">,</span><span class="dv">5</span>)</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="fu">ID</span> (hp<span class="op">-</span>button<span class="op">-</span>signin<span class="op">-</span>or<span class="op">-</span>signout)</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>      <span class="co">// This method collects the memory info with the lable SignIn and Signout</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>      <span class="co">// This method saves the data in CSV format</span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>      JediOmni<span class="op">.</span><span class="at">Collect</span> Memory <span class="fu">Info</span> (<span class="st">&quot;SingIn/SingOut&quot;</span>)</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>    }    </span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>    <span class="co">//This method draws the graph using the memory data collected.</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>    JediOmni<span class="op">.</span><span class="at">Draw</span> Memory Usage Graph </span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Memory usage graph</p>
+<p><img src=".images/JediOmni_Screenshot_220421_15011753.png"
+alt="MemoryCollectors::Main" /></p>
+<p>Find the report in csv format <a
+href=".resources/JediOmniMemoryMonitoring_220421_14392549.csv">here</a></p>
+<h2 id="script-for-windows-devices">Script for Windows Devices</h2>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>﻿Using Windows</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Test Windows Memory Monitors</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Starts memory Monitoring task</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    Windows<span class="op">.</span><span class="at">Start</span> Memory Monitoring</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Repeat test scenario and dump memory usage</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Repeat</span><span class="op">:</span><span class="dv">20</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Memory Collection with repeat count</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>        Windows<span class="op">.</span><span class="at">Collect</span> Memory <span class="fu">Info</span> (<span class="st">&quot;Start-&quot;</span><span class="op">+</span> REPEAT_${R})</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Draw graph for all the repetitions</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    Windows<span class="op">.</span><span class="at">Draw</span> Memory Usage Graph </span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<h2 id="memory-collection-for-local-machine">Memory collection for local
+machine</h2>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Using Windows At localhost</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>Test Windows Memory Monitors </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    Remote <span class="dt">Run</span><span class="op">:</span>localhost</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Keywords to run in remote executor.</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>        Windows<span class="op">.</span><span class="at">Start</span> Memory Monitoring</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        Windows<span class="op">.</span><span class="at">Collect</span> Memory <span class="fu">Info</span> (<span class="st">&quot;Start&quot;</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>        Windows<span class="op">.</span><span class="at">Draw</span> Memory Usage Graph </span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>     }</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<h2 id="memory-collection-for-remote-machine">Memory collection for
+remote machine</h2>
+<p>Memory collection with remote executor. By using remote executor in
+solution server, you can collect solution server's memory usage while
+testing.</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>Using Windows At <span class="op">&lt;</span>SolutionServer<span class="op">&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>Test Windows Memory Monitors </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    Remote <span class="dt">Run</span><span class="op">:&lt;</span>SolutionServer<span class="op">&gt;</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Keywords to run in remote executor.</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>        Windows<span class="op">.</span><span class="at">Start</span> Memory Monitoring</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>        Windows<span class="op">.</span><span class="at">Collect</span> Memory <span class="fu">Info</span> (<span class="st">&quot;Start&quot;</span>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>        Windows<span class="op">.</span><span class="at">Draw</span> Memory Usage Graph </span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>        <span class="co">// JediOmni.Capture Screen Shot (&quot;Radiobutton&quot;)</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>     }</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Memory usage graph</p>
+<p><img src=".images/WindowsMemory.png"
+alt="MemoryCollectors::Main" /></p>
+<p>Find the report in csv format <a
+href=".resources/WindowsMemoryMonitoring_220426_15562521.csv">here</a></p>
+<h2
+id="script-to-collect-memory-collectors-on-application-servers">Script
+to collect memory collectors on application servers</h2>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">// running memory collectors at remote machine HPAdvanced</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>using Windows At HPAdvanced</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>using JediOmni</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>using Oxpd</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>test</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>   <span class="co">// run the test case on remote machine </span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>   <span class="co">// start monitoring on the remote machine</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    Remote <span class="dt">Run</span><span class="op">:</span>HPAdvanced</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        Windows<span class="op">.</span><span class="at">Start</span> Memory Monitoring</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="co">// repeate the steps for 100 repetitions</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Repeat</span><span class="op">:</span><span class="dv">100</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Run some solution tests</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>        JediOmni<span class="op">.</span><span class="at">Touch</span> <span class="bu">Text</span>(HP Advanced)</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>        Oxpd<span class="op">.</span><span class="at">Get</span> Browser Engine</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Run script on remote machine</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>        Remote <span class="dt">Run</span><span class="op">:</span>HPAdvanced</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>        {</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>            <span class="co">// collect memory info</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>            Windows<span class="op">.</span><span class="at">Collect</span> Memory <span class="fu">Info</span>(${R})</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>        <span class="co">// wait for completing the collection on HPAdvanced </span></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>        Wait For Remote <span class="fu">Complete</span> (HPAdvanced)</span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>    <span class="co">// run on Remote machine</span></span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>    Remote <span class="dt">Run</span><span class="op">:</span>HPAdvanced</span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Draw memory usage graph</span></span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>        Windows<span class="op">.</span><span class="at">Draw</span> Memory Usage Graph</span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>    <span class="co">// wait for completion of </span></span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a>    Wait For Remote <span class="fu">Complete</span> (HPAdvanced)</span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+</body>
+</html>

@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+  <TestCase Name="PrintAnywhere PT Value">
+    <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.PT Value_PrintAnywhere">
+      <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+      <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+      <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobDestination']/psf:Option,name)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:LocalNW_Device
+</Output>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:LocalNW_Device)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:JobDeviceLanguage']/psf:Option,name)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+psk:PCL
+</Output>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},psk:PCL)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Inner Text (${value},//*[@name='ns0000:JobLocalNW_Device_Protocols_Supported']/psf:Value)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+TCP
+</Output>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Inner Text (${value},//*[@name='ns0000:JobLocalNW_Device_Protocols_Supported']/psf:Value)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+TCP
+</Output>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},TCP)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:On
+</Output>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:On)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:OptIn
+</Output>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:OptIn)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+        1 file(s) copied.
+
+</Output>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+    </Statement>
+    <Result>
+PASS
+</Result>
+    <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+  </TestCase>
+  <TestCase Name="PrivatePickup PT Value">
+    <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.PT Value_PrivatePickup">
+      <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+      <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+      <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobDestination']/psf:Option,name)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:LocalNW_Device
+</Output>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:PushToClient)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+ns0000:LocalNW_Device and ns0000:PushToClient are not same
+</ErrorDescription>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:JobDeviceLanguage']/psf:Option,name)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+psk:PCL
+</Output>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:PDF)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+psk:PCL and ns0000:PDF are not same
+</ErrorDescription>
+        <EndTime>
+2023-02-24 17:56:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Inner Text (${value},//*[@name='ns0000:JobLocalNW_Device_Protocols_Supported']/psf:Value)">
+        <StartTime>
+2023-02-24 17:56:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+TCP
+</Output>
+        <EndTime>
+2023-02-24 17:56:01
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Inner Text (${value},//*[@name='ns0000:JobLocalNW_Device_Protocols_Supported']/psf:Value)">
+        <StartTime>
+2023-02-24 17:56:01
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+TCP
+</Output>
+        <EndTime>
+2023-02-24 17:56:01
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},TCP)">
+        <StartTime>
+2023-02-24 17:56:01
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-02-24 17:56:01
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobStatusMonitor']/psf:Option,name)">
+        <StartTime>
+2023-02-24 17:56:01
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:On
+</Output>
+        <EndTime>
+2023-02-24 17:56:01
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:On)">
+        <StartTime>
+2023-02-24 17:56:01
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-02-24 17:56:01
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+        <StartTime>
+2023-02-24 17:56:01
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+ns0000:OptIn
+</Output>
+        <EndTime>
+2023-02-24 17:56:01
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:OptIn)">
+        <StartTime>
+2023-02-24 17:56:01
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-02-24 17:56:01
+</EndTime>
+      </Statement>
+      <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+        <StartTime>
+2023-02-24 17:56:01
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <Output>
+        1 file(s) copied.
+
+</Output>
+        <EndTime>
+2023-02-24 17:56:01
+</EndTime>
+      </Statement>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2023-02-24 17:56:01
+</EndTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2023-02-24 17:56:01
+</EndTime>
+    </Statement>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2023-02-24 17:56:01
+</EndTime>
+  </TestCase>
+  <EndTime>
+2023-02-24 17:56:01
+</EndTime>
+</TestSuite>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2023-02-24 13:04:51
+</StartTime>
+  <TestCase Name="Paper Size:Envelope #10">
+    <StartTime>
+2023-02-24 13:04:51
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2023-02-24 13:04:51
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2023-02-24 13:04:51
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.Destination Selection_Envelope_10">
+          <StartTime>
+2023-02-24 13:04:51
+</StartTime>
+          <StartTime>
+2023-02-24 13:04:51
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Envelope_10.pdf,HP Smart Printing)">
+            <StartTime>
+2023-02-24 13:04:51
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-24 13:05:21
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP Smart Printing)">
+            <StartTime>
+2023-02-24 13:05:21
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-24 13:05:22
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+            <StartTime>
+2023-02-24 13:05:22
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2023-02-24 13:05:22
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2023-02-24 13:05:22
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>

@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2022-02-18 12:05:20
+</StartTime>
+  <TestCase Name="General Everyday Printing">
+    <StartTime>
+2022-02-18 12:05:20
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_General_Everyday_Printing">
+      <StartTime>
+2022-02-18 12:05:20
+</StartTime>
+      <StartTime>
+2022-02-18 12:05:20
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_General_Everyday_Printing.pdf,HP Smart Printing)">
+        <StartTime>
+2022-02-18 12:05:20
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2022-02-18 12:05:50
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+        <StartTime>
+2022-02-18 12:05:50
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2022-02-18 12:05:50
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2022-02-18 12:05:50
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2022-02-18 12:05:56
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-02-18 12:05:56
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-02-18 12:05:56
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2022-02-18 12:05:56
+</StartTime>
+      <StartTime>
+2022-02-18 12:05:56
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-02-18 12:05:56
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-02-18 12:05:56
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_GeneralPrint)">
+      <StartTime>
+2022-02-18 12:05:56
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-02-18 12:05:57
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2022-02-18 12:05:57
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-02-18 12:06:02
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2022-02-18 12:06:02
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-02-18 12:06:02
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2022-02-18 12:06:02
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2022-02-18 12:06:07
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2022-02-18 12:06:07
+</StartTime>
+      <StartTime>
+2022-02-18 12:06:07
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2022-02-18 12:06:07
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2022-02-18 12:06:09
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2022-02-18 12:06:09
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2022-02-18 12:06:29
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2022-02-18 12:06:29
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2022-02-18 12:06:29
+</StartTime>
+          <Block>
+            <StartTime>
+2022-02-18 12:06:29
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2022-02-18 12:06:29
+</EndTime>
+          </Block>
+          <EndTime>
+2022-02-18 12:06:29
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2022-02-18 12:06:29
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2022-02-18 12:06:29
+</StartTime>
+      </Statement>
+    </Statement>
+  </TestCase>
+</TestSuite>

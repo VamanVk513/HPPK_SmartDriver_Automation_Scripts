@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[Laser Printer] Full Horizon Basic Duplex TC">
+  <StartTime>
+2021-11-18 12:29:07
+</StartTime>
+  <TestCase Name="General Everyday Printing">
+    <StartTime>
+2021-11-18 12:29:07
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_General_Everyday_Printing">
+      <StartTime>
+2021-11-18 12:29:07
+</StartTime>
+      <StartTime>
+2021-11-18 12:29:07
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_General_Everyday_Printing.pdf,HP Smart Printing)">
+        <StartTime>
+2021-11-18 12:29:07
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2021-11-18 12:29:40
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+        <StartTime>
+2021-11-18 12:29:40
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2021-11-18 12:29:40
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2021-11-18 12:29:40
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2021-11-18 12:29:46
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-11-18 12:29:46
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-11-18 12:29:46
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2021-11-18 12:29:46
+</StartTime>
+      <StartTime>
+2021-11-18 12:29:46
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-11-18 12:29:46
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-11-18 12:29:46
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_GeneralPrint)">
+      <StartTime>
+2021-11-18 12:29:46
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-11-18 12:29:47
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2021-11-18 12:29:47
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-11-18 12:29:52
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2021-11-18 12:29:52
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-11-18 12:29:53
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2021-11-18 12:29:53
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-11-18 12:29:58
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2021-11-18 12:29:58
+</StartTime>
+      <StartTime>
+2021-11-18 12:29:58
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2021-11-18 12:29:58
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2021-11-18 12:30:00
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2021-11-18 12:30:00
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2021-11-18 12:30:20
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2021-11-18 12:30:20
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2021-11-18 12:30:20
+</StartTime>
+          <Block>
+            <StartTime>
+2021-11-18 12:30:20
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2021-11-18 12:30:20
+</EndTime>
+          </Block>
+          <EndTime>
+2021-11-18 12:30:20
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2021-11-18 12:30:20
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2021-11-18 12:30:20
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2021-11-18 12:30:40
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-11-18 12:30:40
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2021-11-18 12:30:40
+</EndTime>
+    </Statement>
+    <Statement StatementName="Destination_Selection_Application.PT Value_TwoSidedLongEdge">
+      <StartTime>
+2021-11-18 12:30:40
+</StartTime>
+      <StartTime>
+2021-11-18 12:30:40
+</StartTime>
+      <Statement StatementName="XML.Load From File (C:\temp\H_JobSetup_OutPT.xml)">
+        <StartTime>
+2021-11-18 12:30:41
+</StartTime>
+        <Result>
+Error
+</Result>
+        <ErrorDescription>
+Error with xml
+</ErrorDescription>
+        <AdditionalInfo>
+System.UnauthorizedAccessException: Access to the path 'C:\temp\H_JobSetup_OutPT.xml' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(String filename)
+   at HP.GFriend.Keywords.XML.LoadFromFile(String filePath) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.XML\XML.cs:line 89
+</AdditionalInfo>
+        <EndTime>
+2021-11-18 12:30:41
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='psk:JobDuplexAllDocumentsContiguously']/psf:Option,name)">
+        <StartTime>
+2021-11-18 12:30:41
+</StartTime>
+        <Result>
+Error
+</Result>
+        <ErrorDescription>
+Unexpected exception
+</ErrorDescription>
+        <AdditionalInfo>
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.Xml.XPath.XPathException: Namespace prefix 'psf' is not defined.
+   at MS.Internal.Xml.XPath.CompiledXpathExpr.UndefinedXsltContext.LookupNamespace(String prefix)
+   at MS.Internal.Xml.XPath.BaseAxisQuery.SetXsltContext(XsltContext context)
+   at MS.Internal.Xml.XPath.CompiledXpathExpr.SetContext(IXmlNamespaceResolver nsResolver)
+   at System.Xml.XmlNode.SelectSingleNode(String xpath, XmlNamespaceManager nsmgr)
+   at HP.GFriend.Keywords.XML.GetAttribute(String saveTo, String xPath, String attributeName) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.XML\XML.cs:line 131
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+</AdditionalInfo>
+        <EndTime>
+2021-11-18 12:30:41
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},psk:TwoSidedLongEdge)">
+        <StartTime>
+2021-11-18 12:30:41
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+${value} and psk:TwoSidedLongEdge are not same
+</ErrorDescription>
+        <EndTime>
+2021-11-18 12:30:41
+</EndTime>
+      </Statement>
+      <Statement StatementName="XML.Get Attribute (${value},//*[@name='ns0000:JobTelemetryUserOption']/psf:Option,name)">
+        <StartTime>
+2021-11-18 12:30:41
+</StartTime>
+        <Result>
+Error
+</Result>
+        <ErrorDescription>
+Unexpected exception
+</ErrorDescription>
+        <AdditionalInfo>
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.Xml.XPath.XPathException: Namespace prefix 'psf' is not defined.
+   at MS.Internal.Xml.XPath.CompiledXpathExpr.UndefinedXsltContext.LookupNamespace(String prefix)
+   at MS.Internal.Xml.XPath.BaseAxisQuery.SetXsltContext(XsltContext context)
+   at MS.Internal.Xml.XPath.CompiledXpathExpr.SetContext(IXmlNamespaceResolver nsResolver)
+   at System.Xml.XmlNode.SelectSingleNode(String xpath, XmlNamespaceManager nsmgr)
+   at HP.GFriend.Keywords.XML.GetAttribute(String saveTo, String xPath, String attributeName) in C:\Jenkins\workspace\Build_And_Release_GFriend_Official\GFLibraries\GFK.XML\XML.cs:line 131
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+</AdditionalInfo>
+        <EndTime>
+2021-11-18 12:30:41
+</EndTime>
+      </Statement>
+      <Statement StatementName="Equals (${value},ns0000:OptIn)">
+        <StartTime>
+2021-11-18 12:30:41
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+${value} and ns0000:OptIn are not same
+</ErrorDescription>
+        <EndTime>
+2021-11-18 12:30:41
+</EndTime>
+      </Statement>
+      <Statement StatementName="Run Command(cmd /c copy c:\temp\H_JobSetup_OutPT.xml &quot;${OUTPUT_FOLDER}&quot;,${commandOutput},5)">
+        <StartTime>
+2021-11-18 12:30:41
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Access is denied.
+
+</ErrorDescription>
+        <EndTime>
+2021-11-18 12:30:42
+</EndTime>
+      </Statement>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2021-11-18 12:30:42
+</EndTime>
+      <Result>
+Fail
+</Result>
+      <EndTime>
+2021-11-18 12:30:42
+</EndTime>
+    </Statement>
+    <Result>
+FAIL
+</Result>
+    <EndTime>
+2021-11-18 12:30:42
+</EndTime>
+  </TestCase>
+  <EndTime>
+2021-11-18 12:30:42
+</EndTime>
+</TestSuite>

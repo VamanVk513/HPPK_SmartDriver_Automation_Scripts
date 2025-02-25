@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="yes"?>
+<psf:PrintTicket xmlns:psf="http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1" xmlns:ns0000="http://schemas.hp.com/ptpc/2006/1" xmlns:psk="http://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords" xmlns:bpe="http://www.adobe.com/bpeschema" xmlns:hp="http://schemas.hp.com/ptpc/2006/2">
+	<psf:ParameterInit name="psk:JobCopiesAllDocuments">
+		<psf:Value xsi:type="xsd:integer">1</psf:Value>
+	</psf:ParameterInit>
+	<psf:Feature name="psk:PageMediaSize">
+		<psf:Option name="psk:ISOA4">
+			<psf:ScoredProperty name="psk:MediaSizeWidth">
+				<psf:Value xsi:type="xsd:integer">210000</psf:Value>
+			</psf:ScoredProperty>
+			<psf:ScoredProperty name="psk:MediaSizeHeight">
+				<psf:Value xsi:type="xsd:integer">297000</psf:Value>
+			</psf:ScoredProperty>
+		</psf:Option>
+	</psf:Feature>
+	<psf:Feature name="psk:PageInputBin">
+		<psf:Option name="ns0000:UsePrinterSetting"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobLocale">
+		<psf:Option name="ns0000:English_United_States"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobStringsCluster0">
+		<psf:Option name="ns0000:IDS_PAGES_PER_SHEET_NO_HK"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobStringsCluster1">
+		<psf:Option name="ns0000:IDS_SCALE_MANUALLY"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobStringsCluster2">
+		<psf:Option name="ns0000:IDS_ENCRYPTION_MODE"/>
+	</psf:Feature>
+	<psf:Feature name="psk:PageMediaType">
+		<psf:Option name="ns0000:HPEcoSMARTLite"/>
+	</psf:Feature>
+	<psf:Feature name="psk:JobDeviceLanguage">
+		<psf:Option name="ns0000:PDF"/>
+	</psf:Feature>
+	<psf:Feature name="psk:PageOrientation">
+		<psf:Option name="psk:Portrait"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:DocumentMargins">
+		<psf:Option name="ns0000:Standard"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobUserMargin">
+		<psf:Option name="ns0000:__5mm"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobDynamicLayoutAdjustment">
+		<psf:Option name="ns0000:Clip"/>
+		<psf:Property name="ns0000:LandscapeRotationOverride">
+			<psf:Value xsi:type="xsd:string">LANDSCAPE_CC270</psf:Value>
+		</psf:Property>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobMarginsLayout">
+		<psf:Option name="ns0000:Standard"/>
+	</psf:Feature>
+	<psf:Feature name="psk:PageOutputColor">
+		<psf:Option name="psk:Monochrome">
+			<psf:ScoredProperty name="psk:DeviceBitsPerPixel">
+				<psf:Value xsi:type="xsd:integer">8</psf:Value>
+			</psf:ScoredProperty>
+			<psf:ScoredProperty name="psk:DriverBitsPerPixel">
+				<psf:Value xsi:type="xsd:integer">1</psf:Value>
+			</psf:ScoredProperty>
+		</psf:Option>
+	</psf:Feature>
+	<psf:Feature name="ns0000:PageGeneralEdgeControl">
+		<psf:Option name="ns0000:GeneralAuto"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:PageTextGrays">
+		<psf:Option name="ns0000:Auto"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:PageGraphicsGrays">
+		<psf:Option name="ns0000:Auto"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:PageImageGrays">
+		<psf:Option name="ns0000:Auto"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:PageTextHalftone">
+		<psf:Option name="ns0000:Auto"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:PageGraphicsHalftone">
+		<psf:Option name="ns0000:Auto"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:PageImageHalftone">
+		<psf:Option name="ns0000:Auto"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:DocumentRGBColor">
+		<psf:Option name="ns0000:GeneralPrinterDefault"/>
+	</psf:Feature>
+	<psf:Feature name="psk:PageColorManagement">
+		<psf:Option name="psk:Device"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:PageRotate180">
+		<psf:Option name="ns0000:NoRotation"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:PageRotate">
+		<psf:Option name="ns0000:None"/>
+	</psf:Feature>
+	<psf:Feature name="psk:PageMirrorImage">
+		<psf:Option name="psk:None"/>
+	</psf:Feature>
+	<psf:Feature name="psk:JobPageOrder">
+		<psf:Option name="psk:Standard"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobEnableAutoCutter">
+		<psf:Option name="ns0000:On"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobRemoveBlankAreas">
+		<psf:Option name="ns0000:Off"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobUserResolution">
+		<psf:Option name="ns0000:HPS_Normal"/>
+	</psf:Feature>
+	<psf:Feature name="psk:PageResolution">
+		<psf:Option name="ns0000:_600dpi">
+			<psf:ScoredProperty name="psk:ResolutionX">
+				<psf:Value xsi:type="xsd:integer">600</psf:Value>
+			</psf:ScoredProperty>
+			<psf:ScoredProperty name="psk:ResolutionY">
+				<psf:Value xsi:type="xsd:integer">600</psf:Value>
+			</psf:ScoredProperty>
+		</psf:Option>
+	</psf:Feature>
+	<psf:Feature name="ns0000:PageMaxAppResolution">
+		<psf:Option name="ns0000:Automatic"/>
+	</psf:Feature>
+	<psf:Feature name="psk:PageOutputQuality">
+		<psf:Option name="psk:Normal"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobFinishingFolding">
+		<psf:Option name="ns0000:FoldOff"/>
+	</psf:Feature>
+	<psf:Feature name="psk:JobOutputBin">
+		<psf:Option name="ns0000:AutomaticallySelect"/>
+	</psf:Feature>
+	<psf:Feature name="psk:DocumentNUp">
+		<psf:Option>
+			<psf:ScoredProperty name="psk:PagesPerSheet">
+				<psf:Value xsi:type="xsd:integer">1</psf:Value>
+			</psf:ScoredProperty>
+			<psf:ScoredProperty name="ns0000:Gutter">
+				<psf:ParameterRef name="ns0000:DocumentNUpGutter"/>
+			</psf:ScoredProperty>
+			<psf:Property name="ns0000:NUpMismatchRotateAngle">
+				<psf:Value xsi:type="xsd:integer">270</psf:Value>
+			</psf:Property>
+		</psf:Option>
+		<psf:Feature name="psk:PresentationDirection">
+			<psf:Option name="psk:RightBottom"/>
+		</psf:Feature>
+		<psf:Feature name="ns0000:NUpBorders">
+			<psf:Option name="ns0000:Off"/>
+		</psf:Feature>
+	</psf:Feature>
+	<psf:Feature name="psk:DocumentCollate">
+		<psf:Option name="psk:Collated"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobDestination">
+		<psf:Option name="ns0000:PushToClient">
+			<psf:ScoredProperty name="ns0000:CloudDeliveryType">
+				<psf:ParameterRef name="ns0000:JobCloudDeliveryType"/>
+			</psf:ScoredProperty>
+			<psf:ScoredProperty name="ns0000:RoamUserID">
+				<psf:ParameterRef name="ns0000:JobRoamUserID"/>
+			</psf:ScoredProperty>
+			<psf:ScoredProperty name="ns0000:CloudPrinterUUID">
+				<psf:ParameterRef name="ns0000:JobCloudPrinterUUID"/>
+			</psf:ScoredProperty>
+			<psf:ScoredProperty name="ns0000:IPAddress">
+				<psf:ParameterRef name="ns0000:JobLocalNW_Device_IPAddress"/>
+			</psf:ScoredProperty>
+			<psf:ScoredProperty name="ns0000:HostName">
+				<psf:ParameterRef name="ns0000:JobLocalNW_Device_HostName"/>
+			</psf:ScoredProperty>
+			<psf:ScoredProperty name="ns0000:Protocols_Supported">
+				<psf:ParameterRef name="ns0000:JobLocalNW_Device_Protocols_Supported"/>
+			</psf:ScoredProperty>
+			<psf:ScoredProperty name="ns0000:PrivatePickupSettable">
+				<psf:ParameterRef name="ns0000:JobPrivatePickupSettable"/>
+			</psf:ScoredProperty>
+			<psf:ScoredProperty name="ns0000:PrivatePickupEnabledInDashboard">
+				<psf:ParameterRef name="ns0000:JobPrivatePickupEnabledInDashboard"/>
+			</psf:ScoredProperty>
+		</psf:Option>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobTelemetryUserOption">
+		<psf:Option name="ns0000:OptIn">
+			<psf:ScoredProperty name="ns0000:EventJobRepoPath">
+				<psf:ParameterRef name="ns0000:DocumentEventJobRepoPath"/>
+			</psf:ScoredProperty>
+			<psf:ScoredProperty name="ns0000:appDeployedUUID">
+				<psf:ParameterRef name="ns0000:DocumentappDeployedUUID"/>
+			</psf:ScoredProperty>
+			<psf:ScoredProperty name="ns0000:appDeployedID">
+				<psf:ParameterRef name="ns0000:DocumentappDeployedID"/>
+			</psf:ScoredProperty>
+			<psf:ScoredProperty name="ns0000:appStackType">
+				<psf:ParameterRef name="ns0000:DocumentappStackType"/>
+			</psf:ScoredProperty>
+			<psf:Property name="ns0000:JobQueueType">
+				<psf:Value xsi:type="xsd:string">POG_Queue</psf:Value>
+			</psf:Property>
+		</psf:Option>
+	</psf:Feature>
+	<psf:Feature name="psk:JobDuplexAllDocumentsContiguously">
+		<psf:Option name="psk:OneSided"/>
+	</psf:Feature>
+	<psf:Feature name="psk:PageBorderless">
+		<psf:Option name="psk:None"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobTouchByUser">
+		<psf:Option name="ns0000:On"/>
+	</psf:Feature>
+	<psf:Feature name="psk:PageScaling">
+		<psf:Option name="psk:None"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobEnhTargetPrinterSetting">
+		<psf:Option name="ns0000:On"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobExtPTFormat">
+		<psf:Option name="ns0000:GZipBase64"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobStatusMonitor">
+		<psf:Option name="ns0000:On"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobDeliveryMode">
+		<psf:Option name="ns0000:Normal"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:PagePantoneEmulation">
+		<psf:Option name="ns0000:Off"/>
+	</psf:Feature>
+	<psf:ParameterInit name="ns0000:JobLocalNW_Device_IPAddress">
+		<psf:Value xsi:type="xsd:string"/>
+	</psf:ParameterInit>
+	<psf:ParameterInit name="ns0000:JobLocalNW_Device_HostName">
+		<psf:Value xsi:type="xsd:string"/>
+	</psf:ParameterInit>
+	<psf:ParameterInit name="ns0000:JobLocalNW_Device_Protocols_Supported">
+		<psf:Value xsi:type="xsd:string">TCP</psf:Value>
+	</psf:ParameterInit>
+	<psf:ParameterInit name="ns0000:JobCloudDeliveryType">
+		<psf:Value xsi:type="xsd:string">PrintAnywhere</psf:Value>
+	</psf:ParameterInit>
+	<psf:ParameterInit name="ns0000:JobRoamUserID">
+		<psf:Value xsi:type="xsd:string">potg_sandangel09@yopmail.com</psf:Value>
+	</psf:ParameterInit>
+	<psf:ParameterInit name="ns0000:JobCloudPrinterUUID">
+		<psf:Value xsi:type="xsd:string">d0b2af56-09e1-4a6e-93ba-03527940332e</psf:Value>
+	</psf:ParameterInit>
+	<psf:ParameterInit name="ns0000:DocumentEventJobRepoPath">
+		<psf:Value xsi:type="xsd:string">C:\Users\TEST\AppData\Local\Packages\AD2F1837.HPPrinterControl_v10z8vjag6ke6\LocalState\TelemetryRepo</psf:Value>
+	</psf:ParameterInit>
+	<psf:ParameterInit name="ns0000:DocumentappDeployedUUID">
+		<psf:Value xsi:type="xsd:string">410daf27-13d0-4981-af63-4e6ca0f1629d</psf:Value>
+	</psf:ParameterInit>
+	<psf:ParameterInit name="ns0000:DocumentappDeployedID">
+		<psf:Value xsi:type="xsd:string">HP Smart App/155.1</psf:Value>
+	</psf:ParameterInit>
+	<psf:ParameterInit name="ns0000:DocumentappStackType">
+		<psf:Value xsi:type="xsd:string">Prod</psf:Value>
+	</psf:ParameterInit>
+	<psf:ParameterInit name="ns0000:DocumentNUpGutter">
+		<psf:Value xsi:type="xsd:integer">0</psf:Value>
+	</psf:ParameterInit>
+	<psf:ParameterInit name="ns0000:PageMediaTypePrev">
+		<psf:Value xsi:type="xsd:string">{http://schemas.hp.com/ptpc/2006/1}EXTRA_HEAVY_121_163</psf:Value>
+	</psf:ParameterInit>
+	<psf:ParameterInit name="ns0000:PageInputBinPrev">
+		<psf:Value xsi:type="xsd:string">ns0000:UsePrinterSetting</psf:Value>
+	</psf:ParameterInit>
+	<psf:ParameterInit name="ns0000:JobUserResolutionPrev">
+		<psf:Value xsi:type="xsd:string">ns0000:HPS_Normal</psf:Value>
+	</psf:ParameterInit>
+	<psf:ParameterInit name="ns0000:PageBorderlessPrev">
+		<psf:Value xsi:type="xsd:string">psk:None</psf:Value>
+	</psf:ParameterInit>
+	<psf:ParameterInit name="ns0000:JobPrivatePickupSettable">
+		<psf:Value xsi:type="xsd:string">True</psf:Value>
+	</psf:ParameterInit>
+	<psf:ParameterInit name="ns0000:JobPrivatePickupEnabledInDashboard">
+		<psf:Value xsi:type="xsd:string">False</psf:Value>
+	</psf:ParameterInit>
+	<psf:Property name="ns0000:UCDEProperties">
+		<psf:Property name="ns0000:DataType">
+			<psf:Value xsi:type="xsd:string">String</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:JobIsRQueue">
+			<psf:Value xsi:type="xsd:string">true</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:JobRQueuePortName">
+			<psf:Value xsi:type="xsd:string">HP Roam</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:DestName">
+			<psf:Value xsi:type="xsd:string">HP LaserJet Tank MFP 260x</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:PrinterDisplayName">
+			<psf:Value xsi:type="xsd:string">HP LaserJet Tank MFP 2606dw (44D216)</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:DeviceImagePath">
+			<psf:Value xsi:type="xsd:string">C:\Users\TEST\AppData\Local\Packages\AD2F1837.HPPrinterControl_v10z8vjag6ke6\LocalState\Cache\DeviceImage\d0b2af56-09e1-4a6e-93ba-03527940332e.png</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:AskDestConfirmAlways">
+			<psf:Value xsi:type="xsd:string">True</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:ShowPrintingTo">
+			<psf:Value xsi:type="xsd:string">False</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:NetworkID">
+			<psf:Value xsi:type="xsd:string">e7af82a6</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:GlobalDestName">
+			<psf:Value xsi:type="xsd:string">HP LaserJet Tank MFP 260x</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:CID">
+			<psf:Value xsi:type="xsd:string">HPLJPCLMSMV2</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:JobPrinterUUID">
+			<psf:Value xsi:type="xsd:string">d0b2af56-09e1-4a6e-93ba-03527940332e</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:GetPrivatePickupFromDashboardAlways">
+			<psf:Value xsi:type="xsd:string">true</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:JobMDL">
+			<psf:Value xsi:type="xsd:string">HP LaserJet Tank MFP 260x</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:JobProductNumber">
+			<psf:Value xsi:type="xsd:string">381U5A</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:JobCurrentUserID">
+			<psf:Value xsi:type="xsd:string">potg_sandangel09@yopmail.com</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:NewEnvDestAutoset">
+			<psf:Value xsi:type="xsd:string">False</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:IRCloudResilience">
+			<psf:Value xsi:type="xsd:string">True</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:PrivatePickupDashboardSyncVisible">
+			<psf:Value xsi:type="xsd:string">False</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:Organization">
+			<psf:Value xsi:type="xsd:string">My Printers</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:StratusID">
+			<psf:Value xsi:type="xsd:string">663cad8e16608123ea3327f2</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:Account_Type">
+			<psf:Value xsi:type="xsd:string">Personal</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:TenantID">
+			<psf:Value xsi:type="xsd:string">127f22db-069d-4768-8004-f50ec953ded1</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:OrgType">
+			<psf:Value xsi:type="xsd:string">Personal</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:PTConvertMode">
+			<psf:Value xsi:type="xsd:integer">2</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:JobExtPTConvertMode">
+			<psf:Value xsi:type="xsd:integer">1</psf:Value>
+		</psf:Property>
+	</psf:Property>
+	<psf:Property name="ns0000:JobVars">
+		<psf:Property name="ns0000:DataType">
+			<psf:Value xsi:type="xsd:string">String</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:SelectedPreset">
+			<psf:Value xsi:type="xsd:string">IDS_DEFAULT_PRESET</psf:Value>
+		</psf:Property>
+	</psf:Property>
+	<psf:Property name="ns0000:PrinterAttributes">
+		<psf:Property name="ns0000:DataType">
+			<psf:Value xsi:type="xsd:string">String</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:RefDevCap">
+			<psf:Value xsi:type="xsd:string">LJPCLMSMV2</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:RefManualType">
+			<psf:Value xsi:type="xsd:string">FDNRHorizon</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:DyMargin">
+			<psf:Value xsi:type="xsd:integer">100</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:OutDirection">
+			<psf:Value xsi:type="xsd:string">FACEDOWN</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:RotateForLand">
+			<psf:Value xsi:type="xsd:string">True</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:SupportSnapping">
+			<psf:Value xsi:type="xsd:string">False</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:RoamDocumentType">
+			<psf:Value xsi:type="xsd:string">RAW</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:RemoteDeliveryType">
+			<psf:Value xsi:type="xsd:string">remoteIPP</psf:Value>
+		</psf:Property>
+	</psf:Property>
+	<psf:Feature name="ns0000:PageColorCorrectionGrays">
+		<psf:Option name="ns0000:Auto"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:JobColorCorrectionHalftone">
+		<psf:Option name="ns0000:Auto"/>
+	</psf:Feature>
+	<psf:Feature name="psk:JobStapleAllDocuments">
+		<psf:Option name="psk:None"/>
+	</psf:Feature>
+	<psf:Feature name="psk:DocumentBinding">
+		<psf:Option name="psk:None"/>
+	</psf:Feature>
+	<psf:Feature name="ns0000:DocumentHPEasyColor">
+		<psf:Option name="ns0000:HPEasyColorConservative"/>
+	</psf:Feature>
+	<psf:ParameterInit name="ns0000:JobUserName">
+		<psf:Value xsi:type="xsd:string"/>
+	</psf:ParameterInit>
+	<psf:Feature name="ns0000:JobDeviceMarigin">
+		<psf:Option name="ns0000:Margin100"/>
+	</psf:Feature>
+	<psf:Property name="ns0000:JobDeviceProperties">
+		<psf:Property name="ns0000:DataType">
+			<psf:Value xsi:type="xsd:string">String</psf:Value>
+		</psf:Property>
+		<psf:Property name="ns0000:DeviceCollation">
+			<psf:Value xsi:type="xsd:string">Installed</psf:Value>
+		</psf:Property>
+	</psf:Property>
+</psf:PrintTicket>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite  Name="PSA_Moreto">
+<StartTime>
+2024-07-29 13:24:12
+</StartTime>
+<TestCase  Name="12. Color:PrintMode_GreyScale">
+<StartTime>
+2024-07-29 13:24:12
+</StartTime>
+<Statement  StatementName="Destination_Selection_PSA_Application.Destination Selection_PrintMode_GreyScale">
+<StartTime>
+2024-07-29 13:24:12
+</StartTime>
+<StartTime>
+2024-07-29 13:24:12
+</StartTime>
+<Statement  StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_GREYSCALE.pdf,HP_PrintSupport_App)">
+<StartTime>
+2024-07-29 13:24:12
+</StartTime>
+<Result>
+Fail
+</Result>
+<ErrorDescription>
+Fail to open Printer Dialogue
+</ErrorDescription>
+<EndTime>
+2024-07-29 13:25:15
+</EndTime>
+</Statement>
+<Statement  StatementName="Windows.Wait For Name (HP_PrintSupport_App,20)">
+<StartTime>
+2024-07-29 13:25:15
+</StartTime>

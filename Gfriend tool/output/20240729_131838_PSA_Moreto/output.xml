@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_Moreto">
+  <StartTime>
+2024-07-29 13:19:01
+</StartTime>
+  <TestCase Name="11. Color:PrintMode_MonoChrome">
+    <StartTime>
+2024-07-29 13:19:01
+</StartTime>
+    <Statement StatementName="Destination_Selection_PSA_Application.Destination Selection_PrintMode_MonoChrome">
+      <StartTime>
+2024-07-29 13:19:01
+</StartTime>
+      <StartTime>
+2024-07-29 13:19:01
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_MONOCHROME.pdf,HP_PrintSupport_App)">
+        <StartTime>
+2024-07-29 13:19:01
+</StartTime>
+        <Result>
+Fail
+</Result>
+        <ErrorDescription>
+Fail to open Printer Dialogue
+</ErrorDescription>
+        <EndTime>
+2024-07-29 13:20:05
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP_PrintSupport_App,20)">
+        <StartTime>
+2024-07-29 13:20:05
+</StartTime>
+      </Statement>
+    </Statement>
+  </TestCase>
+</TestSuite>

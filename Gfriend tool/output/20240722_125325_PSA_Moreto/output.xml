@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="PSA_Moreto">
+  <StartTime>
+2024-07-22 12:53:47
+</StartTime>
+  <TestCase Name="2.General_EveryDay_Printing">
+    <StartTime>
+2024-07-22 12:53:47
+</StartTime>
+    <Statement StatementName="Destination_Selection_PSA_Application.Destination Selection_General_Everyday_Printing">
+      <StartTime>
+2024-07-22 12:53:47
+</StartTime>
+      <StartTime>
+2024-07-22 12:53:47
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\PSA\YMC_GENERAL_EVERYDAY_PRNTING.pdf)">
+        <StartTime>
+2024-07-22 12:53:47
+</StartTime>
+        <Result>
+Error
+</Result>
+        <ErrorDescription>
+Unexpected exception
+</ErrorDescription>
+        <AdditionalInfo>
+System.MissingMethodException: Method 'HP.GFriend.Keywords.Hallasan.OpenFileForPrint' not found.
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   at HP.GFriend.Core.Execution.Executor.Execute(Statement aStatement, TestDataManager testDataManager, Int32 repeat, Int32 stackLevel, Dictionary`2 arguments)
+</AdditionalInfo>
+        <EndTime>
+2024-07-22 12:53:47
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP_PrintSupport_App,30)">
+        <StartTime>
+2024-07-22 12:53:47
+</StartTime>
+      </Statement>
+    </Statement>
+  </TestCase>
+</TestSuite>

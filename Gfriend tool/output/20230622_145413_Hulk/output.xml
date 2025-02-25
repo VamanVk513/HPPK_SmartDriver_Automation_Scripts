@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="Hulk">
+  <StartTime>
+2023-06-22 14:54:35
+</StartTime>
+  <TestCase Name="1.General Everyday Printing">
+    <StartTime>
+2023-06-22 14:54:35
+</StartTime>
+    <Statement StatementName="Destination_Selection_Application.Destination Selection_General_Everyday_Printing">
+      <StartTime>
+2023-06-22 14:54:35
+</StartTime>
+      <StartTime>
+2023-06-22 14:54:35
+</StartTime>
+      <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC_General_Everyday_Printing.pdf,HP Smart Printing)">
+        <StartTime>
+2023-06-22 14:54:35
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-06-22 14:55:05
+</EndTime>
+      </Statement>
+      <Statement StatementName="Windows.Wait For Name (HP Smart Printing,30)">
+        <StartTime>
+2023-06-22 14:55:05
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-06-22 14:55:05
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(6)">
+        <StartTime>
+2023-06-22 14:55:05
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-06-22 14:55:11
+</EndTime>
+      </Statement>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-06-22 14:55:11
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-06-22 14:55:11
+</EndTime>
+    </Statement>
+    <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+      <StartTime>
+2023-06-22 14:55:11
+</StartTime>
+      <StartTime>
+2023-06-22 14:55:11
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-06-22 14:55:11
+</EndTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-06-22 14:55:11
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Set Combobox (ui_PresetComboBox,_GeneralPrint_PCL)">
+      <StartTime>
+2023-06-22 14:55:11
+</StartTime>
+      <Result>
+Fail
+</Result>
+      <ErrorDescription>
+Combobx click fail : ui_PresetComboBox - _GeneralPrint_PCL
+</ErrorDescription>
+      <ScreenShot>
+.\Hallasan_Screenshot_230622_14551412.png
+</ScreenShot>
+      <EndTime>
+2023-06-22 14:55:14
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2023-06-22 14:55:14
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-06-22 14:55:19
+</EndTime>
+    </Statement>
+    <Statement StatementName="Hallasan.Confirm">
+      <StartTime>
+2023-06-22 14:55:19
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-06-22 14:55:19
+</EndTime>
+    </Statement>
+    <Statement StatementName="Sleep(5)">
+      <StartTime>
+2023-06-22 14:55:19
+</StartTime>
+      <Result>
+Pass
+</Result>
+      <EndTime>
+2023-06-22 14:55:24
+</EndTime>
+    </Statement>
+    <Statement StatementName="Click_Print_Button.Print">
+      <StartTime>
+2023-06-22 14:55:24
+</StartTime>
+      <StartTime>
+2023-06-22 14:55:24
+</StartTime>
+      <Statement StatementName="Hallasan.Click Print Button">
+        <StartTime>
+2023-06-22 14:55:24
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-06-22 14:55:26
+</EndTime>
+      </Statement>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2023-06-22 14:55:26
+</StartTime>
+        <Result>
+Pass
+</Result>
+        <EndTime>
+2023-06-22 14:55:46
+</EndTime>
+      </Statement>
+      <If Condition=" Hallasan.Close Application">
+        <StartTime>
+2023-06-22 14:55:46
+</StartTime>
+        <ConditionResult>
+PASS
+</ConditionResult>
+        <StatementBlock Kind="PASS">
+          <StartTime>
+2023-06-22 14:55:46
+</StartTime>
+          <Block>
+            <StartTime>
+2023-06-22 14:55:46
+</StartTime>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2023-06-22 14:55:46
+</EndTime>
+          </Block>
+          <EndTime>
+2023-06-22 14:55:46
+</EndTime>
+          <Result>
+PASS
+</Result>
+        </StatementBlock>
+        <Result>
+PASS
+</Result>
+        <EndTime>
+2023-06-22 14:55:46
+</EndTime>
+      </If>
+      <Statement StatementName="Sleep(20)">
+        <StartTime>
+2023-06-22 14:55:46
+</StartTime>
+      </Statement>
+    </Statement>
+  </TestCase>
+</TestSuite>

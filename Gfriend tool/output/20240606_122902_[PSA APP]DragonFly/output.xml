@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite Name="[PSA APP]DragonFly">
+  <StartTime>
+2024-06-06 12:29:25
+</StartTime>
+  <TestCase Name="Paper Size:Letter">
+    <StartTime>
+2024-06-06 12:29:25
+</StartTime>
+    <Repeat RepeatCount="1">
+      <StartTime>
+2024-06-06 12:29:25
+</StartTime>
+      <Loop LoopCount="1">
+        <StartTime>
+2024-06-06 12:29:25
+</StartTime>
+        <Statement StatementName="Destination_Selection_Application.PSA_Destination Selection_Letter">
+          <StartTime>
+2024-06-06 12:29:25
+</StartTime>
+          <StartTime>
+2024-06-06 12:29:25
+</StartTime>
+          <Statement StatementName="Hallasan.Open File For Print (C:\GFriend_PotG\Potg_Driver\PotG Testfile\YMC Letter.pdf,HP Smart Printing)">
+            <StartTime>
+2024-06-06 12:29:25
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Fail to click target printer
+</ErrorDescription>
+            <EndTime>
+2024-06-06 12:30:16
+</EndTime>
+          </Statement>
+          <Statement StatementName="Hallasan.Get Driver Window(HP2F7C2F)">
+            <StartTime>
+2024-06-06 12:30:16
+</StartTime>
+            <Result>
+Fail
+</Result>
+            <ErrorDescription>
+Can not find window
+</ErrorDescription>
+            <ScreenShot>
+.\Hallasan_Screenshot_240606_12302687.png
+</ScreenShot>
+            <EndTime>
+2024-06-06 12:30:26
+</EndTime>
+          </Statement>
+          <Statement StatementName="Windows.Wait For Name (HP2F7C2F,30)">
+            <StartTime>
+2024-06-06 12:30:26
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2024-06-06 12:30:26
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(6)">
+            <StartTime>
+2024-06-06 12:30:26
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2024-06-06 12:30:32
+</EndTime>
+          </Statement>
+          <Result>
+FAIL
+</Result>
+          <EndTime>
+2024-06-06 12:30:32
+</EndTime>
+          <Result>
+Fail
+</Result>
+          <EndTime>
+2024-06-06 12:30:32
+</EndTime>
+        </Statement>
+        <Statement StatementName="Used_Destination_Selection_Function.not Used Destination Selection Function">
+          <StartTime>
+2024-06-06 12:30:32
+</StartTime>
+          <StartTime>
+2024-06-06 12:30:32
+</StartTime>
+          <Result>
+PASS
+</Result>
+          <EndTime>
+2024-06-06 12:30:32
+</EndTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2024-06-06 12:30:32
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Set Combobox (Part.PageMediaSize,Option.NorthAmericaLetter)">
+          <StartTime>
+2024-06-06 12:30:32
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find combobox : Part.PageMediaSize
+</ErrorDescription>
+          <EndTime>
+2024-06-06 12:30:35
+</EndTime>
+        </Statement>
+        <Statement StatementName="Windows.Capture Screen Shot(Capture.jpg)">
+          <StartTime>
+2024-06-06 12:30:35
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <ScreenShot>
+.\Windows_Screenshot_240606_12303539.png
+</ScreenShot>
+          <EndTime>
+2024-06-06 12:30:35
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2024-06-06 12:30:35
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2024-06-06 12:30:40
+</EndTime>
+        </Statement>
+        <Statement StatementName="Hallasan.Confirm">
+          <StartTime>
+2024-06-06 12:30:40
+</StartTime>
+          <Result>
+Fail
+</Result>
+          <ErrorDescription>
+Can not find element with given automation ID : App.OK
+</ErrorDescription>
+          <ScreenShot>
+.\Hallasan_Screenshot_240606_12304405.png
+</ScreenShot>
+          <EndTime>
+2024-06-06 12:30:44
+</EndTime>
+        </Statement>
+        <Statement StatementName="Sleep(5)">
+          <StartTime>
+2024-06-06 12:30:44
+</StartTime>
+          <Result>
+Pass
+</Result>
+          <EndTime>
+2024-06-06 12:30:49
+</EndTime>
+        </Statement>
+        <Statement StatementName="Click_Print_Button.Print">
+          <StartTime>
+2024-06-06 12:30:49
+</StartTime>
+          <StartTime>
+2024-06-06 12:30:49
+</StartTime>
+          <Statement StatementName="Hallasan.Click Print Button">
+            <StartTime>
+2024-06-06 12:30:49
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2024-06-06 12:30:51
+</EndTime>
+          </Statement>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2024-06-06 12:30:51
+</StartTime>
+            <Result>
+Pass
+</Result>
+            <EndTime>
+2024-06-06 12:31:11
+</EndTime>
+          </Statement>
+          <If Condition=" Hallasan.Close Application">
+            <StartTime>
+2024-06-06 12:31:11
+</StartTime>
+            <ConditionResult>
+PASS
+</ConditionResult>
+            <StatementBlock Kind="PASS">
+              <StartTime>
+2024-06-06 12:31:11
+</StartTime>
+              <Block>
+                <StartTime>
+2024-06-06 12:31:11
+</StartTime>
+                <Result>
+PASS
+</Result>
+                <EndTime>
+2024-06-06 12:31:11
+</EndTime>
+              </Block>
+              <EndTime>
+2024-06-06 12:31:11
+</EndTime>
+              <Result>
+PASS
+</Result>
+            </StatementBlock>
+            <Result>
+PASS
+</Result>
+            <EndTime>
+2024-06-06 12:31:11
+</EndTime>
+          </If>
+          <Statement StatementName="Sleep(20)">
+            <StartTime>
+2024-06-06 12:31:11
+</StartTime>
+          </Statement>
+        </Statement>
+      </Loop>
+    </Repeat>
+  </TestCase>
+</TestSuite>
